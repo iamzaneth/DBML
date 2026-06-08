@@ -1,0 +1,241 @@
+# ==============================================================================
+# Vietnamese Sign Language (VSL) Recognition - Configuration
+# ==============================================================================
+# All hyperparameters, paths, and settings for the data pipeline and training.
+# ==============================================================================
+
+# --- Data Configuration ---
+data:
+  # HuggingFace dataset identifier
+  hf_dataset_id: "Kateht/VOYA_VSL"
+
+  # Local directory to store downloaded .npz files
+  raw_dir: "data/raw"
+
+  # Directory for processed/cached data
+  processed_dir: "data/processed"
+
+  # Number of classes in the dataset
+  num_classes: 161
+
+  # Sequence length (number of frames per sample)
+  seq_length: 60
+
+  # Total number of features per frame (535 landmarks × 3 coords)
+  num_features: 1605
+
+  # Train / Validation / Test split ratios (must sum to 1.0)
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+  # Random seed for reproducible splits
+  split_seed: 42
+
+  # Whether to shuffle data before splitting
+  shuffle: true
+
+  # Feature subset to use: "full" (1605) or "pose_hands" (225)
+  feature_subset: "full"
+
+# --- Landmark Configuration ---
+landmarks:
+  # MediaPipe Holistic landmark counts
+  pose_count: 33       # 33 pose landmarks × 3 = 99 features
+  face_count: 468      # 468 face landmarks × 3 = 1404 features  (Note: 468 is face mesh without irises)
+  left_hand_count: 21  # 21 left hand landmarks × 3 = 63 features
+  right_hand_count: 21 # 21 right hand landmarks × 3 = 63 features (Note: actual may differ)
+  coords_per_landmark: 3  # x, y, z
+
+  # Landmark ordering in the feature vector (start indices)
+  # Assumed order: [pose, face, left_hand, right_hand] or determined during exploration
+  pose_start: 0
+  face_start: 99       # 33 * 3
+  left_hand_start: 1503  # 99 + 468*3 = 99 + 1404 = 1503
+  right_hand_start: 1566 # 1503 + 21*3 = 1503 + 63 = 1566  (Note: 1566 + 63 = 1629 > 1605, so ordering needs verification)
+
+  # Root joint indices for normalization (index within each landmark group)
+  # Pose: use midpoint of left_shoulder (11) and right_shoulder (12)
+  pose_root_landmarks: [11, 12]
+  # Hands: use wrist (0)
+  hand_root_landmark: 0
+
+# --- Preprocessing Configuration ---
+preprocessing:
+  # Normalization strategy: "root_relative" | "min_max" | "standard"
+  normalization: "root_relative"
+
+  # Whether to interpolate missing/zero landmarks
+  interpolate_missing: true
+
+  # Maximum consecutive missing frames to interpolate
+  max_interpolation_gap: 5
+
+  # Whether to apply per-sample standardization after root-relative normalization
+  post_standardize: false
+
+# --- Augmentation Configuration ---
+augmentation:
+  # Master switch for augmentation (only applied to training data)
+  enabled: true
+
+  # Probability of applying each augmentation (independently)
+  spatial:
+    # Random scaling
+    scale:
+      enabled: true
+      probability: 0.5
+      min_factor: 0.85
+      max_factor: 1.15
+
+    # Random rotation (2D, applied to x-y plane)
+    rotation:
+      enabled: true
+      probability: 0.5
+      max_angle_deg: 15.0
+
+    # Horizontal flip / mirror (swap left-right)
+    flip:
+      enabled: true
+      probability: 0.3
+
+    # Random translation / shift
+    shift:
+      enabled: true
+      probability: 0.4
+      max_shift: 0.05  # fraction of coordinate range
+
+  temporal:
+    # Time warping (non-linear temporal distortion)
+    time_warp:
+      enabled: true
+      probability: 0.4
+      sigma: 5.0       # smoothness of the warp
+      num_knots: 4      # number of warp control points
+
+    # Random frame dropout (replace frames with interpolated values)
+    frame_dropout:
+      enabled: true
+      probability: 0.3
+      max_dropout_ratio: 0.15  # max fraction of frames to drop
+
+    # Speed variation (uniform temporal scaling)
+    speed_variation:
+      enabled: true
+      probability: 0.3
+      min_speed: 0.8
+      max_speed: 1.2
+
+  # Gaussian noise injection
+  noise:
+    enabled: true
+    probability: 0.5
+    std: 0.005  # standard deviation of Gaussian noise
+
+# --- Model Configuration ---
+model:
+  # Architecture: "transformer" | "lstm" | "cnn_lstm"
+  architecture: "transformer"
+
+  # Transformer-specific settings
+  transformer:
+    num_heads: 8
+    num_layers: 4
+    d_model: 256
+    dff: 512
+    dropout_rate: 0.3
+    attention_dropout: 0.1
+
+  # LSTM-specific settings
+  lstm:
+    units: 256
+    num_layers: 2
+    bidirectional: true
+    dropout_rate: 0.3
+    recurrent_dropout: 0.2
+
+  # Final classifier
+  classifier:
+    hidden_units: [256, 128]
+    dropout_rate: 0.4
+    activation: "relu"
+
+# --- Training Configuration ---
+training:
+  batch_size: 32
+  epochs: 150
+  learning_rate: 0.001
+  optimizer: "adam"
+
+  # Learning rate schedule
+  lr_schedule:
+    type: "cosine_decay"  # "cosine_decay" | "step_decay" | "reduce_on_plateau"
+    warmup_epochs: 5
+    min_lr: 0.00001
+
+  # Early stopping
+  early_stopping:
+    enabled: true
+    patience: 20
+    monitor: "val_accuracy"
+    min_delta: 0.001
+    restore_best_weights: true
+
+  # Model checkpointing
+  checkpoint:
+    enabled: true
+    save_dir: "checkpoints"
+    monitor: "val_accuracy"
+    save_best_only: true
+
+  # Label smoothing
+  label_smoothing: 0.1
+
+  # Mixed precision training (recommended for RTX 4050)
+  mixed_precision: true
+
+  # Gradient clipping
+  gradient_clip_norm: 1.0
+
+  # Class weights: "balanced" | "none" | "sqrt_inv"
+  class_weights: "balanced"
+
+# --- Inference Configuration ---
+inference:
+  # Path to saved model
+  model_path: "checkpoints/best_model.keras"
+
+  # Confidence threshold for predictions
+  confidence_threshold: 0.3
+
+  # Top-K predictions to return
+  top_k: 5
+
+  # Whether to apply TTA (Test-Time Augmentation)
+  tta:
+    enabled: false
+    num_augmentations: 5
+
+# --- Logging & Experiment Tracking ---
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  tensorboard: true
+  wandb:
+    enabled: false
+    project: "vsl-recognition"
+    entity: null
+
+# --- Hardware / Performance ---
+hardware:
+  # GPU memory growth (prevent TF from allocating all GPU memory)
+  gpu_memory_growth: true
+
+  # Number of parallel data loading workers
+  num_workers: 4
+
+  # Prefetch buffer size (tf.data.AUTOTUNE = -1)
+  prefetch_buffer: -1
+
+  # Shuffle buffer size for tf.data.Dataset
+  shuffle_buffer: 2048

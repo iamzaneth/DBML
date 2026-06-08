@@ -1,1 +1,5 @@
 .venv
+*pycache*
+*.pyc
+data/raw/*
+!data/raw/.gitkeep
