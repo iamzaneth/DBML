@@ -1,10 +1,11 @@
 import os
 import sys
-import csv
 import json
 import re
 import urllib.request
+import logging
 from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 
 # Giảm log TensorFlow/MediaPipe
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
@@ -16,6 +17,9 @@ import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 
+# Tắt logging từ Google frameworks
+logging.getLogger("google").setLevel(logging.ERROR)
+logging.getLogger("tensorflow").setLevel(logging.ERROR)
 
 # ============================================================
 # UTF-8 CONSOLE
@@ -23,7 +27,6 @@ from mediapipe.tasks.python import vision
 
 if sys.stdout.encoding != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
-
 
 # ============================================================
 # PROJECT PATHS
@@ -34,59 +37,51 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 MODEL_DIR = PROJECT_ROOT / "models"
 INTERIM_BASE_DIR = PROJECT_ROOT / "data" / "interim"
 OUTPUT_BASE_DIR = PROJECT_ROOT / "data" / "processed" / "landmarks"
-PREVIEW_BASE_DIR = PROJECT_ROOT / "data" / "processed" / "landmark_preview"
-
 
 # ============================================================
 # CONFIG
 # ============================================================
 
-# Mỗi video sẽ được chuẩn hóa thành đúng 60 frame/time steps.
+# Mỗi video được chuẩn hóa thành đúng 60 frame/time steps.
 TARGET_FRAMES = 60
 
-# Nếu muốn test ít video trước thì để số, ví dụ 5.
-# Chạy toàn bộ thì để None.
+# Nếu muốn test ít video trước thì để số, ví dụ 5. Chạy toàn bộ thì để None.
 MAX_VIDEOS = None
 
 # Nếu file .npz đã tồn tại thì bỏ qua.
 SKIP_EXISTING = True
 
-# Lưu video nền đen có vẽ landmark để kiểm tra trực quan.
-SAVE_BLACK_PREVIEW = True
-
-# Bật toàn bộ để lấy chi tiết nhất có thể.
+# Bật/tắt nhóm landmark chính.
 USE_HAND = True
 USE_POSE = True
 USE_FACE = True
 
+# Face được giảm nhẹ: chỉ lưu blendshapes, không lưu full 478 landmarks và matrix.
+USE_FACE_BLENDSHAPES = True
+USE_FACE_MATRIX = False
+
+# Dùng float16 để giảm dung lượng. Khi train có thể cast lại float32.
+STORAGE_DTYPE = np.float16
+
 VIDEO_EXTENSIONS = [".mp4", ".avi", ".mov", ".mkv", ".webm"]
 
-
 # ============================================================
-# MULTI-WORKER CONFIG (Chia việc cho nhiều người)
+# MULTI-WORKER CONFIG
 # ============================================================
-# 
-# Để chia việc cho 10 người, mỗi người chạy script với WORKER_ID khác nhau.
-# - Người 1: WORKER_ID = 1 (xử lý label 0-199)
-# - Người 2: WORKER_ID = 2 (xử lý label 200-399)
+# Chế độ chạy:
+# - WORKER_ID = 0: chạy toàn bộ label, không chia worker.
+# - WORKER_ID = 1: xử lý label index 0-199.
+# - WORKER_ID = 2: xử lý label index 200-399.
 # - ...
-# - Người 9: WORKER_ID = 9 (xử lý label 1600-1799)
-# - Người 10: WORKER_ID = 10 (xử lý label 1800 trở đi)
-#
-# Tất cả đều lưu vào data/processed/landmarks/{label}/*.npz
-# Sau đó bạn copy thủ công các folder label vào một chỗ chung.
+# - WORKER_ID = 10: xử lý label index 1800 trở đi.
 
-WORKER_ID = 1  # Đặt từ 1 đến 10 tùy vào mỗi người
-LABELS_PER_WORKER = 200  # Mỗi người 200 labels (trừ người cuối)
-
+WORKER_ID = 0
+LABELS_PER_WORKER = 200
 
 # ============================================================
 # MODEL URLS
 # ============================================================
-# Pose dùng heavy để ưu tiên chất lượng landmark.
-# Nếu máy yếu, có thể đổi pose_landmarker_heavy thành:
-# - pose_landmarker_full
-# - pose_landmarker_lite
+# Pose heavy ưu tiên chất lượng. Nếu máy yếu, có thể đổi sang full/lite.
 
 MODEL_URLS = {
     "hand": {
@@ -103,93 +98,42 @@ MODEL_URLS = {
     },
 }
 
-
 # ============================================================
 # LANDMARK SIZE CONFIG
 # ============================================================
-# Lấy chi tiết:
-# - Pose normalized landmarks: 33 điểm x [x, y, z, visibility, presence]
-# - Pose world landmarks:      33 điểm x [x, y, z, visibility, presence]
-# - Left hand normalized:      21 điểm x [x, y, z]
-# - Right hand normalized:     21 điểm x [x, y, z]
-# - Left hand world:           21 điểm x [x, y, z]
-# - Right hand world:          21 điểm x [x, y, z]
-# - Face landmarks:            478 điểm x [x, y, z]
-# - Face blendshapes:          52 giá trị biểu cảm
-# - Face matrix:               16 giá trị ma trận biến đổi khuôn mặt
+# Dataset sau tối ưu chỉ lưu 3 nhánh:
+# - pose:  33 điểm normalized x [x, y, z, visibility, presence]
+#        + 33 điểm world      x [x, y, z, visibility, presence]
+#        = 330 features/frame
+# - hands: left/right normalized + left/right world, mỗi hand 21 x [x, y, z]
+#        = 252 features/frame
+# - face:  52 blendshape scores, không lưu full 478 face landmarks
+#        = 52 features/frame
 
 POSE_LANDMARK_COUNT = 33
 HAND_LANDMARK_COUNT = 21
-FACE_LANDMARK_COUNT = 478
 FACE_BLENDSHAPE_COUNT = 52
-FACE_MATRIX_DIM = 16
+FACE_BLENDSHAPE_DIM = FACE_BLENDSHAPE_COUNT
 
 POSE_NORM_DIM = POSE_LANDMARK_COUNT * 5
 POSE_WORLD_DIM = POSE_LANDMARK_COUNT * 5
+POSE_FEATURE_DIM = POSE_NORM_DIM + POSE_WORLD_DIM
 
 LEFT_HAND_NORM_DIM = HAND_LANDMARK_COUNT * 3
 RIGHT_HAND_NORM_DIM = HAND_LANDMARK_COUNT * 3
-
 LEFT_HAND_WORLD_DIM = HAND_LANDMARK_COUNT * 3
 RIGHT_HAND_WORLD_DIM = HAND_LANDMARK_COUNT * 3
-
-HANDS_COMBINED_DIM = (
+HANDS_FEATURE_DIM = (
     LEFT_HAND_NORM_DIM
     + RIGHT_HAND_NORM_DIM
     + LEFT_HAND_WORLD_DIM
     + RIGHT_HAND_WORLD_DIM
 )
 
-FACE_LANDMARK_DIM = FACE_LANDMARK_COUNT * 3
-FACE_BLENDSHAPE_DIM = FACE_BLENDSHAPE_COUNT
-FACE_TRANSFORM_DIM = FACE_MATRIX_DIM
+FACE_FEATURE_DIM = FACE_BLENDSHAPE_COUNT if USE_FACE and USE_FACE_BLENDSHAPES else 0
+TRAIN_FEATURE_DIM = POSE_FEATURE_DIM + HANDS_FEATURE_DIM + FACE_FEATURE_DIM
 
-FACE_COMBINED_DIM = FACE_LANDMARK_DIM + FACE_BLENDSHAPE_DIM + FACE_TRANSFORM_DIM
-
-POSE_COMBINED_DIM = POSE_NORM_DIM + POSE_WORLD_DIM
-
-TOTAL_FEATURE_DIM = (
-    POSE_NORM_DIM
-    + POSE_WORLD_DIM
-    + LEFT_HAND_NORM_DIM
-    + RIGHT_HAND_NORM_DIM
-    + LEFT_HAND_WORLD_DIM
-    + RIGHT_HAND_WORLD_DIM
-    + FACE_LANDMARK_DIM
-    + FACE_BLENDSHAPE_DIM
-    + FACE_TRANSFORM_DIM
-)
-
-
-# ============================================================
-# CONNECTIONS FOR PREVIEW
-# ============================================================
-
-HAND_CONNECTIONS = [
-    (0, 1), (1, 2), (2, 3), (3, 4),
-    (0, 5), (5, 6), (6, 7), (7, 8),
-    (5, 9), (9, 10), (10, 11), (11, 12),
-    (9, 13), (13, 14), (14, 15), (15, 16),
-    (13, 17), (0, 17), (17, 18), (18, 19), (19, 20)
-]
-
-POSE_CONNECTIONS = [
-    (0, 1), (1, 2), (2, 3), (3, 7),
-    (0, 4), (4, 5), (5, 6), (6, 8),
-    (9, 10),
-    (11, 12),
-    (11, 13), (13, 15),
-    (15, 17), (15, 19), (15, 21), (17, 19),
-    (12, 14), (14, 16),
-    (16, 18), (16, 20), (16, 22), (18, 20),
-    (11, 23), (12, 24), (23, 24),
-    (23, 25), (24, 26),
-    (25, 27), (26, 28),
-    (27, 29), (28, 30),
-    (29, 31), (30, 32),
-    (27, 31), (28, 32)
-]
-
+VALID_MASK_COLUMNS = ["pose", "left_hand", "right_hand", "face"]
 
 # ============================================================
 # UTILS
@@ -200,11 +144,17 @@ def safe_name(name: str) -> str:
     name = re.sub(r"[^\w\-]+", "_", name)
     return name
 
-
-def download_models():
+def download_models() -> None:
     MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
     for model_name, item in MODEL_URLS.items():
+        if model_name == "hand" and not USE_HAND:
+            continue
+        if model_name == "pose" and not USE_POSE:
+            continue
+        if model_name == "face" and not USE_FACE:
+            continue
+
         model_path = item["path"]
         model_url = item["url"]
 
@@ -216,9 +166,8 @@ def download_models():
         urllib.request.urlretrieve(model_url, model_path)
         print(f"[MODEL] Đã tải xong {model_name}: {model_path}")
 
-
-def list_label_videos(label_dir: Path):
-    videos = []
+def list_label_videos(label_dir: Path) -> List[Path]:
+    videos: List[Path] = []
 
     for ext in VIDEO_EXTENSIONS:
         videos.extend(label_dir.glob(f"*{ext}"))
@@ -230,12 +179,11 @@ def list_label_videos(label_dir: Path):
 
     return videos
 
-
-def get_sample_indices(total_frames: int, target_frames: int):
+def get_sample_indices(total_frames: int, target_frames: int) -> List[int]:
     """
     Chuẩn hóa mỗi video thành đúng target_frames.
-    Nếu video ít frame hơn 60, frame sẽ được lặp.
-    Nếu video nhiều frame hơn 60, frame sẽ được sample đều theo thời gian.
+    Nếu video ít frame hơn target_frames, frame sẽ được lặp.
+    Nếu video nhiều frame hơn target_frames, frame sẽ được sample đều theo thời gian.
     """
     if total_frames <= 0:
         return []
@@ -246,106 +194,143 @@ def get_sample_indices(total_frames: int, target_frames: int):
 
     return indices.tolist()
 
+def dtype_name(dtype) -> str:
+    return np.dtype(dtype).name
 
-def save_feature_schema(target_label, output_dir):
+def save_feature_schema(output_base_dir: Path) -> None:
     """
-    Lưu schema để sau này biết từng key trong .npz có ý nghĩa gì.
+    Lưu một file schema duy nhất để mô tả cấu trúc tất cả file .npz.
+    Không tạo schema theo từng label để tránh file dư thừa.
     """
+    output_base_dir.mkdir(parents=True, exist_ok=True)
+
     schema = {
-        "target_label": target_label,
-        "target_frames": TARGET_FRAMES,
-        "total_feature_dim": TOTAL_FEATURE_DIM,
+        "schema_version": "2.0",
         "file_format": ".npz",
-        "keys": {
-            "pose_normalized": {
-                "shape": [TARGET_FRAMES, POSE_NORM_DIM],
-                "landmarks": POSE_LANDMARK_COUNT,
-                "values_per_landmark": ["x", "y", "z", "visibility", "presence"]
+        "description": "Optimized MediaPipe landmark dataset for sign-language training. No duplicated combined tensors are stored.",
+        "target_frames": TARGET_FRAMES,
+        "storage_dtype": dtype_name(STORAGE_DTYPE),
+        "train_dtype_recommendation": "Cast pose/hands/face to float32 when training.",
+        "saved_keys": {
+            "label": {
+                "shape": [],
+                "dtype": "str",
+                "description": "Label folder name / gloss name.",
             },
-            "pose_world": {
-                "shape": [TARGET_FRAMES, POSE_WORLD_DIM],
-                "landmarks": POSE_LANDMARK_COUNT,
-                "values_per_landmark": ["x", "y", "z", "visibility", "presence"]
+            "video_name": {
+                "shape": [],
+                "dtype": "str",
+                "description": "Original video filename.",
             },
-            "pose_combined": {
-                "shape": [TARGET_FRAMES, POSE_COMBINED_DIM],
-                "contains": ["pose_normalized", "pose_world"]
+            "target_frames": {
+                "shape": [],
+                "dtype": "int32",
+                "description": "Number of sampled frames per video.",
             },
-            "left_hand_normalized": {
-                "shape": [TARGET_FRAMES, LEFT_HAND_NORM_DIM],
-                "landmarks": HAND_LANDMARK_COUNT,
-                "values_per_landmark": ["x", "y", "z"]
+            "source_fps": {
+                "shape": [],
+                "dtype": "float32",
+                "description": "FPS reported by OpenCV. If unavailable, fallback is 25.0.",
             },
-            "right_hand_normalized": {
-                "shape": [TARGET_FRAMES, RIGHT_HAND_NORM_DIM],
-                "landmarks": HAND_LANDMARK_COUNT,
-                "values_per_landmark": ["x", "y", "z"]
+            "source_total_frames": {
+                "shape": [],
+                "dtype": "int32",
+                "description": "Original total frame count reported by OpenCV.",
             },
-            "left_hand_world": {
-                "shape": [TARGET_FRAMES, LEFT_HAND_WORLD_DIM],
-                "landmarks": HAND_LANDMARK_COUNT,
-                "values_per_landmark": ["x", "y", "z"]
+            "sample_indices": {
+                "shape": [TARGET_FRAMES],
+                "dtype": "int32",
+                "description": "Original frame indices sampled from the source video.",
             },
-            "right_hand_world": {
-                "shape": [TARGET_FRAMES, RIGHT_HAND_WORLD_DIM],
-                "landmarks": HAND_LANDMARK_COUNT,
-                "values_per_landmark": ["x", "y", "z"]
+            "train_feature_dim": {
+                "shape": [],
+                "dtype": "int32",
+                "description": "Feature dim after np.concatenate([pose, hands, face], axis=1).",
+                "value": TRAIN_FEATURE_DIM,
             },
-            "hands_combined": {
-                "shape": [TARGET_FRAMES, HANDS_COMBINED_DIM],
+            "pose": {
+                "shape": [TARGET_FRAMES, POSE_FEATURE_DIM],
+                "dtype": dtype_name(STORAGE_DTYPE),
+                "contains": ["pose_normalized", "pose_world"],
+                "layout": {
+                    "pose_normalized": {
+                        "slice": [0, POSE_NORM_DIM],
+                        "landmarks": POSE_LANDMARK_COUNT,
+                        "values_per_landmark": ["x", "y", "z", "visibility", "presence"],
+                    },
+                    "pose_world": {
+                        "slice": [POSE_NORM_DIM, POSE_FEATURE_DIM],
+                        "landmarks": POSE_LANDMARK_COUNT,
+                        "values_per_landmark": ["x", "y", "z", "visibility", "presence"],
+                    },
+                },
+            },
+            "hands": {
+                "shape": [TARGET_FRAMES, HANDS_FEATURE_DIM],
+                "dtype": dtype_name(STORAGE_DTYPE),
                 "contains": [
-                    "left_hand_normalized",
-                    "right_hand_normalized",
-                    "left_hand_world",
-                    "right_hand_world"
-                ]
-            },
-            "face_landmarks": {
-                "shape": [TARGET_FRAMES, FACE_LANDMARK_DIM],
-                "landmarks": FACE_LANDMARK_COUNT,
-                "values_per_landmark": ["x", "y", "z"]
-            },
-            "face_blendshapes": {
-                "shape": [TARGET_FRAMES, FACE_BLENDSHAPE_DIM],
-                "values": "expression scores"
-            },
-            "face_transform_matrix": {
-                "shape": [TARGET_FRAMES, FACE_TRANSFORM_DIM],
-                "values": "flattened 4x4 matrix"
-            },
-            "face_combined": {
-                "shape": [TARGET_FRAMES, FACE_COMBINED_DIM],
-                "contains": [
-                    "face_landmarks",
-                    "face_blendshapes",
-                    "face_transform_matrix"
-                ]
-            },
-            "combined": {
-                "shape": [TARGET_FRAMES, TOTAL_FEATURE_DIM],
-                "contains": [
-                    "pose_normalized",
-                    "pose_world",
                     "left_hand_normalized",
                     "right_hand_normalized",
                     "left_hand_world",
                     "right_hand_world",
-                    "face_landmarks",
-                    "face_blendshapes",
-                    "face_transform_matrix"
-                ]
-            }
-        }
+                ],
+                "layout": {
+                    "left_hand_normalized": {
+                        "slice": [0, LEFT_HAND_NORM_DIM],
+                        "landmarks": HAND_LANDMARK_COUNT,
+                        "values_per_landmark": ["x", "y", "z"],
+                    },
+                    "right_hand_normalized": {
+                        "slice": [LEFT_HAND_NORM_DIM, LEFT_HAND_NORM_DIM + RIGHT_HAND_NORM_DIM],
+                        "landmarks": HAND_LANDMARK_COUNT,
+                        "values_per_landmark": ["x", "y", "z"],
+                    },
+                    "left_hand_world": {
+                        "slice": [LEFT_HAND_NORM_DIM + RIGHT_HAND_NORM_DIM, LEFT_HAND_NORM_DIM + RIGHT_HAND_NORM_DIM + LEFT_HAND_WORLD_DIM],
+                        "landmarks": HAND_LANDMARK_COUNT,
+                        "values_per_landmark": ["x", "y", "z"],
+                    },
+                    "right_hand_world": {
+                        "slice": [LEFT_HAND_NORM_DIM + RIGHT_HAND_NORM_DIM + LEFT_HAND_WORLD_DIM, HANDS_FEATURE_DIM],
+                        "landmarks": HAND_LANDMARK_COUNT,
+                        "values_per_landmark": ["x", "y", "z"],
+                    },
+                },
+            },
+            "face": {
+                "shape": [TARGET_FRAMES, FACE_FEATURE_DIM],
+                "dtype": dtype_name(STORAGE_DTYPE),
+                "contains": ["face_blendshapes"],
+                "description": "52 face expression scores only. Full 478 face landmarks and 4x4 face matrix are not saved.",
+            },
+            "valid_mask": {
+                "shape": [TARGET_FRAMES, len(VALID_MASK_COLUMNS)],
+                "dtype": "uint8",
+                "columns": VALID_MASK_COLUMNS,
+                "description": "1 means the component was detected in that sampled frame; 0 means missing and feature values are zero-filled.",
+            },
+        },
+        "recommended_load_code": [
+            "data = np.load(path)",
+            "pose = data['pose'].astype(np.float32)",
+            "hands = data['hands'].astype(np.float32)",
+            "face = data['face'].astype(np.float32)",
+            "x = np.concatenate([pose, hands, face], axis=1)",
+            "valid_mask = data['valid_mask']",
+        ],
+        "notes": [
+            "No combined key is saved to avoid duplicated data.",
+            "No per-label manifest CSV is created.",
+            "This script only extracts and saves optimized .npz feature files.",
+            "Missing landmarks are zero-filled and marked in valid_mask.",
+        ],
     }
 
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    schema_path = output_dir / "feature_schema.json"
+    schema_path = output_base_dir / "feature_schema.json"
     with open(schema_path, "w", encoding="utf-8") as f:
         json.dump(schema, f, indent=2, ensure_ascii=False)
 
-    print(f"[SCHEMA] Saved: {schema_path}")
-
+    print(f"[SCHEMA] Saved once: {schema_path}")
 
 # ============================================================
 # CREATE LANDMARKERS
@@ -362,9 +347,7 @@ def create_hand_landmarker():
         min_hand_presence_confidence=0.4,
         min_tracking_confidence=0.4,
     )
-
     return vision.HandLandmarker.create_from_options(options)
-
 
 def create_pose_landmarker():
     options = vision.PoseLandmarkerOptions(
@@ -378,9 +361,7 @@ def create_pose_landmarker():
         min_tracking_confidence=0.4,
         output_segmentation_masks=False,
     )
-
     return vision.PoseLandmarker.create_from_options(options)
-
 
 def create_face_landmarker():
     options = vision.FaceLandmarkerOptions(
@@ -392,23 +373,19 @@ def create_face_landmarker():
         min_face_detection_confidence=0.4,
         min_face_presence_confidence=0.4,
         min_tracking_confidence=0.4,
-
-        # Bật để lấy thêm biểu cảm mặt và ma trận mặt
-        output_face_blendshapes=True,
-        output_facial_transformation_matrixes=True,
+        # Chỉ lấy blendshapes để giữ thông tin biểu cảm nhưng giảm rất mạnh số chiều face.
+        output_face_blendshapes=USE_FACE_BLENDSHAPES,
+        # Tắt matrix để giảm output dư cho bài toán nhận diện ký hiệu.
+        output_facial_transformation_matrixes=USE_FACE_MATRIX,
     )
-
     return vision.FaceLandmarker.create_from_options(options)
-
 
 # ============================================================
 # VECTOR CONVERSION
 # ============================================================
 
-def pose_to_vector(pose_landmarks):
-    """
-    Pose: 33 x [x, y, z, visibility, presence]
-    """
+def pose_to_vector(pose_landmarks) -> np.ndarray:
+    """Pose: 33 x [x, y, z, visibility, presence]."""
     vector = np.zeros(POSE_LANDMARK_COUNT * 5, dtype=np.float32)
 
     if not pose_landmarks:
@@ -418,23 +395,20 @@ def pose_to_vector(pose_landmarks):
 
     for i in range(count):
         lm = pose_landmarks[i]
-
         visibility = getattr(lm, "visibility", 0.0)
         presence = getattr(lm, "presence", 0.0)
 
-        vector[i * 5 + 0] = lm.x
-        vector[i * 5 + 1] = lm.y
-        vector[i * 5 + 2] = lm.z
-        vector[i * 5 + 3] = 0.0 if visibility is None else visibility
-        vector[i * 5 + 4] = 0.0 if presence is None else presence
+        base = i * 5
+        vector[base + 0] = lm.x
+        vector[base + 1] = lm.y
+        vector[base + 2] = lm.z
+        vector[base + 3] = 0.0 if visibility is None else visibility
+        vector[base + 4] = 0.0 if presence is None else presence
 
     return vector
 
-
-def hand_to_vector(hand_landmarks):
-    """
-    Hand: 21 x [x, y, z]
-    """
+def hand_to_vector(hand_landmarks) -> np.ndarray:
+    """Hand: 21 x [x, y, z]."""
     vector = np.zeros(HAND_LANDMARK_COUNT * 3, dtype=np.float32)
 
     if not hand_landmarks:
@@ -444,39 +418,15 @@ def hand_to_vector(hand_landmarks):
 
     for i in range(count):
         lm = hand_landmarks[i]
-
-        vector[i * 3 + 0] = lm.x
-        vector[i * 3 + 1] = lm.y
-        vector[i * 3 + 2] = lm.z
-
-    return vector
-
-
-def face_to_vector(face_landmarks):
-    """
-    Face: 478 x [x, y, z]
-    """
-    vector = np.zeros(FACE_LANDMARK_DIM, dtype=np.float32)
-
-    if not face_landmarks:
-        return vector
-
-    count = min(len(face_landmarks), FACE_LANDMARK_COUNT)
-
-    for i in range(count):
-        lm = face_landmarks[i]
-
-        vector[i * 3 + 0] = lm.x
-        vector[i * 3 + 1] = lm.y
-        vector[i * 3 + 2] = lm.z
+        base = i * 3
+        vector[base + 0] = lm.x
+        vector[base + 1] = lm.y
+        vector[base + 2] = lm.z
 
     return vector
 
-
-def face_blendshapes_to_vector(face_blendshapes):
-    """
-    Face blendshape: thường 52 điểm biểu cảm.
-    """
+def face_blendshapes_to_vector(face_blendshapes) -> np.ndarray:
+    """Face blendshapes: 52 expression scores."""
     vector = np.zeros(FACE_BLENDSHAPE_DIM, dtype=np.float32)
 
     if not face_blendshapes:
@@ -490,28 +440,8 @@ def face_blendshapes_to_vector(face_blendshapes):
 
     return vector
 
-
-def face_matrix_to_vector(facial_transformation_matrixes):
-    """
-    Face transform matrix: 4x4 = 16 giá trị.
-    """
-    vector = np.zeros(FACE_TRANSFORM_DIM, dtype=np.float32)
-
-    if facial_transformation_matrixes is None or len(facial_transformation_matrixes) == 0:
-        return vector
-
-    matrix = np.array(facial_transformation_matrixes[0], dtype=np.float32).reshape(-1)
-    count = min(len(matrix), FACE_TRANSFORM_DIM)
-
-    vector[:count] = matrix[:count]
-
-    return vector
-
-
-def get_handedness_label(handedness_item):
-    """
-    MediaPipe thường trả category_name là 'Left' hoặc 'Right'.
-    """
+def get_handedness_label(handedness_item) -> Optional[str]:
+    """MediaPipe thường trả category_name là 'Left' hoặc 'Right'."""
     try:
         if handedness_item and len(handedness_item) > 0:
             return handedness_item[0].category_name
@@ -520,99 +450,32 @@ def get_handedness_label(handedness_item):
 
     return None
 
-
-def create_empty_frame_parts():
-    """
-    Dùng khi frame bị lỗi hoặc không đọc được.
-    Vẫn giữ đúng shape để sequence không bị lệch.
-    """
+def extract_pose_features(pose_result) -> Tuple[np.ndarray, int]:
     pose_norm_vec = np.zeros(POSE_NORM_DIM, dtype=np.float32)
     pose_world_vec = np.zeros(POSE_WORLD_DIM, dtype=np.float32)
-    pose_combined = np.zeros(POSE_COMBINED_DIM, dtype=np.float32)
+    valid_pose = 0
 
-    left_hand_norm_vec = np.zeros(LEFT_HAND_NORM_DIM, dtype=np.float32)
-    right_hand_norm_vec = np.zeros(RIGHT_HAND_NORM_DIM, dtype=np.float32)
-    left_hand_world_vec = np.zeros(LEFT_HAND_WORLD_DIM, dtype=np.float32)
-    right_hand_world_vec = np.zeros(RIGHT_HAND_WORLD_DIM, dtype=np.float32)
-    hands_combined = np.zeros(HANDS_COMBINED_DIM, dtype=np.float32)
-
-    face_landmark_vec = np.zeros(FACE_LANDMARK_DIM, dtype=np.float32)
-    face_blendshape_vec = np.zeros(FACE_BLENDSHAPE_DIM, dtype=np.float32)
-    face_matrix_vec = np.zeros(FACE_TRANSFORM_DIM, dtype=np.float32)
-    face_combined = np.zeros(FACE_COMBINED_DIM, dtype=np.float32)
-
-    combined = np.zeros(TOTAL_FEATURE_DIM, dtype=np.float32)
-
-    return {
-        "pose_normalized": pose_norm_vec,
-        "pose_world": pose_world_vec,
-        "pose_combined": pose_combined,
-
-        "left_hand_normalized": left_hand_norm_vec,
-        "right_hand_normalized": right_hand_norm_vec,
-        "left_hand_world": left_hand_world_vec,
-        "right_hand_world": right_hand_world_vec,
-        "hands_combined": hands_combined,
-
-        "face_landmarks": face_landmark_vec,
-        "face_blendshapes": face_blendshape_vec,
-        "face_transform_matrix": face_matrix_vec,
-        "face_combined": face_combined,
-
-        "combined": combined,
-    }
-
-
-def extract_frame_parts(hand_result, pose_result, face_result):
-    """
-    Trả về dictionary chứa từng nhóm landmark riêng,
-    đồng thời có combined vector để train nhanh.
-
-    Một frame có các nhóm:
-    - pose_normalized
-    - pose_world
-    - pose_combined
-    - left_hand_normalized
-    - right_hand_normalized
-    - left_hand_world
-    - right_hand_world
-    - hands_combined
-    - face_landmarks
-    - face_blendshapes
-    - face_transform_matrix
-    - face_combined
-    - combined
-    """
-
-    pose_norm_vec = np.zeros(POSE_NORM_DIM, dtype=np.float32)
-    pose_world_vec = np.zeros(POSE_WORLD_DIM, dtype=np.float32)
-
-    left_hand_norm_vec = np.zeros(LEFT_HAND_NORM_DIM, dtype=np.float32)
-    right_hand_norm_vec = np.zeros(RIGHT_HAND_NORM_DIM, dtype=np.float32)
-
-    left_hand_world_vec = np.zeros(LEFT_HAND_WORLD_DIM, dtype=np.float32)
-    right_hand_world_vec = np.zeros(RIGHT_HAND_WORLD_DIM, dtype=np.float32)
-
-    face_landmark_vec = np.zeros(FACE_LANDMARK_DIM, dtype=np.float32)
-    face_blendshape_vec = np.zeros(FACE_BLENDSHAPE_DIM, dtype=np.float32)
-    face_matrix_vec = np.zeros(FACE_TRANSFORM_DIM, dtype=np.float32)
-
-    # ----------------------------
-    # POSE
-    # ----------------------------
-
-    if USE_POSE:
+    if USE_POSE and pose_result is not None:
         if pose_result.pose_landmarks:
             pose_norm_vec = pose_to_vector(pose_result.pose_landmarks[0])
+            valid_pose = 1
 
         if pose_result.pose_world_landmarks:
             pose_world_vec = pose_to_vector(pose_result.pose_world_landmarks[0])
 
-    # ----------------------------
-    # HANDS
-    # ----------------------------
+    pose = np.concatenate([pose_norm_vec, pose_world_vec]).astype(np.float32)
+    return pose, valid_pose
 
-    if USE_HAND and hand_result.hand_landmarks:
+def extract_hands_features(hand_result) -> Tuple[np.ndarray, int, int]:
+    left_hand_norm_vec = np.zeros(LEFT_HAND_NORM_DIM, dtype=np.float32)
+    right_hand_norm_vec = np.zeros(RIGHT_HAND_NORM_DIM, dtype=np.float32)
+    left_hand_world_vec = np.zeros(LEFT_HAND_WORLD_DIM, dtype=np.float32)
+    right_hand_world_vec = np.zeros(RIGHT_HAND_WORLD_DIM, dtype=np.float32)
+
+    valid_left_hand = 0
+    valid_right_hand = 0
+
+    if USE_HAND and hand_result is not None and hand_result.hand_landmarks:
         for i, hand_landmarks in enumerate(hand_result.hand_landmarks):
             hand_norm_vec = hand_to_vector(hand_landmarks)
 
@@ -624,169 +487,72 @@ def extract_frame_parts(hand_result, pose_result, face_result):
             if hand_result.handedness and i < len(hand_result.handedness):
                 label = get_handedness_label(hand_result.handedness[i])
 
-            if label == "Left":
+            if label == "Left" and valid_left_hand == 0:
                 left_hand_norm_vec = hand_norm_vec
                 left_hand_world_vec = hand_world_vec
-
-            elif label == "Right":
+                valid_left_hand = 1
+            elif label == "Right" and valid_right_hand == 0:
                 right_hand_norm_vec = hand_norm_vec
                 right_hand_world_vec = hand_world_vec
-
+                valid_right_hand = 1
             else:
-                if not np.any(left_hand_norm_vec):
+                # Fallback nếu handedness thiếu hoặc trùng nhãn.
+                if valid_left_hand == 0:
                     left_hand_norm_vec = hand_norm_vec
                     left_hand_world_vec = hand_world_vec
-                else:
+                    valid_left_hand = 1
+                elif valid_right_hand == 0:
                     right_hand_norm_vec = hand_norm_vec
                     right_hand_world_vec = hand_world_vec
+                    valid_right_hand = 1
 
-    # ----------------------------
-    # FACE
-    # ----------------------------
-
-    if USE_FACE:
-        if face_result.face_landmarks:
-            face_landmark_vec = face_to_vector(face_result.face_landmarks[0])
-
-        if face_result.face_blendshapes:
-            face_blendshape_vec = face_blendshapes_to_vector(face_result.face_blendshapes)
-
-        if face_result.facial_transformation_matrixes:
-            face_matrix_vec = face_matrix_to_vector(face_result.facial_transformation_matrixes)
-
-    # ----------------------------
-    # LOGICAL GROUPS
-    # ----------------------------
-
-    pose_combined = np.concatenate([
-        pose_norm_vec,
-        pose_world_vec
-    ]).astype(np.float32)
-
-    hands_combined = np.concatenate([
-        left_hand_norm_vec,
-        right_hand_norm_vec,
-        left_hand_world_vec,
-        right_hand_world_vec
-    ]).astype(np.float32)
-
-    face_combined = np.concatenate([
-        face_landmark_vec,
-        face_blendshape_vec,
-        face_matrix_vec
-    ]).astype(np.float32)
-
-    combined = np.concatenate([
-        pose_norm_vec,
-        pose_world_vec,
+    hands = np.concatenate([
         left_hand_norm_vec,
         right_hand_norm_vec,
         left_hand_world_vec,
         right_hand_world_vec,
-        face_landmark_vec,
-        face_blendshape_vec,
-        face_matrix_vec
     ]).astype(np.float32)
 
+    return hands, valid_left_hand, valid_right_hand
+
+def extract_face_features(face_result) -> Tuple[np.ndarray, int]:
+    face_vec = np.zeros(FACE_FEATURE_DIM, dtype=np.float32)
+    valid_face = 0
+
+    if USE_FACE and face_result is not None:
+        if face_result.face_landmarks:
+            valid_face = 1
+
+        if USE_FACE_BLENDSHAPES and face_result.face_blendshapes:
+            face_vec = face_blendshapes_to_vector(face_result.face_blendshapes)
+            valid_face = 1
+
+    return face_vec, valid_face
+
+def extract_frame_features(hand_result, pose_result, face_result) -> Dict[str, np.ndarray]:
+    pose, valid_pose = extract_pose_features(pose_result)
+    hands, valid_left_hand, valid_right_hand = extract_hands_features(hand_result)
+    face, valid_face = extract_face_features(face_result)
+
+    valid_mask = np.array(
+        [valid_pose, valid_left_hand, valid_right_hand, valid_face],
+        dtype=np.uint8,
+    )
+
     return {
-        "pose_normalized": pose_norm_vec,
-        "pose_world": pose_world_vec,
-        "pose_combined": pose_combined,
-
-        "left_hand_normalized": left_hand_norm_vec,
-        "right_hand_normalized": right_hand_norm_vec,
-        "left_hand_world": left_hand_world_vec,
-        "right_hand_world": right_hand_world_vec,
-        "hands_combined": hands_combined,
-
-        "face_landmarks": face_landmark_vec,
-        "face_blendshapes": face_blendshape_vec,
-        "face_transform_matrix": face_matrix_vec,
-        "face_combined": face_combined,
-
-        "combined": combined,
+        "pose": pose,
+        "hands": hands,
+        "face": face,
+        "valid_mask": valid_mask,
     }
 
-
-# ============================================================
-# PREVIEW DRAWING
-# ============================================================
-
-def draw_landmarks_on_black(
-    canvas,
-    landmarks,
-    connections=None,
-    point_color=(0, 255, 0),
-    line_color=(0, 255, 0),
-    radius=2
-):
-    if not landmarks:
-        return
-
-    height, width, _ = canvas.shape
-    points = []
-
-    for lm in landmarks:
-        x = int(lm.x * width)
-        y = int(lm.y * height)
-        points.append((x, y))
-
-    if connections:
-        for start_idx, end_idx in connections:
-            if start_idx < len(points) and end_idx < len(points):
-                x1, y1 = points[start_idx]
-                x2, y2 = points[end_idx]
-
-                if 0 <= x1 < width and 0 <= y1 < height and 0 <= x2 < width and 0 <= y2 < height:
-                    cv2.line(canvas, (x1, y1), (x2, y2), line_color, 2)
-
-    for x, y in points:
-        if 0 <= x < width and 0 <= y < height:
-            cv2.circle(canvas, (x, y), radius, point_color, -1)
-
-
-def create_black_preview_frame(frame_shape, hand_result, pose_result, face_result):
-    height, width, channels = frame_shape
-    canvas = np.zeros((height, width, channels), dtype=np.uint8)
-
-    # Pose: đỏ
-    if USE_POSE and pose_result.pose_landmarks:
-        for pose_landmarks in pose_result.pose_landmarks:
-            draw_landmarks_on_black(
-                canvas,
-                pose_landmarks,
-                connections=POSE_CONNECTIONS,
-                point_color=(0, 0, 255),
-                line_color=(0, 0, 255),
-                radius=3
-            )
-
-    # Hands: xanh lá
-    if USE_HAND and hand_result.hand_landmarks:
-        for hand_landmarks in hand_result.hand_landmarks:
-            draw_landmarks_on_black(
-                canvas,
-                hand_landmarks,
-                connections=HAND_CONNECTIONS,
-                point_color=(0, 255, 0),
-                line_color=(0, 255, 0),
-                radius=3
-            )
-
-    # Face: xanh dương, chỉ vẽ điểm cho nhẹ
-    if USE_FACE and face_result.face_landmarks:
-        for face_landmarks in face_result.face_landmarks:
-            draw_landmarks_on_black(
-                canvas,
-                face_landmarks,
-                connections=None,
-                point_color=(255, 0, 0),
-                line_color=(255, 0, 0),
-                radius=1
-            )
-
-    return canvas
-
+def create_empty_frame_features() -> Dict[str, np.ndarray]:
+    return {
+        "pose": np.zeros(POSE_FEATURE_DIM, dtype=np.float32),
+        "hands": np.zeros(HANDS_FEATURE_DIM, dtype=np.float32),
+        "face": np.zeros(FACE_FEATURE_DIM, dtype=np.float32),
+        "valid_mask": np.zeros(len(VALID_MASK_COLUMNS), dtype=np.uint8),
+    }
 
 # ============================================================
 # VIDEO PROCESSING
@@ -795,7 +561,6 @@ def create_black_preview_frame(frame_shape, hand_result, pose_result, face_resul
 def process_one_video(
     video_path: Path,
     output_npz_path: Path,
-    preview_video_path: Path,
     hand_landmarker,
     pose_landmarker,
     face_landmarker,
@@ -822,25 +587,11 @@ def process_one_video(
         return None, timestamp_offset_ms
 
     sequence_parts = {
-        "pose_normalized": [],
-        "pose_world": [],
-        "pose_combined": [],
-
-        "left_hand_normalized": [],
-        "right_hand_normalized": [],
-        "left_hand_world": [],
-        "right_hand_world": [],
-        "hands_combined": [],
-
-        "face_landmarks": [],
-        "face_blendshapes": [],
-        "face_transform_matrix": [],
-        "face_combined": [],
-
-        "combined": [],
+        "pose": [],
+        "hands": [],
+        "face": [],
+        "valid_mask": [],
     }
-
-    writer = None
 
     # Timestamp giả lập 60 FPS để MediaPipe VIDEO mode nhận timestamp tăng dần.
     timestamp_step_ms = int(1000 / 60)
@@ -852,142 +603,102 @@ def process_one_video(
         timestamp_ms = timestamp_offset_ms + sample_i * timestamp_step_ms
 
         if not ret:
-            frame_parts = create_empty_frame_parts()
-
+            frame_features = create_empty_frame_features()
             for key in sequence_parts:
-                sequence_parts[key].append(frame_parts[key])
-
+                sequence_parts[key].append(frame_features[key])
             continue
 
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
         mp_image = mp.Image(
             image_format=mp.ImageFormat.SRGB,
-            data=rgb_frame
+            data=rgb_frame,
         )
 
-        hand_result = hand_landmarker.detect_for_video(mp_image, timestamp_ms)
-        pose_result = pose_landmarker.detect_for_video(mp_image, timestamp_ms)
-        face_result = face_landmarker.detect_for_video(mp_image, timestamp_ms)
+        hand_result = None
+        pose_result = None
+        face_result = None
 
-        frame_parts = extract_frame_parts(
+        if USE_HAND and hand_landmarker is not None:
+            hand_result = hand_landmarker.detect_for_video(mp_image, timestamp_ms)
+
+        if USE_POSE and pose_landmarker is not None:
+            pose_result = pose_landmarker.detect_for_video(mp_image, timestamp_ms)
+
+        if USE_FACE and face_landmarker is not None:
+            face_result = face_landmarker.detect_for_video(mp_image, timestamp_ms)
+
+        frame_features = extract_frame_features(
             hand_result=hand_result,
             pose_result=pose_result,
-            face_result=face_result
+            face_result=face_result,
         )
 
         for key in sequence_parts:
-            sequence_parts[key].append(frame_parts[key])
-
-        if SAVE_BLACK_PREVIEW:
-            preview_frame = create_black_preview_frame(
-                frame_shape=frame.shape,
-                hand_result=hand_result,
-                pose_result=pose_result,
-                face_result=face_result
-            )
-
-            if writer is None:
-                preview_video_path.parent.mkdir(parents=True, exist_ok=True)
-
-                h, w, _ = preview_frame.shape
-                fourcc = cv2.VideoWriter_fourcc(*"mp4v")
-
-                writer = cv2.VideoWriter(
-                    str(preview_video_path),
-                    fourcc,
-                    60.0,
-                    (w, h)
-                )
-
-            writer.write(preview_frame)
+            sequence_parts[key].append(frame_features[key])
 
     cap.release()
 
-    if writer is not None:
-        writer.release()
-
-    # Stack từng nhóm thành array shape: (60, feature_dim_của_nhóm)
-    stacked = {}
-
-    for key, values in sequence_parts.items():
-        stacked[key] = np.stack(values, axis=0).astype(np.float32)
+    stacked = {
+        "pose": np.stack(sequence_parts["pose"], axis=0).astype(STORAGE_DTYPE),
+        "hands": np.stack(sequence_parts["hands"], axis=0).astype(STORAGE_DTYPE),
+        "face": np.stack(sequence_parts["face"], axis=0).astype(STORAGE_DTYPE),
+        "valid_mask": np.stack(sequence_parts["valid_mask"], axis=0).astype(np.uint8),
+    }
 
     output_npz_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Không lưu combined, không lưu atomic features, không lưu manifest.
+    # Khi train, dùng np.concatenate([pose, hands, face], axis=1) nếu cần full tensor.
     np.savez_compressed(
         output_npz_path,
-
-        # Metadata
         label=np.array(target_label),
         video_name=np.array(video_path.name),
         target_frames=np.array(TARGET_FRAMES, dtype=np.int32),
         source_fps=np.array(source_fps, dtype=np.float32),
         source_total_frames=np.array(total_frames, dtype=np.int32),
-        total_feature_dim=np.array(TOTAL_FEATURE_DIM, dtype=np.int32),
-
-        # Pose
-        pose_normalized=stacked["pose_normalized"],
-        pose_world=stacked["pose_world"],
-        pose_combined=stacked["pose_combined"],
-
-        # Hands
-        left_hand_normalized=stacked["left_hand_normalized"],
-        right_hand_normalized=stacked["right_hand_normalized"],
-        left_hand_world=stacked["left_hand_world"],
-        right_hand_world=stacked["right_hand_world"],
-        hands_combined=stacked["hands_combined"],
-
-        # Face
-        face_landmarks=stacked["face_landmarks"],
-        face_blendshapes=stacked["face_blendshapes"],
-        face_transform_matrix=stacked["face_transform_matrix"],
-        face_combined=stacked["face_combined"],
-
-        # Main training tensor
-        combined=stacked["combined"],
+        sample_indices=np.array(sample_indices, dtype=np.int32),
+        train_feature_dim=np.array(TRAIN_FEATURE_DIM, dtype=np.int32),
+        pose=stacked["pose"],
+        hands=stacked["hands"],
+        face=stacked["face"],
+        valid_mask=stacked["valid_mask"],
     )
 
     next_timestamp_offset_ms = timestamp_offset_ms + TARGET_FRAMES * timestamp_step_ms + 1000
+
+    valid_ratio = stacked["valid_mask"].mean(axis=0)
 
     result = {
         "source_fps": float(source_fps),
         "source_total_frames": int(total_frames),
         "target_frames": TARGET_FRAMES,
-        "feature_dim": TOTAL_FEATURE_DIM,
-
-        "combined_shape": str(stacked["combined"].shape),
-        "pose_shape": str(stacked["pose_combined"].shape),
-        "hands_shape": str(stacked["hands_combined"].shape),
-        "face_shape": str(stacked["face_combined"].shape),
-
-        "pose_normalized_shape": str(stacked["pose_normalized"].shape),
-        "pose_world_shape": str(stacked["pose_world"].shape),
-        "face_landmarks_shape": str(stacked["face_landmarks"].shape),
+        "train_feature_dim": TRAIN_FEATURE_DIM,
+        "pose_shape": str(stacked["pose"].shape),
+        "hands_shape": str(stacked["hands"].shape),
+        "face_shape": str(stacked["face"].shape),
+        "valid_pose_ratio": float(valid_ratio[0]),
+        "valid_left_hand_ratio": float(valid_ratio[1]),
+        "valid_right_hand_ratio": float(valid_ratio[2]),
+        "valid_face_ratio": float(valid_ratio[3]),
     }
 
     return result, next_timestamp_offset_ms
 
-
 # ============================================================
-# MAIN
+# LABEL PROCESSING
 # ============================================================
 
 def process_label(
     target_label: str,
     interim_label_dir: Path,
     output_dir: Path,
-    preview_dir: Path,
     hand_landmarker,
     pose_landmarker,
     face_landmarker,
     timestamp_offset_ms: int,
 ):
-    """
-    Xử lý tất cả video trong một label.
-    """
     print(f"\n{'=' * 80}")
-    print(f"EXTRACT HAND + POSE + FACE LANDMARKS FOR LABEL: {target_label}")
+    print(f"EXTRACT OPTIMIZED LANDMARKS FOR LABEL: {target_label}")
     print(f"{'=' * 80}")
 
     if not interim_label_dir.exists():
@@ -1002,109 +713,51 @@ def process_label(
         print("[SKIP] Không có video nào trong folder này.")
         return None, timestamp_offset_ms
 
-    save_feature_schema(target_label, output_dir)
-
-    manifest_rows = []
     processed = 0
     skipped = 0
     errors = 0
-    try:
-        print("\n[3] Bắt đầu xử lý video...\n")
 
-        for idx, video_path in enumerate(videos, start=1):
-            video_stem = video_path.stem
+    print("\n[3] Bắt đầu xử lý video...\n")
 
-            output_npz_path = output_dir / f"{video_stem}.npz"
-            preview_video_path = preview_dir / f"{video_stem}_preview.mp4"
+    for idx, video_path in enumerate(videos, start=1):
+        video_stem = video_path.stem
+        output_npz_path = output_dir / f"{video_stem}.npz"
 
-            print(f"[{idx}/{len(videos)}] {video_path.name}")
+        print(f"[{idx}/{len(videos)}] {video_path.name}")
 
-            if SKIP_EXISTING and output_npz_path.exists():
-                print(f"   [SKIP] Đã tồn tại: {output_npz_path}")
-                skipped += 1
-                continue
+        if SKIP_EXISTING and output_npz_path.exists():
+            print(f"   [SKIP] Đã tồn tại: {output_npz_path}")
+            skipped += 1
+            continue
 
-            result, timestamp_offset_ms = process_one_video(
-                video_path=video_path,
-                output_npz_path=output_npz_path,
-                preview_video_path=preview_video_path,
-                hand_landmarker=hand_landmarker,
-                pose_landmarker=pose_landmarker,
-                face_landmarker=face_landmarker,
-                timestamp_offset_ms=timestamp_offset_ms,
-                target_label=target_label,
-            )
+        result, timestamp_offset_ms = process_one_video(
+            video_path=video_path,
+            output_npz_path=output_npz_path,
+            hand_landmarker=hand_landmarker,
+            pose_landmarker=pose_landmarker,
+            face_landmarker=face_landmarker,
+            timestamp_offset_ms=timestamp_offset_ms,
+            target_label=target_label,
+        )
 
-            if result is None:
-                errors += 1
-                continue
+        if result is None:
+            errors += 1
+            continue
 
-            processed += 1
+        processed += 1
 
-            manifest_rows.append({
-                "video_name": video_path.name,
-                "video_stem": video_stem,
-                "label": target_label,
-                "video_path": str(video_path),
-                "npz_path": str(output_npz_path),
-                "preview_path": str(preview_video_path) if SAVE_BLACK_PREVIEW else "",
-
-                "target_frames": result["target_frames"],
-                "feature_dim": result["feature_dim"],
-
-                "combined_shape": result["combined_shape"],
-                "pose_shape": result["pose_shape"],
-                "hands_shape": result["hands_shape"],
-                "face_shape": result["face_shape"],
-
-                "pose_normalized_shape": result["pose_normalized_shape"],
-                "pose_world_shape": result["pose_world_shape"],
-                "face_landmarks_shape": result["face_landmarks_shape"],
-
-                "source_fps": result["source_fps"],
-                "source_total_frames": result["source_total_frames"],
-            })
-
-            print(f"   [OK] Saved: {output_npz_path}")
-            print(f"   Combined shape:        {result['combined_shape']}")
-            print(f"   Pose combined shape:   {result['pose_shape']}")
-            print(f"   Hands combined shape:  {result['hands_shape']}")
-            print(f"   Face combined shape:   {result['face_shape']}")
-
-    finally:
-        pass
-
-    manifest_path = output_dir / f"manifest_label_{target_label}.csv"
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    with open(manifest_path, "w", newline="", encoding="utf-8") as f:
-        fieldnames = [
-            "video_name",
-            "video_stem",
-            "label",
-            "video_path",
-            "npz_path",
-            "preview_path",
-
-            "target_frames",
-            "feature_dim",
-
-            "combined_shape",
-            "pose_shape",
-            "hands_shape",
-            "face_shape",
-
-            "pose_normalized_shape",
-            "pose_world_shape",
-            "face_landmarks_shape",
-
-            "source_fps",
-            "source_total_frames",
-        ]
-
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(manifest_rows)
+        print(f"   [OK] Saved: {output_npz_path}")
+        print(f"   Pose shape:        {result['pose_shape']}")
+        print(f"   Hands shape:       {result['hands_shape']}")
+        print(f"   Face shape:        {result['face_shape']}")
+        print(f"   Train feature dim: {result['train_feature_dim']}")
+        print(
+            "   Valid ratio:       "
+            f"pose={result['valid_pose_ratio']:.2f}, "
+            f"left={result['valid_left_hand_ratio']:.2f}, "
+            f"right={result['valid_right_hand_ratio']:.2f}, "
+            f"face={result['valid_face_ratio']:.2f}"
+        )
 
     print("\n" + "=" * 80)
     print(f"SUMMARY FOR LABEL: {target_label}")
@@ -1115,12 +768,9 @@ def process_label(
     print(f"Skipped:           {skipped}")
     print(f"Errors:            {errors}")
     print(f"Target frames:     {TARGET_FRAMES}")
-    print(f"Feature dim:       {TOTAL_FEATURE_DIM}")
+    print(f"Storage dtype:     {dtype_name(STORAGE_DTYPE)}")
+    print(f"Train feature dim: {TRAIN_FEATURE_DIM}")
     print(f"Output dir:        {output_dir}")
-    print(f"Manifest:          {manifest_path}")
-
-    if SAVE_BLACK_PREVIEW:
-        print(f"Preview dir:       {preview_dir}")
 
     return {
         "label": target_label,
@@ -1129,56 +779,72 @@ def process_label(
         "errors": errors,
     }, timestamp_offset_ms
 
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
     print("=" * 80)
-    print("EXTRACT HAND + POSE + FACE LANDMARKS FOR ALL LABELS")
+    print("EXTRACT-ONLY OPTIMIZED HAND + POSE + FACE-BLENDSHAPE LANDMARKS")
     print("=" * 80)
-    
-    # ============ MULTI-WORKER INFO ============
-    start_idx = (WORKER_ID - 1) * LABELS_PER_WORKER
-    if WORKER_ID == 10:
-        # Người thứ 10 xử lý tất cả labels từ 1800 trở đi
+
+    if WORKER_ID == 0:
+        start_idx = 0
         end_idx = None
-        print(f"\n[WORKER] Người {WORKER_ID}: Xử lý labels từ index {start_idx} trở đi (tất cả phần còn lại)")
+        run_all_labels = True
+        print("\n[WORKER] WORKER_ID = 0: Chạy toàn bộ labels, không chia worker")
     else:
-        end_idx = start_idx + LABELS_PER_WORKER
-        print(f"\n[WORKER] Người {WORKER_ID}: Xử lý labels từ index {start_idx} đến {end_idx - 1} ({LABELS_PER_WORKER} labels)")
+        if WORKER_ID < 0:
+            raise ValueError("WORKER_ID phải >= 0. Dùng 0 để chạy full labels, hoặc 1-10 để chia worker.")
+
+        run_all_labels = False
+        start_idx = (WORKER_ID - 1) * LABELS_PER_WORKER
+
+        if WORKER_ID == 10:
+            end_idx = None
+            print(f"\n[WORKER] Người {WORKER_ID}: Xử lý labels từ index {start_idx} trở đi")
+        else:
+            end_idx = start_idx + LABELS_PER_WORKER
+            print(f"\n[WORKER] Người {WORKER_ID}: Xử lý labels từ index {start_idx} đến {end_idx - 1}")
     print("=" * 80)
 
     if not INTERIM_BASE_DIR.exists():
         print(f"[ERROR] Không tìm thấy folder input: {INTERIM_BASE_DIR}")
-        print("Bạn cần có cấu trúc ví dụ: data/interim/label1/*.mp4, data/interim/label2/*.mp4, ...")
+        print("Bạn cần có cấu trúc: data/interim/<label>/*.mp4")
         return
 
     download_models()
+    save_feature_schema(OUTPUT_BASE_DIR)
 
-    # Lấy danh sách tất cả folders (labels)
     label_dirs = sorted([d for d in INTERIM_BASE_DIR.iterdir() if d.is_dir()])
 
     if not label_dirs:
-        print(f"[ERROR] Không tìm thấy folder nào trong: {INTERIM_BASE_DIR}")
+        print(f"[ERROR] Không tìm thấy folder label nào trong: {INTERIM_BASE_DIR}")
         return
 
     print(f"\n[0] Base interim folder: {INTERIM_BASE_DIR}")
     print(f"[1] Tổng cộng tìm thấy {len(label_dirs)} label(s)")
 
-    # ============ FILTER LABELS BY WORKER ============
-    if end_idx is None:
-        label_dirs = label_dirs[start_idx:]
+    if not run_all_labels:
+        if end_idx is None:
+            label_dirs = label_dirs[start_idx:]
+        else:
+            label_dirs = label_dirs[start_idx:end_idx]
+
+    if run_all_labels:
+        print(f"[2] Chế độ full: sẽ xử lý toàn bộ {len(label_dirs)} label(s):")
     else:
-        label_dirs = label_dirs[start_idx:end_idx]
-    
-    print(f"[2] Người {WORKER_ID} sẽ xử lý {len(label_dirs)} label(s):")
+        print(f"[2] Worker {WORKER_ID} sẽ xử lý {len(label_dirs)} label(s):")
     for i, label_dir in enumerate(label_dirs[:5], start=1):
         print(f"    - {label_dir.name}")
     if len(label_dirs) > 5:
         print(f"    ... và {len(label_dirs) - 5} labels khác")
 
     print("\n[3] Khởi tạo MediaPipe landmarkers...")
-    hand_landmarker = create_hand_landmarker()
-    pose_landmarker = create_pose_landmarker()
-    face_landmarker = create_face_landmarker()
+
+    hand_landmarker = create_hand_landmarker() if USE_HAND else None
+    pose_landmarker = create_pose_landmarker() if USE_POSE else None
+    face_landmarker = create_face_landmarker() if USE_FACE else None
 
     summary_results = []
     timestamp_offset_ms = 0
@@ -1189,13 +855,11 @@ def main():
         for label_dir in label_dirs:
             target_label = label_dir.name
             output_label_dir = OUTPUT_BASE_DIR / target_label
-            preview_label_dir = PREVIEW_BASE_DIR / target_label
 
             result, timestamp_offset_ms = process_label(
                 target_label=target_label,
                 interim_label_dir=label_dir,
                 output_dir=output_label_dir,
-                preview_dir=preview_label_dir,
                 hand_landmarker=hand_landmarker,
                 pose_landmarker=pose_landmarker,
                 face_landmarker=face_landmarker,
@@ -1206,9 +870,12 @@ def main():
                 summary_results.append(result)
 
     finally:
-        hand_landmarker.close()
-        pose_landmarker.close()
-        face_landmarker.close()
+        if hand_landmarker is not None:
+            hand_landmarker.close()
+        if pose_landmarker is not None:
+            pose_landmarker.close()
+        if face_landmarker is not None:
+            face_landmarker.close()
 
     print("\n" + "=" * 80)
     print(f"SUMMARY FOR WORKER {WORKER_ID}")
@@ -1219,21 +886,27 @@ def main():
     total_errors = sum(r["errors"] for r in summary_results)
 
     for result in summary_results:
-        print(f"Label '{result['label']}': {result['processed']} processed, {result['skipped']} skipped, {result['errors']} errors")
+        print(
+            f"Label '{result['label']}': "
+            f"{result['processed']} processed, "
+            f"{result['skipped']} skipped, "
+            f"{result['errors']} errors"
+        )
 
     print(f"\nWorker {WORKER_ID} Summary:")
     print(f"Total processed:   {total_processed}")
     print(f"Total skipped:     {total_skipped}")
     print(f"Total errors:      {total_errors}")
     print(f"Target frames:     {TARGET_FRAMES}")
-    print(f"Feature dim:       {TOTAL_FEATURE_DIM}")
+    print(f"Storage dtype:     {dtype_name(STORAGE_DTYPE)}")
+    print(f"Pose dim:          {POSE_FEATURE_DIM}")
+    print(f"Hands dim:         {HANDS_FEATURE_DIM}")
+    print(f"Face dim:          {FACE_FEATURE_DIM}")
+    print(f"Train feature dim: {TRAIN_FEATURE_DIM}")
     print(f"Output base dir:   {OUTPUT_BASE_DIR}")
-
-    if SAVE_BLACK_PREVIEW:
-        print(f"Preview base dir:  {PREVIEW_BASE_DIR}")
+    print(f"Schema:            {OUTPUT_BASE_DIR / 'feature_schema.json'}")
 
     print("\nDone.")
-
 
 if __name__ == "__main__":
     main()
