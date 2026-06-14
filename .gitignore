@@ -1,2 +1,32 @@
-data/
 .vscode
+
+# Ignore toàn bộ nội dung trong data
+data/*
+
+# Nhưng vẫn cho phép Git thấy các folder con
+!data/raw/
+!data/interim/
+!data/processed/
+
+!data/raw/ASL/
+!data/raw/VSL/
+!data/interim/ASL/
+!data/interim/VSL/
+!data/processed/ASL/
+!data/processed/VSL/
+
+# Ignore toàn bộ file bên trong các folder data
+data/raw/ASL/*
+data/raw/VSL/*
+data/interim/ASL/*
+data/interim/VSL/*
+data/processed/ASL/*
+data/processed/VSL/*
+
+# Chỉ cho phép track file .gitkeep để giữ folder
+!data/raw/ASL/.gitkeep
+!data/raw/VSL/.gitkeep
+!data/interim/ASL/.gitkeep
+!data/interim/VSL/.gitkeep
+!data/processed/ASL/.gitkeep
+!data/processed/VSL/.gitkeep
