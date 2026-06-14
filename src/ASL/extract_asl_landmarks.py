@@ -32,7 +32,7 @@ if sys.stdout.encoding != "utf-8":
 # PROJECT PATHS
 # ============================================================
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 MODEL_DIR = PROJECT_ROOT / "models"
 INTERIM_BASE_DIR = PROJECT_ROOT / "data" / "interim" / "ASL"
