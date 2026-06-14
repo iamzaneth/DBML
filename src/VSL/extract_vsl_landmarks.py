@@ -70,13 +70,29 @@ VIDEO_EXTENSIONS = [".mp4", ".avi", ".mov", ".mkv", ".webm"]
 # ============================================================
 # Chế độ chạy:
 # - WORKER_ID = 0: chạy toàn bộ label, không chia worker.
-# - WORKER_ID = 1: xử lý label index 0-199.
-# - WORKER_ID = 2: xử lý label index 200-399.
-# - ...
-# - WORKER_ID = 10: xử lý label index 1800 trở đi.
+# - WORKER_ID = 1..10: chia đều khoảng 3,314 labels cho 10 worker/người.
+#
+# Với TOTAL_EXPECTED_LABELS = 3314 và NUM_WORKERS = 10:
+# - LABELS_PER_WORKER = ceil(3314 / 10) = 332
+# - WORKER_ID = 1:  xử lý label index 0-331
+# - WORKER_ID = 2:  xử lý label index 332-663
+# - WORKER_ID = 3:  xử lý label index 664-995
+# - WORKER_ID = 4:  xử lý label index 996-1327
+# - WORKER_ID = 5:  xử lý label index 1328-1659
+# - WORKER_ID = 6:  xử lý label index 1660-1991
+# - WORKER_ID = 7:  xử lý label index 1992-2323
+# - WORKER_ID = 8:  xử lý label index 2324-2655
+# - WORKER_ID = 9:  xử lý label index 2656-2987
+# - WORKER_ID = 10: xử lý label index 2988 trở đi
+#
+# Đổi WORKER_ID tương ứng với người chạy.
+# Giữ WORKER_ID = 0 nếu muốn chạy full toàn bộ labels.
 
 WORKER_ID = 4
-LABELS_PER_WORKER = 200
+
+TOTAL_EXPECTED_LABELS = 3314
+NUM_WORKERS = 10
+LABELS_PER_WORKER = (TOTAL_EXPECTED_LABELS + NUM_WORKERS - 1) // NUM_WORKERS
 
 # ============================================================
 # MODEL URLS
@@ -795,17 +811,20 @@ def main():
         print("\n[WORKER] WORKER_ID = 0: Chạy toàn bộ labels, không chia worker")
     else:
         if WORKER_ID < 0:
-            raise ValueError("WORKER_ID phải >= 0. Dùng 0 để chạy full labels, hoặc 1-10 để chia worker.")
+            raise ValueError(f"WORKER_ID phải >= 0. Dùng 0 để chạy full labels, hoặc 1-{NUM_WORKERS} để chia worker.")
 
         run_all_labels = False
         start_idx = (WORKER_ID - 1) * LABELS_PER_WORKER
 
-        if WORKER_ID == 10:
+        if WORKER_ID > NUM_WORKERS:
+            raise ValueError(f"WORKER_ID chỉ được từ 0 đến {NUM_WORKERS}. Hiện tại WORKER_ID = {WORKER_ID}")
+
+        if WORKER_ID == NUM_WORKERS:
             end_idx = None
-            print(f"\n[WORKER] Người {WORKER_ID}: Xử lý labels từ index {start_idx} trở đi")
+            print(f"\n[WORKER] Người {WORKER_ID}/{NUM_WORKERS}: Xử lý labels từ index {start_idx} trở đi")
         else:
             end_idx = start_idx + LABELS_PER_WORKER
-            print(f"\n[WORKER] Người {WORKER_ID}: Xử lý labels từ index {start_idx} đến {end_idx - 1}")
+            print(f"\n[WORKER] Người {WORKER_ID}/{NUM_WORKERS}: Xử lý labels từ index {start_idx} đến {end_idx - 1}")
     print("=" * 80)
 
     if not INTERIM_BASE_DIR.exists():
@@ -824,6 +843,7 @@ def main():
 
     print(f"\n[0] Base interim folder: {INTERIM_BASE_DIR}")
     print(f"[1] Tổng cộng tìm thấy {len(label_dirs)} label(s)")
+    print(f"[WORKER CONFIG] TOTAL_EXPECTED_LABELS={TOTAL_EXPECTED_LABELS}, NUM_WORKERS={NUM_WORKERS}, LABELS_PER_WORKER={LABELS_PER_WORKER}")
 
     if not run_all_labels:
         if end_idx is None:
