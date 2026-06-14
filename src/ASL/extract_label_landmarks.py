@@ -35,8 +35,8 @@ if sys.stdout.encoding != "utf-8":
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 MODEL_DIR = PROJECT_ROOT / "models"
-INTERIM_BASE_DIR = PROJECT_ROOT / "data" / "interim"
-OUTPUT_BASE_DIR = PROJECT_ROOT / "data" / "processed" / "landmarks"
+INTERIM_BASE_DIR = PROJECT_ROOT / "data" / "interim" / "ASL"
+OUTPUT_BASE_DIR = PROJECT_ROOT / "data" / "processed" / "ASL"
 
 # ============================================================
 # CONFIG

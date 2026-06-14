@@ -14,9 +14,9 @@ if sys.stdout.encoding != 'utf-8':
 # ==========================================
 
 # Paths
-json_path = "data/raw/WLASL_v0.3.json"
-videos_src_dir = "data/raw/videos"
-output_dir = "data/interim"
+json_path = "data/raw/ASL/WLASL_v0.3.json"
+videos_src_dir = "data/raw/ASL/videos"
+output_dir = "data/interim/ASL"
 
 def load_metadata(json_file):
     """Load metadata from WLASL JSON file"""
