@@ -88,7 +88,7 @@ VIDEO_EXTENSIONS = [".mp4", ".avi", ".mov", ".mkv", ".webm"]
 # Đổi WORKER_ID tương ứng với người chạy.
 # Giữ WORKER_ID = 0 nếu muốn chạy full toàn bộ labels.
 
-WORKER_ID = 4
+WORKER_ID = 0
 
 TOTAL_EXPECTED_LABELS = 3314
 NUM_WORKERS = 10
