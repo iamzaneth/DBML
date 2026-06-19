@@ -30,3 +30,6 @@ data/processed/VSL/*
 !data/interim/VSL/.gitkeep
 !data/processed/ASL/.gitkeep
 !data/processed/VSL/.gitkeepmodels/ 
+
+models/*
+
