@@ -1,0 +1,24 @@
+{
+  "vsl": {
+    "total_videos": 4362,
+    "blur_mean": 450.409082591021,
+    "brightness_std": 24.8604830519916,
+    "edge_density": 0.025903271141922243,
+    "motion": 0.22927904295013443,
+    "occlusion_rate": 0.46794283967598965,
+    "hand_visibility": 0.9979367262723521,
+    "person_area": 0.34127970514642303,
+    "frontality_score": 0.9536271813830458
+  },
+  "asl": {
+    "total_videos": 11980,
+    "blur_mean": 495.2740609630285,
+    "brightness_std": 51.47092518787831,
+    "edge_density": 0.03548271210227098,
+    "motion": 0.4142200928916783,
+    "occlusion_rate": 0.41469254312743464,
+    "hand_visibility": 0.9959098497495826,
+    "person_area": 0.7782152291434289,
+    "frontality_score": 0.6632342451219393
+  }
+}
