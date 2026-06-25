@@ -1,5 +1,7 @@
 .vscode
 .venv
+*.pyc
+*.zip
 # Ignore toàn bộ nội dung trong data
 data/*
 
@@ -7,11 +9,11 @@ data/*
 !data/raw/
 !data/interim/
 !data/processed/
-
 !data/raw/ASL/
 !data/raw/VSL/
 !data/interim/ASL/
 !data/interim/VSL/
+!data/interim/VSL_cropped/
 !data/processed/ASL/
 !data/processed/VSL/
 
@@ -20,6 +22,7 @@ data/raw/ASL/*
 data/raw/VSL/*
 data/interim/ASL/*
 data/interim/VSL/*
+data/interim/VSL_cropped/*
 data/interim/v2/*
 data/processed/ASL/*
 data/processed/VSL/*
@@ -30,6 +33,7 @@ data/processed/v2/*
 !data/raw/VSL/.gitkeep
 !data/interim/ASL/.gitkeep
 !data/interim/VSL/.gitkeep
+!data/interim/VSL_cropped/.gitkeep
 !data/interim/v2/.gitkeep
 !data/processed/ASL/.gitkeep
 !data/processed/v2/.gitkeep
