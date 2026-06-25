@@ -136,7 +136,7 @@ Ngưỡng để gộp side phụ vào side chính. Giá trị nhỏ hơn sẽ ch
 
 `--preview`
 
-Xuất video preview vẽ các keypoint đang được lưu trong `.npz`: pose, hands, mouth.
+Xuất video preview để kiểm tra pose, hands và mouth sau bước trim/resample. Riêng mouth được vẽ bằng tọa độ raw của 12 điểm để overlay đúng lên frame gốc; file `.npz` lưu mouth đã được normalize.
 
 `--skip-existing`
 
@@ -153,7 +153,7 @@ Mỗi file `.npz` lưu các key chính:
 - `pose`: `(T, 330)`
 - `hands`: `(T, 252)`
 - `face`: `(T, 52)` blendshape scores
-- `mouth`: `(T, 36)` 12 mouth landmarks x `[x, y, z]`
+- `mouth`: `(T, 36)` 12 mouth landmarks x `[x, y, z]`, đã neo tại tâm hai khoé miệng và scale theo độ rộng miệng
 - `valid_mask`: `(T, 4)` với cột `pose`, `left_hand`, `right_hand`, `face`
 
 Tổng feature dim khi train:
@@ -167,4 +167,3 @@ Hiện tại:
 ```text
 330 + 252 + 52 + 36 = 670
 ```
-

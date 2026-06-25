@@ -140,6 +140,8 @@ MOUTH_LANDMARK_INDICES = [
     0, 17, 61, 291, 39, 269,
     13, 14, 78, 308, 81, 311,
 ]
+MOUTH_LEFT_CORNER_LOCAL = MOUTH_LANDMARK_INDICES.index(61)
+MOUTH_RIGHT_CORNER_LOCAL = MOUTH_LANDMARK_INDICES.index(291)
 MOUTH_LANDMARK_COUNT = len(MOUTH_LANDMARK_INDICES)
 FACE_BLENDSHAPE_COUNT = 52
 FACE_BLENDSHAPE_DIM = FACE_BLENDSHAPE_COUNT
@@ -200,6 +202,47 @@ def list_label_videos(label_dir: Path) -> List[Path]:
     videos = sorted(videos)
 
     return videos
+
+class ProgressTracker:
+    def __init__(self, total: int, width: int = 32):
+        self.total = max(int(total), 0)
+        self.width = width
+        self.done = 0
+        self.processed = 0
+        self.skipped = 0
+        self.errors = 0
+
+    def advance(self, status: str, label: str, video_name: str) -> None:
+        if self.total <= 0:
+            return
+
+        self.done += 1
+        if status == "OK":
+            self.processed += 1
+        elif status == "SKIP":
+            self.skipped += 1
+        elif status == "ERROR":
+            self.errors += 1
+
+        ratio = min(self.done / self.total, 1.0)
+        filled = int(round(self.width * ratio))
+        bar = "█" * filled + "░" * (self.width - filled)
+
+        # Status icon
+        status_icon = "✓" if status == "OK" else ("⊘" if status == "SKIP" else ("✗" if status == "ERROR" else "•"))
+        status_color = "\033[92m" if status == "OK" else ("\033[93m" if status == "SKIP" else ("\033[91m" if status == "ERROR" else "\033[0m"))
+        reset_color = "\033[0m"
+
+        # Shorten label/video_name if too long
+        display_label = label if len(label) <= 15 else label[:12] + "..."
+        display_video = video_name if len(video_name) <= 20 else video_name[:17] + "..."
+
+        print(
+            f"{status_color}{status_icon}{reset_color} [{bar}] {self.done:4d}/{self.total:<4d} "
+            f"{ratio * 100:5.1f}% | "
+            f"\033[92m✓ {self.processed}\033[0m \033[93m⊘ {self.skipped}\033[0m \033[91m✗ {self.errors}\033[0m | "
+            f"{display_label:15s} / {display_video:20s}"
+        )
 
 def resolve_extraction_frames(total_frames: int) -> int:
     if total_frames <= 0:
@@ -383,6 +426,7 @@ def save_feature_schema(output_base_dir: Path) -> None:
                 "landmark_indices": MOUTH_LANDMARK_INDICES,
                 "landmarks": MOUTH_LANDMARK_COUNT,
                 "values_per_landmark": ["x", "y", "z"],
+                "preprocessing": "Mouth xyz is translated to the midpoint of lip corners and scaled by lip-corner distance.",
                 "description": "Compact mouth/lip landmark subset for observing mouth motion without storing full face mesh.",
             },
             "valid_mask": {
@@ -927,6 +971,21 @@ def normalize_hand_block(hand_block: np.ndarray) -> np.ndarray:
 
     return hand_3d.reshape(hand_block.shape)
 
+def normalize_mouth_sequence(mouth: np.ndarray) -> np.ndarray:
+    mouth_3d = mouth.reshape(-1, MOUTH_LANDMARK_COUNT, 3).astype(np.float32, copy=True)
+    has_mouth = np.any(np.abs(mouth_3d) > EPSILON, axis=(1, 2))
+
+    left_corner = mouth_3d[:, MOUTH_LEFT_CORNER_LOCAL, :]
+    right_corner = mouth_3d[:, MOUTH_RIGHT_CORNER_LOCAL, :]
+    center = (left_corner + right_corner) * 0.5
+    scale = np.linalg.norm(right_corner - left_corner, axis=1)
+    valid = has_mouth & (scale > EPSILON)
+
+    if np.any(valid):
+        mouth_3d[valid] = (mouth_3d[valid] - center[valid, None, :]) / scale[valid, None, None]
+
+    return mouth_3d.reshape(mouth.shape)
+
 def get_hand_slices(side: str) -> Tuple[slice, slice, int]:
     if side == "left":
         return (
@@ -1035,12 +1094,14 @@ def preprocess_hands_sequence(
 
 def preprocess_stacked_landmarks(
     stacked: Dict[str, np.ndarray],
-) -> Tuple[Dict[str, np.ndarray], np.ndarray, np.ndarray, Dict[str, float]]:
+) -> Tuple[Dict[str, np.ndarray], np.ndarray, np.ndarray, np.ndarray, Dict[str, float]]:
     pose_float = stacked["pose"].astype(np.float32, copy=True)
     hands_float = stacked["hands"].astype(np.float32, copy=True)
+    mouth_float = stacked["mouth"].astype(np.float32, copy=True)
     valid_mask = stacked["valid_mask"].astype(np.uint8, copy=True)
 
     preview_pose = pose_float[:, :POSE_NORM_DIM].copy()
+    preview_mouth = mouth_float.copy()
     hands_float, valid_mask, hand_side_stats = stabilize_single_hand_sides(
         hands_float,
         valid_mask,
@@ -1054,11 +1115,11 @@ def preprocess_stacked_landmarks(
         "pose": normalize_pose_sequence(pose_float).astype(STORAGE_DTYPE),
         "hands": hands_processed.astype(STORAGE_DTYPE),
         "face": stacked["face"].astype(STORAGE_DTYPE),
-        "mouth": stacked["mouth"].astype(STORAGE_DTYPE),
+        "mouth": normalize_mouth_sequence(mouth_float).astype(STORAGE_DTYPE),
         "valid_mask": valid_mask.astype(np.uint8),
     }
 
-    return processed, preview_pose, preview_hands, hand_side_stats
+    return processed, preview_pose, preview_hands, preview_mouth, hand_side_stats
 
 # ============================================================
 # PREVIEW
@@ -1314,8 +1375,13 @@ def process_one_video(
     )
     target_frame_count = len(sample_indices)
 
-    stacked, preview_pose, preview_hands, hand_side_stats = preprocess_stacked_landmarks(stacked)
-    preview_mouth = stacked["mouth"].astype(np.float32, copy=False)
+    (
+        stacked,
+        preview_pose,
+        preview_hands,
+        preview_mouth,
+        hand_side_stats,
+    ) = preprocess_stacked_landmarks(stacked)
 
     output_npz_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -1391,6 +1457,7 @@ def process_label(
     pose_landmarker,
     face_landmarker,
     timestamp_offset_ms: int,
+    progress: Optional[ProgressTracker] = None,
 ):
     print(f"\n{'=' * 80}")
     print(f"EXTRACT OPTIMIZED LANDMARKS FOR LABEL: {target_label}")
@@ -1423,6 +1490,8 @@ def process_label(
         if SKIP_EXISTING and output_npz_path.exists():
             print(f"   [SKIP] Đã tồn tại: {output_npz_path}")
             skipped += 1
+            if progress is not None:
+                progress.advance("SKIP", target_label, video_path.name)
             continue
 
         result, timestamp_offset_ms = process_one_video(
@@ -1437,6 +1506,8 @@ def process_label(
 
         if result is None:
             errors += 1
+            if progress is not None:
+                progress.advance("ERROR", target_label, video_path.name)
             continue
 
         processed += 1
@@ -1474,6 +1545,8 @@ def process_label(
             f"right={result['valid_right_hand_ratio']:.2f}, "
             f"face={result['valid_face_ratio']:.2f}"
         )
+        if progress is not None:
+            progress.advance("OK", target_label, video_path.name)
 
     print("\n" + "=" * 80)
     print(f"SUMMARY FOR LABEL: {target_label}")
@@ -1787,6 +1860,10 @@ def main():
     if len(label_dirs) > 5:
         print(f"    ... và {len(label_dirs) - 5} labels khác")
 
+    total_jobs = sum(len(list_label_videos(label_dir)) for label_dir in label_dirs)
+    progress = ProgressTracker(total_jobs)
+    print(f"[PROGRESS] Tổng số công việc: {total_jobs} video")
+
     print("\n[3] Khởi tạo MediaPipe landmarkers...")
 
     hand_landmarker = create_hand_landmarker() if USE_HAND else None
@@ -1811,6 +1888,7 @@ def main():
                 pose_landmarker=pose_landmarker,
                 face_landmarker=face_landmarker,
                 timestamp_offset_ms=timestamp_offset_ms,
+                progress=progress,
             )
 
             if result:
