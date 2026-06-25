@@ -20,15 +20,19 @@ data/raw/ASL/*
 data/raw/VSL/*
 data/interim/ASL/*
 data/interim/VSL/*
+data/interim/v2/*
 data/processed/ASL/*
 data/processed/VSL/*
+data/processed/v2/*
 
 # Chỉ cho phép track file .gitkeep để giữ folder
 !data/raw/ASL/.gitkeep
 !data/raw/VSL/.gitkeep
 !data/interim/ASL/.gitkeep
 !data/interim/VSL/.gitkeep
+!data/interim/v2/.gitkeep
 !data/processed/ASL/.gitkeep
+!data/processed/v2/.gitkeep
 !data/processed/VSL/.gitkeepmodels/ 
 
 models/*
