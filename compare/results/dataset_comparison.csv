@@ -1,0 +1,10 @@
+Metric,VSL,ASL,Interpretation
+Total Videos,4362.0,11980.0,# of videos
+Blur Mean,450.409082591021,495.2740609630285,Higher is sharper ↑
+Brightness Stability,24.8604830519916,51.47092518787831,Lower is more stable ↓
+Edge Density,0.025903271141922243,0.03548271210227098,Lower is simpler background ↓
+Motion Magnitude,0.22927904295013443,0.4142200928916783,Lower is more stable ↓
+Occlusion Rate,0.46794283967598965,0.41469254312743464,Lower is better (less occlusion) ↓
+Hand Visibility Ratio,0.9979367262723521,0.9959098497495826,Higher is better ↑
+Person Area Ratio,0.34127970514642303,0.7782152291434289,Higher is better (larger person) ↑
+Frontality Score,0.9536271813830458,0.6632342451219393,Higher is more frontal (better) ↑
