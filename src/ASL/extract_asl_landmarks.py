@@ -1414,7 +1414,8 @@ def process_one_video(
         valid_mask=stacked["valid_mask"],
     )
 
-    next_timestamp_offset_ms = timestamp_offset_ms + target_frame_count * timestamp_step_ms + 1000
+    # Phải cộng dựa trên số frame ĐÃ TRÍCH XUẤT (sample_indices), chứ không phải target_frame_count (đã bị resample về 60)
+    next_timestamp_offset_ms = timestamp_offset_ms + len(sample_indices) * timestamp_step_ms + 1000
 
     valid_ratio = stacked["valid_mask"].mean(axis=0)
 
