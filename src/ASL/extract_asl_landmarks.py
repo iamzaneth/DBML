@@ -1308,7 +1308,8 @@ def process_one_video(
         cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
         ret, frame = cap.read()
 
-        timestamp_ms = timestamp_offset_ms + sample_i * timestamp_step_ms
+        timestamp_offset_ms += timestamp_step_ms
+        timestamp_ms = timestamp_offset_ms
 
         if not ret:
             frame_features = create_empty_frame_features()
@@ -1331,14 +1332,19 @@ def process_one_video(
         pose_result = None
         face_result = None
 
-        if USE_HAND and hand_landmarker is not None:
-            hand_result = hand_landmarker.detect_for_video(mp_image, timestamp_ms)
+        try:
+            if USE_HAND and hand_landmarker is not None:
+                hand_result = hand_landmarker.detect_for_video(mp_image, timestamp_ms)
 
-        if USE_POSE and pose_landmarker is not None:
-            pose_result = pose_landmarker.detect_for_video(mp_image, timestamp_ms)
+            if USE_POSE and pose_landmarker is not None:
+                pose_result = pose_landmarker.detect_for_video(mp_image, timestamp_ms)
 
-        if USE_FACE and face_landmarker is not None:
-            face_result = face_landmarker.detect_for_video(mp_image, timestamp_ms)
+            if USE_FACE and face_landmarker is not None:
+                face_result = face_landmarker.detect_for_video(mp_image, timestamp_ms)
+        except Exception as e:
+            print(f"   [FATAL] MediaPipe crashed at video {video_path.name}, sample_i={sample_i}, timestamp_ms={timestamp_ms}")
+            print(f"   [DEBUG] timestamp_offset_ms was {timestamp_offset_ms}, len(sample_indices)={len(sample_indices)}")
+            raise e
 
         frame_features = extract_frame_features(
             hand_result=hand_result,
@@ -1413,10 +1419,6 @@ def process_one_video(
         mouth=stacked["mouth"],
         valid_mask=stacked["valid_mask"],
     )
-
-    # Phải cộng dựa trên số frame ĐÃ TRÍCH XUẤT (sample_indices), chứ không phải target_frame_count (đã bị resample về 60)
-    next_timestamp_offset_ms = timestamp_offset_ms + len(sample_indices) * timestamp_step_ms + 1000
-
     valid_ratio = stacked["valid_mask"].mean(axis=0)
 
     result = {
@@ -1444,7 +1446,7 @@ def process_one_video(
         "valid_face_ratio": float(valid_ratio[3]),
     }
 
-    return result, next_timestamp_offset_ms
+    return result, timestamp_offset_ms
 
 # ============================================================
 # LABEL PROCESSING
