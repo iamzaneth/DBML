@@ -1,0 +1,5316 @@
+dataset,class_name,sample_count
+VSL,0 (số không),1
+VSL,1,1
+VSL,1 000 000 (một triệu),3
+VSL,1 000 000 000 (một tỉ),3
+VSL,10,1
+VSL,10 000 (mười nghìn),3
+VSL,100,1
+VSL,1000 (một nghìn),1
+VSL,11,3
+VSL,12,3
+VSL,2,1
+VSL,2 < 5 (Toán học),1
+VSL,2 < 6 (Toán học),1
+VSL,23,3
+VSL,3,1
+VSL,33,2
+VSL,4,1
+VSL,40,1
+VSL,5,1
+VSL,5 > 3 (Toán học),1
+VSL,5000 (năm nghìn),2
+VSL,6,3
+VSL,7,1
+VSL,7up,1
+VSL,8,1
+VSL,80,1
+VSL,9,1
+VSL,90,1
+VSL,Albania (nước Albania),1
+VSL,An Giang,1
+VSL,Anh (nước Anh),3
+VSL,Ba chân bốn cẳng,1
+VSL,Bra-xin (nước Bra-xin),3
+VSL,Bru-nây (nước Bru-nây),3
+VSL,Bun-ga-ri (nước Bun-ga-ri),1
+VSL,Bà Nà,1
+VSL,Bà Rịa - Vũng Tàu,1
+VSL,Bãi biển Vũng Tàu,1
+VSL,Bình Dương,1
+VSL,Bình Phước,1
+VSL,Bình Thuận,1
+VSL,Bình Định,1
+VSL,Băng-la-đét (nước Băng-la-đét),1
+VSL,Bạc Liêu,1
+VSL,Bắc Giang,1
+VSL,Bắc Kạn,1
+VSL,Bắc Ninh,1
+VSL,Bắc bộ,1
+VSL,Bến Tre,1
+VSL,Cam-pu-chia (nước Cam-pu-chia),3
+VSL,Cao Bằng,1
+VSL,Chi-lê (nước Chi-lê),1
+VSL,Châu Á Thái Bình Dương,1
+VSL,Châu Đại Dương,1
+VSL,Cocacola,1
+VSL,Cu ba (nước Cu ba),1
+VSL,Cà Mau,1
+VSL,Cô vy (covid),1
+VSL,Cô-lôm-bi-a (nước Cô-lôm-bi-a),1
+VSL,Cố đô Huế,1
+VSL,Cộng Hòa Séc (nước Cộng Hòa Séc),1
+VSL,Dinh Độc Lập,1
+VSL,Do Thái,1
+VSL,Gia Lai,1
+VSL,Hoàng tử,1
+VSL,Hoãn,1
+VSL,Hung-ga-ri (nước Hung-ga-ri),1
+VSL,Hà Giang,1
+VSL,Hà Lan (nước Hà Lan),1
+VSL,Hùng Vương,1
+VSL,Hưng Yên,1
+VSL,Hạ Long,1
+VSL,Hải Dương,1
+VSL,Hậu Giang,1
+VSL,Hồ Chí Minh,1
+VSL,I-rắc (nước I-rắc),1
+VSL,Italia (nước Italia),1
+VSL,Khánh Hòa,1
+VSL,Kim Đồng,1
+VSL,Kiên Giang,1
+VSL,Kon Tum,1
+VSL,Liên Bang Nga (nước Nga),3
+VSL,Long An,1
+VSL,Long Vương,1
+VSL,Lào (nước Lào),3
+VSL,Lâm Đồng,1
+VSL,Lượm,1
+VSL,Lạc Long Quân,1
+VSL,Lạng Sơn,1
+VSL,Ma Cao,1
+VSL,Mexico (nước Mexico),3
+VSL,Miến Điện (nước Mi-an-ma),3
+VSL,Mã Lai (nước Ma-lai-xi-a),3
+VSL,Mặt trời lặn,1
+VSL,Mặt trời mọc,1
+VSL,Nam bán cầu,1
+VSL,Nam Định,1
+VSL,Nhật (nước Nhật),3
+VSL,Ninh Bình,1
+VSL,Ninh Thuận,1
+VSL,Oa-sinh-tơn,1
+VSL,Pa-ki-xtan (nước Pa-ki-xtan),1
+VSL,Paris,1
+VSL,Phi-líp-pin (nước Phi-líp-pin),3
+VSL,Phú Thọ,1
+VSL,Pê-ru (nước Pê-ru),1
+VSL,Quy Nhơn,1
+VSL,Quảng Bình,1
+VSL,Quảng Nam,1
+VSL,Quảng Ngãi,1
+VSL,Quảng Ninh,1
+VSL,Quảng Trị,1
+VSL,Quốc Tử Giám,1
+VSL,Sapa,1
+VSL,Socola,1
+VSL,Sóc Trăng,1
+VSL,Thanh Hóa,1
+VSL,Thái Nguyên,1
+VSL,Thánh Gióng,1
+VSL,Thăng Long,1
+VSL,Thủy Điện Hòa Bình,3
+VSL,Thừa Thiên – Huế,3
+VSL,Tiền Giang,1
+VSL,Trung Quốc (nước Trung Quốc),3
+VSL,Trung Thu,3
+VSL,Trà Vinh,1
+VSL,Trần Quốc Toản,1
+VSL,Tuy Hoà,1
+VSL,Tây Bắc,1
+VSL,Tây Nguyên,1
+VSL,Tây Ninh,1
+VSL,Tết Dương,2
+VSL,Tết Thiếu nhi,1
+VSL,Tết Trung thu,3
+VSL,Tết hàn thực,3
+VSL,Tết Âm,2
+VSL,UNICEF,1
+VSL,Võ Nguyên Giáp,1
+VSL,Võ Thị Sáu,1
+VSL,Văn miếu Quốc Tử Giám,1
+VSL,Vĩnh Long,1
+VSL,Vĩnh Phúc,1
+VSL,Y-Éc-Xanh,1
+VSL,Yên Bái,1
+VSL,a,1
+VSL,ai,3
+VSL,ai bảo,1
+VSL,ai cho,1
+VSL,an ninh,1
+VSL,anh chị,1
+VSL,anh chị em,1
+VSL,anh dũng,3
+VSL,anh em,3
+VSL,"anh hai, anh cả",3
+VSL,anh hùng,1
+VSL,anh họ,2
+VSL,anh ruột,3
+VSL,anh rể,3
+VSL,anh vợ,1
+VSL,ao chuôm,1
+VSL,b,1
+VSL,ba là,1
+VSL,ban giám hiệu,1
+VSL,ban ngày,1
+VSL,ban đêm,3
+VSL,bao giờ?,3
+VSL,bao la,1
+VSL,bao nhiêu?,1
+VSL,bao tay (dùng cho trẻ sơ sinh),1
+VSL,bay,1
+VSL,bay liệng (bay lượn),1
+VSL,bay nhanh (máy bay),1
+VSL,biến đổi,1
+VSL,biển hiệu,1
+VSL,biển đông,1
+VSL,biểu thị,1
+VSL,biểu thức,1
+VSL,biểu đồ,1
+VSL,biểu đồ cột,1
+VSL,biểu đồ hình quạt,1
+VSL,biện pháp,1
+VSL,bom nguyên tử,1
+VSL,bom đạn,1
+VSL,boong tàu,1
+VSL,buôn làng,1
+VSL,buông màn,3
+VSL,buồn nôn,1
+VSL,buồn thảm,1
+VSL,buồng trứng,1
+VSL,buổi chiều,1
+VSL,buổi sáng,3
+VSL,buổi trưa,3
+VSL,buổi tối,3
+VSL,buổi đêm,3
+VSL,buộc dây,1
+VSL,buộc tóc,1
+VSL,bài báo,1
+VSL,bài thơ,3
+VSL,bàn bạc,1
+VSL,bàn chân,1
+VSL,bàn chải đánh răng,1
+VSL,bàn ghế,1
+VSL,bàn là,1
+VSL,bàn phím (máy vi tính),1
+VSL,bàn tay,1
+VSL,bàn tán,1
+VSL,bán buôn,1
+VSL,bán hàng,3
+VSL,bán kính (hình tròn),1
+VSL,bán đảo,1
+VSL,bánh Trung Thu,1
+VSL,bánh bột lọc,1
+VSL,bánh canh,1
+VSL,bánh cuốn,3
+VSL,bánh cốm,1
+VSL,bánh gai,1
+VSL,bánh giò,1
+VSL,bánh giầy,1
+VSL,bánh gối,1
+VSL,bánh hamburger,1
+VSL,bánh mì,3
+VSL,bánh pizza,1
+VSL,bánh pía,1
+VSL,bánh sandwich,1
+VSL,bánh tráng,1
+VSL,bánh xe,1
+VSL,bánh đa,1
+VSL,bánh đúc,1
+VSL,báo (con báo),3
+VSL,báo cáo,1
+VSL,báo thù,1
+VSL,báo động,1
+VSL,bát,1
+VSL,bát hương,1
+VSL,bát ngát,1
+VSL,bãi cát,1
+VSL,bãi cỏ,1
+VSL,bãi tắm,1
+VSL,bãi đỗ xe (ô tô),1
+VSL,bé gái,1
+VSL,bé hơn,1
+VSL,bé loắt choắt,1
+VSL,bé trai,3
+VSL,béo,1
+VSL,bê tông,1
+VSL,bên cạnh,2
+VSL,bên dưới,1
+VSL,bên phải,1
+VSL,bên trong,1
+VSL,bên trái,1
+VSL,bên trên,1
+VSL,bênh vực,1
+VSL,bìa sách,1
+VSL,bìa vở,3
+VSL,bình an,3
+VSL,bình minh,1
+VSL,bình phương,1
+VSL,bình sữa (em bé),1
+VSL,bình thường,3
+VSL,bí ngô,1
+VSL,bím tóc đuôi sam,1
+VSL,bít tất,1
+VSL,bít tết (bò),3
+VSL,bò,1
+VSL,bò sát,1
+VSL,bò tót,1
+VSL,bó hoa,1
+VSL,bó đũa,1
+VSL,bóc lột,1
+VSL,bóc vỏ,1
+VSL,bón phân,3
+VSL,bóng bay,1
+VSL,bông hoa,3
+VSL,bùn,1
+VSL,bùng binh,1
+VSL,bún chả,1
+VSL,bún mắm,1
+VSL,bún ngan,1
+VSL,bún đậu,1
+VSL,bún ốc,1
+VSL,búp bê,1
+VSL,bút,1
+VSL,bút bi,1
+VSL,bút dạ,1
+VSL,bút màu,3
+VSL,bút máy,1
+VSL,băng bó,1
+VSL,băng chuyền,1
+VSL,băng dính,1
+VSL,băng giá,1
+VSL,băng hình,1
+VSL,bơi,1
+VSL,bơi lội,1
+VSL,bơm (cái bơm),1
+VSL,bơm nước,1
+VSL,bơm xe,1
+VSL,bưu tá,1
+VSL,bước,1
+VSL,bước chân,1
+VSL,bướng bỉnh,2
+VSL,bạn,3
+VSL,bạn gái,3
+VSL,bạn trai,3
+VSL,bạn yêu bạn ấy,1
+VSL,bạn yêu tôi,1
+VSL,bạn ấy yêu bạn,1
+VSL,bạn ấy yêu tôi,1
+VSL,bản làng,1
+VSL,bản lề,1
+VSL,bản nhạc,1
+VSL,bản sao (chỉ người),1
+VSL,bản thân,1
+VSL,bản đồ Việt Nam,3
+VSL,bảng chia,2
+VSL,bảng chỉ dẫn,1
+VSL,bảng chữ cái ngón tay,1
+VSL,bảng cộng,3
+VSL,bảng cửu chương,1
+VSL,bảng học sinh,1
+VSL,bảng màu,1
+VSL,bảng nhân,3
+VSL,bảng trừ,3
+VSL,bảng đen,3
+VSL,bảo hiểm,1
+VSL,bảo thủ,1
+VSL,bảo tàng,1
+VSL,bảo vệ môi trường,3
+VSL,bảo đảm,1
+VSL,bất hiếu,1
+VSL,bất khuất,1
+VSL,bất động,1
+VSL,bầu trời,1
+VSL,bẫy chim,1
+VSL,bẫy chuột (dụng cụ),1
+VSL,bẫy chuột (hành động),3
+VSL,bậc thang,1
+VSL,bập bênh,1
+VSL,bật lửa,1
+VSL,bật đèn,1
+VSL,bắc bán cầu,1
+VSL,bắc nam,2
+VSL,bắn bi,3
+VSL,bắn cung tên,1
+VSL,bắn súng,1
+VSL,bắp ngô,3
+VSL,bắt,1
+VSL,bắt buộc,1
+VSL,bắt giữ,1
+VSL,bắt nạt,1
+VSL,bắt tay,1
+VSL,bắt đền,3
+VSL,bằng,1
+VSL,bằng phẳng,1
+VSL,bẻ ngô,3
+VSL,bế em,1
+VSL,bến phà,1
+VSL,bến tàu,1
+VSL,bến xe,1
+VSL,bể bơi,1
+VSL,bể cá,1
+VSL,bệ hạ,2
+VSL,bệ xí,1
+VSL,bệnh nhân,1
+VSL,bệnh phong/cùi,1
+VSL,bệnh thủy đậu,1
+VSL,bệnh tật,1
+VSL,bệnh Đao - Down,1
+VSL,bị động,1
+VSL,bịa đặt,1
+VSL,bọc sách,1
+VSL,bọt biển,1
+VSL,bọt xà phòng,1
+VSL,bỏ hoang,1
+VSL,bỏ phiếu,1
+VSL,bỏ qua,1
+VSL,bỏ rơi,1
+VSL,bỏng,1
+VSL,bỏng ngô,1
+VSL,bố,1
+VSL,bố dượng,3
+VSL,bố mẹ,1
+VSL,bố trí,1
+VSL,bốc hơi,1
+VSL,bốc thăm,1
+VSL,bốc vác,1
+VSL,bối rối,1
+VSL,bốn là,1
+VSL,bốt cảnh sát,3
+VSL,bốt điện,3
+VSL,bồ kết,1
+VSL,bồi bàn,1
+VSL,bồi thường,1
+VSL,bồn hoa,1
+VSL,bồn rửa bát,1
+VSL,bổ ngữ,1
+VSL,bổ trợ,1
+VSL,bổ ích,1
+VSL,bộ sách,1
+VSL,bộ truyện,1
+VSL,bộ đội,3
+VSL,bột giặt,1
+VSL,bột màu,3
+VSL,bột ngọt,2
+VSL,bớt,1
+VSL,bớt đi,1
+VSL,bờ biển,1
+VSL,bờ ruộng,1
+VSL,bờ rào,1
+VSL,bờm tóc,1
+VSL,bụi phấn,3
+VSL,bụi tre,1
+VSL,bụi đời,1
+VSL,bụng,1
+VSL,bức tranh,3
+VSL,bức tường,1
+VSL,bữa cơm,1
+VSL,bực mình,1
+VSL,c,1
+VSL,ca,1
+VSL,ca nô,1
+VSL,cao (người),1
+VSL,cao (nhà),1
+VSL,cao (núi),1
+VSL,cao (vật),1
+VSL,cao nguyên,1
+VSL,cao quý,1
+VSL,cao thấp,1
+VSL,cao tầng,1
+VSL,cao tốc,1
+VSL,cao độ,1
+VSL,cau có,1
+VSL,cha,1
+VSL,cha mẹ,1
+VSL,chai,1
+VSL,chai nước,1
+VSL,chanh muối,1
+VSL,chanh nóng,1
+VSL,chanh đá,1
+VSL,che chở,1
+VSL,che phủ,1
+VSL,chen lấn,1
+VSL,chi hội,1
+VSL,chi tiết,1
+VSL,chia,3
+VSL,chia ba,3
+VSL,chia cắt,1
+VSL,chia hết,1
+VSL,chia phần,1
+VSL,chia rẽ,1
+VSL,chia sẻ,1
+VSL,chia tay,1
+VSL,chia đôi,3
+VSL,chia đều,1
+VSL,chim bồ câu,1
+VSL,chim chuyền cành,1
+VSL,chim chào mào,1
+VSL,chim chích chòe,1
+VSL,chim chóc,1
+VSL,chim gõ kiến,1
+VSL,chim phượng hoàng,1
+VSL,chim sâu,1
+VSL,chim sơn ca,1
+VSL,chim sẻ,1
+VSL,chim yến,1
+VSL,chim đại bàng,1
+VSL,chiên/rán (1)(2),1
+VSL,chiêng,1
+VSL,chiếc gối,3
+VSL,chiếm đoạt,1
+VSL,chiến khu,1
+VSL,chiến thắng,1
+VSL,chiếu,3
+VSL,chiếu phim,1
+VSL,chiều cao,1
+VSL,chiều dài,1
+VSL,chiều rộng,1
+VSL,chiều tối,1
+VSL,chong chóng,1
+VSL,chu vi,1
+VSL,chui,1
+VSL,chum,1
+VSL,chung kết,1
+VSL,chung tay,1
+VSL,chuyên biệt,1
+VSL,chuyên cần,1
+VSL,chuyên gia,3
+VSL,chuyền bóng,1
+VSL,chuyển giao,1
+VSL,chuyển hướng,1
+VSL,chuyển vế,1
+VSL,chuyển đồ,1
+VSL,chuyển đổi số đo,1
+VSL,chuyển động,1
+VSL,chuyển động quay,1
+VSL,chuyển động đều,1
+VSL,chuyện lớn,1
+VSL,chuyện nhỏ,1
+VSL,chuyện trò,1
+VSL,chuông,1
+VSL,chuông nhà,1
+VSL,chuẩn bị,3
+VSL,chuồng,1
+VSL,chuỗi hạt,1
+VSL,chuột quang,1
+VSL,chàng trai,1
+VSL,chào,1
+VSL,chào cờ,1
+VSL,chào mừng,1
+VSL,chày,1
+VSL,cháo sườn,1
+VSL,chát,1
+VSL,cháu gái,3
+VSL,cháu họ,3
+VSL,cháu ngoại,3
+VSL,cháu nội,3
+VSL,cháu trai,2
+VSL,cháy rừng,1
+VSL,châm chọc,1
+VSL,châm cứu,3
+VSL,chân dung,1
+VSL,chân tay,1
+VSL,chân đất,1
+VSL,chè đỗ đỏ,1
+VSL,chèn ép,1
+VSL,chèo thuyền,1
+VSL,chém,1
+VSL,chén,1
+VSL,chép bài,1
+VSL,chìa khóa,1
+VSL,chín,1
+VSL,chính phủ,2
+VSL,chính quyền,1
+VSL,chính tả,1
+VSL,chính xác,3
+VSL,chó cắn,1
+VSL,chó sói,1
+VSL,chó xù,1
+VSL,chõ xôi,1
+VSL,chùa,3
+VSL,chùa Hương,1
+VSL,chùa Một Cột,1
+VSL,chùa Yên Tử,1
+VSL,chùm hoa,1
+VSL,chùm khế,1
+VSL,chùm nho,1
+VSL,chùm vải,1
+VSL,chú ( người),1
+VSL,chú hề,1
+VSL,chú rể,1
+VSL,chú tễu,1
+VSL,chú ý,1
+VSL,chúc mừng,3
+VSL,chúc thọ,3
+VSL,chúc tết,3
+VSL,chúi đầu,1
+VSL,chúng tôi (2 người) (đại từ),1
+VSL,chúng tôi (3 người) (đại từ),1
+VSL,chúng tôi (4 người) (đại từ),1
+VSL,chúng tôi (5 người) (đại từ),1
+VSL,chúng tôi (đại từ),1
+VSL,chăm học,1
+VSL,chăm sóc sức khỏe,3
+VSL,chăn (cái chăn),3
+VSL,chăn nuôi,3
+VSL,chơi,2
+VSL,chương trình,1
+VSL,chạy,1
+VSL,chạy (động vật),1
+VSL,chạy bàn,1
+VSL,chạy chậm,1
+VSL,chạy nhanh,1
+VSL,chả cá,3
+VSL,chảo,3
+VSL,chấm dứt,1
+VSL,chấm điểm,1
+VSL,chất dẻo,1
+VSL,chất hữu cơ,1
+VSL,chất lượng,1
+VSL,chất lỏng,1
+VSL,chất rắn,1
+VSL,chất thải,1
+VSL,chất đốt,1
+VSL,chất độc,1
+VSL,chất độc màu da cam,1
+VSL,chậm chạp,1
+VSL,chật chội,1
+VSL,chậu,1
+VSL,chặn,1
+VSL,chặt,3
+VSL,chặt chẽ,1
+VSL,chỉ,1
+VSL,chỉ dẫn,1
+VSL,chỉ huy,1
+VSL,chỉ khâu,1
+VSL,chỉnh sửa,1
+VSL,chị,3
+VSL,chị chồng,2
+VSL,chị dâu,1
+VSL,"chị hai, chị cả",3
+VSL,chị họ,3
+VSL,chọi gà,1
+VSL,chọi trâu,1
+VSL,chọn lọc,1
+VSL,chọn lựa,1
+VSL,chống đối,3
+VSL,chồi non,1
+VSL,chớp mắt,1
+VSL,chợ Bến Thành,1
+VSL,chợ nổi,1
+VSL,chợ nổi Cái Bè,1
+VSL,chợ nổi Cái Răng,1
+VSL,chục,1
+VSL,chục nghìn,1
+VSL,chục triệu,1
+VSL,chụp đèn,1
+VSL,chụp ảnh,1
+VSL,chủ nghĩa xã hội,1
+VSL,chủ ngữ,1
+VSL,chủ nhiệm,1
+VSL,chủ tịch,3
+VSL,chủ đề,1
+VSL,chủ động,1
+VSL,chức năng,1
+VSL,chức vụ,1
+VSL,chứng cớ,1
+VSL,chứng kiến,1
+VSL,chứng minh,1
+VSL,chứng nhận,1
+VSL,chữ,1
+VSL,chữ cái,1
+VSL,chữ hoa,1
+VSL,chữ viết,1
+VSL,chữa bài,3
+VSL,chữa bệnh,1
+VSL,chữa cháy,1
+VSL,co dãn,1
+VSL,co giật,1
+VSL,coi thường,1
+VSL,con ba ba,1
+VSL,con bê,3
+VSL,con bò,3
+VSL,con bướm,1
+VSL,con chim,1
+VSL,con chuồn chuồn,1
+VSL,con chuột,3
+VSL,con chuột nhắt,1
+VSL,con chó,3
+VSL,con chồn,1
+VSL,con cua,1
+VSL,con cá,3
+VSL,con cá sấu,1
+VSL,con cò,1
+VSL,con cóc,1
+VSL,con công,1
+VSL,con cú mèo,1
+VSL,con cọp,3
+VSL,con cừu,1
+VSL,con dâu,1
+VSL,con dê,1
+VSL,con dế,1
+VSL,con ghẹ,1
+VSL,con gián,1
+VSL,con gà,1
+VSL,con gái,1
+VSL,con gấu,1
+VSL,con hoẵng,1
+VSL,con hàu,1
+VSL,con hươu,1
+VSL,con khỉ,1
+VSL,con kiến,3
+VSL,con lươn,1
+VSL,con lợn (con heo),3
+VSL,con muỗi,3
+VSL,con mèo,3
+VSL,con mực,1
+VSL,con nai,1
+VSL,con người,3
+VSL,con ngỗng,1
+VSL,con ngựa,3
+VSL,con nhím,1
+VSL,con nuôi,3
+VSL,con ong,2
+VSL,con quạ,1
+VSL,con ruồi,1
+VSL,con rùa,1
+VSL,con rắn,1
+VSL,con rối,1
+VSL,con sâu,1
+VSL,con sò,1
+VSL,con sóc,1
+VSL,con sói,1
+VSL,con sông,1
+VSL,con sư tử,2
+VSL,con số,1
+VSL,con tem,1
+VSL,con thỏ,1
+VSL,con trai,1
+VSL,con trai (động vật),1
+VSL,con trăn,1
+VSL,con trỏ,1
+VSL,con tôm,3
+VSL,con voi,3
+VSL,con vượn,1
+VSL,con vẹt,1
+VSL,con vịt,1
+VSL,con đom đóm,1
+VSL,con đường,1
+VSL,con đẻ,1
+VSL,con ếch,3
+VSL,con ốc,1
+VSL,cong,1
+VSL,cua đồng,1
+VSL,cung cấp,1
+VSL,cung tên,1
+VSL,cung điện,3
+VSL,cuối năm,1
+VSL,cuối tháng,1
+VSL,cuối tuần,1
+VSL,cuốn,1
+VSL,cuống hoa,1
+VSL,cuống lá,1
+VSL,cuộc sống,1
+VSL,cuộc đời,1
+VSL,cuộn giấy vệ sinh,1
+VSL,cày,1
+VSL,cày ruộng,1
+VSL,cá kho,3
+VSL,cá kiếm,1
+VSL,cá mập,1
+VSL,cá voi,1
+VSL,các bạn,1
+VSL,các bạn (2 người),1
+VSL,cách ly,1
+VSL,cái bè,1
+VSL,cái gùi,1
+VSL,cái gương,3
+VSL,cái neo,1
+VSL,cái nhíp,1
+VSL,cái túi,1
+VSL,cái vợt cá,1
+VSL,cánh buồm,1
+VSL,cánh tay,1
+VSL,cáp treo,1
+VSL,cát,1
+VSL,câu chuyện,1
+VSL,câu cá,1
+VSL,câu ghép,1
+VSL,câu thơ,3
+VSL,câu văn,1
+VSL,câu đơn,1
+VSL,câu đố,1
+VSL,câu đối,1
+VSL,cây bàng,2
+VSL,cây cọ,1
+VSL,cây cối,1
+VSL,cây cổ thụ,3
+VSL,cây gỗ,1
+VSL,cây khế,1
+VSL,cây ngô,3
+VSL,cây nến,1
+VSL,cây phượng,3
+VSL,cây sả,1
+VSL,cây số,1
+VSL,cây thân gỗ,3
+VSL,cây thông,1
+VSL,cây tre,1
+VSL,cây trồng,1
+VSL,cây xanh,1
+VSL,cây xanh tươi,3
+VSL,cây ăn quả,3
+VSL,cây đa,1
+VSL,cãi nhau,1
+VSL,còi,1
+VSL,còi xương,1
+VSL,còn bạn?,1
+VSL,còng,1
+VSL,còng (cái còng),1
+VSL,có ích,1
+VSL,có … không?,1
+VSL,cô dâu,1
+VSL,cô giáo,3
+VSL,cô đơn,1
+VSL,côn trùng,1
+VSL,công bằng,1
+VSL,công chúa,1
+VSL,công cộng,1
+VSL,công cụ,1
+VSL,công nghiệp,3
+VSL,công nhận,1
+VSL,công sức,1
+VSL,công thức,1
+VSL,công trường,1
+VSL,công tắc,1
+VSL,công viên,3
+VSL,công việc,1
+VSL,công văn,1
+VSL,công ước,1
+VSL,cõng,1
+VSL,cù,1
+VSL,cùi chỏ,1
+VSL,cùng / với (giới từ),1
+VSL,cúc áo,1
+VSL,cúi,1
+VSL,căm thù,1
+VSL,cũng vậy/cũng thế,1
+VSL,cơ bắp,1
+VSL,cơ hội,3
+VSL,cơ quan,1
+VSL,cơ sở,1
+VSL,cơ thể,1
+VSL,cơm,1
+VSL,cơm bình dân,3
+VSL,cơm hộp,1
+VSL,cơm rang,1
+VSL,cưa,1
+VSL,cưa (cái cưa),1
+VSL,cướp,3
+VSL,cướp biển,1
+VSL,cướp cờ,1
+VSL,cướp giật,1
+VSL,cười nhếch mép,1
+VSL,cười vỡ bụng,1
+VSL,cưỡi ngựa,1
+VSL,cạnh,1
+VSL,cạnh bên (toán),1
+VSL,cạnh tranh,1
+VSL,cạnh đáy,1
+VSL,cạnh đối diện,1
+VSL,cả ngày,1
+VSL,cảng Hải Phòng,1
+VSL,cảng Sài Gòn,1
+VSL,cảnh giác,1
+VSL,cảnh vật,1
+VSL,cấp cứu,1
+VSL,cấp dưỡng,1
+VSL,cất giấu,1
+VSL,cất giữ,1
+VSL,cất tiếng khóc,1
+VSL,cất tiếng nói,1
+VSL,cấy,1
+VSL,cấy lúa,1
+VSL,cần không?,3
+VSL,cần khởi động,1
+VSL,cầu (cây cầu),1
+VSL,cầu Long Biên,1
+VSL,cầu Thê Húc (Hồ Gươm),1
+VSL,cầu cứu,1
+VSL,cầu giao,1
+VSL,cầu kì,1
+VSL,cầu nguyện,1
+VSL,cầu thang,1
+VSL,cầu thủ,1
+VSL,cầu tre,1
+VSL,cầu trượt,1
+VSL,cầu vượt,1
+VSL,cắm trại,1
+VSL,cắt lông mũi,1
+VSL,cắt nhau,1
+VSL,cặp sách,1
+VSL,cặp tóc,1
+VSL,cỏ,3
+VSL,cỏ may,1
+VSL,cố gắng,3
+VSL,cố ý (như cố tình),1
+VSL,cố định,1
+VSL,cốc,1
+VSL,cối giã,1
+VSL,cối xay gió,1
+VSL,cối xay lúa,1
+VSL,cốm,1
+VSL,cống,1
+VSL,cốp xe,1
+VSL,cổ,1
+VSL,cổ chân,1
+VSL,cổ họng,1
+VSL,cổ kính,1
+VSL,cổ tay,1
+VSL,cổ truyền,1
+VSL,cổ tích,1
+VSL,cổ vũ,1
+VSL,cổ áo,1
+VSL,cổ đại,1
+VSL,cổng,1
+VSL,cổng trường,2
+VSL,cỗ,1
+VSL,cộng (Toán học),3
+VSL,cột,1
+VSL,cột nhà,1
+VSL,cột sống,1
+VSL,cột điện,3
+VSL,cột đèn,1
+VSL,cờ,1
+VSL,cờ ca rô,1
+VSL,cờ tướng,1
+VSL,cờ vua,1
+VSL,cởi mở,1
+VSL,cởi áo,1
+VSL,cụ,1
+VSL,cụ già,1
+VSL,cụ thể,1
+VSL,cụ đồ,1
+VSL,cục tẩy,1
+VSL,cụm từ,1
+VSL,củ cà rốt,1
+VSL,củ cải trắng,1
+VSL,củ gừng,1
+VSL,củ hành tây,1
+VSL,củ khoai lang,1
+VSL,củ khoai tây,1
+VSL,củ nghệ,1
+VSL,củ su hào,1
+VSL,củ sả,1
+VSL,củ tỏi,1
+VSL,củ từ,1
+VSL,củ đậu,1
+VSL,củi,1
+VSL,cứu,1
+VSL,cứu hộ,1
+VSL,cứu sống,1
+VSL,cử chỉ điệu bộ,1
+VSL,cử động,1
+VSL,cửa hàng,3
+VSL,cửa khẩu,1
+VSL,cửa kính,1
+VSL,cửa sổ,1
+VSL,cực khổ,1
+VSL,d,1
+VSL,da ngăm (nước da ngăm đen),3
+VSL,da trắng,3
+VSL,dai,1
+VSL,danh bạ,1
+VSL,danh dự,1
+VSL,danh hiệu,1
+VSL,danh lam thắng cảnh,1
+VSL,danh mục,1
+VSL,danh nhân,1
+VSL,danh sách,1
+VSL,danh từ,1
+VSL,danh từ riêng,1
+VSL,dao,1
+VSL,di chuyển,1
+VSL,di truyền,3
+VSL,diêm,1
+VSL,diều,1
+VSL,diễn thuyết,1
+VSL,diện tích,1
+VSL,diện tích toàn phần,1
+VSL,diện tích xung quanh,1
+VSL,diệt chủng,1
+VSL,doanh nghiệp,1
+VSL,doanh trại,1
+VSL,du học,1
+VSL,du thuyền,1
+VSL,dung tích,1
+VSL,duy nhất,1
+VSL,duyên dáng,1
+VSL,duyệt binh,1
+VSL,dài,1
+VSL,dài hơn,1
+VSL,dài hạn,1
+VSL,dài nhất,1
+VSL,dàn bài,1
+VSL,dàn nhạc,1
+VSL,dám làm,3
+VSL,dán,1
+VSL,dân ca,1
+VSL,dân chài,1
+VSL,dân chủ,1
+VSL,dân số,1
+VSL,dân tộc,3
+VSL,dân tộc Chăm,1
+VSL,dân tộc Khơ me,1
+VSL,dân tộc Mông,1
+VSL,dân tộc Mường,1
+VSL,dân tộc Thái,1
+VSL,dân tộc thiểu số,3
+VSL,dây buộc tóc,1
+VSL,dây chun,1
+VSL,dây thần kinh,1
+VSL,dây thừng,1
+VSL,dây xích,1
+VSL,dây điện,3
+VSL,dãy nhà,1
+VSL,dãy núi,1
+VSL,dãy núi Hoàng Liên Sơn,1
+VSL,dãy số,1
+VSL,dãy số liệu,1
+VSL,dép quai hậu,3
+VSL,dê con,1
+VSL,dê mẹ,1
+VSL,dòng chữ,1
+VSL,dòng họ,1
+VSL,dòng sông,1
+VSL,dòng sông chảy,1
+VSL,dũng cảm,1
+VSL,dạy,1
+VSL,dải phân cách,1
+VSL,dấu bằng,1
+VSL,dấu chia,1
+VSL,dấu chấm,1
+VSL,dấu chấm hỏi,1
+VSL,dấu chấm than,1
+VSL,dấu gạch ngang,1
+VSL,dấu hai chấm,1
+VSL,dấu huyền,3
+VSL,dấu hỏi,3
+VSL,dấu ngoặc đơn,1
+VSL,dấu ngã,3
+VSL,dấu nhân,1
+VSL,dấu nặng,1
+VSL,dấu phẩy,1
+VSL,dấu sắc,3
+VSL,dầu gội đầu,1
+VSL,dầu hoả,1
+VSL,dầu khí,1
+VSL,dầu mỏ,1
+VSL,dầu ăn,1
+VSL,dẫn chương trình,1
+VSL,dẫn chứng,1
+VSL,dập,1
+VSL,dắt,1
+VSL,dặn dò,1
+VSL,dẻo,1
+VSL,dễ chịu,1
+VSL,dễ thương,1
+VSL,dệt,1
+VSL,dịch vụ,3
+VSL,dịu dàng,1
+VSL,dọc,1
+VSL,dốc,1
+VSL,dốt,1
+VSL,dỗi,3
+VSL,dụng cụ,1
+VSL,dừng lại,1
+VSL,dự trữ,1
+VSL,dự án,1
+VSL,dựng phim,1
+VSL,e,1
+VSL,e thẹn,3
+VSL,em dâu,1
+VSL,em gái,1
+VSL,em họ,3
+VSL,em rể,3
+VSL,em trai,3
+VSL,em út,1
+VSL,email,1
+VSL,f,1
+VSL,g,2
+VSL,ga tàu,3
+VSL,gai,1
+VSL,gan,1
+VSL,gan dạ,1
+VSL,gan lì,1
+VSL,gang tay,1
+VSL,ghen tị,3
+VSL,ghi chép,1
+VSL,ghi chú,1
+VSL,ghi hình,1
+VSL,ghi nhớ,1
+VSL,ghé thăm,1
+VSL,ghép hình,1
+VSL,giai đoạn,1
+VSL,gian dối,1
+VSL,gian khổ,1
+VSL,gian lận,1
+VSL,giao hoán,1
+VSL,giao hàng,1
+VSL,giao lưu,1
+VSL,giao thông,2
+VSL,giao thừa,1
+VSL,giao tiếp,3
+VSL,gieo xúc xắc,1
+VSL,giàn khoan,1
+VSL,giàn mướp,1
+VSL,giàn nho,1
+VSL,giàu có,1
+VSL,giá sách,1
+VSL,giá trị,3
+VSL,giá trị phần trăm,3
+VSL,giá trị tuyệt đối,1
+VSL,giám khảo,1
+VSL,giám sát,2
+VSL,giám đốc,1
+VSL,gián tiếp,3
+VSL,giáo dục,1
+VSL,giáo sĩ,1
+VSL,giã,1
+VSL,giãn cách xã hội,1
+VSL,gió Lào,1
+VSL,giông bão,1
+VSL,giúp đỡ,3
+VSL,giơ tay,1
+VSL,giường,1
+VSL,giả bộ (giống giả vờ),1
+VSL,giả mạo,1
+VSL,giả sử,1
+VSL,giải lao,1
+VSL,giải quyết,1
+VSL,giải thích,1
+VSL,giải vô địch,1
+VSL,giảm,1
+VSL,giấc ngủ,1
+VSL,giấy,3
+VSL,giấy màu,3
+VSL,giấy nháp,3
+VSL,giấy tờ,1
+VSL,giấy ăn,3
+VSL,giầy ba ta,1
+VSL,giầy dép,1
+VSL,giầy thể thao,1
+VSL,giẫm,1
+VSL,giận dỗi,1
+VSL,giận dữ,1
+VSL,giật mình,1
+VSL,giẻ lau,1
+VSL,giếng nước,1
+VSL,giết,1
+VSL,giọng ca,1
+VSL,giọng nói,1
+VSL,giỏi,1
+VSL,giống nhau,1
+VSL,giỗ,1
+VSL,giới hạn,1
+VSL,giới thiệu,1
+VSL,giữ nguyên,1
+VSL,gà mái,1
+VSL,gà nướng lu,1
+VSL,gà rừng,1
+VSL,gà trống,1
+VSL,gà tây,1
+VSL,gánh,1
+VSL,gáy,1
+VSL,gãi đầu gãi tai,1
+VSL,gãy chân,1
+VSL,gãy tay,1
+VSL,góc bẹt,1
+VSL,góc bếp,1
+VSL,góc học tập,1
+VSL,góc nhọn,1
+VSL,góc tù,1
+VSL,góc vuông,1
+VSL,góc vườn,1
+VSL,gói,1
+VSL,gói (đgt),1
+VSL,góp tiền,1
+VSL,góp ý,1
+VSL,gù lưng,1
+VSL,găng tay,1
+VSL,gương,1
+VSL,gương mẫu,1
+VSL,gương mặt,1
+VSL,gạo,3
+VSL,gạo nếp,1
+VSL,gấp ba,1
+VSL,gấp giấy,1
+VSL,gấp quần áo,1
+VSL,gấp đôi,1
+VSL,gần gũi,1
+VSL,gầy (miền Nam: ốm),3
+VSL,gật gù,1
+VSL,gật đầu,1
+VSL,gậy của người già,1
+VSL,gắn bó,1
+VSL,gắp thức ăn,1
+VSL,gặm cỏ,1
+VSL,gặm xương (con chó gặm xương),1
+VSL,gặp gỡ,1
+VSL,gặt lúa,1
+VSL,gọi,1
+VSL,gọn gàng,1
+VSL,gọt bút chì,1
+VSL,gọt bút chì (cái),1
+VSL,gỏi/nộm,1
+VSL,gốm sứ,1
+VSL,gỗ,3
+VSL,gợi ý,1
+VSL,gửi,1
+VSL,gửi quà,1
+VSL,gửi thư,1
+VSL,h,3
+VSL,hai là,1
+VSL,hai phân số bằng nhau,1
+VSL,ham chơi,3
+VSL,hay là (hoặc là),3
+VSL,hi sinh,3
+VSL,hi vọng,3
+VSL,hiếu thảo,1
+VSL,hiểu,3
+VSL,hiện nay,1
+VSL,hiện đại,1
+VSL,hiệu (Toán học),1
+VSL,hiệu cầm đồ,1
+VSL,hiệu thuốc,1
+VSL,hoa,3
+VSL,hoa cúc,1
+VSL,hoa dâm bụt,1
+VSL,hoa giấy,1
+VSL,hoa hậu,1
+VSL,hoa hồng,1
+VSL,hoa lay ơn,1
+VSL,hoa mai,1
+VSL,hoa sen,3
+VSL,hoa đào,1
+VSL,hoan hô,1
+VSL,hoang mang,1
+VSL,hoàn thành,1
+VSL,hoàng hôn,1
+VSL,hoàng đế,1
+VSL,hoán vị,1
+VSL,hoạt hình,3
+VSL,hoạt động,1
+VSL,hoảng sợ,1
+VSL,hoặc,3
+VSL,hung thủ,1
+VSL,hung ác,1
+VSL,huy hiệu,1
+VSL,huyện,3
+VSL,huân chương,1
+VSL,huỷ,1
+VSL,huỷ diệt,1
+VSL,hài hước,1
+VSL,hài lòng,1
+VSL,hàm răng,1
+VSL,hàng chục,1
+VSL,hàng chục nghìn,1
+VSL,hàng chục triệu,1
+VSL,hàng dọc,1
+VSL,hàng ngang,1
+VSL,hàng nghìn,1
+VSL,hàng ngày,3
+VSL,hàng triệu,1
+VSL,hàng trăm,1
+VSL,hàng trăm nghìn,1
+VSL,hàng xóm,1
+VSL,hàng đơn vị,1
+VSL,hành lang,1
+VSL,hành quân,3
+VSL,hành tinh,1
+VSL,hành vi,1
+VSL,hành động,1
+VSL,háo hức,1
+VSL,hát ru,1
+VSL,hãng máy bay,1
+VSL,hãng tàu thuyền,1
+VSL,hãng xe máy,1
+VSL,hãng ô tô,1
+VSL,héc-ta (ha),1
+VSL,héc-tô-gam (hg),3
+VSL,héc-tô-mét (hm),3
+VSL,héc-tô-mét vuông (hm2),3
+VSL,héo,1
+VSL,hét (giống la),1
+VSL,hên/gặp may,1
+VSL,hình,1
+VSL,hình bình hành,1
+VSL,hình chiếu,1
+VSL,hình cầu,1
+VSL,hình dáng,1
+VSL,hình elip,1
+VSL,hình học,1
+VSL,hình hộp chữ nhật,1
+VSL,hình lập phương,1
+VSL,hình phạt,1
+VSL,hình thang,1
+VSL,hình trụ,1
+VSL,hình tứ giác,1
+VSL,hình vuông,1
+VSL,hình vẽ,1
+VSL,hòa bình,1
+VSL,hòa nhập,1
+VSL,hòn bi (giống viên bi),1
+VSL,hòn đá,1
+VSL,hóa đơn,1
+VSL,hói đầu,1
+VSL,hót,1
+VSL,hót rác,1
+VSL,hót rác (cái hót rác),1
+VSL,hôi,1
+VSL,hôn,1
+VSL,hùng vĩ,1
+VSL,hú vía,1
+VSL,hút nước,1
+VSL,hút thuốc lá,1
+VSL,hăm dọa,1
+VSL,hăng hái,1
+VSL,hơi nước,1
+VSL,hướng dẫn,1
+VSL,hạn hán,1
+VSL,hạt,1
+VSL,hạt cườm,1
+VSL,hạt lúa,1
+VSL,hạt lạc,1
+VSL,hạt tiêu,1
+VSL,hải sản,1
+VSL,hải đảo,1
+VSL,hấp,1
+VSL,hấp dẫn,1
+VSL,hậu quả,1
+VSL,hắt hơi,1
+VSL,hằng đẳng thức,1
+VSL,hẹn,3
+VSL,hệ bài tiết,1
+VSL,hệ thống,3
+VSL,họ (2 người) (đại từ),1
+VSL,họ (đại từ),1
+VSL,họa sỹ,1
+VSL,học bổng,1
+VSL,học giỏi,1
+VSL,học kém,1
+VSL,học nhóm,1
+VSL,học phí,1
+VSL,học sinh Miền Nam,1
+VSL,học trung bình,1
+VSL,học trò,1
+VSL,học tập,1
+VSL,họng,1
+VSL,họp,3
+VSL,họp nhóm,3
+VSL,hỏi,3
+VSL,hỏi han,1
+VSL,hỏi thăm,1
+VSL,hỏng,3
+VSL,hối hận,3
+VSL,hối lộ,1
+VSL,hốt hoảng,1
+VSL,hồ Hoàn Kiếm,1
+VSL,hồ dán,1
+VSL,hồ nước,1
+VSL,hồi hộp,3
+VSL,hỗn số,1
+VSL,hội chứng Đao - Down,1
+VSL,hội nghị,1
+VSL,hội thoại,1
+VSL,hội thảo,2
+VSL,hội trường,1
+VSL,hộp,1
+VSL,hộp bút,1
+VSL,hộp sữa,1
+VSL,hợp lí,1
+VSL,hợp tác,1
+VSL,hợp đồng,2
+VSL,hứa,3
+VSL,hữu nghị,1
+VSL,i,1
+VSL,in (ấn),1
+VSL,internet,1
+VSL,j,1
+VSL,k,1
+VSL,keo kiệt,1
+VSL,khai mạc,1
+VSL,khe cửa,1
+VSL,khe núi,1
+VSL,khen,1
+VSL,khen tặng,1
+VSL,khiêm tốn,1
+VSL,khiêng,1
+VSL,khoa học,1
+VSL,khoan,1
+VSL,khoan (cái khoan),1
+VSL,khoan (khoan đã),1
+VSL,khoang tàu,1
+VSL,khoanh tay,1
+VSL,khoe,1
+VSL,khoá (cái khóa),1
+VSL,khoác tay,1
+VSL,khoác vai,1
+VSL,khoác áo,1
+VSL,khoáng sản,1
+VSL,khoảng cách,1
+VSL,khoẻ mạnh,1
+VSL,khu rừng,1
+VSL,khu vườn,1
+VSL,khu vực cách ly,1
+VSL,khung cửa số,1
+VSL,khung thành,1
+VSL,khuy,1
+VSL,khuyên tai,1
+VSL,khuyến khích,1
+VSL,khuôn hình,1
+VSL,khác,1
+VSL,khách,1
+VSL,khách mời,1
+VSL,khách sạn,1
+VSL,khách vip,1
+VSL,khám bệnh,1
+VSL,khám phá,1
+VSL,kháng cự,1
+VSL,kháng sinh,1
+VSL,khát nước,1
+VSL,khát vọng,1
+VSL,kháu khỉnh,1
+VSL,khâm phục,1
+VSL,khâu vá,1
+VSL,khéo,1
+VSL,khép cửa,1
+VSL,khí cầu,1
+VSL,khó khăn,2
+VSL,khó tiêu,1
+VSL,khóa cửa,1
+VSL,khóa quần,1
+VSL,khóc,1
+VSL,khói,1
+VSL,khóm dứa,1
+VSL,khô héo,1
+VSL,không bình đẳng,1
+VSL,không cho,3
+VSL,không có,1
+VSL,không có chi,1
+VSL,không cần,1
+VSL,không dám,3
+VSL,không gian,1
+VSL,không hiểu,3
+VSL,không khí,1
+VSL,không muốn,3
+VSL,không nghe lời,3
+VSL,không ngon,1
+VSL,không nên,3
+VSL,không quen,3
+VSL,không thẳng hàng,1
+VSL,không đẹp,3
+VSL,khúc khuỷu,1
+VSL,khăn mặt,1
+VSL,khăn quàng,1
+VSL,khăn quàng đỏ,1
+VSL,khả năng,1
+VSL,khẩu hiệu,1
+VSL,khẩu trang,1
+VSL,khắc phục,1
+VSL,khỏi bệnh,3
+VSL,khố,1
+VSL,khối lượng,1
+VSL,khổ,2
+VSL,khổ công,1
+VSL,khổ thơ,1
+VSL,khổng lồ,1
+VSL,khớp xương,1
+VSL,khờ dại,1
+VSL,khởi nghiệp,1
+VSL,ki-lô-gam,1
+VSL,ki-lô-mét (km),1
+VSL,ki-lô-mét vuông (km2),1
+VSL,kia,1
+VSL,kim,1
+VSL,kim cương,1
+VSL,kinh nghiệm,3
+VSL,kinh ngạc,1
+VSL,kiên quyết,1
+VSL,kiên trì (giống: kiên nhẫn),1
+VSL,"kiêu (kiêu căng, kiêu xa)",1
+VSL,kiếm (cái kiếm),1
+VSL,kiến thức,1
+VSL,kiến trúc,1
+VSL,kiến trúc sư,1
+VSL,kiểm tra,3
+VSL,kèn,1
+VSL,kém,3
+VSL,kéo,1
+VSL,kéo co,1
+VSL,kêu,1
+VSL,kêu gọi,1
+VSL,kì diệu,1
+VSL,kì lạ,1
+VSL,kí duyệt,1
+VSL,kí hiệu,1
+VSL,kí tên,3
+VSL,kính,1
+VSL,kính hiển vi,1
+VSL,kính lão,1
+VSL,kính lúp,1
+VSL,kính trọng,1
+VSL,kẹo,3
+VSL,kẹp,1
+VSL,kẹt xe/tắc đường,1
+VSL,kẻ cắp,1
+VSL,kẻ thù,1
+VSL,kết bạn,1
+VSL,kết hợp,1
+VSL,kết luận,1
+VSL,kết quả,3
+VSL,kể chuyện,1
+VSL,kỉ luật,1
+VSL,kỉ niệm,3
+VSL,kịch,1
+VSL,kịch bản,1
+VSL,kịch câm,1
+VSL,kịp thời,1
+VSL,kỹ năng,1
+VSL,l,1
+VSL,la bàn,1
+VSL,la hét,1
+VSL,lang thang,1
+VSL,lao phổi,1
+VSL,lau chùi,1
+VSL,lau khô,1
+VSL,lau miệng,1
+VSL,lau nhà,1
+VSL,leo trèo,1
+VSL,linh hồn,1
+VSL,liên hoan,3
+VSL,liên kết,1
+VSL,liên lạc,3
+VSL,liên quan,3
+VSL,liên tục,1
+VSL,liếc nhìn,3
+VSL,liền sau,1
+VSL,liền trước,1
+VSL,liều lĩnh,1
+VSL,liều mình,1
+VSL,liệt (liệt tay chân),1
+VSL,lo sợ,1
+VSL,loa,1
+VSL,lon bia,1
+VSL,long lanh (mắt),1
+VSL,loài vật,3
+VSL,loạn thị,1
+VSL,lung tung,3
+VSL,luyện tập,1
+VSL,luyện từ và câu,1
+VSL,luân phiên,2
+VSL,luật chơi,3
+VSL,luật lệ,1
+VSL,luộc,1
+VSL,luộc rau,1
+VSL,là gì?,3
+VSL,làm bài tập,2
+VSL,làm quen,1
+VSL,làm ruộng,1
+VSL,làm việc,1
+VSL,làm được,1
+VSL,làn sóng,1
+VSL,làng gốm Bát Tràng,1
+VSL,làng xóm,1
+VSL,lá cây,2
+VSL,lá thư,1
+VSL,lái tàu hỏa,3
+VSL,lâu,2
+VSL,lây bệnh,1
+VSL,lây nhiễm,1
+VSL,lãng phí,1
+VSL,lãnh đạo,1
+VSL,lão già,1
+VSL,lên ngôi,1
+VSL,lên xe,1
+VSL,lên đường,1
+VSL,lí do,1
+VSL,lò xo,1
+VSL,lông,1
+VSL,lông gà,1
+VSL,lùi bước,1
+VSL,lúa,1
+VSL,lúc nào,3
+VSL,lúng túng,1
+VSL,lý do,1
+VSL,lăng Bác Hồ,1
+VSL,lĩnh hội,1
+VSL,lĩnh vực,3
+VSL,lũ quét,1
+VSL,lũy tre,1
+VSL,lơ lửng,1
+VSL,lưu,1
+VSL,lưu ý,1
+VSL,lương thực,1
+VSL,lưới,1
+VSL,lướt ván,1
+VSL,lười,3
+VSL,lười học,3
+VSL,lưỡi,1
+VSL,lưỡi câu,1
+VSL,lược,1
+VSL,lượm,1
+VSL,lượt về (trong thể thao),1
+VSL,lượt đi,1
+VSL,lạc quan,1
+VSL,lạnh lùng,3
+VSL,lấm lem,1
+VSL,lấy,1
+VSL,lầu (tầng),1
+VSL,lẩu,1
+VSL,lẫn lộn,1
+VSL,lắc đầu,1
+VSL,lắng nghe,1
+VSL,lắp ráp,1
+VSL,lặn,1
+VSL,lặng lẽ,1
+VSL,lều trại,1
+VSL,lễ Halloween 31/10,3
+VSL,lễ Nô-en,3
+VSL,lễ bế giảng,2
+VSL,lễ hội,3
+VSL,lễ hội hóa trang,3
+VSL,lễ phép,1
+VSL,lễ vật,1
+VSL,lọ hoa,1
+VSL,lọ mực,1
+VSL,lọng,1
+VSL,lốc xoáy,1
+VSL,lối đi,1
+VSL,lồng bàn,1
+VSL,lồng chim,1
+VSL,lồng tiếng,1
+VSL,lỗi chính tả,1
+VSL,lỗi lầm,1
+VSL,lớn hơn 1 (Toán học),1
+VSL,lớn hơn 2 (Toán học),1
+VSL,lớp,1
+VSL,lớp phó,1
+VSL,lớp trưởng,1
+VSL,lời giải,1
+VSL,lời nói,1
+VSL,lợi ích,1
+VSL,lục giác,1
+VSL,lục địa,1
+VSL,lửa,1
+VSL,lựu,1
+VSL,lựu đạn,1
+VSL,m,1
+VSL,ma,1
+VSL,ma cà rồng,1
+VSL,ma quỷ,1
+VSL,ma sát,1
+VSL,ma túy,1
+VSL,may mắn,1
+VSL,mi-li-mét (mm),1
+VSL,minh hoạ,1
+VSL,miêu tả,1
+VSL,miến,1
+VSL,miền Bắc Việt Nam,1
+VSL,miền Nam Việt Nam,1
+VSL,mua bán,1
+VSL,mua vé,1
+VSL,mui xe,1
+VSL,muối,1
+VSL,muối i-ốt,1
+VSL,muốn,3
+VSL,muốn không?,3
+VSL,muộn,1
+VSL,màn,3
+VSL,màu cam,1
+VSL,màu nhiệm,1
+VSL,màu nâu,3
+VSL,màu trắng,3
+VSL,màu xanh da trời,3
+VSL,màu xanh lá cây,3
+VSL,màu đen,1
+VSL,màu đỏ,1
+VSL,má,1
+VSL,má (giống: mẹ),1
+VSL,má hồng,1
+VSL,mách,3
+VSL,mái chèo,1
+VSL,mái hiên,1
+VSL,mái nhà,1
+VSL,mái tóc,1
+VSL,mái vòm,1
+VSL,máy bơm,1
+VSL,máy chiếu,1
+VSL,máy in,3
+VSL,máy khâu,1
+VSL,máy quay,1
+VSL,máy tính (laptop),1
+VSL,máy tính bỏ túi,1
+VSL,máy vi tính,1
+VSL,máy xúc,1
+VSL,máy ảnh,1
+VSL,mâm cơm,1
+VSL,mâm ngũ quả,3
+VSL,mây,1
+VSL,mã vạch,1
+VSL,mèo cào,1
+VSL,mét (m),1
+VSL,mét khối (m3),1
+VSL,mét vuông (m2),1
+VSL,mê say (như: say mê),1
+VSL,mê tín,1
+VSL,mênh mông,1
+VSL,mía,1
+VSL,mít tinh,1
+VSL,móc áo,1
+VSL,móng chân,1
+VSL,móng tay,1
+VSL,móng vuốt,1
+VSL,mô hình,1
+VSL,mô tả,1
+VSL,môi,1
+VSL,môi trường,1
+VSL,môn Giáo dục công dân,1
+VSL,môn Giáo dục thể chất,1
+VSL,môn Khoa học,1
+VSL,môn Kĩ thuật,4
+VSL,môn Lịch sử,3
+VSL,môn Mĩ thuật,1
+VSL,môn Ngoại ngữ,1
+VSL,môn Sinh học,1
+VSL,môn Tin học và Công nghệ,1
+VSL,môn Tiếng Việt,1
+VSL,môn Toán,1
+VSL,môn Tự nhiên và Xã hội,1
+VSL,môn Âm nhạc,1
+VSL,môn Đạo đức,3
+VSL,môn Địa lý,3
+VSL,mõm,1
+VSL,mù chữ,1
+VSL,mùa hè,3
+VSL,mùa thu,1
+VSL,mùa xuân,3
+VSL,mùa đông,1
+VSL,múa,1
+VSL,múa lân,1
+VSL,múa rối,1
+VSL,múa sạp,1
+VSL,măng,1
+VSL,mĩ thuật,1
+VSL,mũ,1
+VSL,mũ lưỡi trai,1
+VSL,mũi tên,1
+VSL,mũm mĩm,1
+VSL,mơ ngủ,1
+VSL,mơ ước,1
+VSL,mưa phùn,1
+VSL,mạch lạc,1
+VSL,mạch máu,1
+VSL,mạng lưới,1
+VSL,mạnh bạo (giống: mạnh dạn),1
+VSL,mạnh mẽ,1
+VSL,mất (chết) (chỉ người),1
+VSL,mất ngủ,1
+VSL,mất trí,1
+VSL,mấy giờ?,1
+VSL,mầm cây,1
+VSL,mầm non,1
+VSL,mẫu số,1
+VSL,mẫu số bé,1
+VSL,mẫu số chung,1
+VSL,mẫu số lớn,1
+VSL,mật khẩu,3
+VSL,mật ong,1
+VSL,mắc áo,1
+VSL,mắm,1
+VSL,mắng,3
+VSL,mặc,1
+VSL,mặc kệ,1
+VSL,mặc quần áo,1
+VSL,mặt,1
+VSL,mặt dài,1
+VSL,mặt nạ,1
+VSL,mặt vuông,1
+VSL,mặt đất,1
+VSL,mềm mại,1
+VSL,mệt không?,1
+VSL,mệt mỏi,1
+VSL,mọc ria mép,1
+VSL,mọc râu,1
+VSL,mọc tóc,1
+VSL,mồ côi,1
+VSL,mồ côi cha mẹ,1
+VSL,mồ hôi,1
+VSL,mồ hôi nhễ nhại,1
+VSL,mỗi,1
+VSL,mỗi ngày,3
+VSL,mộc nhĩ,1
+VSL,một cặp,1
+VSL,một là,1
+VSL,một mình,1
+VSL,một tiếng,3
+VSL,một tiết học,1
+VSL,một ít/ một chút,1
+VSL,một đôi,1
+VSL,mớ rau,1
+VSL,mới,3
+VSL,mời,1
+VSL,mở,1
+VSL,mở cửa,1
+VSL,mở màn,1
+VSL,mở rộng,1
+VSL,mở đầu,1
+VSL,mục lục,1
+VSL,mục tiêu,1
+VSL,mục đích,1
+VSL,mứt,1
+VSL,mỳ tôm,3
+VSL,mỳ vằn thắn,1
+VSL,mỳ ý,3
+VSL,n,1
+VSL,nghe,1
+VSL,nghi ngờ,3
+VSL,nghiêm khắc,3
+VSL,nghiêm túc,1
+VSL,nghiên cứu,1
+VSL,nghiến răng,1
+VSL,nghé,3
+VSL,nghênh nghênh (đầu),1
+VSL,nghĩ,1
+VSL,nghĩa bóng,1
+VSL,nghĩa trang,1
+VSL,nghĩa đen,1
+VSL,nghẹn ngào,1
+VSL,nghệ sĩ,1
+VSL,nghệ thuật,3
+VSL,nghỉ hè,3
+VSL,nghỉ hưu,1
+VSL,nghỉ học,3
+VSL,nghỉ mát,1
+VSL,nghỉ ngơi,1
+VSL,nghị lực,1
+VSL,ngoan ngoãn,1
+VSL,ngon giấc,1
+VSL,ngon miệng,1
+VSL,ngoại hình,1
+VSL,ngoắc tay,1
+VSL,ngoằn ngoèo,1
+VSL,ngoặc kép,1
+VSL,ngoặc đơn,1
+VSL,nguy hiểm,3
+VSL,nguyên nhân,1
+VSL,nguyện vọng,1
+VSL,nguệch ngoạc,1
+VSL,nguồn gốc,1
+VSL,nguội,1
+VSL,ngà voi,1
+VSL,ngành nghề,1
+VSL,ngày Giải phóng miền Nam 30/4,3
+VSL,ngày Ngôn ngữ kí hiệu Quốc tế 23/9,3
+VSL,ngày Người khuyết tật Thế giới 3/12,3
+VSL,ngày Người khuyết tật Việt Nam 18/4,3
+VSL,ngày Nhà giáo Việt nam,2
+VSL,ngày Phụ nữ Việt Nam 20/10,3
+VSL,ngày Quốc tế Lao động,3
+VSL,ngày Quốc tế phụ nữ 8/3,3
+VSL,ngày của Cha,3
+VSL,ngày của Mẹ,3
+VSL,ngày gia đình Việt Nam 28/6,3
+VSL,ngày giải phóng thủ đô 10/10,3
+VSL,ngày giỗ tổ Hùng Vương (âm lịch 10/3),3
+VSL,ngày khai trường,1
+VSL,ngày nay,3
+VSL,ngày sinh,3
+VSL,ngày thành lập quân đội nhân dân Việt Nam,3
+VSL,ngày tháng,3
+VSL,ngày thương bình liệt sĩ 27/7,3
+VSL,ngày thầy thuốc Việt Nam,3
+VSL,ngày xưa,1
+VSL,ngày đêm,1
+VSL,ngán,1
+VSL,ngâm hạt,1
+VSL,ngân hàng,1
+VSL,ngây thơ,1
+VSL,ngã,1
+VSL,ngã ba,1
+VSL,ngói,1
+VSL,ngón chân,1
+VSL,ngón tay,1
+VSL,ngô,2
+VSL,ngôn ngữ,1
+VSL,ngôn ngữ kí hiệu,1
+VSL,ngõ,1
+VSL,ngăn chặn,1
+VSL,ngăn cản,1
+VSL,ngũ quả,3
+VSL,ngước nhìn,1
+VSL,người bán hàng,1
+VSL,người gửi,1
+VSL,người lái xe (ô tô),3
+VSL,người lạ,1
+VSL,người máy,1
+VSL,người nhận,1
+VSL,người nước ngoài,1
+VSL,người quen,3
+VSL,người xưa,3
+VSL,người xấu,3
+VSL,người yêu,3
+VSL,ngưỡng mộ,1
+VSL,ngược lại,1
+VSL,ngược đãi,1
+VSL,ngạc nhiên,1
+VSL,ngẩng đầu,1
+VSL,ngập lụt,1
+VSL,ngập ngừng,1
+VSL,ngắn,1
+VSL,ngắn nhất,1
+VSL,ngắt hoa,2
+VSL,ngọn cây,3
+VSL,ngồi,3
+VSL,ngộ nghĩnh,1
+VSL,ngộ độc,1
+VSL,ngừng lại,1
+VSL,ngữ pháp,3
+VSL,ngữ điệu,1
+VSL,nhanh nhẹn,1
+VSL,nhi đồng,1
+VSL,nhiều hơn,1
+VSL,nhiều vô cùng,1
+VSL,nhiệt kế,3
+VSL,nhiệt độ,1
+VSL,nhu cầu,1
+VSL,nhà bác học,1
+VSL,nhà cửa,1
+VSL,nhà kho,1
+VSL,nhà nước,3
+VSL,nhà rông,1
+VSL,nhà sàn,1
+VSL,nhà thơ,1
+VSL,nhà thờ,1
+VSL,nhà thờ Đức Bà,1
+VSL,nhà toán học,1
+VSL,nhà trường,3
+VSL,nhà tù,1
+VSL,nhà tầng,1
+VSL,nhà văn hóa,3
+VSL,nhà vệ sinh,1
+VSL,nhào lộn,1
+VSL,nhát gan,1
+VSL,nháy mắt,1
+VSL,nhân (Toán học),3
+VSL,nhân chứng,1
+VSL,nhân cách hoá,1
+VSL,nhân dân,1
+VSL,nhân hậu,3
+VSL,nhân viên,1
+VSL,nhân vật,1
+VSL,nhãn vở,3
+VSL,nhìn,1
+VSL,nhóm,1
+VSL,nhõng nhẽo,1
+VSL,nhút nhát,1
+VSL,nhăn mặt,1
+VSL,như hình với bóng,1
+VSL,nhưng,3
+VSL,nhường nhịn,1
+VSL,nhược điểm,1
+VSL,nhạy cảm,1
+VSL,nhảy bao bố,1
+VSL,nhảy cao,1
+VSL,nhảy dù,1
+VSL,nhảy lò cò,1
+VSL,nhảy múa,1
+VSL,nhấn mạnh,1
+VSL,nhấp nháy,1
+VSL,nhầm,3
+VSL,nhận,1
+VSL,nhận hàng,1
+VSL,nhận thức,1
+VSL,nhận xét,1
+VSL,nhập khẩu,1
+VSL,nhập ngũ,3
+VSL,nhập trường,3
+VSL,nhắc nhở,1
+VSL,nhắm mắt,1
+VSL,nhặt rau,1
+VSL,nhẹ hơn,1
+VSL,nhẹ nhàng,1
+VSL,nhọn,1
+VSL,nhọn hoắt,1
+VSL,nhỏ hơn,1
+VSL,nhỏ tuổi,1
+VSL,nhỏ/ nhỏ bé,1
+VSL,nhổ củ cải,1
+VSL,nhổ lông mày,1
+VSL,nhổ râu,1
+VSL,nhổ răng,1
+VSL,nhổ tóc,1
+VSL,nhộn nhịp (đông người),1
+VSL,nhụy hoa,1
+VSL,niềm vui,1
+VSL,no,3
+VSL,náo nức,1
+VSL,"náo động, náo nhiệt",1
+VSL,nén,1
+VSL,nét mặt,1
+VSL,nên không?,3
+VSL,nóc nhà,1
+VSL,nói chuyện,1
+VSL,nói dối,1
+VSL,nói leo,1
+VSL,nói ngập ngừng,1
+VSL,nón,1
+VSL,nóng tính,1
+VSL,nô lệ,1
+VSL,nông nghiệp,1
+VSL,nông thôn,1
+VSL,núi cao,1
+VSL,núi lửa,1
+VSL,núi thấp,1
+VSL,năm là,1
+VSL,năm ngoái,1
+VSL,năm tới,1
+VSL,năn nỉ,1
+VSL,năng khiếu,1
+VSL,năng lực,1
+VSL,nơ,1
+VSL,nơi chốn,1
+VSL,nước Việt nam,3
+VSL,nước mắm,1
+VSL,nước mắt,1
+VSL,nước tương (xì dầu),1
+VSL,nước tới chân mới nhảy,1
+VSL,"nước ép (cam, cà chua,..)",1
+VSL,nước ép trái cây,3
+VSL,nướng,1
+VSL,nạn nhân,1
+VSL,nạp điện,3
+VSL,nấm,1
+VSL,nấu nướng,1
+VSL,nắn nót,1
+VSL,nắp,1
+VSL,nằm,1
+VSL,nặn,1
+VSL,nặng hơn,1
+VSL,nẻ,1
+VSL,nếm,1
+VSL,nến,1
+VSL,nền nhà,1
+VSL,nỏ,1
+VSL,nối tiếp,1
+VSL,nốt ruồi,1
+VSL,nồi,1
+VSL,nồi cơm điện,1
+VSL,nổ lốp xe,1
+VSL,nổ mìn,1
+VSL,nổ súng,1
+VSL,nổi bật,1
+VSL,nổi da gà,1
+VSL,nổi dậy,1
+VSL,nổi giận,1
+VSL,nổi nóng,1
+VSL,nội dung,3
+VSL,nội quy,1
+VSL,nội tiếp,1
+VSL,nứt nẻ (ruộng),1
+VSL,o,1
+VSL,p,3
+VSL,pha chế,1
+VSL,pha cà phê,1
+VSL,pha lê,1
+VSL,phao,1
+VSL,phi công,1
+VSL,phi ngựa,1
+VSL,phi tiêu,1
+VSL,phim hoạt hình,3
+VSL,phim truyện,3
+VSL,phim tài liệu,1
+VSL,phiên dịch,3
+VSL,phiền hà,1
+VSL,phong bì,1
+VSL,phong cách,1
+VSL,phong kiến,1
+VSL,phong toả,1
+VSL,phong trào,1
+VSL,phong tục,1
+VSL,phun nước,1
+VSL,phà,1
+VSL,phá,3
+VSL,pháo hoa,1
+VSL,pháo sáng,1
+VSL,pháo đài,1
+VSL,phát biểu,1
+VSL,phát hiện,1
+VSL,phát động,1
+VSL,phân biệt,1
+VSL,phân công,1
+VSL,phân loại,1
+VSL,phân số,1
+VSL,phân số thập phân,1
+VSL,phân số tối giản,1
+VSL,phân tích,1
+VSL,phân vân,1
+VSL,phép mầu,1
+VSL,phép tính,1
+VSL,phê bình,1
+VSL,phích nước,1
+VSL,phòng bệnh,1
+VSL,phòng chống,1
+VSL,phòng chức năng,1
+VSL,phòng học tin học,1
+VSL,phòng máy tính,1
+VSL,phòng mĩ thuật,1
+VSL,phòng thí nghiệm,1
+VSL,phòng thư viện,1
+VSL,phòng y tế,1
+VSL,phòng âm nhạc,1
+VSL,phòng đa năng,1
+VSL,phó hiệu trưởng,3
+VSL,phóng viên,1
+VSL,phô tô,1
+VSL,phù hợp,1
+VSL,phơi quần áo,1
+VSL,phương Tây,1
+VSL,phương hướng,1
+VSL,phương pháp,1
+VSL,phương tiện,1
+VSL,phương tiện giao thông,3
+VSL,phương Đông,1
+VSL,phải không?,3
+VSL,phản bội,3
+VSL,phản xạ,1
+VSL,phản động,1
+VSL,phấn (viết bảng),3
+VSL,phấn trang điểm,1
+VSL,phấn đấu,1
+VSL,phấp phới,1
+VSL,phần trăm,1
+VSL,phẫu thuật bụng,1
+VSL,phẫu thuật chân,1
+VSL,phẫu thuật cổ,1
+VSL,phẫu thuật mũi,1
+VSL,phẫu thuật mắt,1
+VSL,phẫu thuật tay,1
+VSL,phật (tượng),1
+VSL,phễu,1
+VSL,phố,1
+VSL,phố cổ,1
+VSL,phố cổ Hội an,1
+VSL,phổ biến,1
+VSL,phổi,1
+VSL,phở,3
+VSL,phở cuốn,3
+VSL,phụ huynh,1
+VSL,phụ thuộc,1
+VSL,phục hồi,1
+VSL,phục vụ,1
+VSL,phủ nhận,1
+VSL,phức tạp,1
+VSL,pi-a-nô (dương cầm),1
+VSL,q,1
+VSL,quan (chức vụ),1
+VSL,quan hệ,1
+VSL,quan hệ từ,1
+VSL,quan sát,1
+VSL,quan trọng,1
+VSL,quan tâm,1
+VSL,quan điểm,1
+VSL,quang hợp,1
+VSL,quanh năm,1
+VSL,quay cóp,1
+VSL,quay phim,1
+VSL,quy nạp,1
+VSL,quy tắc,1
+VSL,quy định,1
+VSL,quy đồng mẫu số,1
+VSL,quyên góp,1
+VSL,quyến luyến,1
+VSL,quyết tâm,3
+VSL,quyết định,3
+VSL,quyền lợi,3
+VSL,quyển vở,3
+VSL,quà,1
+VSL,quàng khăn,1
+VSL,quá cảnh,1
+VSL,quát mắng,1
+VSL,quân đội,2
+VSL,quét dọn,1
+VSL,quét nhà,1
+VSL,quê,3
+VSL,quên,1
+VSL,quý giá,1
+VSL,quý hiếm,1
+VSL,quạt cây,1
+VSL,quạt treo tường,1
+VSL,quạt trần,1
+VSL,quả,1
+VSL,quả bưởi,3
+VSL,quả bầu,1
+VSL,quả bầu hồ lô,1
+VSL,quả cam,1
+VSL,quả chanh,1
+VSL,quả chuối,1
+VSL,quả chôm chôm,1
+VSL,quả dưa hấu,3
+VSL,quả dừa,3
+VSL,quả dừa xiêm,3
+VSL,quả gấc,1
+VSL,quả hồng,1
+VSL,quả hồng xiêm,1
+VSL,quả khế,3
+VSL,quả lê,1
+VSL,quả mít,1
+VSL,quả mướp,1
+VSL,quả na,1
+VSL,quả nho,1
+VSL,quả nhãn,3
+VSL,quả quýt,1
+VSL,quả quất,1
+VSL,quả roi,3
+VSL,quả su su,1
+VSL,quả sầu riêng,1
+VSL,quả thanh long,1
+VSL,quả táo,2
+VSL,quả vải,1
+VSL,quả xoài,1
+VSL,quả điều,2
+VSL,quả đu đủ,3
+VSL,quả đất,1
+VSL,quả địa cầu,1
+VSL,quả ổi,1
+VSL,quả ớt,1
+VSL,quảng cáo,1
+VSL,quần bò,3
+VSL,quần yếm,1
+VSL,quần âu,1
+VSL,quần đùi,1
+VSL,quận,3
+VSL,quốc ca,1
+VSL,quốc gia,1
+VSL,quốc hội,1
+VSL,quốc khánh,1
+VSL,quốc tế,1
+VSL,quỳ,1
+VSL,r,1
+VSL,ra lệnh,1
+VSL,ra ngoài,3
+VSL,rau,1
+VSL,rau bắp cải,1
+VSL,rau cải,1
+VSL,rau cải thảo,1
+VSL,rau diếp cá,1
+VSL,rau dền,1
+VSL,rau mùng tơi,1
+VSL,rau ngò/rau mùi,1
+VSL,rau ngót,1
+VSL,reo hò,1
+VSL,ria mép,1
+VSL,riêng biệt,1
+VSL,riêng tư,1
+VSL,rong biển,1
+VSL,rong chơi,3
+VSL,ru ngủ,1
+VSL,ruộng bậc thang,1
+VSL,ruột già,1
+VSL,ruột non,1
+VSL,rào chắn,1
+VSL,rách,1
+VSL,râu,1
+VSL,rèn luyện,1
+VSL,rèn sắt,1
+VSL,rình mò,1
+VSL,rìu,1
+VSL,róc rách,1
+VSL,rón rén,1
+VSL,rõ ràng,2
+VSL,rút gọn,1
+VSL,rút gọn phân số,1
+VSL,răng,1
+VSL,răng cưa,1
+VSL,răng hô,1
+VSL,răng khểnh,1
+VSL,rơi,1
+VSL,rơm,1
+VSL,rơm rớm,1
+VSL,rước đèn,1
+VSL,rưỡi,3
+VSL,rượu,3
+VSL,rạch,1
+VSL,rạp chiếu phim,1
+VSL,rắc rối,1
+VSL,rằm trung thu,3
+VSL,rẽ phải,1
+VSL,rế,1
+VSL,rễ chùm,1
+VSL,rễ cây,1
+VSL,rễ cọc,1
+VSL,rổ,1
+VSL,rộng lớn,1
+VSL,rộng rãi,1
+VSL,rụng tóc (đt),1
+VSL,rừng núi,1
+VSL,rừng rậm,1
+VSL,rừng thưa,1
+VSL,rửa bát,1
+VSL,rửa chân,2
+VSL,rửa mặt,2
+VSL,rửa tay,1
+VSL,rực rỡ,1
+VSL,s,1
+VSL,sa mạc,1
+VSL,sa thải,1
+VSL,san hô,1
+VSL,san sẻ,1
+VSL,sao,2
+VSL,sao chép,1
+VSL,sau,1
+VSL,say sưa,1
+VSL,sinh hoạt,1
+VSL,sinh sản,3
+VSL,sinh sống,1
+VSL,sinh tố,1
+VSL,"sinh tố (bơ, dâu,..)",1
+VSL,sinh vật,1
+VSL,sinh đôi,3
+VSL,sinh đẻ,3
+VSL,sinh động,1
+VSL,siêng năng,1
+VSL,siêu thị,1
+VSL,siêu tốc,1
+VSL,siêu âm,1
+VSL,soi,1
+VSL,son môi,1
+VSL,song song,1
+VSL,sum họp,1
+VSL,suy nghĩ,2
+VSL,suy ra (Toán học),1
+VSL,suýt,3
+VSL,suối,1
+VSL,suỵt,1
+VSL,sách,1
+VSL,sách giáo khoa,1
+VSL,sách toán,1
+VSL,sáng,1
+VSL,sáng chói,1
+VSL,sáng kiến,1
+VSL,sáng tạo,1
+VSL,sáo,1
+VSL,sân chơi,2
+VSL,sân khấu,1
+VSL,sân nhà,1
+VSL,sân thượng,1
+VSL,sân trường,3
+VSL,sân vận động,1
+VSL,sâu,1
+VSL,sâu bọ,1
+VSL,sâu răng,1
+VSL,sâu thẳm,1
+VSL,sóng biển,1
+VSL,sóng thần,1
+VSL,sông Hồng,1
+VSL,súc miệng,1
+VSL,súp,1
+VSL,súp lơ,1
+VSL,săn bắn,1
+VSL,sĩ diện,2
+VSL,sĩ quan,1
+VSL,sơ mi,3
+VSL,sơ đồ,2
+VSL,sơn,1
+VSL,sương gió,1
+VSL,sườn,1
+VSL,sản xuất,1
+VSL,sấm chớp,1
+VSL,sấm sét,1
+VSL,sắp xếp,3
+VSL,sắt,3
+VSL,số La Mã (Toán học),1
+VSL,số bé,1
+VSL,số chín,1
+VSL,số chẵn,1
+VSL,số liền sau,1
+VSL,số liền trước,1
+VSL,số lẻ,1
+VSL,số lớn,1
+VSL,số thập phân,1
+VSL,số đo,1
+VSL,sống sót,3
+VSL,sốt,1
+VSL,sổ tay,1
+VSL,sổ điểm danh,1
+VSL,sổ đầu bài,1
+VSL,sờ,1
+VSL,sợ không?,1
+VSL,sợi,1
+VSL,sợi chỉ,1
+VSL,sợi dây,1
+VSL,sợi len,1
+VSL,sụp đổ,1
+VSL,sức khỏe,1
+VSL,sừng,1
+VSL,sừng bò,1
+VSL,sừng trâu,1
+VSL,sửa chữa,1
+VSL,sữa,3
+VSL,sữa bò,3
+VSL,sữa bột,3
+VSL,sữa dê,3
+VSL,sữa hộp,3
+VSL,sữa rửa mặt,1
+VSL,sữa đặc,1
+VSL,sự thật,1
+VSL,t,3
+VSL,tai,1
+VSL,tai nạn,1
+VSL,tai nạn giao thông,1
+VSL,tam giác,1
+VSL,taxi,1
+VSL,tay,1
+VSL,tay chân sạch sẽ,3
+VSL,tay phải,1
+VSL,tay trái,1
+VSL,tha,1
+VSL,tha mồi,1
+VSL,tha thứ,3
+VSL,tham dự,3
+VSL,tham khảo,1
+VSL,tham lam,1
+VSL,tham quan,3
+VSL,tham ăn,3
+VSL,thanh niên,1
+VSL,thao thức,1
+VSL,theo dõi,1
+VSL,theo đuổi,1
+VSL,thi cử,3
+VSL,thiu,1
+VSL,thiên nhiên,1
+VSL,thiên thần,1
+VSL,thiên đình,1
+VSL,thiếp mời,1
+VSL,thiếp đi,1
+VSL,thiết kế,3
+VSL,thiếu nhi,1
+VSL,thiếu niên,1
+VSL,thiếu thốn,3
+VSL,thiệp sinh nhật,3
+VSL,thiệt thòi,1
+VSL,thoát hiểm,1
+VSL,thoăn thoắt,1
+VSL,thu mua,1
+VSL,thu nhỏ,1
+VSL,thu thập,1
+VSL,thung lũng,1
+VSL,thuyết phục,1
+VSL,thuyết trình,1
+VSL,thuyền chài,1
+VSL,thuyền rồng,1
+VSL,thuê,3
+VSL,thuận lợi,1
+VSL,thuốc bắc,1
+VSL,thuốc bổ,1
+VSL,thuốc lá,1
+VSL,thuộc lòng,1
+VSL,thuộc địa,1
+VSL,thuỷ thủ,1
+VSL,thuỷ điện,3
+VSL,thành công,1
+VSL,thành lập,4
+VSL,thành thạo,1
+VSL,thành thị,1
+VSL,thành viên,1
+VSL,thác,1
+VSL,thái độ,3
+VSL,thám tử,1
+VSL,thán phục,1
+VSL,tháng,3
+VSL,thánh địa Mỹ Sơn,1
+VSL,tháo gỡ,1
+VSL,tháp,1
+VSL,tháp Rùa,1
+VSL,thâm quầng mắt,1
+VSL,thân cây,3
+VSL,thân hình,1
+VSL,thân thiết,1
+VSL,thân thiện,1
+VSL,thèm,1
+VSL,thèm rỏ dãi,1
+VSL,thét,1
+VSL,thêm,1
+VSL,thêu,2
+VSL,thì thầm,1
+VSL,thìa,3
+VSL,thí nghiệm,1
+VSL,thích nghi,1
+VSL,thích thú,3
+VSL,thím,1
+VSL,thóc (gạo),1
+VSL,thói quen,3
+VSL,thông báo,1
+VSL,thông cảm,1
+VSL,thông minh,3
+VSL,thông qua,1
+VSL,thông thường,1
+VSL,thông tin,3
+VSL,thù lao,1
+VSL,thùng,1
+VSL,thú dữ,3
+VSL,thú y,3
+VSL,thúc đẩy,1
+VSL,thăm hỏi,3
+VSL,thăng bằng,1
+VSL,thơm,3
+VSL,thư giãn,1
+VSL,thương (số),1
+VSL,thương mại,1
+VSL,thương yêu,6
+VSL,thường xuyên,4
+VSL,thả diều,1
+VSL,thả mồi,1
+VSL,thản nhiên,1
+VSL,thấp hơn,1
+VSL,thấp nhất,1
+VSL,thần chết,1
+VSL,thần kinh,1
+VSL,thần kì,1
+VSL,thầy cô,3
+VSL,thầy cúng,1
+VSL,thầy giáo,3
+VSL,thận,1
+VSL,thập thò,1
+VSL,thật thà,1
+VSL,thắc mắc,1
+VSL,thắng lợi,1
+VSL,thắp đèn,1
+VSL,thẳng hàng (Toán học),1
+VSL,thẳng tắp,1
+VSL,thẻ,1
+VSL,thế hệ,1
+VSL,thế nào?,3
+VSL,thề,1
+VSL,thềm,1
+VSL,thị giác,1
+VSL,thị lực,1
+VSL,thịnh vượng,1
+VSL,thối,1
+VSL,thống nhất,1
+VSL,thống nhất đất nước,1
+VSL,thổ dân,1
+VSL,thổi,1
+VSL,thổi bóng,1
+VSL,thổi kèn,1
+VSL,thờ cúng,1
+VSL,thời gian biểu,1
+VSL,thở,1
+VSL,thở dài,1
+VSL,thợ kim hoàn,1
+VSL,thợ rèn,1
+VSL,thợ thêu,1
+VSL,thụ phấn (hoa),1
+VSL,thủ công,3
+VSL,thủ tướng,3
+VSL,thủng,1
+VSL,thủy chung,1
+VSL,thứ tự,1
+VSL,thừa,3
+VSL,thực hiện,1
+VSL,thực hành,1
+VSL,thực phẩm,1
+VSL,thực sự,1
+VSL,thực tế,1
+VSL,thực vật,1
+VSL,ti hí mắt,1
+VSL,tia chớp,1
+VSL,tia nắng,1
+VSL,tia số,1
+VSL,tim,1
+VSL,tin cậy,1
+VSL,tin học,1
+VSL,tin nhắn,1
+VSL,tin tức,1
+VSL,tinh mắt,1
+VSL,tinh trùng,1
+VSL,tiêm,1
+VSL,tiêu cực,1
+VSL,tiêu diệt,1
+VSL,tiêu hoá,1
+VSL,tiếc,3
+VSL,tiến bộ,1
+VSL,tiến sĩ,1
+VSL,tiếng Anh,3
+VSL,tiếng nói,1
+VSL,tiếp nhận,1
+VSL,tiếp theo,1
+VSL,tiếp thu,1
+VSL,tiếp tân,1
+VSL,tiếp tục,3
+VSL,tiết kiệm,3
+VSL,tiểu học,1
+VSL,tiệc,1
+VSL,tiện nghi,1
+VSL,to lớn,1
+VSL,toa lét,1
+VSL,toa xe,3
+VSL,toà án,3
+VSL,toàn cầu,1
+VSL,trang phục,1
+VSL,trang trí,1
+VSL,trang điểm,1
+VSL,tranh luận,1
+VSL,trao tặng,1
+VSL,tre,3
+VSL,tri kỉ,1
+VSL,triều cường,1
+VSL,triều đình,1
+VSL,triệu phú,1
+VSL,trong khoảng,1
+VSL,trong ngoài,3
+VSL,trong suốt,1
+VSL,trong sáng,1
+VSL,trung bình,1
+VSL,trung thành,1
+VSL,trung tâm,1
+VSL,trung điểm,1
+VSL,trung ương,1
+VSL,truyền dịch,1
+VSL,truyền thông,1
+VSL,truyền thống,1
+VSL,trà,1
+VSL,trà nóng,1
+VSL,trà sữa,1
+VSL,trà đá,1
+VSL,tràn ngập (nước),1
+VSL,trách mắng,1
+VSL,trách nhiệm,1
+VSL,trái nghĩa,2
+VSL,tránh thai,1
+VSL,trêu,1
+VSL,trêu tức,1
+VSL,trình bày,1
+VSL,trình độ,1
+VSL,trí khôn,1
+VSL,trí thức,1
+VSL,trò chơi,1
+VSL,tròn,1
+VSL,tròn trịa (mặt),1
+VSL,trói tay,1
+VSL,trông chờ,3
+VSL,trông coi,1
+VSL,trông nhà,1
+VSL,trông nom,3
+VSL,trùm chăn,1
+VSL,trú mưa,1
+VSL,trúng thưởng,1
+VSL,trúng tuyển,3
+VSL,trăng,3
+VSL,trưng bày,1
+VSL,trước,3
+VSL,trường PTCS (cấp 2),3
+VSL,trường THPT ( cấp 3),3
+VSL,trường hợp,1
+VSL,trường mầm non,3
+VSL,trường tiểu học,2
+VSL,trưởng nhóm,1
+VSL,trưởng thành,1
+VSL,trại giam,1
+VSL,trạm xe buýt,1
+VSL,trạm y tế,1
+VSL,trả (đt),1
+VSL,trả lời,1
+VSL,trả thù,1
+VSL,trầm trồ,1
+VSL,trần nhà,1
+VSL,trắng muốt,3
+VSL,trắng tay,1
+VSL,trẻ con/con nít,3
+VSL,trọc đầu,3
+VSL,trọng nam khinh nữ,1
+VSL,trọng tài,1
+VSL,trốn chạy,3
+VSL,trốn tìm,1
+VSL,trống,1
+VSL,trống (không có gì),1
+VSL,trộm cắp,1
+VSL,trộn (đt),1
+VSL,trở thành,1
+VSL,trục hoành,1
+VSL,trục tung,1
+VSL,trục xuất,1
+VSL,trụi lá,3
+VSL,trứng,3
+VSL,trực nhật,1
+VSL,trực tiếp,1
+VSL,tung tăng,1
+VSL,tuyên bố,1
+VSL,tuyên ngôn,1
+VSL,tuyên truyền,1
+VSL,tuyệt vọng,1
+VSL,tuân lệnh,1
+VSL,tuân thủ,1
+VSL,tuần,3
+VSL,tuần lễ người Điếc thế giới,3
+VSL,tuần này,3
+VSL,tuần sau,3
+VSL,tuần trăng mật,1
+VSL,tuần trước,3
+VSL,tuốt lúa,1
+VSL,tuổi thơ,1
+VSL,tuổi thơ ấu,1
+VSL,tuỷ sống,1
+VSL,tài giỏi,1
+VSL,tài năng,1
+VSL,tài trợ,1
+VSL,tàu hoả,3
+VSL,tàu ngầm,1
+VSL,tàu thuyền,1
+VSL,tàu thủy,1
+VSL,tác dụng,1
+VSL,tác giả,1
+VSL,tác phẩm,1
+VSL,tác động,2
+VSL,tách,1
+VSL,tách lớp,1
+VSL,tái phát,1
+VSL,tái phạm,3
+VSL,tán thành,1
+VSL,tát,1
+VSL,tâm thần,1
+VSL,tên là gì?,2
+VSL,tên riêng,1
+VSL,tìm hiểu,3
+VSL,tình cảm,1
+VSL,tình cờ,1
+VSL,tình huống,1
+VSL,tình yêu,1
+VSL,tí hon,1
+VSL,tích (số),1
+VSL,tích cực,1
+VSL,tím tái,1
+VSL,tính,1
+VSL,tính chất,1
+VSL,tính chất bằng nhau,1
+VSL,tính chất cơ bản của phân số,1
+VSL,tính chất giao hoán,1
+VSL,tính chất kết hợp,1
+VSL,tính cách,1
+VSL,tính nhẩm,1
+VSL,tính toán,1
+VSL,tính từ,1
+VSL,tò mò,2
+VSL,tòa soạn,1
+VSL,tóc dài,1
+VSL,tóc dựng đứng,1
+VSL,tóc ngắn,3
+VSL,tóc xoăn,1
+VSL,tóm cổ,1
+VSL,tóm lược,1
+VSL,tóm tắt,1
+VSL,tô màu,3
+VSL,tôi yêu bạn,3
+VSL,tôi yêu bạn ấy,1
+VSL,tôm hùm,1
+VSL,tôn thờ,1
+VSL,tôn trọng,2
+VSL,tù giam,1
+VSL,túm tóc,1
+VSL,tăm,1
+VSL,tĩnh lặng,1
+VSL,tươi cười,1
+VSL,tương lai,1
+VSL,tương ớt,3
+VSL,tương ứng,1
+VSL,tưới cây,3
+VSL,tưởng,1
+VSL,tưởng tượng,4
+VSL,tượng,1
+VSL,tượng đài,1
+VSL,tạm biệt,1
+VSL,tạo dáng,1
+VSL,tạo thành,1
+VSL,tải về,1
+VSL,tấm lòng,1
+VSL,tấm vải,3
+VSL,tấn công,1
+VSL,tẩy chay,1
+VSL,tận số,1
+VSL,tập hợp (Toán học),1
+VSL,tập hợp rỗng,1
+VSL,tập làm văn,1
+VSL,tập thể,1
+VSL,tập thể dục,2
+VSL,tập trung,1
+VSL,tập viết,1
+VSL,tặc lưỡi,1
+VSL,tỉ lệ,1
+VSL,tỉ mỉ,1
+VSL,tỉ số,1
+VSL,tỉ số phần trăm,1
+VSL,tỉnh,1
+VSL,tỉnh táo,1
+VSL,tỏa hương,1
+VSL,tống tiền,1
+VSL,tồn tại,1
+VSL,tổ chim,1
+VSL,tổ tiên,1
+VSL,tổ trưởng,1
+VSL,tổng (số),1
+VSL,tổng hợp,1
+VSL,tổng kết/bế giảng,3
+VSL,tổng thống,3
+VSL,tờ báo,3
+VSL,tờ giấy,3
+VSL,tờ tiền,1
+VSL,tụ tập,1
+VSL,tủi thân,1
+VSL,từ bỏ,1
+VSL,từ chối,3
+VSL,từ ngữ,1
+VSL,từ phải sang trái,1
+VSL,từ trái nghĩa,3
+VSL,từ trái sang phải,1
+VSL,từ đồng âm,1
+VSL,tự (tự làm),1
+VSL,tự do,3
+VSL,tự giác,1
+VSL,tự hào,1
+VSL,tự lập,3
+VSL,tự tin,3
+VSL,tự trọng,1
+VSL,tự vệ,3
+VSL,u,1
+VSL,u ám ( trời u ám),1
+VSL,ung dung,1
+VSL,ung thư,3
+VSL,uốn,1
+VSL,uốn cong,1
+VSL,uốn dẻo,1
+VSL,uốn tóc,1
+VSL,v,1
+VSL,va chạm,1
+VSL,va li,1
+VSL,vai,1
+VSL,vai trò,1
+VSL,vi khuẩn,1
+VSL,viết lia lịa,1
+VSL,việc làm,1
+VSL,viện bảo tàng,1
+VSL,viện nghiên cứu,1
+VSL,vua Hùng,1
+VSL,vui chơi,3
+VSL,vui mừng,3
+VSL,vui sướng,3
+VSL,vui tính,1
+VSL,vun đắp,1
+VSL,vuông góc,1
+VSL,vuốt tóc,1
+VSL,vàng (kim loại),1
+VSL,vàng bạc,1
+VSL,vào,1
+VSL,vào lớp,1
+VSL,vào mùa,2
+VSL,vá quần áo,1
+VSL,vá xe,1
+VSL,vác,1
+VSL,vái lạy,1
+VSL,vái tứ phương,1
+VSL,vây bắt,1
+VSL,vé,1
+VSL,vênh váo,1
+VSL,vì sao?,3
+VSL,ví dụ,3
+VSL,vòi nước,1
+VSL,vòi voi,1
+VSL,vòm lá,1
+VSL,vòng cung,1
+VSL,vòng nguyệt quế,1
+VSL,vòng quanh Trái Đất,1
+VSL,vòng tròn,1
+VSL,vòng đeo tay,1
+VSL,vòng đời,1
+VSL,vô duyên,3
+VSL,vô lo vô nghĩ,1
+VSL,vô lí,1
+VSL,vô tâm,1
+VSL,vô tình,1
+VSL,vô tư,1
+VSL,vô ý,1
+VSL,vô ý thức,1
+VSL,võ thuật,1
+VSL,võng (cái võng),1
+VSL,vùng vẫy (dành cho người),1
+VSL,văn,1
+VSL,văn bản,1
+VSL,văn nghệ,3
+VSL,vĩ cầm,1
+VSL,vĩ đại,1
+VSL,vũ công,1
+VSL,vũ trụ,1
+VSL,vườn thú,1
+VSL,vượt trội,1
+VSL,vạch trần,1
+VSL,vạch xuất phát,1
+VSL,vạm vỡ,1
+VSL,vạt áo,1
+VSL,vải lụa,3
+VSL,vấn đề,3
+VSL,vầng trăng,2
+VSL,vẫn,3
+VSL,vẫy tay,1
+VSL,vẫy vùng (cá),1
+VSL,vận chuyển,1
+VSL,vận tốc,1
+VSL,vận động,1
+VSL,vật,1
+VSL,vật nuôi,3
+VSL,vắn tắt,1
+VSL,vắng,3
+VSL,vắng lặng,1
+VSL,vắt cam,1
+VSL,vắt chanh,1
+VSL,vết thương,1
+VSL,về (Sài Gòn),1
+VSL,về 2 (Miền Bắc),2
+VSL,về 3 (đi về),1
+VSL,về 4 (từ nơi khác về),1
+VSL,về 5 (về nhà),1
+VSL,vệ sinh cá nhân,1
+VSL,vị ngữ,1
+VSL,vị trí,1
+VSL,vịnh,1
+VSL,vịnh Hạ Long,1
+VSL,vịt quay,1
+VSL,vỏ,1
+VSL,vồ,1
+VSL,vỗ cánh,1
+VSL,vỗ tay,1
+VSL,vỗ về,1
+VSL,vội vã,1
+VSL,vớt,1
+VSL,vở chèo,1
+VSL,vỡ,1
+VSL,vỡ lòng,1
+VSL,vợt cầu lông,1
+VSL,vững chắc,1
+VSL,vực sâu,1
+VSL,w,1
+VSL,x,3
+VSL,xa cách,1
+VSL,xa vô tận,1
+VSL,xa xôi,1
+VSL,xanh xao,3
+VSL,xe ben,1
+VSL,xe container,1
+VSL,xe cảnh sát,3
+VSL,xe cẩu,1
+VSL,xe cứu hỏa,2
+VSL,xe cứu thương,1
+VSL,xe khách,3
+VSL,xe lam,1
+VSL,xe lu,1
+VSL,xe máy,1
+VSL,xe tải,1
+VSL,xe đạp,1
+VSL,xem,3
+VSL,xem xét,1
+VSL,xem đã,1
+VSL,xen,1
+VSL,xin lỗi,1
+VSL,xinh,1
+VSL,xinh xắn,1
+VSL,xoa đầu,1
+VSL,xoá bỏ,1
+VSL,xoáy,1
+VSL,xu (tiền),1
+VSL,xui xẻo,1
+VSL,xung phong,1
+VSL,xung quanh nhà,1
+VSL,xung đột,1
+VSL,xuyên Việt,1
+VSL,xuất hiện,3
+VSL,xuất khẩu,1
+VSL,xuống,1
+VSL,xà phòng,3
+VSL,xà phòng giặt,3
+VSL,xào,1
+VSL,xác chết,1
+VSL,xác định,1
+VSL,xách nặng,1
+VSL,xách túi,1
+VSL,xâm hại tình dục,1
+VSL,xâm lược,1
+VSL,xây,3
+VSL,xây nhà,1
+VSL,xã,1
+VSL,xã hội,3
+VSL,xé rách,1
+VSL,xì hơi (đánh rắm),2
+VSL,xích đạo,1
+VSL,xóa bảng,1
+VSL,xóm làng,1
+VSL,xô,1
+VSL,xôi,1
+VSL,xôi gà,1
+VSL,xôi gấc,1
+VSL,xông hơi,1
+VSL,xúc xắc,1
+VSL,xăm,1
+VSL,xăng,1
+VSL,xăng-ti-mét (cm),1
+VSL,xăng-ti-mét-khối (cm3),1
+VSL,xăng-ti-mét-vuông (cm2),1
+VSL,xưa,3
+VSL,xương rồng,1
+VSL,xả rác,1
+VSL,xảy ra,1
+VSL,xẻng,1
+VSL,xếp,1
+VSL,xếp hàng,1
+VSL,xếp hàng dọc,1
+VSL,xếp hàng ngang,1
+VSL,xếp hàng ưu tiên,1
+VSL,xếp hình,1
+VSL,xịt côn trùng,1
+VSL,xứ Nghệ,1
+VSL,xử lý,1
+VSL,y,1
+VSL,y tế,1
+VSL,yên bình,1
+VSL,yên lòng,1
+VSL,yên ngựa,1
+VSL,yên tâm,1
+VSL,yêu cầu,3
+VSL,yêu mến (yêu quí),3
+VSL,yêu nước Việt Nam,1
+VSL,yếm,1
+VSL,yếu,3
+VSL,yếu tố,1
+VSL,z,1
+VSL,Âu Cơ,1
+VSL,Ê Đê,1
+VSL,Ê-ti-ô-pi-a (nước Ê-ti-ô-pi-a),1
+VSL,Ô-lim-píc,1
+VSL,ác,1
+VSL,ác cảm,1
+VSL,ác mộng,1
+VSL,ác độc,1
+VSL,áo,1
+VSL,áo cánh,1
+VSL,áo kẻ sọc,1
+VSL,áo len,1
+VSL,áo phao,1
+VSL,áo phông,3
+VSL,áo đồng phục,3
+VSL,áo ấm,1
+VSL,áp phích,1
+VSL,â,3
+VSL,âm thanh,1
+VSL,ân hận,3
+VSL,ê,3
+VSL,ích lợi,1
+VSL,ít,1
+VSL,ít hơn,1
+VSL,ít nhất,1
+VSL,óc,1
+VSL,ô,3
+VSL,ô nhiễm,1
+VSL,ô tô,1
+VSL,ô ăn quan,1
+VSL,ôm,1
+VSL,ôn luyện,1
+VSL,ôn tập,1
+VSL,ông bà,3
+VSL,ông già,1
+VSL,ông ngoại,3
+VSL,ông nội,3
+VSL,úp,1
+VSL,ý chí,1
+VSL,ý nghĩa,3
+VSL,ý thức,1
+VSL,ý tưởng,1
+VSL,ă,3
+VSL,ăn bám,1
+VSL,ăn cóc,1
+VSL,ăn diện,1
+VSL,ăn hối lộ,1
+VSL,ăn uống,1
+VSL,ăn vú sữa,1
+VSL,ăn vú sữa (bằng thìa),1
+VSL,ăn vặt,1
+VSL,ăn vụng,1
+VSL,ăn vừa,1
+VSL,ăn xin,1
+VSL,ăn ít,1
+VSL,ăn đủ,1
+VSL,Điện Biên Phủ,1
+VSL,Đu Bai (nước Đu Bai),1
+VSL,Đông Dương,1
+VSL,Đông Nam,1
+VSL,Đông Nam Á,1
+VSL,Đông Timor (nước Đông Timor),1
+VSL,Đảng,1
+VSL,Đắk Lắk,1
+VSL,Đặng Văn Ngữ,1
+VSL,Đền Hùng,1
+VSL,Đồng Nai,1
+VSL,Đồng Tháp Mười,1
+VSL,đ,1
+VSL,đan,1
+VSL,đau bụng,1
+VSL,đau chân,1
+VSL,đau mắt,1
+VSL,đau mắt đỏ,1
+VSL,đau tai,1
+VSL,đau tay,1
+VSL,đen láy (như đen nhánh),3
+VSL,đen đủi,1
+VSL,đeo kính,1
+VSL,đi,1
+VSL,đi dạo,3
+VSL,đi học,1
+VSL,"đi lạc (đường, rừng..)",1
+VSL,đi tuần,1
+VSL,đi vệ sinh,1
+VSL,đinh,1
+VSL,điêu khắc,1
+VSL,điều hòa,2
+VSL,điều khiển,1
+VSL,điều kiện,1
+VSL,điều phối,2
+VSL,điều tra,1
+VSL,điều trị,1
+VSL,điểm ở giữa đoạn thẳng,1
+VSL,điện,3
+VSL,điện thoại,1
+VSL,đo,1
+VSL,đoàn cải lương,1
+VSL,đoàn thanh niên,1
+VSL,đoàn tụ,1
+VSL,đoán,1
+VSL,đoạn thơ,1
+VSL,đoạn thẳng,1
+VSL,đoạn văn,1
+VSL,đua ngựa,1
+VSL,đua thuyền,1
+VSL,đua xe máy,1
+VSL,đua đòi,1
+VSL,đun nấu,1
+VSL,đuôi,1
+VSL,đuôi chuột,1
+VSL,đuôi cá,1
+VSL,đuốc,1
+VSL,đài sen,1
+VSL,đàn bướm,1
+VSL,đàn bầu,1
+VSL,đàn ghi ta,1
+VSL,đàn kiến,1
+VSL,đàn tơ-rưng,1
+VSL,đàn xê lô đại vĩ cầm,1
+VSL,đàng hoàng,1
+VSL,đàng ngoài,1
+VSL,đàng trong,1
+VSL,đào tạo,1
+VSL,đá bóng,1
+VSL,đám ma,1
+VSL,đám mây,1
+VSL,đáng quý,1
+VSL,đánh,1
+VSL,đánh bắt,1
+VSL,đánh cầu lông,1
+VSL,đánh giá,1
+VSL,đánh răng,2
+VSL,đánh trống,1
+VSL,đèn báo giao thông,3
+VSL,đèn lồng,1
+VSL,đèn pin,3
+VSL,đèn vàng,3
+VSL,đèn xanh,3
+VSL,đèn ông sao,1
+VSL,đèn điện,3
+VSL,đèn đỏ,1
+VSL,đèo,1
+VSL,đèo Hải Vân,3
+VSL,đích,1
+VSL,đòi,1
+VSL,đòi hỏi,1
+VSL,đói không?,1
+VSL,đón,1
+VSL,đón tiếp,1
+VSL,đóng cửa,1
+VSL,đóng dấu,1
+VSL,đóng góp,1
+VSL,đô thị,1
+VSL,đôi chân,1
+VSL,đôi dép,1
+VSL,đôi tay,1
+VSL,đôi/cặp,1
+VSL,đông lạnh,1
+VSL,đùa,3
+VSL,đùm bọc,1
+VSL,đúng không?,3
+VSL,đăng ký,1
+VSL,đăng nhập,1
+VSL,đĩa,1
+VSL,đĩa DVD,1
+VSL,đũa,1
+VSL,đơn giản,1
+VSL,đưa đón,1
+VSL,đường Nguyễn Huệ,1
+VSL,đường biên giới,1
+VSL,đường bộ,1
+VSL,đường cao,1
+VSL,đường chéo,1
+VSL,đường chỉ tay,1
+VSL,đường hàng không,1
+VSL,đường hầm,1
+VSL,đường kính,1
+VSL,đường ray xe lửa,1
+VSL,đường sắt,1
+VSL,đường thuỷ,1
+VSL,đường thẳng,1
+VSL,đường tròn,1
+VSL,đại diện,3
+VSL,đại dương,1
+VSL,đại số,1
+VSL,đại sứ,1
+VSL,đại tá,1
+VSL,đại tướng,1
+VSL,đại úy,1
+VSL,đạn,1
+VSL,đạo diễn,1
+VSL,đảm nhiệm,1
+VSL,đảo,1
+VSL,đảo Hoàng Sa,1
+VSL,đảo Lý Sơn,1
+VSL,đảo Phú Quốc,1
+VSL,đảo Trường Sa,1
+VSL,đất,1
+VSL,đất màu mỡ,1
+VSL,đất nước bị chia cắt (Việt Nam),1
+VSL,đất nặn,1
+VSL,đất ruộng,1
+VSL,đất trồng cây,1
+VSL,đấu tranh,1
+VSL,đấu vật,1
+VSL,đầu gối,1
+VSL,đầu hàng,1
+VSL,đầu tiên,1
+VSL,đầu tàu,1
+VSL,đầu tư,1
+VSL,đầu xuôi đuôi lọt,1
+VSL,đầy,1
+VSL,đầy tớ,1
+VSL,đầy đủ,1
+VSL,đẩy,1
+VSL,đập,1
+VSL,đắt đỏ,1
+VSL,đằng sau,1
+VSL,đằng trước,1
+VSL,đặc biệt,4
+VSL,đặc điểm,1
+VSL,đặt,1
+VSL,đẹp không?,3
+VSL,đẹp không? (người),3
+VSL,đẹp mê hồn,1
+VSL,đẹp đẽ (như đẹp),1
+VSL,đếm,1
+VSL,đề nghị,3
+VSL,đề phòng,1
+VSL,đề tài,1
+VSL,đề-ca-mét (dam),1
+VSL,đề-ca-mét vuông (dam2),1
+VSL,đề-xi-mét (dm),1
+VSL,đề-xi-mét khối (dm3),1
+VSL,đề-xi-mét vuông (dm2),1
+VSL,đền,1
+VSL,đều đặn,1
+VSL,để (đặt),1
+VSL,đệm,1
+VSL,đỉnh,1
+VSL,đỉnh núi,1
+VSL,địa chỉ,3
+VSL,địa cầu,1
+VSL,địa hình,1
+VSL,địa lí,1
+VSL,địa điểm,1
+VSL,địa đạo Củ Chi,1
+VSL,định vị,1
+VSL,đọc sách,1
+VSL,đỏ thắm,1
+VSL,đối diện,1
+VSL,đối thoại,1
+VSL,đối tượng,1
+VSL,đối xứng,1
+VSL,đối xử,1
+VSL,đồ chơi,1
+VSL,đồ dùng dạy học,1
+VSL,đồ dùng học tập,1
+VSL,đồ uống,1
+VSL,đồ ăn,1
+VSL,đồn công an,1
+VSL,đồng bào,1
+VSL,đồng bằng,1
+VSL,đồng bằng duyên hải miền Trung,1
+VSL,đồng bằng sông Cửu Long,1
+VSL,đồng bằng sông Hồng,1
+VSL,đồng hồ,1
+VSL,đồng lúa,1
+VSL,đồng phục,3
+VSL,đồng ruộng,1
+VSL,đồng tiền,1
+VSL,đổ nước,1
+VSL,đổi,1
+VSL,đổi mới,1
+VSL,độc hại,1
+VSL,độc lập,1
+VSL,đội thiếu niên,1
+VSL,đội trưởng,1
+VSL,động cơ,1
+VSL,động viên,1
+VSL,đỡ,1
+VSL,đợi,3
+VSL,đứng nghiêm,1
+VSL,đứng đầu (hàng đầu),1
+VSL,đựng,1
+VSL,ơ,1
+VSL,ư,1
+VSL,ưu tiên,3
+VSL,ưu điểm,1
+VSL,Ả Rập (nước Ả Rập),1
+VSL,ảo thuật,1
+VSL,ấm no,1
+VSL,ấm trà,1
+VSL,ấm áp,1
+VSL,ấm đun nước,1
+VSL,ấn,1
+VSL,ấn tượng,1
+VSL,ầm ĩ,1
+VSL,ẩm mốc,1
+VSL,ẩm ướt,1
+VSL,ế ẩm,1
+VSL,ốc vít,1
+VSL,ốm đau,1
+VSL,ống nghe,1
+VSL,ống nhòm,1
+VSL,ống nước,1
+VSL,ổn định,1
+VSL,ở ngoài,3
+VSL,ở trong,1
+VSL,ủng,1
+VSL,ủng hộ,1
+VSL,ủy ban,1
+VSL,ủy ban nhân dân,1
+VSL,ủy quyền,3
+VSL,ức chế,1
+WLASL,a,4
+WLASL,a lot,7
+WLASL,abdomen,5
+WLASL,able,5
+WLASL,about,7
+WLASL,above,5
+WLASL,accent,5
+WLASL,accept,8
+WLASL,accident,13
+WLASL,accomplish,5
+WLASL,accountant,5
+WLASL,across,6
+WLASL,act,5
+WLASL,action,6
+WLASL,active,5
+WLASL,activity,5
+WLASL,actor,6
+WLASL,adapt,6
+WLASL,add,9
+WLASL,address,4
+WLASL,adjective,4
+WLASL,adjust,4
+WLASL,admire,5
+WLASL,admit,5
+WLASL,adopt,6
+WLASL,adult,7
+WLASL,advanced,4
+WLASL,advantage,4
+WLASL,adverb,4
+WLASL,affect,6
+WLASL,afraid,5
+WLASL,africa,9
+WLASL,after,7
+WLASL,afternoon,7
+WLASL,again,8
+WLASL,against,5
+WLASL,age,7
+WLASL,agenda,4
+WLASL,ago,9
+WLASL,agree,5
+WLASL,agreement,6
+WLASL,ahead,4
+WLASL,aid,5
+WLASL,aim,5
+WLASL,airplane,7
+WLASL,alarm,5
+WLASL,alcohol,4
+WLASL,algebra,5
+WLASL,all,8
+WLASL,all day,5
+WLASL,allergy,8
+WLASL,alligator,5
+WLASL,allow,8
+WLASL,almost,5
+WLASL,alone,9
+WLASL,alphabet,4
+WLASL,already,8
+WLASL,also,7
+WLASL,always,7
+WLASL,amazing,5
+WLASL,america,6
+WLASL,amputate,5
+WLASL,analyze,8
+WLASL,anatomy,4
+WLASL,and,5
+WLASL,angel,7
+WLASL,angle,6
+WLASL,angry,7
+WLASL,animal,9
+WLASL,anniversary,5
+WLASL,announce,5
+WLASL,annoy,4
+WLASL,another,5
+WLASL,answer,7
+WLASL,any,5
+WLASL,anyway,4
+WLASL,apart,5
+WLASL,apartment,6
+WLASL,apostrophe,6
+WLASL,appear,7
+WLASL,appetite,5
+WLASL,apple,11
+WLASL,appointment,10
+WLASL,appreciate,5
+WLASL,approach,5
+WLASL,appropriate,5
+WLASL,approve,8
+WLASL,april,5
+WLASL,archery,5
+WLASL,area,7
+WLASL,argue,10
+WLASL,arizona,4
+WLASL,arm,7
+WLASL,army,5
+WLASL,around,5
+WLASL,arrest,6
+WLASL,arrive,8
+WLASL,arrogant,6
+WLASL,art,7
+WLASL,article,4
+WLASL,artist,5
+WLASL,asia,7
+WLASL,ask,7
+WLASL,asl,4
+WLASL,assist,5
+WLASL,assistant,5
+WLASL,assume,4
+WLASL,attend,5
+WLASL,attention,6
+WLASL,attitude,7
+WLASL,attorney,4
+WLASL,attract,6
+WLASL,auction,5
+WLASL,audience,6
+WLASL,audiologist,4
+WLASL,audiology,4
+WLASL,august,6
+WLASL,aunt,7
+WLASL,australia,9
+WLASL,austria,4
+WLASL,author,4
+WLASL,authority,5
+WLASL,autumn,7
+WLASL,available,4
+WLASL,average,5
+WLASL,avoid,7
+WLASL,awake,5
+WLASL,award,3
+WLASL,aware,4
+WLASL,away,6
+WLASL,awful,8
+WLASL,awkward,7
+WLASL,b,4
+WLASL,baby,9
+WLASL,babysitter,4
+WLASL,back,7
+WLASL,background,5
+WLASL,backpack,8
+WLASL,bacon,7
+WLASL,bad,10
+WLASL,bake,7
+WLASL,balance,10
+WLASL,bald,7
+WLASL,ball,9
+WLASL,balloon,9
+WLASL,banana,9
+WLASL,bank,3
+WLASL,baptize,5
+WLASL,bar,11
+WLASL,barely,9
+WLASL,bark,8
+WLASL,baseball,6
+WLASL,basement,6
+WLASL,basic,4
+WLASL,basketball,12
+WLASL,bath,7
+WLASL,bathroom,7
+WLASL,battery,3
+WLASL,battle,4
+WLASL,bear,7
+WLASL,beard,9
+WLASL,beautiful,7
+WLASL,because,10
+WLASL,become,5
+WLASL,bed,13
+WLASL,bedroom,6
+WLASL,bee,6
+WLASL,beer,8
+WLASL,before,16
+WLASL,beg,5
+WLASL,beginning,7
+WLASL,behavior,5
+WLASL,behind,5
+WLASL,belief,7
+WLASL,believe,7
+WLASL,bell,6
+WLASL,below,6
+WLASL,belt,7
+WLASL,benefit,7
+WLASL,berry,5
+WLASL,beside,5
+WLASL,best,5
+WLASL,bet,6
+WLASL,better,5
+WLASL,between,6
+WLASL,bible,4
+WLASL,bicycle,6
+WLASL,big,9
+WLASL,bike,4
+WLASL,binoculars,4
+WLASL,biology,6
+WLASL,bird,10
+WLASL,birth,6
+WLASL,birthday,6
+WLASL,bite,6
+WLASL,bitter,8
+WLASL,black,10
+WLASL,blame,6
+WLASL,blanket,10
+WLASL,blend,5
+WLASL,bless,6
+WLASL,blind,8
+WLASL,blood,5
+WLASL,blow,5
+WLASL,blue,8
+WLASL,boast,4
+WLASL,boat,8
+WLASL,body,6
+WLASL,boil,4
+WLASL,bone,4
+WLASL,book,6
+WLASL,bookshelf,3
+WLASL,bookstore,4
+WLASL,boots,3
+WLASL,bored,7
+WLASL,borrow,6
+WLASL,boss,7
+WLASL,both,6
+WLASL,bother,8
+WLASL,bottle,7
+WLASL,bottom,8
+WLASL,bowl,6
+WLASL,bowling,13
+WLASL,box,7
+WLASL,boxing,4
+WLASL,boy,8
+WLASL,boyfriend,5
+WLASL,bra,4
+WLASL,bracelet,7
+WLASL,brag,6
+WLASL,braid,4
+WLASL,brain,4
+WLASL,brave,5
+WLASL,bread,7
+WLASL,break,5
+WLASL,breakdown,4
+WLASL,breakfast,5
+WLASL,breathe,6
+WLASL,breeze,4
+WLASL,bribe,3
+WLASL,bridge,4
+WLASL,brief,5
+WLASL,bright,6
+WLASL,bring,8
+WLASL,brochure,4
+WLASL,broke,5
+WLASL,brother,11
+WLASL,brown,8
+WLASL,brush,7
+WLASL,buffalo,5
+WLASL,bug,4
+WLASL,build,6
+WLASL,building,6
+WLASL,bull,5
+WLASL,bully,6
+WLASL,burp,4
+WLASL,bus,5
+WLASL,bush,6
+WLASL,business,7
+WLASL,busy,5
+WLASL,but,7
+WLASL,butter,6
+WLASL,butterfly,5
+WLASL,button,5
+WLASL,buy,9
+WLASL,bye,5
+WLASL,cabbage,4
+WLASL,cabinet,5
+WLASL,cafeteria,8
+WLASL,cake,8
+WLASL,calculate,7
+WLASL,calculator,5
+WLASL,calculus,5
+WLASL,california,9
+WLASL,call,12
+WLASL,calm,7
+WLASL,camel,4
+WLASL,camera,5
+WLASL,camp,5
+WLASL,camping,5
+WLASL,can,9
+WLASL,canada,7
+WLASL,cancel,8
+WLASL,candidate,5
+WLASL,candle,6
+WLASL,candy,13
+WLASL,cannot,6
+WLASL,canoe,4
+WLASL,captain,3
+WLASL,caption,7
+WLASL,car,7
+WLASL,card,8
+WLASL,cards,4
+WLASL,care,7
+WLASL,careful,9
+WLASL,careless,2
+WLASL,carnival,5
+WLASL,carrot,9
+WLASL,carry,7
+WLASL,cat,9
+WLASL,catch,9
+WLASL,category,5
+WLASL,caterpillar,4
+WLASL,catholic,5
+WLASL,cause,6
+WLASL,ceiling,6
+WLASL,celebrate,6
+WLASL,cemetery,6
+WLASL,cent,6
+WLASL,center,7
+WLASL,cereal,8
+WLASL,certificate,6
+WLASL,chain,7
+WLASL,chair,7
+WLASL,challenge,6
+WLASL,champion,11
+WLASL,chance,5
+WLASL,change,12
+WLASL,chapter,5
+WLASL,character,7
+WLASL,chase,6
+WLASL,chat,9
+WLASL,cheap,7
+WLASL,cheat,10
+WLASL,check,11
+WLASL,cheerleader,4
+WLASL,cheese,7
+WLASL,chemical,5
+WLASL,chemistry,6
+WLASL,cherry,5
+WLASL,chicago,3
+WLASL,chicken,5
+WLASL,child,9
+WLASL,children,7
+WLASL,china,4
+WLASL,chocolate,6
+WLASL,choice,8
+WLASL,choir,6
+WLASL,choke,4
+WLASL,choose,8
+WLASL,chop,7
+WLASL,christ,4
+WLASL,christian,7
+WLASL,christmas,8
+WLASL,church,6
+WLASL,cigarette,5
+WLASL,circle,5
+WLASL,city,9
+WLASL,class,9
+WLASL,classroom,5
+WLASL,clean,7
+WLASL,clear,5
+WLASL,clever,6
+WLASL,click,4
+WLASL,climb,5
+WLASL,clock,5
+WLASL,close,8
+WLASL,closet,5
+WLASL,clothes,5
+WLASL,cloud,8
+WLASL,clown,5
+WLASL,clueless,5
+WLASL,clumsy,5
+WLASL,coach,6
+WLASL,coat,5
+WLASL,cochlear implant,7
+WLASL,coconut,5
+WLASL,coffee,7
+WLASL,cold,12
+WLASL,collect,4
+WLASL,college,7
+WLASL,color,8
+WLASL,comb,6
+WLASL,come,6
+WLASL,come here,8
+WLASL,comfortable,7
+WLASL,comma,4
+WLASL,command,5
+WLASL,comment,5
+WLASL,commit,4
+WLASL,committee,5
+WLASL,common,5
+WLASL,common sense,5
+WLASL,community,6
+WLASL,commute,5
+WLASL,company,4
+WLASL,compare,7
+WLASL,compete,4
+WLASL,complain,6
+WLASL,complete,5
+WLASL,complex,7
+WLASL,compromise,6
+WLASL,computer,14
+WLASL,concentrate,3
+WLASL,concept,4
+WLASL,concern,5
+WLASL,conflict,7
+WLASL,confront,6
+WLASL,confused,6
+WLASL,congratulations,4
+WLASL,congress,6
+WLASL,connect,5
+WLASL,conquer,4
+WLASL,consider,4
+WLASL,constitution,6
+WLASL,construct,5
+WLASL,consume,4
+WLASL,contact,7
+WLASL,contest,4
+WLASL,continue,6
+WLASL,contract,3
+WLASL,contribute,7
+WLASL,control,5
+WLASL,conversation,5
+WLASL,convert,4
+WLASL,convince,10
+WLASL,cook,8
+WLASL,cookie,8
+WLASL,cool,16
+WLASL,cooperate,3
+WLASL,cop,8
+WLASL,copy,8
+WLASL,corn,12
+WLASL,corner,5
+WLASL,correct,9
+WLASL,cost,6
+WLASL,couch,5
+WLASL,cough,6
+WLASL,counsel,5
+WLASL,counselor,4
+WLASL,count,6
+WLASL,country,9
+WLASL,court,4
+WLASL,cousin,14
+WLASL,cover,5
+WLASL,cow,9
+WLASL,crab,6
+WLASL,cracker,6
+WLASL,crash,9
+WLASL,crave,5
+WLASL,crazy,7
+WLASL,create,4
+WLASL,crocodile,4
+WLASL,cross,5
+WLASL,crown,4
+WLASL,cruel,4
+WLASL,crush,4
+WLASL,cry,10
+WLASL,cuba,3
+WLASL,culture,4
+WLASL,cup,6
+WLASL,curious,6
+WLASL,curriculum,6
+WLASL,curse,6
+WLASL,curtain,2
+WLASL,customer,4
+WLASL,cut,8
+WLASL,cute,7
+WLASL,d,4
+WLASL,dad,7
+WLASL,daily,5
+WLASL,damage,4
+WLASL,dance,7
+WLASL,dancer,4
+WLASL,danger,5
+WLASL,dangerous,6
+WLASL,dark,12
+WLASL,date,5
+WLASL,daughter,10
+WLASL,dawn,4
+WLASL,day,9
+WLASL,dead,5
+WLASL,deaf,11
+WLASL,death,5
+WLASL,debate,4
+WLASL,debt,4
+WLASL,december,5
+WLASL,decide,9
+WLASL,decorate,9
+WLASL,decrease,5
+WLASL,deduct,6
+WLASL,deep,8
+WLASL,deer,7
+WLASL,defeat,4
+WLASL,defend,5
+WLASL,degree,6
+WLASL,delay,11
+WLASL,delicious,10
+WLASL,deliver,4
+WLASL,demand,8
+WLASL,democrat,4
+WLASL,demonstrate,6
+WLASL,dentist,8
+WLASL,deny,5
+WLASL,deodorant,6
+WLASL,department,4
+WLASL,depend,7
+WLASL,deposit,5
+WLASL,depressed,5
+WLASL,descend,4
+WLASL,describe,7
+WLASL,desert,7
+WLASL,design,5
+WLASL,desk,6
+WLASL,dessert,8
+WLASL,destroy,7
+WLASL,detach,4
+WLASL,detective,3
+WLASL,determine,4
+WLASL,develop,8
+WLASL,devil,3
+WLASL,diabetes,5
+WLASL,diamond,6
+WLASL,diaper,6
+WLASL,diarrhea,6
+WLASL,dice,4
+WLASL,dictionary,6
+WLASL,die,4
+WLASL,different,8
+WLASL,difficult,4
+WLASL,dig,5
+WLASL,dime,5
+WLASL,dining room,5
+WLASL,dinner,7
+WLASL,dinosaur,7
+WLASL,diploma,5
+WLASL,director,4
+WLASL,dirt,5
+WLASL,dirty,9
+WLASL,disagree,5
+WLASL,disappear,7
+WLASL,discipline,5
+WLASL,disconnect,8
+WLASL,discount,4
+WLASL,discover,7
+WLASL,discuss,8
+WLASL,disgust,6
+WLASL,disgusted,4
+WLASL,dismiss,4
+WLASL,dissolve,7
+WLASL,disturb,5
+WLASL,dive,9
+WLASL,divide,6
+WLASL,division,4
+WLASL,divorce,6
+WLASL,dizzy,4
+WLASL,doctor,10
+WLASL,document,7
+WLASL,dog,11
+WLASL,doll,7
+WLASL,dollar,8
+WLASL,dolphin,5
+WLASL,don't want,6
+WLASL,done,5
+WLASL,door,7
+WLASL,dorm,6
+WLASL,dormitory,5
+WLASL,double,6
+WLASL,doubt,6
+WLASL,down,8
+WLASL,downstairs,4
+WLASL,drag,3
+WLASL,dragon,3
+WLASL,drama,5
+WLASL,draw,6
+WLASL,drawer,7
+WLASL,dream,6
+WLASL,dress,8
+WLASL,drink,15
+WLASL,drive,7
+WLASL,drop,9
+WLASL,drug,4
+WLASL,drum,5
+WLASL,drunk,7
+WLASL,dry,9
+WLASL,duck,6
+WLASL,due,6
+WLASL,dull,6
+WLASL,dumb,4
+WLASL,during,5
+WLASL,dusk,5
+WLASL,duty,5
+WLASL,dvd,4
+WLASL,dye,4
+WLASL,e,4
+WLASL,each,4
+WLASL,eagle,7
+WLASL,ear,8
+WLASL,early,6
+WLASL,earn,6
+WLASL,earring,6
+WLASL,earth,6
+WLASL,earthquake,5
+WLASL,east,8
+WLASL,easter,7
+WLASL,easy,6
+WLASL,eat,7
+WLASL,economy,5
+WLASL,educate,7
+WLASL,education,5
+WLASL,effort,4
+WLASL,egg,7
+WLASL,egypt,7
+WLASL,eight,6
+WLASL,eighteen,6
+WLASL,either,3
+WLASL,electrician,5
+WLASL,electricity,5
+WLASL,elementary,4
+WLASL,elephant,7
+WLASL,elevator,6
+WLASL,else,3
+WLASL,email,6
+WLASL,embarrass,6
+WLASL,emergency,4
+WLASL,emotion,6
+WLASL,empty,5
+WLASL,encourage,7
+WLASL,end,6
+WLASL,energy,6
+WLASL,engage,5
+WLASL,engagement,4
+WLASL,engine,5
+WLASL,engineer,5
+WLASL,england,5
+WLASL,english,5
+WLASL,enjoy,8
+WLASL,enormous,5
+WLASL,enough,5
+WLASL,enter,5
+WLASL,envelope,4
+WLASL,environment,11
+WLASL,equal,6
+WLASL,erase,5
+WLASL,eraser,5
+WLASL,escape,8
+WLASL,establish,5
+WLASL,eternity,5
+WLASL,europe,7
+WLASL,evaluate,5
+WLASL,evening,4
+WLASL,event,7
+WLASL,every,5
+WLASL,every monday,5
+WLASL,every tuesday,5
+WLASL,everyday,4
+WLASL,everything,4
+WLASL,evidence,7
+WLASL,exact,6
+WLASL,exaggerate,5
+WLASL,example,11
+WLASL,except,5
+WLASL,exchange,8
+WLASL,excited,6
+WLASL,excuse,3
+WLASL,exercise,5
+WLASL,exhibit,4
+WLASL,expand,4
+WLASL,expect,6
+WLASL,expensive,8
+WLASL,experience,7
+WLASL,experiment,6
+WLASL,expert,7
+WLASL,explain,7
+WLASL,explode,4
+WLASL,express,4
+WLASL,eye,6
+WLASL,eyeglasses,4
+WLASL,eyes,5
+WLASL,f,4
+WLASL,face,8
+WLASL,fact,6
+WLASL,faculty,5
+WLASL,fail,6
+WLASL,fairy,4
+WLASL,fake,6
+WLASL,fall in love,5
+WLASL,familiar,3
+WLASL,family,11
+WLASL,famous,6
+WLASL,fancy,7
+WLASL,far,11
+WLASL,farm,8
+WLASL,farmer,4
+WLASL,fast,9
+WLASL,fat,10
+WLASL,father,7
+WLASL,fault,9
+WLASL,favorite,5
+WLASL,fear,5
+WLASL,february,4
+WLASL,federal,4
+WLASL,feed,6
+WLASL,feedback,6
+WLASL,feel,7
+WLASL,fence,6
+WLASL,festival,4
+WLASL,few,5
+WLASL,fight,7
+WLASL,final,5
+WLASL,finally,7
+WLASL,finance,4
+WLASL,find,8
+WLASL,fine,9
+WLASL,fingerspell,3
+WLASL,finish,9
+WLASL,fire,3
+WLASL,firefighter,5
+WLASL,first,9
+WLASL,fish,10
+WLASL,fishing,6
+WLASL,five,5
+WLASL,fix,6
+WLASL,flag,6
+WLASL,flatter,4
+WLASL,flexible,7
+WLASL,flirt,6
+WLASL,flood,4
+WLASL,floor,6
+WLASL,florida,4
+WLASL,flower,7
+WLASL,flute,6
+WLASL,fly,8
+WLASL,fold,6
+WLASL,follow,9
+WLASL,food,7
+WLASL,fool,5
+WLASL,football,9
+WLASL,for,5
+WLASL,forbid,4
+WLASL,forest,7
+WLASL,forever,6
+WLASL,forget,7
+WLASL,forgive,5
+WLASL,fork,4
+WLASL,form,9
+WLASL,former,5
+WLASL,four,5
+WLASL,fourth,5
+WLASL,fox,7
+WLASL,france,6
+WLASL,free,4
+WLASL,freeway,4
+WLASL,freeze,7
+WLASL,french,5
+WLASL,french fries,6
+WLASL,friday,6
+WLASL,friend,7
+WLASL,friendly,7
+WLASL,frog,7
+WLASL,from,7
+WLASL,from now on,5
+WLASL,front,8
+WLASL,fruit,7
+WLASL,full,10
+WLASL,fun,7
+WLASL,function,7
+WLASL,funeral,5
+WLASL,funny,5
+WLASL,furniture,3
+WLASL,future,9
+WLASL,g,4
+WLASL,gallaudet,4
+WLASL,gamble,5
+WLASL,game,6
+WLASL,gang,4
+WLASL,garage,3
+WLASL,gas,7
+WLASL,gasoline,4
+WLASL,gather,6
+WLASL,gay,4
+WLASL,general,6
+WLASL,generation,4
+WLASL,geography,7
+WLASL,geometry,5
+WLASL,german,5
+WLASL,germany,6
+WLASL,get,7
+WLASL,get up,6
+WLASL,ghost,6
+WLASL,gift,4
+WLASL,giraffe,7
+WLASL,girl,9
+WLASL,girlfriend,5
+WLASL,give,10
+WLASL,give up,6
+WLASL,glass,7
+WLASL,glasses,9
+WLASL,gloves,2
+WLASL,go,15
+WLASL,goal,7
+WLASL,goat,6
+WLASL,god,7
+WLASL,gold,4
+WLASL,golf,7
+WLASL,gone,5
+WLASL,good,10
+WLASL,goodbye,5
+WLASL,gorilla,5
+WLASL,gossip,6
+WLASL,government,10
+WLASL,grab,4
+WLASL,graduate,10
+WLASL,graduation,5
+WLASL,grammar,9
+WLASL,grandfather,7
+WLASL,grandma,4
+WLASL,grandmother,7
+WLASL,grapes,7
+WLASL,grass,5
+WLASL,grateful,5
+WLASL,gray,6
+WLASL,great,9
+WLASL,greece,7
+WLASL,green,7
+WLASL,grey,2
+WLASL,group,8
+WLASL,grow,6
+WLASL,grow up,4
+WLASL,guess,6
+WLASL,guide,5
+WLASL,guilty,7
+WLASL,guitar,7
+WLASL,gum,6
+WLASL,gun,4
+WLASL,gymnastics,4
+WLASL,h,4
+WLASL,habit,4
+WLASL,hair,9
+WLASL,haircut,3
+WLASL,half,5
+WLASL,halloween,9
+WLASL,hamburger,6
+WLASL,hammer,6
+WLASL,hang up,3
+WLASL,hanukkah,4
+WLASL,happen,6
+WLASL,happy,8
+WLASL,hard,6
+WLASL,hard of hearing,5
+WLASL,hat,9
+WLASL,hate,4
+WLASL,have,6
+WLASL,hawaii,7
+WLASL,head,6
+WLASL,headache,9
+WLASL,health,6
+WLASL,heap,5
+WLASL,hear,9
+WLASL,hearing,8
+WLASL,hearing aid,5
+WLASL,heart,8
+WLASL,heart attack,5
+WLASL,heaven,5
+WLASL,heavy,5
+WLASL,helicopter,8
+WLASL,hello,4
+WLASL,helmet,5
+WLASL,help,14
+WLASL,her,8
+WLASL,here,7
+WLASL,herself,7
+WLASL,hide,5
+WLASL,high,6
+WLASL,high school,4
+WLASL,highway,7
+WLASL,hill,3
+WLASL,hippopotamus,3
+WLASL,his,4
+WLASL,history,8
+WLASL,hit,6
+WLASL,hockey,5
+WLASL,hold,5
+WLASL,holy,5
+WLASL,home,7
+WLASL,homework,5
+WLASL,honest,5
+WLASL,honey,5
+WLASL,honor,6
+WLASL,hop,4
+WLASL,hope,9
+WLASL,horse,4
+WLASL,hospital,7
+WLASL,host,5
+WLASL,hot,10
+WLASL,hot dog,5
+WLASL,hour,7
+WLASL,house,7
+WLASL,how,9
+WLASL,hug,5
+WLASL,human,4
+WLASL,humble,8
+WLASL,hungry,6
+WLASL,hunt,5
+WLASL,hurricane,5
+WLASL,hurry,7
+WLASL,hurt,5
+WLASL,husband,7
+WLASL,i,4
+WLASL,ice cream,7
+WLASL,idea,8
+WLASL,identify,5
+WLASL,if,6
+WLASL,ignore,5
+WLASL,ill,4
+WLASL,illegal,5
+WLASL,image,5
+WLASL,impact,5
+WLASL,important,8
+WLASL,impossible,6
+WLASL,improve,9
+WLASL,in,7
+WLASL,include,4
+WLASL,increase,5
+WLASL,independent,7
+WLASL,india,4
+WLASL,individual,4
+WLASL,infection,6
+WLASL,influence,6
+WLASL,inform,9
+WLASL,information,7
+WLASL,innocent,4
+WLASL,insect,5
+WLASL,inside,6
+WLASL,inspect,5
+WLASL,inspire,5
+WLASL,instead,5
+WLASL,institute,5
+WLASL,insurance,6
+WLASL,interest,10
+WLASL,interesting,6
+WLASL,international,3
+WLASL,internet,8
+WLASL,interpret,4
+WLASL,interpreter,5
+WLASL,interrupt,5
+WLASL,intersection,4
+WLASL,interview,5
+WLASL,introduce,6
+WLASL,invest,7
+WLASL,investigate,6
+WLASL,invite,5
+WLASL,involve,5
+WLASL,iran,7
+WLASL,ireland,4
+WLASL,iron,4
+WLASL,island,6
+WLASL,israel,5
+WLASL,italy,5
+WLASL,j,4
+WLASL,jacket,7
+WLASL,jail,5
+WLASL,january,5
+WLASL,japan,7
+WLASL,jealous,8
+WLASL,jesus,6
+WLASL,jewelry,6
+WLASL,jewish,5
+WLASL,join,8
+WLASL,joke,5
+WLASL,journey,4
+WLASL,joy,5
+WLASL,judge,5
+WLASL,july,4
+WLASL,jump,6
+WLASL,june,5
+WLASL,k,4
+WLASL,kangaroo,3
+WLASL,karate,4
+WLASL,keep,6
+WLASL,key,6
+WLASL,keyboard,6
+WLASL,kick,5
+WLASL,kid,5
+WLASL,kill,7
+WLASL,kindergarten,5
+WLASL,king,7
+WLASL,kiss,9
+WLASL,kitchen,7
+WLASL,kneel,4
+WLASL,knife,6
+WLASL,knock,3
+WLASL,know,8
+WLASL,label,6
+WLASL,lady,5
+WLASL,lamp,2
+WLASL,land,6
+WLASL,language,10
+WLASL,laptop,6
+WLASL,large,7
+WLASL,last,12
+WLASL,last week,5
+WLASL,last year,6
+WLASL,late,8
+WLASL,later,12
+WLASL,laugh,11
+WLASL,laundry,4
+WLASL,law,7
+WLASL,lawyer,5
+WLASL,lazy,6
+WLASL,lead,7
+WLASL,leader,5
+WLASL,leaf,6
+WLASL,league,3
+WLASL,leak,5
+WLASL,learn,8
+WLASL,leave,11
+WLASL,lecture,7
+WLASL,left,5
+WLASL,legal,4
+WLASL,lemon,8
+WLASL,lend,6
+WLASL,lesbian,6
+WLASL,less,5
+WLASL,lesson,6
+WLASL,let,4
+WLASL,letter,11
+WLASL,lettuce,7
+WLASL,liability,5
+WLASL,librarian,4
+WLASL,library,5
+WLASL,license,3
+WLASL,lie,7
+WLASL,lift,6
+WLASL,light,8
+WLASL,lightning,6
+WLASL,like,10
+WLASL,limit,7
+WLASL,line,6
+WLASL,linguistics,7
+WLASL,lion,5
+WLASL,lip,4
+WLASL,lipstick,4
+WLASL,list,9
+WLASL,listen,7
+WLASL,little bit,3
+WLASL,live,6
+WLASL,loan,3
+WLASL,lobster,7
+WLASL,local,4
+WLASL,lock,6
+WLASL,lonely,6
+WLASL,long,5
+WLASL,look at,2
+WLASL,look for,3
+WLASL,lord,4
+WLASL,lose,9
+WLASL,loud,6
+WLASL,lousy,6
+WLASL,love,7
+WLASL,lucky,7
+WLASL,lunch,6
+WLASL,m,4
+WLASL,machine,6
+WLASL,mad,5
+WLASL,magazine,5
+WLASL,magic,5
+WLASL,mainstream,5
+WLASL,major,5
+WLASL,make,9
+WLASL,man,12
+WLASL,manage,5
+WLASL,manager,5
+WLASL,many,10
+WLASL,march,7
+WLASL,marry,7
+WLASL,match,8
+WLASL,math,7
+WLASL,mature,4
+WLASL,maximum,6
+WLASL,maybe,6
+WLASL,me,4
+WLASL,mean,8
+WLASL,meaning,2
+WLASL,measure,7
+WLASL,meat,8
+WLASL,mechanic,6
+WLASL,medicine,8
+WLASL,meet,9
+WLASL,meeting,6
+WLASL,melody,5
+WLASL,melt,4
+WLASL,member,5
+WLASL,memorize,7
+WLASL,mention,3
+WLASL,message,5
+WLASL,metal,4
+WLASL,mexico,6
+WLASL,microphone,5
+WLASL,microscope,4
+WLASL,microwave,7
+WLASL,middle,7
+WLASL,midnight,4
+WLASL,military,3
+WLASL,milk,5
+WLASL,mind,5
+WLASL,mine,4
+WLASL,minus,4
+WLASL,minute,9
+WLASL,mirror,8
+WLASL,miss,8
+WLASL,mistake,4
+WLASL,misunderstand,4
+WLASL,mix,6
+WLASL,mock,3
+WLASL,mom,7
+WLASL,monday,6
+WLASL,money,6
+WLASL,monkey,7
+WLASL,monster,5
+WLASL,month,7
+WLASL,monthly,4
+WLASL,moon,7
+WLASL,moose,4
+WLASL,more,8
+WLASL,morning,6
+WLASL,mosquito,4
+WLASL,most,7
+WLASL,mother,11
+WLASL,motivate,6
+WLASL,motor,5
+WLASL,motorcycle,7
+WLASL,mountain,5
+WLASL,mouse,5
+WLASL,mouth,5
+WLASL,move,10
+WLASL,movie,5
+WLASL,much,6
+WLASL,multiply,6
+WLASL,murder,4
+WLASL,muscle,5
+WLASL,museum,5
+WLASL,mushroom,5
+WLASL,music,8
+WLASL,must,7
+WLASL,mustache,5
+WLASL,my,6
+WLASL,myself,6
+WLASL,n,4
+WLASL,name,6
+WLASL,napkin,7
+WLASL,narrow,4
+WLASL,nation,5
+WLASL,near,9
+WLASL,necessary,4
+WLASL,neck,6
+WLASL,necklace,9
+WLASL,need,6
+WLASL,negative,7
+WLASL,negotiate,3
+WLASL,neighbor,7
+WLASL,nephew,6
+WLASL,nervous,7
+WLASL,network,6
+WLASL,neutral,6
+WLASL,never,7
+WLASL,new,9
+WLASL,new york,4
+WLASL,newspaper,4
+WLASL,next,5
+WLASL,nice,6
+WLASL,nickel,4
+WLASL,niece,7
+WLASL,night,5
+WLASL,nine,5
+WLASL,nineteen,6
+WLASL,no,11
+WLASL,none,7
+WLASL,noon,6
+WLASL,normal,5
+WLASL,north,7
+WLASL,northwest,4
+WLASL,nose,6
+WLASL,not,7
+WLASL,not yet,4
+WLASL,nothing,6
+WLASL,notice,6
+WLASL,november,5
+WLASL,now,9
+WLASL,number,5
+WLASL,numerous,5
+WLASL,nun,4
+WLASL,nurse,6
+WLASL,nut,5
+WLASL,o,4
+WLASL,objective,4
+WLASL,obsess,7
+WLASL,obtain,5
+WLASL,occur,3
+WLASL,ocean,5
+WLASL,october,5
+WLASL,octopus,5
+WLASL,odd,4
+WLASL,odor,5
+WLASL,off,7
+WLASL,offer,6
+WLASL,office,9
+WLASL,often,6
+WLASL,ok,7
+WLASL,old,7
+WLASL,olympics,3
+WLASL,on,5
+WLASL,once,5
+WLASL,one,8
+WLASL,onion,8
+WLASL,only,6
+WLASL,open,7
+WLASL,operate,6
+WLASL,opinion,7
+WLASL,opposite,5
+WLASL,or,3
+WLASL,oral,4
+WLASL,orange,10
+WLASL,order,10
+WLASL,organize,5
+WLASL,other,5
+WLASL,our,4
+WLASL,out,5
+WLASL,outside,9
+WLASL,over,6
+WLASL,overcome,5
+WLASL,overlook,5
+WLASL,overwhelm,8
+WLASL,owe,5
+WLASL,owl,5
+WLASL,p,4
+WLASL,pack,5
+WLASL,page,5
+WLASL,pain,5
+WLASL,paint,7
+WLASL,painter,5
+WLASL,pants,8
+WLASL,paper,8
+WLASL,parachute,4
+WLASL,parade,6
+WLASL,paragraph,5
+WLASL,parallel,5
+WLASL,parents,3
+WLASL,part,4
+WLASL,party,9
+WLASL,pass,7
+WLASL,past,9
+WLASL,path,6
+WLASL,patient,7
+WLASL,pause,5
+WLASL,pay,7
+WLASL,pay attention,4
+WLASL,peace,4
+WLASL,peaceful,7
+WLASL,peach,6
+WLASL,peanut butter,5
+WLASL,pear,3
+WLASL,peel,4
+WLASL,penalty,4
+WLASL,pencil,5
+WLASL,pennsylvania,5
+WLASL,penny,3
+WLASL,people,6
+WLASL,pepper,7
+WLASL,percent,4
+WLASL,perfect,7
+WLASL,perfume,5
+WLASL,period,5
+WLASL,permit,4
+WLASL,person,7
+WLASL,personality,4
+WLASL,perspective,10
+WLASL,pet,5
+WLASL,philadelphia,4
+WLASL,philosophy,6
+WLASL,phone,5
+WLASL,photographer,5
+WLASL,phrase,6
+WLASL,physician,6
+WLASL,physics,6
+WLASL,piano,5
+WLASL,pick,5
+WLASL,pickle,4
+WLASL,picture,6
+WLASL,pie,5
+WLASL,piece,4
+WLASL,pig,7
+WLASL,pillow,7
+WLASL,pilot,4
+WLASL,pink,9
+WLASL,pity,5
+WLASL,pizza,12
+WLASL,place,5
+WLASL,plan,7
+WLASL,plant,5
+WLASL,plate,5
+WLASL,play,11
+WLASL,player,4
+WLASL,please,7
+WLASL,plenty,5
+WLASL,plus,7
+WLASL,pneumonia,5
+WLASL,pocket,6
+WLASL,point,9
+WLASL,polar bear,5
+WLASL,police,8
+WLASL,policeman,5
+WLASL,policy,6
+WLASL,polite,6
+WLASL,politics,6
+WLASL,poop,5
+WLASL,poor,6
+WLASL,popcorn,4
+WLASL,popular,6
+WLASL,position,4
+WLASL,positive,5
+WLASL,possible,8
+WLASL,post,2
+WLASL,postpone,8
+WLASL,potato,8
+WLASL,potential,5
+WLASL,pound,6
+WLASL,pour,5
+WLASL,poverty,4
+WLASL,power,7
+WLASL,practice,9
+WLASL,praise,5
+WLASL,pray,6
+WLASL,preach,5
+WLASL,preacher,3
+WLASL,precious,5
+WLASL,precipitation,6
+WLASL,precise,4
+WLASL,predict,6
+WLASL,prefer,3
+WLASL,pregnant,5
+WLASL,prepare,7
+WLASL,preschool,3
+WLASL,present,8
+WLASL,presentation,8
+WLASL,president,9
+WLASL,pressure,5
+WLASL,pretty,5
+WLASL,prevent,5
+WLASL,price,6
+WLASL,pride,5
+WLASL,priest,5
+WLASL,prince,3
+WLASL,princess,3
+WLASL,principal,5
+WLASL,principle,5
+WLASL,print,6
+WLASL,printer,6
+WLASL,priority,4
+WLASL,prison,6
+WLASL,private,7
+WLASL,problem,9
+WLASL,process,4
+WLASL,procrastinate,7
+WLASL,professional,7
+WLASL,professor,5
+WLASL,profit,4
+WLASL,program,6
+WLASL,progress,4
+WLASL,project,7
+WLASL,promise,5
+WLASL,promote,4
+WLASL,proof,6
+WLASL,propaganda,2
+WLASL,proper,4
+WLASL,prostitute,4
+WLASL,protect,6
+WLASL,proud,5
+WLASL,prove,5
+WLASL,provide,6
+WLASL,psychologist,3
+WLASL,psychology,6
+WLASL,public,5
+WLASL,publish,6
+WLASL,pull,9
+WLASL,pumpkin,5
+WLASL,punish,6
+WLASL,purchase,4
+WLASL,pure,4
+WLASL,purple,8
+WLASL,purpose,6
+WLASL,pursue,4
+WLASL,push,6
+WLASL,put,6
+WLASL,put off,5
+WLASL,puzzled,6
+WLASL,q,4
+WLASL,quality,5
+WLASL,quarrel,4
+WLASL,quarter,5
+WLASL,queen,6
+WLASL,question,5
+WLASL,quick,7
+WLASL,quiet,7
+WLASL,quit,7
+WLASL,quote,6
+WLASL,r,4
+WLASL,rabbit,8
+WLASL,raccoon,7
+WLASL,race,6
+WLASL,radio,6
+WLASL,rage,4
+WLASL,rain,7
+WLASL,rainbow,5
+WLASL,rake,5
+WLASL,rat,6
+WLASL,rather,4
+WLASL,read,6
+WLASL,ready,10
+WLASL,real,4
+WLASL,realize,4
+WLASL,really,7
+WLASL,reason,7
+WLASL,receive,5
+WLASL,recent,7
+WLASL,recliner,4
+WLASL,recognize,5
+WLASL,recommend,4
+WLASL,recover,6
+WLASL,red,7
+WLASL,reduce,5
+WLASL,refer,5
+WLASL,referee,5
+WLASL,refuse,6
+WLASL,regular,4
+WLASL,rehearse,7
+WLASL,reject,5
+WLASL,relate,5
+WLASL,relationship,5
+WLASL,relax,4
+WLASL,release,5
+WLASL,relief,6
+WLASL,religion,7
+WLASL,rely,5
+WLASL,remember,7
+WLASL,remote control,5
+WLASL,remove,7
+WLASL,rent,5
+WLASL,repeat,5
+WLASL,replace,5
+WLASL,reply,4
+WLASL,report,3
+WLASL,represent,7
+WLASL,reputation,5
+WLASL,request,4
+WLASL,require,6
+WLASL,rescue,4
+WLASL,research,7
+WLASL,resign,5
+WLASL,resist,3
+WLASL,respect,7
+WLASL,responsibility,6
+WLASL,responsible,4
+WLASL,rest,6
+WLASL,restaurant,7
+WLASL,restroom,3
+WLASL,result,7
+WLASL,retire,7
+WLASL,retreat,4
+WLASL,reveal,5
+WLASL,revenge,6
+WLASL,review,7
+WLASL,rich,6
+WLASL,ride,8
+WLASL,ridiculous,4
+WLASL,right,9
+WLASL,ring,5
+WLASL,rise,7
+WLASL,river,5
+WLASL,road,4
+WLASL,roar,4
+WLASL,rob,8
+WLASL,robber,5
+WLASL,robot,4
+WLASL,rock,6
+WLASL,role,5
+WLASL,roof,4
+WLASL,room,11
+WLASL,roommate,5
+WLASL,rooster,5
+WLASL,rope,4
+WLASL,rose,5
+WLASL,rough,7
+WLASL,rubber,5
+WLASL,rude,6
+WLASL,ruin,4
+WLASL,rule,6
+WLASL,run,7
+WLASL,rush,5
+WLASL,russia,8
+WLASL,s,4
+WLASL,sad,8
+WLASL,safe,5
+WLASL,salad,6
+WLASL,salary,5
+WLASL,salt,8
+WLASL,salute,4
+WLASL,same,9
+WLASL,sandwich,10
+WLASL,satisfy,5
+WLASL,saturday,7
+WLASL,sauce,4
+WLASL,sausage,4
+WLASL,save,8
+WLASL,saw,3
+WLASL,say,6
+WLASL,scan,3
+WLASL,scared,8
+WLASL,schedule,5
+WLASL,school,9
+WLASL,science,7
+WLASL,scientist,5
+WLASL,scissors,8
+WLASL,scold,4
+WLASL,score,11
+WLASL,scotland,6
+WLASL,scream,3
+WLASL,screwdriver,6
+WLASL,sculpture,6
+WLASL,sea,5
+WLASL,search,5
+WLASL,second,6
+WLASL,secret,8
+WLASL,secretary,10
+WLASL,see,5
+WLASL,seem,6
+WLASL,seldom,3
+WLASL,selfish,5
+WLASL,sell,7
+WLASL,senate,6
+WLASL,send,5
+WLASL,senior,6
+WLASL,sensitive,5
+WLASL,sentence,7
+WLASL,separate,6
+WLASL,september,5
+WLASL,sequence,5
+WLASL,serious,6
+WLASL,serve,5
+WLASL,service,7
+WLASL,settle,4
+WLASL,seven,6
+WLASL,several,4
+WLASL,sew,4
+WLASL,shame,5
+WLASL,shampoo,5
+WLASL,shape,7
+WLASL,share,7
+WLASL,shave,4
+WLASL,she,6
+WLASL,sheep,5
+WLASL,shelf,5
+WLASL,shine,8
+WLASL,shirt,12
+WLASL,shock,9
+WLASL,shoes,6
+WLASL,shoot,5
+WLASL,shop,6
+WLASL,shopping,3
+WLASL,short,13
+WLASL,should,6
+WLASL,shoulder,4
+WLASL,shout,3
+WLASL,shovel,3
+WLASL,show,9
+WLASL,shower,5
+WLASL,shrimp,6
+WLASL,shy,6
+WLASL,sick,8
+WLASL,side,5
+WLASL,sign,9
+WLASL,sign language,5
+WLASL,silent,5
+WLASL,silly,10
+WLASL,silver,6
+WLASL,similar,6
+WLASL,simple,5
+WLASL,sin,4
+WLASL,since,8
+WLASL,sing,5
+WLASL,singer,4
+WLASL,single,6
+WLASL,siren,6
+WLASL,sister,7
+WLASL,sit,6
+WLASL,situation,6
+WLASL,six,6
+WLASL,sixteen,6
+WLASL,size,5
+WLASL,skate,4
+WLASL,skeleton,5
+WLASL,sketch,6
+WLASL,ski,2
+WLASL,skill,4
+WLASL,skin,6
+WLASL,skinny,6
+WLASL,skip,4
+WLASL,skirt,6
+WLASL,skunk,5
+WLASL,sky,8
+WLASL,slave,6
+WLASL,sleep,6
+WLASL,sleepy,5
+WLASL,slice,4
+WLASL,slip,6
+WLASL,slow,8
+WLASL,small,8
+WLASL,smart,8
+WLASL,smell,5
+WLASL,smile,7
+WLASL,smoking,2
+WLASL,smooth,5
+WLASL,snack,5
+WLASL,snake,7
+WLASL,sneeze,4
+WLASL,snob,6
+WLASL,snow,10
+WLASL,snowman,5
+WLASL,soap,7
+WLASL,soccer,5
+WLASL,society,5
+WLASL,socks,6
+WLASL,soda,6
+WLASL,sofa,4
+WLASL,soft,8
+WLASL,soldier,4
+WLASL,solid,6
+WLASL,solve,4
+WLASL,some,7
+WLASL,someday,5
+WLASL,someone,3
+WLASL,something,4
+WLASL,sometimes,5
+WLASL,somewhere,4
+WLASL,son,10
+WLASL,song,5
+WLASL,soon,11
+WLASL,sore throat,6
+WLASL,sorry,7
+WLASL,soul,5
+WLASL,sound,7
+WLASL,soup,6
+WLASL,sour,7
+WLASL,south,7
+WLASL,south america,6
+WLASL,spain,6
+WLASL,spanish,5
+WLASL,speak,5
+WLASL,special,8
+WLASL,specific,6
+WLASL,speech,10
+WLASL,speed,5
+WLASL,spell,6
+WLASL,spider,6
+WLASL,spill,4
+WLASL,spin,8
+WLASL,spirit,7
+WLASL,spit,4
+WLASL,spoon,4
+WLASL,spray,8
+WLASL,spread,4
+WLASL,spring,6
+WLASL,sprint,6
+WLASL,square,5
+WLASL,squeeze,4
+WLASL,squirrel,6
+WLASL,stadium,6
+WLASL,staff,5
+WLASL,stairs,6
+WLASL,stamp,5
+WLASL,stand,5
+WLASL,standard,5
+WLASL,star,7
+WLASL,stare,7
+WLASL,start,4
+WLASL,statistics,4
+WLASL,stay,9
+WLASL,steal,7
+WLASL,steel,6
+WLASL,stepfather,2
+WLASL,sticky,5
+WLASL,still,5
+WLASL,sting,3
+WLASL,stink,8
+WLASL,stir,4
+WLASL,stitch,4
+WLASL,stomach,7
+WLASL,stop,5
+WLASL,store,7
+WLASL,story,7
+WLASL,straight,8
+WLASL,strange,7
+WLASL,straw,7
+WLASL,strawberry,8
+WLASL,street,6
+WLASL,stress,8
+WLASL,stretch,4
+WLASL,strict,6
+WLASL,strong,8
+WLASL,structure,7
+WLASL,struggle,7
+WLASL,stubborn,7
+WLASL,stuck,4
+WLASL,student,8
+WLASL,study,10
+WLASL,stupid,5
+WLASL,subtract,6
+WLASL,subway,5
+WLASL,sue,4
+WLASL,suffer,5
+WLASL,sugar,7
+WLASL,suggest,6
+WLASL,summer,7
+WLASL,summon,5
+WLASL,sun,6
+WLASL,sunday,8
+WLASL,sunrise,4
+WLASL,sunset,8
+WLASL,sunshine,5
+WLASL,superman,4
+WLASL,support,6
+WLASL,suppose,4
+WLASL,sure,5
+WLASL,surface,6
+WLASL,surgeon,3
+WLASL,surgery,7
+WLASL,surprise,6
+WLASL,surrender,4
+WLASL,suspect,6
+WLASL,suspend,4
+WLASL,swallow,7
+WLASL,sweater,6
+WLASL,sweden,4
+WLASL,sweep,4
+WLASL,sweet,10
+WLASL,sweetheart,6
+WLASL,swim,4
+WLASL,swimming,6
+WLASL,swimsuit,5
+WLASL,swing,4
+WLASL,switzerland,6
+WLASL,symbol,6
+WLASL,sympathy,4
+WLASL,t,4
+WLASL,table,5
+WLASL,take,11
+WLASL,take turns,7
+WLASL,take up,4
+WLASL,tale,6
+WLASL,talent,4
+WLASL,talk,7
+WLASL,tall,13
+WLASL,tan,5
+WLASL,taste,6
+WLASL,tea,7
+WLASL,teach,7
+WLASL,teacher,8
+WLASL,team,6
+WLASL,tease,8
+WLASL,technology,5
+WLASL,teeth,4
+WLASL,telephone,6
+WLASL,telescope,5
+WLASL,television,6
+WLASL,tell,10
+WLASL,temperature,8
+WLASL,temple,6
+WLASL,tempt,3
+WLASL,ten,5
+WLASL,tend,3
+WLASL,tender,6
+WLASL,tennis,6
+WLASL,tent,8
+WLASL,terrible,6
+WLASL,test,8
+WLASL,testify,5
+WLASL,texas,3
+WLASL,text,6
+WLASL,thailand,6
+WLASL,than,4
+WLASL,thank you,7
+WLASL,thankful,5
+WLASL,thanksgiving,13
+WLASL,that,4
+WLASL,theater,4
+WLASL,their,5
+WLASL,them,5
+WLASL,theme,5
+WLASL,themselves,7
+WLASL,then,5
+WLASL,theory,10
+WLASL,therapy,6
+WLASL,there,6
+WLASL,therefore,3
+WLASL,thermometer,5
+WLASL,they,5
+WLASL,thick,5
+WLASL,thin,16
+WLASL,thing,6
+WLASL,think,7
+WLASL,third,7
+WLASL,thirsty,8
+WLASL,this,4
+WLASL,thousand,6
+WLASL,three,7
+WLASL,thrill,5
+WLASL,throat,5
+WLASL,through,5
+WLASL,throw,7
+WLASL,thursday,11
+WLASL,ticket,6
+WLASL,tie,7
+WLASL,tiger,9
+WLASL,time,8
+WLASL,tiptoe,4
+WLASL,tired,7
+WLASL,tissue,6
+WLASL,title,5
+WLASL,to,7
+WLASL,toast,10
+WLASL,tobacco,4
+WLASL,today,9
+WLASL,together,6
+WLASL,toilet,5
+WLASL,toilet paper,4
+WLASL,tolerate,4
+WLASL,tomato,8
+WLASL,tomorrow,7
+WLASL,tongue,5
+WLASL,tonight,5
+WLASL,tooth,6
+WLASL,toothbrush,5
+WLASL,top,6
+WLASL,topic,7
+WLASL,tornado,5
+WLASL,torture,4
+WLASL,total,5
+WLASL,touch,5
+WLASL,tough,6
+WLASL,tournament,7
+WLASL,towel,5
+WLASL,tower,3
+WLASL,town,9
+WLASL,trade,13
+WLASL,tradition,5
+WLASL,traffic,6
+WLASL,train,9
+WLASL,tranquil,5
+WLASL,transfer,8
+WLASL,transform,4
+WLASL,translate,7
+WLASL,travel,9
+WLASL,tree,6
+WLASL,triangle,6
+WLASL,trip,5
+WLASL,trophy,5
+WLASL,trouble,5
+WLASL,truck,6
+WLASL,true,5
+WLASL,trust,6
+WLASL,truth,5
+WLASL,try,6
+WLASL,tuesday,7
+WLASL,turkey,7
+WLASL,turn,4
+WLASL,turtle,5
+WLASL,tutor,5
+WLASL,tv,2
+WLASL,twin,5
+WLASL,two,6
+WLASL,type,5
+WLASL,u,4
+WLASL,ugly,9
+WLASL,umbrella,6
+WLASL,uncle,6
+WLASL,under,5
+WLASL,understand,7
+WLASL,underwear,8
+WLASL,unique,6
+WLASL,united states,5
+WLASL,university,7
+WLASL,until,7
+WLASL,up,7
+WLASL,upset,9
+WLASL,upstairs,3
+WLASL,use,5
+WLASL,v,4
+WLASL,vacant,4
+WLASL,vacation,6
+WLASL,vague,4
+WLASL,valley,4
+WLASL,value,3
+WLASL,vampire,5
+WLASL,vegetable,5
+WLASL,verb,4
+WLASL,very,6
+WLASL,vice president,4
+WLASL,viewpoint,5
+WLASL,violin,7
+WLASL,visit,9
+WLASL,visitor,5
+WLASL,visualize,5
+WLASL,vlog,4
+WLASL,vocabulary,6
+WLASL,voice,9
+WLASL,volleyball,5
+WLASL,volunteer,7
+WLASL,vomit,9
+WLASL,vote,8
+WLASL,w,4
+WLASL,wait,10
+WLASL,waiter,3
+WLASL,wake up,5
+WLASL,walk,11
+WLASL,wall,5
+WLASL,wallet,6
+WLASL,wander,5
+WLASL,want,9
+WLASL,war,7
+WLASL,warm,5
+WLASL,warn,5
+WLASL,wash,6
+WLASL,wash face,2
+WLASL,washington,5
+WLASL,waste,5
+WLASL,watch,8
+WLASL,water,9
+WLASL,waterfall,5
+WLASL,watermelon,5
+WLASL,way,5
+WLASL,we,7
+WLASL,weak,7
+WLASL,wear,6
+WLASL,weather,8
+WLASL,wedding,7
+WLASL,wednesday,8
+WLASL,week,9
+WLASL,weekend,9
+WLASL,weekly,4
+WLASL,weigh,3
+WLASL,weight,6
+WLASL,weird,5
+WLASL,welcome,5
+WLASL,west,8
+WLASL,wet,9
+WLASL,whale,6
+WLASL,what,12
+WLASL,whatever,4
+WLASL,wheelchair,4
+WLASL,when,8
+WLASL,where,7
+WLASL,which,6
+WLASL,while,6
+WLASL,whistle,3
+WLASL,white,10
+WLASL,who,14
+WLASL,why,11
+WLASL,wide,6
+WLASL,wife,8
+WLASL,will,4
+WLASL,willing,6
+WLASL,win,7
+WLASL,wind,8
+WLASL,window,6
+WLASL,wine,5
+WLASL,winter,6
+WLASL,wish,4
+WLASL,with,8
+WLASL,within,5
+WLASL,without,7
+WLASL,witness,6
+WLASL,wolf,6
+WLASL,woman,11
+WLASL,wonder,5
+WLASL,wonderful,6
+WLASL,wood,6
+WLASL,word,8
+WLASL,work,10
+WLASL,worker,5
+WLASL,workshop,5
+WLASL,world,6
+WLASL,worm,6
+WLASL,worry,5
+WLASL,worse,6
+WLASL,worthless,5
+WLASL,wow,9
+WLASL,wrap,6
+WLASL,wrench,3
+WLASL,wristwatch,6
+WLASL,write,10
+WLASL,wrong,8
+WLASL,year,10
+WLASL,yellow,8
+WLASL,yes,12
+WLASL,yesterday,10
+WLASL,you,8
+WLASL,young,5
+WLASL,your,6
+WLASL,yourself,5
+WLASL,zero,4

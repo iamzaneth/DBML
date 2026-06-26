@@ -1,0 +1,30 @@
+================================================================================
+DATASET SCALE AND STRUCTURE ANALYSIS REPORT
+================================================================================
+
+[VSL]
+  Number of classes (glosses): 3315
+  Total videos: 4362
+  Unreadable videos: 0
+  Mean samples per class: 1.32
+  Median samples per class: 1.00
+  Min samples per class: 1
+  Max samples per class: 6
+
+[WLASL]
+  Number of classes (glosses): 2000
+  Total videos: 11980
+  Unreadable videos: 0
+  Mean samples per class: 5.99
+  Median samples per class: 6.00
+  Min samples per class: 2
+  Max samples per class: 16
+
+Narrative summary:
+--------------------------------------------------------------------------------
+The VSL dataset contains 3315 classes (1.7x more than WLASL's 2000 classes), indicating substantially larger lexical coverage than WLASL.
+Despite covering more classes, VSL has fewer total video samples (4362) than WLASL (11980), implying a sparser per-class sampling density in VSL.
+On average, WLASL provides 6.0 samples per class, compared to 1.3 for VSL, which may translate into more robust per-class statistical estimates and reduced overfitting risk during model training on WLASL.
+Regarding temporal characteristics, videos in VSL have a longer mean duration (4.03s) than those in WLASL (2.43s), which may reflect differences in sign articulation speed, recording protocol, or segmentation convention between the two datasets.
+
+================================================================================
