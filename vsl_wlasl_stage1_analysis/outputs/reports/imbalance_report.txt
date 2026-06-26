@@ -1,0 +1,36 @@
+================================================================================
+CLASS IMBALANCE ANALYSIS REPORT
+================================================================================
+
+[VSL]
+  Max samples per class: 6
+  Min samples per class: 1
+  Mean samples per class: 1.32
+  Median samples per class: 1.00
+  Std samples per class: 0.72
+  Imbalance Ratio (IR): 6.00
+  Coefficient of Variation (CV): 0.549
+  Gini coefficient: 0.203
+  Top 10% classes hold: 23.0% of samples
+  Bottom 10% classes hold: 7.6% of samples
+
+[WLASL]
+  Max samples per class: 16
+  Min samples per class: 2
+  Mean samples per class: 5.99
+  Median samples per class: 6.00
+  Std samples per class: 1.95
+  Imbalance Ratio (IR): 8.00
+  Coefficient of Variation (CV): 0.325
+  Gini coefficient: 0.173
+  Top 10% classes hold: 16.9% of samples
+  Bottom 10% classes hold: 5.8% of samples
+
+Narrative summary:
+--------------------------------------------------------------------------------
+The calculated imbalance ratio of WLASL (8.00) is moderately higher than VSL (6.00), suggesting a stronger long-tail effect that may bias deep learning models toward majority classes in WLASL.
+High coefficient of variation in VSL (CV = 0.55) indicates substantial class frequency dispersion, meaning sample counts vary widely across classes rather than clustering around the mean.
+The Gini coefficient further corroborates this pattern: VSL exhibits a higher Gini coefficient (0.203) than WLASL (0.173), confirming a more unequal distribution of samples across classes.
+Long-tail analysis shows that the top 10% of classes in VSL account for 23.0% of all samples, while the bottom 10% of classes contribute only 7.6%, illustrating a pronounced long-tail distribution that is characteristic of naturally collected sign-language corpora.
+
+================================================================================

@@ -1,0 +1,9 @@
+,VSL,WLASL
+num_classes,3315.0,2000.0
+total_videos,4362.0,11980.0
+mean_samples_per_class,1.3158371040723982,5.99
+median_samples_per_class,1.0,6.0
+min_samples_per_class,1.0,2.0
+max_samples_per_class,6.0,16.0
+mean_duration_seconds,4.026631803071986,2.4284809353872516
+mean_fps,29.77490872263912,28.530534785232394
