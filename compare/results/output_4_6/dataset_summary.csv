@@ -1,0 +1,35 @@
+﻿dataset,component,count,percentage,analysis
+ASL,2 / neutral_proxy,3297,19.648390941597143,handshape_top5
+ASL,3 / neutral_proxy,3084,18.37902264600715,handshape_top5
+ASL,5 / closed_proxy,2611,15.560190703218115,handshape_top5
+ASL,0 / closed_proxy,1997,11.901072705601909,handshape_top5
+ASL,6 / closed_proxy,1675,9.98212157330155,handshape_top5
+VSL,2 / neutral_proxy,1926,27.514285714285712,handshape_top5
+VSL,3 / neutral_proxy,1641,23.442857142857143,handshape_top5
+VSL,6 / closed_proxy,1093,15.614285714285714,handshape_top5
+VSL,5 / closed_proxy,767,10.957142857142856,handshape_top5
+VSL,4 / curved_proxy,594,8.485714285714286,handshape_top5
+ASL,shoulder,16772,99.9523241954708,location
+ASL,below_waist,7,0.0417163289630512,location
+ASL,head,1,0.0059594755661501,location
+VSL,shoulder,6980,99.71428571428572,location
+VSL,below_waist,9,0.1285714285714285,location
+VSL,head,9,0.1285714285714285,location
+VSL,chest,2,0.0285714285714285,location
+ASL,left / backward,3132,18.66507747318236,orientation
+ASL,up / right,2286,13.62336114421931,orientation
+ASL,up / backward,1790,10.66746126340882,orientation
+ASL,left / right,1682,10.0238379022646,orientation
+ASL,up / forward,1667,9.934445768772347,orientation
+VSL,down / backward,1511,21.585714285714285,orientation
+VSL,left / backward,784,11.2,orientation
+VSL,up / right,669,9.557142857142855,orientation
+VSL,down / up,654,9.342857142857143,orientation
+VSL,left / up,556,7.942857142857143,orientation
+ASL,two_hand,7755,64.73288814691152,one_two_hand
+ASL,low_hand_activity,3860,32.220367278797994,one_two_hand
+ASL,right_one_hand,357,2.979966611018364,one_two_hand
+ASL,left_one_hand,8,0.0667779632721202,one_two_hand
+VSL,two_hand,3177,72.83356258596973,one_two_hand
+VSL,low_hand_activity,869,19.92205410362219,one_two_hand
+VSL,right_one_hand,316,7.24438331040807,one_two_hand

@@ -1,0 +1,8 @@
+﻿dataset,activity_type,count,dataset_total,percentage
+ASL,left_one_hand,8,11980,0.0667779632721202
+ASL,low_hand_activity,3860,11980,32.220367278797994
+ASL,right_one_hand,357,11980,2.979966611018364
+ASL,two_hand,7755,11980,64.73288814691152
+VSL,low_hand_activity,869,4362,19.92205410362219
+VSL,right_one_hand,316,4362,7.24438331040807
+VSL,two_hand,3177,4362,72.83356258596973
