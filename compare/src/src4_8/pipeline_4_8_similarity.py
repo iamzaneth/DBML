@@ -718,7 +718,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=src_dir / "output_4_8",
+        default=compare_dir / "results" / "output_4_8",
         help="Output directory for reports, CSVs, and figures.",
     )
     parser.add_argument(
