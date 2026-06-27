@@ -1,0 +1,196 @@
+Input files: video rows summary=(48, 10), label rows=(5314, 17), dtw labels=(2551, 9), dtw inter pairs=(85640, 5)
+
+KEY DATASET COMPARISON
+num_frames: ASL=65.6480; VSL=92.4805; VSL-ASL=26.8325; VSL/ASL=1.41x
+hand_frame_missing_ratio: ASL=0.3963; VSL=0.3226; VSL-ASL=-0.0737; VSL/ASL=0.81x
+total_motion: ASL=12.0679; VSL=25.0142; VSL-ASL=12.9463; VSL/ASL=2.07x
+mean_motion: ASL=0.2257; VSL=0.3254; VSL-ASL=0.0997; VSL/ASL=1.44x
+mean_velocity: ASL=6.4038; VSL=9.6874; VSL-ASL=3.2836; VSL/ASL=1.51x
+motion_variance: ASL=0.0563; VSL=0.1222; VSL-ASL=0.0659; VSL/ASL=2.17x
+acceleration_std: ASL=7.5200; VSL=9.1225; VSL-ASL=1.6025; VSL/ASL=1.21x
+direction_change_count: ASL=40.7900; VSL=67.2506; VSL-ASL=26.4606; VSL/ASL=1.65x
+trajectory_length: ASL=12.0679; VSL=25.0142; VSL-ASL=12.9463; VSL/ASL=2.07x
+straightness_ratio: ASL=0.1369; VSL=0.0387; VSL-ASL=-0.0982; VSL/ASL=0.28x
+left_right_hand_dist_mean: ASL=1.4527; VSL=1.9731; VSL-ASL=0.5205; VSL/ASL=1.36x
+hand_face_dist_mean: ASL=2.3996; VSL=2.8818; VSL-ASL=0.4822; VSL/ASL=1.20x
+hand_body_dist_mean: ASL=2.2122; VSL=2.4880; VSL-ASL=0.2758; VSL/ASL=1.12x
+displacement: ASL=0.7731; VSL=0.4155; VSL-ASL=-0.3576; VSL/ASL=0.54x
+
+VIDEO COUNT AND FRAME LENGTH
+dataset  count      mean       std  median   q1   q3  min   max
+    ASL  11980 65.647997 10.895116    60.0 60.0 67.0 60.0 196.0
+    VSL   4362 92.480514 31.280684    85.0 75.0 98.0 60.0 465.0
+
+SAMPLE COUNT DISTRIBUTION BY LABEL
+ASL: labels=2000, samples_total=11980, median_samples=6.0, min=2, p10=4.0, p25=5.0, max=16, labels_lt5=425, labels_lt10=1896
+VSL: labels=3314, samples_total=4362, median_samples=1.0, min=1, p10=1.0, p25=1.0, max=6, labels_lt5=3313, labels_lt10=3314
+
+DTW INTRA CLASS
+ASL: labels=2000, mean=0.7397, median=0.6959, p75=0.8387, max=1.9268
+dataset        label  num_samples  num_pairs  intra_class_dtw_mean  intra_class_dtw_std  intra_class_dtw_min  intra_class_dtw_max  intra_class_dtw_median
+    ASL        skunk            5         10              1.926817             0.866494             0.909602             3.681647                1.575575
+    ASL         comb            6         15              1.655381             0.958544             0.255491             2.751918                2.309263
+    ASL      cabbage            4          6              1.601485             0.400531             1.031972             2.137108                1.622777
+    ASL         bald            7         21              1.594136             0.594980             0.624117             2.636131                1.762311
+    ASL     shoulder            4          6              1.576526             0.742012             0.549983             2.524599                1.530131
+    ASL      lettuce            7         21              1.551772             0.658755             0.476407             2.608824                1.639515
+    ASL         idea            8         28              1.539873             0.770416             0.438526             2.816292                1.574667
+    ASL common sense            5         10              1.530583             0.886586             0.375713             3.045969                1.305505
+    ASL      tornado            5         10              1.526810             0.591351             0.366485             2.280335                1.565865
+    ASL      consume            4          6              1.523505             0.903781             0.348887             2.667965                1.565404
+VSL: labels=551, mean=0.5087, median=0.4459, p75=0.6521, max=2.4973
+dataset      label  num_samples  num_pairs  intra_class_dtw_mean  intra_class_dtw_std  intra_class_dtw_min  intra_class_dtw_max  intra_class_dtw_median
+    VSL        xưa            3          3              2.497259             0.893501             1.327860             3.496561                2.667356
+    VSL        quê            3          3              1.816214             1.135206             0.212787             2.687255                2.548602
+    VSL        màn            3          3              1.734254             0.800227             0.603791             2.345138                2.253832
+    VSL     e thẹn            3          3              1.583894             0.394409             1.093493             2.059242                1.598946
+    VSL  chiếc gối            3          3              1.548285             0.130175             1.413844             1.724420                1.506591
+    VSL   bên cạnh            2          1              1.543102             0.000000             1.543102             1.543102                1.543102
+    VSL xe cứu hỏa            2          1              1.527866             0.000000             1.527866             1.527866                1.527866
+    VSL    đèn pin            3          3              1.509777             0.767016             0.426601             2.101535                2.001195
+    VSL  quả đu đủ            3          3              1.347412             0.301776             0.942733             1.667138                1.432365
+    VSL  trốn chạy            3          3              1.317948             0.723790             0.294729             1.853556                1.805560
+
+INTER CLASS LOW-DTW PAIRS
+ASL: count=30873, min=0.0522, p10=0.1592, median=0.2317
+dataset  label_a    label_b  dtw_distance                        mode
+    ASL     cute      sweet      0.052208 nearest_candidates_then_dtw
+    ASL    sweet      voice      0.058716 nearest_candidates_then_dtw
+    ASL    sugar      voice      0.059657 nearest_candidates_then_dtw
+    ASL  serious      sugar      0.062572 nearest_candidates_then_dtw
+    ASL   expert  ice cream      0.063320 nearest_candidates_then_dtw
+    ASL    sugar      sweet      0.064177 nearest_candidates_then_dtw
+    ASL   toilet        two      0.064422 nearest_candidates_then_dtw
+    ASL        u          v      0.067272 nearest_candidates_then_dtw
+    ASL favorite      metal      0.068618 nearest_candidates_then_dtw
+    ASL     cute      sugar      0.069097 nearest_candidates_then_dtw
+    ASL     milk     purple      0.069759 nearest_candidates_then_dtw
+    ASL  curious     israel      0.070708 nearest_candidates_then_dtw
+    ASL       no television      0.070804 nearest_candidates_then_dtw
+    ASL   sleepy strawberry      0.073047 nearest_candidates_then_dtw
+    ASL        k          r      0.073117 nearest_candidates_then_dtw
+VSL: count=54767, min=0.0000, p10=0.2318, median=0.3816
+dataset                        label_a        label_b  dtw_distance                        mode
+    VSL                       bất động cười nhếch mép      0.000000 nearest_candidates_then_dtw
+    VSL                       bất động         gật gù      0.000000 nearest_candidates_then_dtw
+    VSL                       bất động        hắt hơi      0.000000 nearest_candidates_then_dtw
+    VSL                       bất động        lắc đầu      0.000000 nearest_candidates_then_dtw
+    VSL                 cười nhếch mép         gật gù      0.000000 nearest_candidates_then_dtw
+    VSL                 cười nhếch mép        hắt hơi      0.000000 nearest_candidates_then_dtw
+    VSL                 cười nhếch mép        lắc đầu      0.000000 nearest_candidates_then_dtw
+    VSL                         gật gù        hắt hơi      0.000000 nearest_candidates_then_dtw
+    VSL                         gật gù        lắc đầu      0.000000 nearest_candidates_then_dtw
+    VSL                        hắt hơi        lắc đầu      0.000000 nearest_candidates_then_dtw
+    VSL bao tay (dùng cho trẻ sơ sinh)       găng tay      0.041557 nearest_candidates_then_dtw
+    VSL                         sổ tay   sổ điểm danh      0.067370 nearest_candidates_then_dtw
+    VSL                            tha        tha mồi      0.073350 nearest_candidates_then_dtw
+    VSL                      chìa khóa      ki-lô-gam      0.076006 nearest_candidates_then_dtw
+    VSL                      giọng nói            kim      0.081914 nearest_candidates_then_dtw
+
+TOP COMPLEX BY DATASET
+ASL
+       label  num_samples  mean_total_motion  mean_velocity  motion_variance_mean  direction_change_mean  hand_missing_mean  sequence_length_variance  motion_complexity_score
+     ceiling            6          33.276389      18.096695              0.415195              44.666667           0.411715                165.583333                 0.765440
+     shampoo            5          37.663288      17.438929              0.280538              56.250000           0.381228                 96.640000                 0.762431
+       climb            5          32.801574      15.887647              0.179118              64.400000           0.314413               1181.760000                 0.676670
+    swimming            6          29.759486      13.601718              0.416633              60.833333           0.300608                219.222222                 0.645049
+     stadium            6          27.436633      14.154674              0.391426              53.500000           0.230971                 32.138889                 0.641438
+  binoculars            4          26.324512      11.921332              0.351467              37.750000           0.133333                  0.000000                 0.632648
+     curtain            2          27.070765      13.866697              0.296895              47.000000           0.137500                  0.000000                 0.629309
+      helmet            5          28.535227      15.507408              0.248792              57.200000           0.321218                277.760000                 0.625350
+         owl            5          28.867226      15.622663              0.259223              54.800000           0.312117                 56.640000                 0.620003
+   visualize            5          29.409638      12.642966              0.279461              49.800000           0.382517                391.360000                 0.610388
+hippopotamus            3          32.305394      13.338690              0.151623              73.333333           0.298798               1074.888889                 0.603877
+       crown            4          28.256646      13.729185              0.284216              44.750000           0.145833                  0.000000                 0.600276
+       sweep            4          27.478428      13.436042              0.303863              63.500000           0.214081                257.187500                 0.588008
+   overwhelm            8          25.618440      13.116377              0.290784              42.625000           0.361224                 95.437500                 0.581566
+       sauce            4          29.241401      10.830018              0.278761              63.250000           0.415327                586.687500                 0.572815
+VSL
+        label  num_samples  mean_total_motion  mean_velocity  motion_variance_mean  direction_change_mean  hand_missing_mean  sequence_length_variance  motion_complexity_score
+         đuôi            1         132.541794      92.378545              5.857681              28.000000           0.679104                  0.000000                 0.806140
+       gà mái            1         144.277360      27.896725              0.698961             128.000000           0.495392                  0.000000                 0.441130
+      cổ tích            1         123.436090      28.677361              1.151961             130.000000           0.327815                  0.000000                 0.413221
+tóc dựng đứng            1          90.033721      35.504086              2.034346              66.000000           0.311881                  0.000000                 0.394396
+     thuỷ thủ            1          83.088022      38.309969              2.165127              48.000000           0.372222                  0.000000                 0.391126
+      kêu gọi            1         100.635719      30.160524              1.955331              93.000000           0.593567                  0.000000                 0.379826
+dải phân cách            1         125.300962      23.918916              0.472087             136.000000           0.291444                  0.000000                 0.375154
+     lốc xoáy            1          88.751720      37.998414              1.513503              56.000000           0.352632                  0.000000                 0.368572
+     trí thức            1         131.127848      17.086528              0.440734             266.000000           0.064935                  0.000000                 0.365962
+      trú mưa            1          76.688655      38.305982              1.652427              52.000000           0.440476                  0.000000                 0.364896
+    tung tăng            1          93.536154      34.186323              1.058266              71.000000           0.276596                  0.000000                 0.356225
+ Mặt trời lặn            1          82.524080      30.915583              1.627095              72.000000           0.271429                  0.000000                 0.353014
+      cây tre            1         113.316106      21.910217              0.647103             141.000000           0.190058                  0.000000                 0.352346
+      bơi lội            1          96.706653      30.915183              1.107600              44.000000           0.699367                  0.000000                 0.347082
+      ở ngoài            3          74.929141      13.749986              0.373491             149.666667           0.267771               5168.222222                 0.343499
+
+HIGH MISSING LABELS
+ASL
+     label  num_samples  hand_missing_mean  mean_total_motion  motion_complexity_score
+      high            6           0.725595           5.539754                 0.071611
+      side            5           0.713333           6.053945                 0.112808
+     honey            5           0.711232           7.535716                 0.113541
+     skunk            5           0.696244          20.583429                 0.552197
+        tv            2           0.695833           7.418190                 0.106100
+   giraffe            7           0.695322          11.746560                 0.234268
+   concept            4           0.688978          14.050016                 0.264516
+     lemon            8           0.688965           5.863661                 0.056295
+      face            8           0.688747          12.389062                 0.203642
+understand            7           0.685386          11.894725                 0.226038
+      pink            9           0.682980           6.340041                 0.084731
+     guess            6           0.681041           6.988287                 0.106316
+       nut            5           0.679136           6.089967                 0.079022
+    tongue            5           0.678333           4.690642                 0.053905
+      verb            4           0.676446           7.774394                 0.121747
+VSL
+                 label  num_samples  hand_missing_mean  mean_total_motion  motion_complexity_score
+               lắc đầu            1           1.000000                NaN                 0.000000
+               hắt hơi            1           1.000000                NaN                 0.000000
+                gật gù            1           1.000000                NaN                 0.000000
+        cười nhếch mép            1           1.000000                NaN                 0.000000
+              bất động            1           1.000000                NaN                 0.000000
+           đứng nghiêm            1           0.916667           0.421784                 0.017081
+                   dốt            1           0.802721          39.730764                 0.153306
+nước tới chân mới nhảy            1           0.793478          37.130310                 0.142030
+               hăm dọa            1           0.784038          22.974684                 0.074466
+               chức vụ            1           0.782258          32.597632                 0.113818
+                  nhìn            1           0.778481          16.125207                 0.060808
+              bắn súng            1           0.773118          47.069153                 0.127756
+                   bơi            1           0.770968          19.561152                 0.066200
+               vẫy tay            1           0.766667          30.966999                 0.105781
+             thuận lợi            1           0.743590          14.292512                 0.058200
+
+HIGH SEQUENCE LENGTH VARIANCE
+ASL
+dataset        label  num_samples  mean_frames  std_frames  min_frames  max_frames  sequence_length_variance
+    ASL        april            5    97.000000   51.637196        60.0       196.0               2666.400000
+    ASL        plant            5    88.600000   40.564023        60.0       168.0               1645.440000
+    ASL      article            4    91.250000   39.644514        60.0       157.0               1571.687500
+    ASL         bank            3    87.000000   38.183766        60.0       141.0               1458.000000
+    ASL        march            7    84.000000   36.691766        60.0       171.0               1346.285714
+    ASL         town            9    74.444444   35.245523        60.0       173.0               1242.246914
+    ASL         city            9    77.444444   34.970181        60.0       173.0               1222.913580
+    ASL        climb            5    83.200000   34.376736        60.0       150.0               1181.760000
+    ASL      tobacco            4    80.250000   33.921785        60.0       139.0               1150.687500
+    ASL    represent            7    77.285714   33.771139        60.0       159.0               1140.489796
+    ASL         bush            6    92.000000   33.201406        62.0       159.0               1102.333333
+    ASL thanksgiving           13    73.307692   32.962414        60.0       185.0               1086.520710
+    ASL hippopotamus            3    84.666667   32.785498        60.0       131.0               1074.888889
+    ASL    adjective            4    78.500000   32.042940        60.0       134.0               1026.750000
+    ASL        canoe            4    85.500000   31.028213        60.0       136.0                962.750000
+VSL
+dataset              label  num_samples  mean_frames  std_frames  min_frames  max_frames  sequence_length_variance
+    VSL                bạn            3   139.000000   84.852814        79.0       259.0               7200.000000
+    VSL          quả đu đủ            3   174.333333   75.935645        81.0       267.0               5766.222222
+    VSL   tay chân sạch sẽ            3   208.666667   72.075578       109.0       277.0               5194.888889
+    VSL            ở ngoài            3   176.666667   71.890349        75.0       228.0               5168.222222
+    VSL           vật nuôi            3   120.666667   68.119177        72.0       217.0               4640.222222
+    VSL            đèn pin            3   131.000000   67.960773        79.0       227.0               4618.666667
+    VSL          Trung Thu            3   174.333333   67.410846        79.0       222.0               4544.222222
+    VSL          hành quân            3   191.666667   66.944421       105.0       268.0               4481.555556
+    VSL        trong ngoài            3   176.333333   65.290802        84.0       223.0               4262.888889
+    VSL                lâu            2   153.500000   58.500000        95.0       212.0               3422.250000
+    VSL            yêu cầu            3   152.666667   58.454161        70.0       194.0               3416.888889
+    VSL gầy (miền Nam_ ốm)            3   138.000000   57.102247        73.0       212.0               3260.666667
+    VSL            tha thứ            3   125.000000   56.856545        78.0       205.0               3232.666667
+    VSL               thìa            3   123.666667   56.097138        84.0       203.0               3146.888889
+    VSL              trăng            3   157.000000   55.160372        79.0       197.0               3042.666667
