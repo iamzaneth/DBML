@@ -1,0 +1,211 @@
+# Data Validation Report
+
+## Files Read
+- `D:\Project\DBML\compare\results\output_4_5\keypoint_quality.csv`
+  - rows: 2
+  - numeric features: 11
+  - categorical features: 1
+  - columns: dataset, frames, pose_missing, hand_missing, face_missing, pose_detection, face_detection, left_hand_missing_rate, right_hand_missing_rate, both_hand_missing_rate, hand_detection_rate, usable
+  - dtypes: dataset: str, frames: float64, pose_missing: float64, hand_missing: float64, face_missing: float64, pose_detection: float64, face_detection: float64, left_hand_missing_rate: float64, right_hand_missing_rate: float64, both_hand_missing_rate: float64, hand_detection_rate: float64, usable: float64
+- `D:\Project\DBML\compare\results\output_4_5\keypoint_quality_summary.csv`
+  - rows: 2
+  - numeric features: 9
+  - categorical features: 1
+  - columns: dataset, Pose detection rate, Face detection rate, Hand detection rate, Pose missing ratio, Hand missing ratio, Face missing ratio, Left hand missing rate, Right hand missing rate, Both hands missing rate
+  - dtypes: dataset: str, Pose detection rate: float64, Face detection rate: float64, Hand detection rate: float64, Pose missing ratio: float64, Hand missing ratio: float64, Face missing ratio: float64, Left hand missing rate: float64, Right hand missing rate: float64, Both hands missing rate: float64
+- `D:\Project\DBML\compare\results\output_4_5\usable_ratio_threshold.csv`
+  - rows: 8
+  - numeric features: 2
+  - categorical features: 1
+  - columns: dataset, threshold_missing, usable_video_ratio
+  - dtypes: dataset: str, threshold_missing: float64, usable_video_ratio: float64
+- `D:\Project\DBML\compare\results\output_4_5\v2\keypoint_quality.csv`
+  - rows: 2
+  - numeric features: 11
+  - categorical features: 1
+  - columns: dataset, frames, pose_missing, hand_missing, face_missing, pose_detection, face_detection, left_hand_missing_rate, right_hand_missing_rate, both_hand_missing_rate, hand_detection_rate, usable
+  - dtypes: dataset: str, frames: float64, pose_missing: float64, hand_missing: float64, face_missing: float64, pose_detection: float64, face_detection: float64, left_hand_missing_rate: float64, right_hand_missing_rate: float64, both_hand_missing_rate: float64, hand_detection_rate: float64, usable: float64
+- `D:\Project\DBML\compare\results\output_4_5\v2\keypoint_quality_summary.csv`
+  - rows: 2
+  - numeric features: 9
+  - categorical features: 1
+  - columns: dataset, Pose detection rate, Face detection rate, Hand detection rate, Pose missing ratio, Hand missing ratio, Face missing ratio, Left hand missing rate, Right hand missing rate, Both hands missing rate
+  - dtypes: dataset: str, Pose detection rate: float64, Face detection rate: float64, Hand detection rate: float64, Pose missing ratio: float64, Hand missing ratio: float64, Face missing ratio: float64, Left hand missing rate: float64, Right hand missing rate: float64, Both hands missing rate: float64
+- `D:\Project\DBML\compare\results\output_4_5\v2\usable_ratio_threshold.csv`
+  - rows: 8
+  - numeric features: 2
+  - categorical features: 1
+  - columns: dataset, threshold_missing, usable_video_ratio
+  - dtypes: dataset: str, threshold_missing: float64, usable_video_ratio: float64
+- `D:\Project\DBML\compare\results\output_4_5\v2\video_quality.csv`
+  - rows: 16342
+  - numeric features: 10
+  - categorical features: 3
+  - columns: video, frames, pose_missing, hand_missing, face_missing, pose_detection, face_detection, left_hand_missing_rate, right_hand_missing_rate, both_hand_missing_rate, hand_detection_rate, usable, dataset
+  - dtypes: video: str, frames: int64, pose_missing: float64, hand_missing: float64, face_missing: float64, pose_detection: float64, face_detection: float64, left_hand_missing_rate: float64, right_hand_missing_rate: float64, both_hand_missing_rate: float64, hand_detection_rate: float64, usable: bool, dataset: str
+- `D:\Project\DBML\compare\results\output_4_5\video_quality.csv`
+  - rows: 16342
+  - numeric features: 10
+  - categorical features: 3
+  - columns: video, frames, pose_missing, hand_missing, face_missing, pose_detection, face_detection, left_hand_missing_rate, right_hand_missing_rate, both_hand_missing_rate, hand_detection_rate, usable, dataset
+  - dtypes: video: str, frames: int64, pose_missing: float64, hand_missing: float64, face_missing: float64, pose_detection: float64, face_detection: float64, left_hand_missing_rate: float64, right_hand_missing_rate: float64, both_hand_missing_rate: float64, hand_detection_rate: float64, usable: bool, dataset: str
+- `D:\Project\DBML\compare\results\output_4_6\dataset_summary.csv`
+  - rows: 34
+  - numeric features: 2
+  - categorical features: 3
+  - columns: dataset, component, count, percentage, analysis
+  - dtypes: dataset: str, component: str, count: int64, percentage: float64, analysis: str
+- `D:\Project\DBML\compare\results\output_4_6\handshape_cluster_summary.csv`
+  - rows: 16
+  - numeric features: 4
+  - categorical features: 2
+  - columns: dataset, handshape_cluster, cluster_label_proxy, count, dataset_total, percentage
+  - dtypes: dataset: str, handshape_cluster: int64, cluster_label_proxy: str, count: int64, dataset_total: int64, percentage: float64
+- `D:\Project\DBML\compare\results\output_4_6\handshape_clusters.csv`
+  - rows: 23780
+  - numeric features: 49
+  - categorical features: 6
+  - columns: dataset, gloss, video, path, hand, valid_frame_ratio, motion_magnitude, thumb_angle_1_mean, thumb_angle_1_std, thumb_angle_2_mean, thumb_angle_2_std, thumb_tip_wrist_ratio_mean, index_angle_1_mean, index_angle_1_std, index_angle_2_mean, index_angle_2_std, index_angle_3_mean, index_angle_3_std, index_tip_wrist_ratio_mean, middle_angle_1_mean, middle_angle_1_std, middle_angle_2_mean, middle_angle_2_std, middle_angle_3_mean, middle_angle_3_std, middle_tip_wrist_ratio_mean, ring_angle_1_mean, ring_angle_1_std, ring_angle_2_mean, ring_angle_2_std, ring_angle_3_mean, ring_angle_3_std, ring_tip_wrist_ratio_mean, pinky_angle_1_mean, pinky_angle_1_std, pinky_angle_2_mean, pinky_angle_2_std, pinky_angle_3_mean, pinky_angle_3_std, pinky_tip_wrist_ratio_mean, thumb_index_distance_ratio_mean, thumb_index_distance_ratio_std, index_middle_distance_ratio_mean, index_middle_distance_ratio_std, middle_ring_distance_ratio_mean, middle_ring_distance_ratio_std, ring_pinky_distance_ratio_mean, ring_pinky_distance_ratio_std, index_pinky_distance_ratio_mean, index_pinky_distance_ratio_std, palm_width_ratio_mean, openness_mean, curvature_proxy_mean, handshape_cluster, cluster_label_proxy
+  - dtypes: dataset: str, gloss: str, video: str, path: str, hand: str, valid_frame_ratio: float64, motion_magnitude: float64, thumb_angle_1_mean: float64, thumb_angle_1_std: float64, thumb_angle_2_mean: float64, thumb_angle_2_std: float64, thumb_tip_wrist_ratio_mean: float64, index_angle_1_mean: float64, index_angle_1_std: float64, index_angle_2_mean: float64, index_angle_2_std: float64, index_angle_3_mean: float64, index_angle_3_std: float64, index_tip_wrist_ratio_mean: float64, middle_angle_1_mean: float64, middle_angle_1_std: float64, middle_angle_2_mean: float64, middle_angle_2_std: float64, middle_angle_3_mean: float64, middle_angle_3_std: float64, middle_tip_wrist_ratio_mean: float64, ring_angle_1_mean: float64, ring_angle_1_std: float64, ring_angle_2_mean: float64, ring_angle_2_std: float64, ring_angle_3_mean: float64, ring_angle_3_std: float64, ring_tip_wrist_ratio_mean: float64, pinky_angle_1_mean: float64, pinky_angle_1_std: float64, pinky_angle_2_mean: float64, pinky_angle_2_std: float64, pinky_angle_3_mean: float64, pinky_angle_3_std: float64, pinky_tip_wrist_ratio_mean: float64, thumb_index_distance_ratio_mean: float64, thumb_index_distance_ratio_std: float64, index_middle_distance_ratio_mean: float64, index_middle_distance_ratio_std: float64, middle_ring_distance_ratio_mean: float64, middle_ring_distance_ratio_std: float64, ring_pinky_distance_ratio_mean: float64, ring_pinky_distance_ratio_std: float64, index_pinky_distance_ratio_mean: float64, index_pinky_distance_ratio_std: float64, palm_width_ratio_mean: float64, openness_mean: float64, curvature_proxy_mean: float64, handshape_cluster: int64, cluster_label_proxy: str
+- `D:\Project\DBML\compare\results\output_4_6\handshape_features.csv`
+  - rows: 23780
+  - numeric features: 48
+  - categorical features: 5
+  - columns: dataset, gloss, video, path, hand, valid_frame_ratio, motion_magnitude, thumb_angle_1_mean, thumb_angle_1_std, thumb_angle_2_mean, thumb_angle_2_std, thumb_tip_wrist_ratio_mean, index_angle_1_mean, index_angle_1_std, index_angle_2_mean, index_angle_2_std, index_angle_3_mean, index_angle_3_std, index_tip_wrist_ratio_mean, middle_angle_1_mean, middle_angle_1_std, middle_angle_2_mean, middle_angle_2_std, middle_angle_3_mean, middle_angle_3_std, middle_tip_wrist_ratio_mean, ring_angle_1_mean, ring_angle_1_std, ring_angle_2_mean, ring_angle_2_std, ring_angle_3_mean, ring_angle_3_std, ring_tip_wrist_ratio_mean, pinky_angle_1_mean, pinky_angle_1_std, pinky_angle_2_mean, pinky_angle_2_std, pinky_angle_3_mean, pinky_angle_3_std, pinky_tip_wrist_ratio_mean, thumb_index_distance_ratio_mean, thumb_index_distance_ratio_std, index_middle_distance_ratio_mean, index_middle_distance_ratio_std, middle_ring_distance_ratio_mean, middle_ring_distance_ratio_std, ring_pinky_distance_ratio_mean, ring_pinky_distance_ratio_std, index_pinky_distance_ratio_mean, index_pinky_distance_ratio_std, palm_width_ratio_mean, openness_mean, curvature_proxy_mean
+  - dtypes: dataset: str, gloss: str, video: str, path: str, hand: str, valid_frame_ratio: float64, motion_magnitude: float64, thumb_angle_1_mean: float64, thumb_angle_1_std: float64, thumb_angle_2_mean: float64, thumb_angle_2_std: float64, thumb_tip_wrist_ratio_mean: float64, index_angle_1_mean: float64, index_angle_1_std: float64, index_angle_2_mean: float64, index_angle_2_std: float64, index_angle_3_mean: float64, index_angle_3_std: float64, index_tip_wrist_ratio_mean: float64, middle_angle_1_mean: float64, middle_angle_1_std: float64, middle_angle_2_mean: float64, middle_angle_2_std: float64, middle_angle_3_mean: float64, middle_angle_3_std: float64, middle_tip_wrist_ratio_mean: float64, ring_angle_1_mean: float64, ring_angle_1_std: float64, ring_angle_2_mean: float64, ring_angle_2_std: float64, ring_angle_3_mean: float64, ring_angle_3_std: float64, ring_tip_wrist_ratio_mean: float64, pinky_angle_1_mean: float64, pinky_angle_1_std: float64, pinky_angle_2_mean: float64, pinky_angle_2_std: float64, pinky_angle_3_mean: float64, pinky_angle_3_std: float64, pinky_tip_wrist_ratio_mean: float64, thumb_index_distance_ratio_mean: float64, thumb_index_distance_ratio_std: float64, index_middle_distance_ratio_mean: float64, index_middle_distance_ratio_std: float64, middle_ring_distance_ratio_mean: float64, middle_ring_distance_ratio_std: float64, ring_pinky_distance_ratio_mean: float64, ring_pinky_distance_ratio_std: float64, index_pinky_distance_ratio_mean: float64, index_pinky_distance_ratio_std: float64, palm_width_ratio_mean: float64, openness_mean: float64, curvature_proxy_mean: float64
+- `D:\Project\DBML\compare\results\output_4_6\location_statistics.csv`
+  - rows: 7
+  - numeric features: 3
+  - categorical features: 2
+  - columns: dataset, dominant_location, count, dataset_total, percentage
+  - dtypes: dataset: str, dominant_location: str, count: int64, dataset_total: int64, percentage: float64
+- `D:\Project\DBML\compare\results\output_4_6\location_video.csv`
+  - rows: 23780
+  - numeric features: 6
+  - categorical features: 6
+  - columns: dataset, gloss, video, path, hand, valid_frame_ratio, dominant_location, head_ratio, shoulder_ratio, chest_ratio, waist_ratio, below_waist_ratio
+  - dtypes: dataset: str, gloss: str, video: str, path: str, hand: str, valid_frame_ratio: float64, dominant_location: str, head_ratio: float64, shoulder_ratio: float64, chest_ratio: float64, waist_ratio: float64, below_waist_ratio: float64
+- `D:\Project\DBML\compare\results\output_4_6\motion_features.csv`
+  - rows: 16342
+  - numeric features: 8
+  - categorical features: 5
+  - columns: dataset, gloss, video, path, left_valid_ratio, right_valid_ratio, left_motion_magnitude, right_motion_magnitude, left_trajectory_length, right_trajectory_length, left_motion_std, right_motion_std, activity_type
+  - dtypes: dataset: str, gloss: str, video: str, path: str, left_valid_ratio: float64, right_valid_ratio: float64, left_motion_magnitude: float64, right_motion_magnitude: float64, left_trajectory_length: float64, right_trajectory_length: float64, left_motion_std: float64, right_motion_std: float64, activity_type: str
+- `D:\Project\DBML\compare\results\output_4_6\one_two_hand_statistics.csv`
+  - rows: 7
+  - numeric features: 3
+  - categorical features: 2
+  - columns: dataset, activity_type, count, dataset_total, percentage
+  - dtypes: dataset: str, activity_type: str, count: int64, dataset_total: int64, percentage: float64
+- `D:\Project\DBML\compare\results\output_4_6\orientation_statistics.csv`
+  - rows: 69
+  - numeric features: 3
+  - categorical features: 3
+  - columns: dataset, dominant_finger_direction, dominant_palm_orientation, count, dataset_total, percentage
+  - dtypes: dataset: str, dominant_finger_direction: str, dominant_palm_orientation: str, count: int64, dataset_total: int64, percentage: float64
+- `D:\Project\DBML\compare\results\output_4_6\orientation_video.csv`
+  - rows: 23780
+  - numeric features: 7
+  - categorical features: 7
+  - columns: dataset, gloss, video, path, hand, valid_frame_ratio, dominant_finger_direction, dominant_palm_orientation, finger_dir_x_mean, finger_dir_y_mean, finger_dir_z_mean, palm_normal_x_mean, palm_normal_y_mean, palm_normal_z_mean
+  - dtypes: dataset: str, gloss: str, video: str, path: str, hand: str, valid_frame_ratio: float64, dominant_finger_direction: str, dominant_palm_orientation: str, finger_dir_x_mean: float64, finger_dir_y_mean: float64, finger_dir_z_mean: float64, palm_normal_x_mean: float64, palm_normal_y_mean: float64, palm_normal_z_mean: float64
+- `D:\Project\DBML\compare\results\output_4_7\debug\npz_structure_inspection.csv`
+  - rows: 120
+  - numeric features: 0
+  - categorical features: 5
+  - columns: dataset, file, key, shape, dtype
+  - dtypes: dataset: str, file: str, key: str, shape: str, dtype: str
+- `D:\Project\DBML\compare\results\output_4_7\dtw\dtw_inter_class_candidate_pairs.csv`
+  - rows: 85640
+  - numeric features: 1
+  - categorical features: 4
+  - columns: dataset, label_a, label_b, dtw_distance, mode
+  - dtypes: dataset: str, label_a: str, label_b: str, dtw_distance: float64, mode: str
+- `D:\Project\DBML\compare\results\output_4_7\dtw\dtw_intra_class_pairs_sample.csv`
+  - rows: 35229
+  - numeric features: 1
+  - categorical features: 4
+  - columns: dataset, label, sample_id_a, sample_id_b, dtw_distance
+  - dtypes: dataset: str, label: str, sample_id_a: str, sample_id_b: str, dtw_distance: float64
+- `D:\Project\DBML\compare\results\output_4_7\dtw\dtw_intra_class_summary.csv`
+  - rows: 2551
+  - numeric features: 7
+  - categorical features: 2
+  - columns: dataset, label, num_samples, num_pairs, intra_class_dtw_mean, intra_class_dtw_std, intra_class_dtw_min, intra_class_dtw_max, intra_class_dtw_median
+  - dtypes: dataset: str, label: str, num_samples: int64, num_pairs: int64, intra_class_dtw_mean: float64, intra_class_dtw_std: float64, intra_class_dtw_min: float64, intra_class_dtw_max: float64, intra_class_dtw_median: float64
+- `D:\Project\DBML\compare\results\output_4_7\dtw\dtw_label_prototypes.csv`
+  - rows: 5314
+  - numeric features: 2
+  - categorical features: 2
+  - columns: dataset, label, num_samples, prototype_index
+  - dtypes: dataset: str, label: str, num_samples: int64, prototype_index: int64
+- `D:\Project\DBML\compare\results\output_4_7\motion_features_by_label.csv`
+  - rows: 5314
+  - numeric features: 15
+  - categorical features: 2
+  - columns: dataset, label, num_samples, mean_total_motion, std_total_motion, mean_velocity, motion_variance_mean, acceleration_mean, trajectory_length_mean, straightness_mean, direction_change_mean, lr_hand_dist_mean, hand_face_dist_mean, hand_body_dist_mean, hand_missing_mean, sequence_length_variance, motion_complexity_score
+  - dtypes: dataset: str, label: str, num_samples: int64, mean_total_motion: float64, std_total_motion: float64, mean_velocity: float64, motion_variance_mean: float64, acceleration_mean: float64, trajectory_length_mean: float64, straightness_mean: float64, direction_change_mean: float64, lr_hand_dist_mean: float64, hand_face_dist_mean: float64, hand_body_dist_mean: float64, hand_missing_mean: float64, sequence_length_variance: float64, motion_complexity_score: float64
+- `D:\Project\DBML\compare\results\output_4_7\motion_features_per_video.csv`
+  - rows: 16342
+  - numeric features: 45
+  - categorical features: 12
+  - columns: dataset, label, file, sample_id, sample_index, npz_sequence_key, npz_format, video_name, target_frames, source_fps, source_total_frames, train_feature_dim, valid_pose_ratio, valid_left_hand_ratio, valid_right_hand_ratio, valid_face_ratio, num_frames, feature_dim, usable_motion, normalization_scale, has_left_hand, has_right_hand, has_pose, has_face, left_valid_frames, right_valid_frames, left_frame_missing_ratio, right_frame_missing_ratio, hand_frame_missing_ratio, left_point_missing_ratio, right_point_missing_ratio, hand_point_missing_ratio, pose_frame_missing_ratio, pose_point_missing_ratio, face_frame_missing_ratio, face_point_missing_ratio, total_motion, mean_motion, max_motion, motion_variance, mean_velocity, max_velocity, velocity_std, mean_acceleration, max_acceleration, acceleration_std, trajectory_length, displacement, straightness_ratio, direction_change_count, trajectory_bbox_area, hand_face_dist_mean, hand_face_dist_std, hand_body_dist_mean, hand_body_dist_std, left_right_hand_dist_mean, left_right_hand_dist_std
+  - dtypes: dataset: str, label: str, file: str, sample_id: str, sample_index: int64, npz_sequence_key: str, npz_format: str, video_name: str, target_frames: int64, source_fps: float64, source_total_frames: int64, train_feature_dim: int64, valid_pose_ratio: float64, valid_left_hand_ratio: float64, valid_right_hand_ratio: float64, valid_face_ratio: float64, num_frames: int64, feature_dim: int64, usable_motion: bool, normalization_scale: float64, has_left_hand: bool, has_right_hand: bool, has_pose: bool, has_face: bool, left_valid_frames: int64, right_valid_frames: int64, left_frame_missing_ratio: float64, right_frame_missing_ratio: float64, hand_frame_missing_ratio: float64, left_point_missing_ratio: float64, right_point_missing_ratio: float64, hand_point_missing_ratio: float64, pose_frame_missing_ratio: float64, pose_point_missing_ratio: float64, face_frame_missing_ratio: float64, face_point_missing_ratio: float64, total_motion: float64, mean_motion: float64, max_motion: float64, motion_variance: float64, mean_velocity: float64, max_velocity: float64, velocity_std: float64, mean_acceleration: float64, max_acceleration: float64, acceleration_std: float64, trajectory_length: float64, displacement: float64, straightness_ratio: float64, direction_change_count: float64, trajectory_bbox_area: float64, hand_face_dist_mean: float64, hand_face_dist_std: float64, hand_body_dist_mean: float64, hand_body_dist_std: float64, left_right_hand_dist_mean: float64, left_right_hand_dist_std: float64
+- `D:\Project\DBML\compare\results\output_4_7\motion_features_per_video_partial.csv`
+  - rows: 16000
+  - numeric features: 45
+  - categorical features: 12
+  - columns: dataset, label, file, sample_id, sample_index, npz_sequence_key, npz_format, video_name, target_frames, source_fps, source_total_frames, train_feature_dim, valid_pose_ratio, valid_left_hand_ratio, valid_right_hand_ratio, valid_face_ratio, num_frames, feature_dim, usable_motion, normalization_scale, has_left_hand, has_right_hand, has_pose, has_face, left_valid_frames, right_valid_frames, left_frame_missing_ratio, right_frame_missing_ratio, hand_frame_missing_ratio, left_point_missing_ratio, right_point_missing_ratio, hand_point_missing_ratio, pose_frame_missing_ratio, pose_point_missing_ratio, face_frame_missing_ratio, face_point_missing_ratio, total_motion, mean_motion, max_motion, motion_variance, mean_velocity, max_velocity, velocity_std, mean_acceleration, max_acceleration, acceleration_std, trajectory_length, displacement, straightness_ratio, direction_change_count, trajectory_bbox_area, hand_face_dist_mean, hand_face_dist_std, hand_body_dist_mean, hand_body_dist_std, left_right_hand_dist_mean, left_right_hand_dist_std
+  - dtypes: dataset: str, label: str, file: str, sample_id: str, sample_index: int64, npz_sequence_key: str, npz_format: str, video_name: str, target_frames: int64, source_fps: float64, source_total_frames: int64, train_feature_dim: int64, valid_pose_ratio: float64, valid_left_hand_ratio: float64, valid_right_hand_ratio: float64, valid_face_ratio: float64, num_frames: int64, feature_dim: int64, usable_motion: bool, normalization_scale: float64, has_left_hand: bool, has_right_hand: bool, has_pose: bool, has_face: bool, left_valid_frames: int64, right_valid_frames: int64, left_frame_missing_ratio: float64, right_frame_missing_ratio: float64, hand_frame_missing_ratio: float64, left_point_missing_ratio: float64, right_point_missing_ratio: float64, hand_point_missing_ratio: float64, pose_frame_missing_ratio: float64, pose_point_missing_ratio: float64, face_frame_missing_ratio: float64, face_point_missing_ratio: float64, total_motion: float64, mean_motion: float64, max_motion: float64, motion_variance: float64, mean_velocity: float64, max_velocity: float64, velocity_std: float64, mean_acceleration: float64, max_acceleration: float64, acceleration_std: float64, trajectory_length: float64, displacement: float64, straightness_ratio: float64, direction_change_count: float64, trajectory_bbox_area: float64, hand_face_dist_mean: float64, hand_face_dist_std: float64, hand_body_dist_mean: float64, hand_body_dist_std: float64, left_right_hand_dist_mean: float64, left_right_hand_dist_std: float64
+- `D:\Project\DBML\compare\results\output_4_7\motion_summary_by_dataset.csv`
+  - rows: 48
+  - numeric features: 8
+  - categorical features: 2
+  - columns: metric, dataset, count, mean, std, median, q1, q3, min, max
+  - dtypes: metric: str, dataset: str, count: int64, mean: float64, std: float64, median: float64, q1: float64, q3: float64, min: float64, max: float64
+- `D:\Project\DBML\compare\results\output_4_7\motion_summary_by_dataset_wide.csv`
+  - rows: 24
+  - numeric features: 2
+  - categorical features: 1
+  - columns: metric, ASL, VSL
+  - dtypes: metric: str, ASL: float64, VSL: float64
+- `D:\Project\DBML\compare\results\output_4_7\sequence_length_by_label.csv`
+  - rows: 5314
+  - numeric features: 6
+  - categorical features: 2
+  - columns: dataset, label, num_samples, mean_frames, std_frames, min_frames, max_frames, sequence_length_variance
+  - dtypes: dataset: str, label: str, num_samples: int64, mean_frames: float64, std_frames: float64, min_frames: float64, max_frames: float64, sequence_length_variance: float64
+- `D:\Project\DBML\compare\results\output_4_7\top_complex_motion_labels.csv`
+  - rows: 100
+  - numeric features: 15
+  - categorical features: 2
+  - columns: dataset, label, num_samples, mean_total_motion, std_total_motion, mean_velocity, motion_variance_mean, acceleration_mean, trajectory_length_mean, straightness_mean, direction_change_mean, lr_hand_dist_mean, hand_face_dist_mean, hand_body_dist_mean, hand_missing_mean, sequence_length_variance, motion_complexity_score
+  - dtypes: dataset: str, label: str, num_samples: int64, mean_total_motion: float64, std_total_motion: float64, mean_velocity: float64, motion_variance_mean: float64, acceleration_mean: float64, trajectory_length_mean: float64, straightness_mean: float64, direction_change_mean: float64, lr_hand_dist_mean: float64, hand_face_dist_mean: float64, hand_body_dist_mean: float64, hand_missing_mean: float64, sequence_length_variance: float64, motion_complexity_score: float64
+- `D:\Project\DBML\compare\src\src4_8\mapping.csv`
+  - rows: 403
+  - numeric features: 2
+  - categorical features: 7
+  - columns: asl_id, asl_label, vsl_label, vsl_video_count, vsl_sample_ids, vsl_sample_videos, match_type, confidence, note
+  - dtypes: asl_id: int64, asl_label: str, vsl_label: str, vsl_video_count: int64, vsl_sample_ids: str, vsl_sample_videos: str, match_type: str, confidence: str, note: str
+
+## Merge Keys
+- `D:\Project\DBML\compare\results\output_4_6\handshape_features.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; numeric features used 48
+- `D:\Project\DBML\compare\results\output_4_6\location_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; numeric features used 5
+- `D:\Project\DBML\compare\results\output_4_6\orientation_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; numeric features used 6
+- `D:\Project\DBML\compare\results\output_4_7\motion_features_per_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 16342 -> 16342; numeric features used 21
+
+## Dataset Counts
+- video rows after merge: 16342
+- unique videos: 16342
+- unique gloss: 5314
+- gloss feature rows: 5314
+- mapping rows: 403
+- mapping unique pairs: 403
+- gloss pairs found in mapping and features: 392
+- VSL gloss not found: 11
+- ASL gloss not found: 0
+- duplicate mapping pairs removed: 0
+- gloss pairs excluded: 11
+
+## Warnings
+- Mapping file used exactly: D:\Project\DBML\compare\src\src4_8\mapping.csv with columns `vsl_label` and `asl_label`.

@@ -16,40 +16,108 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import StandardScaler
 
 
-TEXT_EXCLUDE_PATTERNS = (
-    "dataset",
-    "gloss",
-    "label",
-    "video",
-    "path",
-    "file",
-    "cluster",
-    "dominant_location",
-    "dominant_orientation",
-    "dominant_finger_direction",
-    "activity_type",
-    "match_type",
-    "confidence",
-    "note",
-    "npz_sequence_key",
-    "npz_format",
-)
-
-NUMERIC_EXCLUDE_PATTERNS = (
-    "id",
-    "index",
-    "sample",
-    "count",
-    "prototype",
-    "source_total_frames",
-    "target_frames",
-    "train_feature_dim",
-    "feature_dim",
-)
-
 QUALITY_PATH_HINTS = ("output_4_5", "quality")
 FEATURE_PATH_HINTS = ("output_4_6", "output_4_7", "src4_6", "src4_7")
 REGION_SUFFIX_RE = re.compile(r"^(?P<base>.+)_(?P<region>[BTN])$")
+
+HANDSHAPE_FEATURE_COLUMNS = (
+    "valid_frame_ratio",
+    "motion_magnitude",
+    "thumb_angle_1_mean",
+    "thumb_angle_1_std",
+    "thumb_angle_2_mean",
+    "thumb_angle_2_std",
+    "thumb_tip_wrist_ratio_mean",
+    "index_angle_1_mean",
+    "index_angle_1_std",
+    "index_angle_2_mean",
+    "index_angle_2_std",
+    "index_angle_3_mean",
+    "index_angle_3_std",
+    "index_tip_wrist_ratio_mean",
+    "middle_angle_1_mean",
+    "middle_angle_1_std",
+    "middle_angle_2_mean",
+    "middle_angle_2_std",
+    "middle_angle_3_mean",
+    "middle_angle_3_std",
+    "middle_tip_wrist_ratio_mean",
+    "ring_angle_1_mean",
+    "ring_angle_1_std",
+    "ring_angle_2_mean",
+    "ring_angle_2_std",
+    "ring_angle_3_mean",
+    "ring_angle_3_std",
+    "ring_tip_wrist_ratio_mean",
+    "pinky_angle_1_mean",
+    "pinky_angle_1_std",
+    "pinky_angle_2_mean",
+    "pinky_angle_2_std",
+    "pinky_angle_3_mean",
+    "pinky_angle_3_std",
+    "pinky_tip_wrist_ratio_mean",
+    "thumb_index_distance_ratio_mean",
+    "thumb_index_distance_ratio_std",
+    "index_middle_distance_ratio_mean",
+    "index_middle_distance_ratio_std",
+    "middle_ring_distance_ratio_mean",
+    "middle_ring_distance_ratio_std",
+    "ring_pinky_distance_ratio_mean",
+    "ring_pinky_distance_ratio_std",
+    "index_pinky_distance_ratio_mean",
+    "index_pinky_distance_ratio_std",
+    "palm_width_ratio_mean",
+    "openness_mean",
+    "curvature_proxy_mean",
+)
+
+LOCATION_FEATURE_COLUMNS = (
+    "head_ratio",
+    "shoulder_ratio",
+    "chest_ratio",
+    "waist_ratio",
+    "below_waist_ratio",
+)
+
+ORIENTATION_FEATURE_COLUMNS = (
+    "finger_dir_x_mean",
+    "finger_dir_y_mean",
+    "finger_dir_z_mean",
+    "palm_normal_x_mean",
+    "palm_normal_y_mean",
+    "palm_normal_z_mean",
+)
+
+MOTION_FEATURE_COLUMNS = (
+    "total_motion",
+    "mean_motion",
+    "max_motion",
+    "motion_variance",
+    "mean_velocity",
+    "max_velocity",
+    "velocity_std",
+    "mean_acceleration",
+    "max_acceleration",
+    "acceleration_std",
+    "trajectory_length",
+    "displacement",
+    "straightness_ratio",
+    "direction_change_count",
+    "trajectory_bbox_area",
+    "hand_face_dist_mean",
+    "hand_face_dist_std",
+    "hand_body_dist_mean",
+    "hand_body_dist_std",
+    "left_right_hand_dist_mean",
+    "left_right_hand_dist_std",
+)
+
+FEATURE_COLUMNS_BY_FILE = {
+    "handshape_features.csv": HANDSHAPE_FEATURE_COLUMNS,
+    "location_video.csv": LOCATION_FEATURE_COLUMNS,
+    "orientation_video.csv": ORIENTATION_FEATURE_COLUMNS,
+    "motion_features_per_video.csv": MOTION_FEATURE_COLUMNS,
+}
 
 
 class PipelineError(RuntimeError):
@@ -165,33 +233,29 @@ def choose_video_source(df: pd.DataFrame) -> str | None:
     return None
 
 
-def allowed_numeric_columns(df: pd.DataFrame) -> list[str]:
-    numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
-    allowed: list[str] = []
-    for col in numeric_cols:
-        lower = col.lower()
-        if any(pattern in lower for pattern in TEXT_EXCLUDE_PATTERNS):
-            continue
-        if any(pattern in lower for pattern in NUMERIC_EXCLUDE_PATTERNS):
-            continue
-        allowed.append(col)
-    return allowed
-
-
 def prepare_feature_tables(tables: dict[Path, pd.DataFrame]) -> tuple[list[pd.DataFrame], list[dict[str, Any]], list[str]]:
     prepared: list[pd.DataFrame] = []
     merge_info: list[dict[str, Any]] = []
     warnings: list[str] = []
 
     for path, df in tables.items():
+        whitelisted_cols = FEATURE_COLUMNS_BY_FILE.get(path.name.lower())
+        if whitelisted_cols is None:
+            continue
         if not is_feature_candidate(path, df):
             continue
         dataset_col = find_col(df.columns.tolist(), ("dataset",))
         gloss_col = find_col(df.columns.tolist(), ("gloss", "label"))
         video_col = choose_video_source(df)
-        numeric_cols = allowed_numeric_columns(df)
-        if not (dataset_col and gloss_col and video_col and numeric_cols):
-            warnings.append(f"Skipped {path}: missing merge keys or numeric feature columns.")
+        missing_cols = [col for col in whitelisted_cols if col not in df.columns]
+        numeric_cols = [col for col in whitelisted_cols if col in df.columns]
+        if missing_cols:
+            warnings.append(f"{path}: missing whitelisted feature columns: {', '.join(missing_cols)}.")
+        if not (dataset_col and gloss_col and video_col):
+            warnings.append(f"Skipped {path}: missing merge keys.")
+            continue
+        if not numeric_cols:
+            warnings.append(f"Skipped {path}: no whitelisted feature columns available.")
             continue
 
         work = df[[dataset_col, gloss_col, video_col] + numeric_cols].copy()
