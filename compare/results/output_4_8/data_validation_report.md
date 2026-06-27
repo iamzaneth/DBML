@@ -189,13 +189,10 @@
   - dtypes: asl_id: int64, asl_label: object, vsl_label: object, vsl_video_count: int64, vsl_sample_ids: object, vsl_sample_videos: object, match_type: object, confidence: object, note: object
 
 ## Merge Keys
-- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\handshape_clusters.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; numeric features used 24
-- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\handshape_features.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; numeric features used 24
-- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\location_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; numeric features used 5
-- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\motion_features.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 16342 -> 16342; numeric features used 6
-- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\orientation_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; numeric features used 6
-- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_7\motion_features_per_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 16342 -> 16342; numeric features used 33
-- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_7\motion_features_per_video_partial.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 16000 -> 16000; numeric features used 33
+- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\handshape_features.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; selected features 48; ignored metadata 5; missing features 0
+- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\location_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; selected features 6; ignored metadata 6; missing features 0
+- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\orientation_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 23780 -> 11890; selected features 7; ignored metadata 7; missing features 0
+- `E:\NAM3\BDML\Project\DBML\compare\results\output_4_7\motion_features_per_video.csv`: dataset + gloss/label + normalized video/file/video_name/path; rows 16342 -> 16342; selected features 21; ignored metadata 36; missing features 0
 
 ## Dataset Counts
 - video rows after merge: 16342

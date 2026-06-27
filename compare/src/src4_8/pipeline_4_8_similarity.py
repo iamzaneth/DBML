@@ -17,7 +17,6 @@ from sklearn.preprocessing import StandardScaler
 
 
 QUALITY_PATH_HINTS = ("output_4_5", "quality")
-FEATURE_PATH_HINTS = ("output_4_6", "output_4_7", "src4_6", "src4_7")
 REGION_SUFFIX_RE = re.compile(r"^(?P<base>.+)_(?P<region>[BTN])$")
 
 HANDSHAPE_FEATURE_COLUMNS = (
@@ -173,6 +172,30 @@ def profile_tables(paths: list[Path]) -> tuple[dict[Path, pd.DataFrame], list[di
     return tables, profiles
 
 
+def load_schema_summary(schema_path: Path) -> dict[str, list[str]]:
+    if not schema_path.exists():
+        raise PipelineError(f"Schema summary not found: {schema_path}")
+    sections: dict[str, list[str]] = {}
+    current_section: str | None = None
+    current_columns: list[str] = []
+    for line in schema_path.read_text(encoding="utf-8").splitlines():
+        section_match = SCHEMA_SECTION_RE.match(line)
+        if section_match:
+            if current_section is not None:
+                sections[current_section] = current_columns
+            current_section = section_match.group("section")
+            current_columns = []
+            continue
+        if current_section is None:
+            continue
+        column_match = SCHEMA_COLUMN_RE.match(line)
+        if column_match:
+            current_columns.append(column_match.group("column"))
+    if current_section is not None:
+        sections[current_section] = current_columns
+    return sections
+
+
 def normalize_video_key(value: Any) -> str:
     if pd.isna(value):
         return ""
@@ -215,13 +238,8 @@ def is_quality_table(path: Path) -> bool:
 def is_feature_candidate(path: Path, df: pd.DataFrame) -> bool:
     if is_quality_table(path):
         return False
-    columns = [col.lower() for col in df.columns]
-    has_dataset = "dataset" in columns
-    has_gloss = any(col in columns for col in ("gloss", "label"))
-    has_video = any(col in columns for col in ("video", "file", "video_name", "path"))
-    has_numeric = len(df.select_dtypes(include=[np.number]).columns) > 0
-    path_hint = any(hint in str(path).lower().replace("\\", "/") for hint in FEATURE_PATH_HINTS)
-    return has_dataset and has_gloss and has_video and has_numeric and path_hint
+    normalized = path.as_posix().lower()
+    return any(normalized.endswith(suffix) for suffix in ALLOWED_FEATURE_SUFFIXES)
 
 
 def choose_video_source(df: pd.DataFrame) -> str | None:
@@ -233,7 +251,10 @@ def choose_video_source(df: pd.DataFrame) -> str | None:
     return None
 
 
-def prepare_feature_tables(tables: dict[Path, pd.DataFrame]) -> tuple[list[pd.DataFrame], list[dict[str, Any]], list[str]]:
+def prepare_feature_tables(
+    tables: dict[Path, pd.DataFrame],
+    schema_summary: dict[str, list[str]],
+) -> tuple[list[pd.DataFrame], list[dict[str, Any]], list[str]]:
     prepared: list[pd.DataFrame] = []
     merge_info: list[dict[str, Any]] = []
     warnings: list[str] = []
@@ -244,6 +265,11 @@ def prepare_feature_tables(tables: dict[Path, pd.DataFrame]) -> tuple[list[pd.Da
             continue
         if not is_feature_candidate(path, df):
             continue
+        section = canonical_schema_suffix(path)
+        if section not in schema_summary:
+            warnings.append(f"Skipped {path}: schema section not found in csv_fields_summary.md.")
+            continue
+        schema_columns = schema_summary[section]
         dataset_col = find_col(df.columns.tolist(), ("dataset",))
         gloss_col = find_col(df.columns.tolist(), ("gloss", "label"))
         video_col = choose_video_source(df)
@@ -258,7 +284,17 @@ def prepare_feature_tables(tables: dict[Path, pd.DataFrame]) -> tuple[list[pd.Da
             warnings.append(f"Skipped {path}: no whitelisted feature columns available.")
             continue
 
-        work = df[[dataset_col, gloss_col, video_col] + numeric_cols].copy()
+        selected_features = [col for col in feature_candidates if col in df.columns]
+        missing_features = [col for col in feature_candidates if col not in df.columns]
+        ignored_metadata = [col for col in metadata_columns if col in df.columns]
+        if not selected_features:
+            raise PipelineError(f"No valid feature columns found for {path}.")
+        if missing_features:
+            warnings.append(
+                f"{Path(path).name}: missing schema-defined features: {', '.join(missing_features)}"
+            )
+
+        work = df[[dataset_col, gloss_col, video_col] + selected_features].copy()
         work = work.rename(columns={dataset_col: "dataset", gloss_col: "gloss", video_col: "video_source"})
         work["dataset"] = work["dataset"].astype(str).str.strip()
         work["gloss"] = work["gloss"].astype(str).str.strip()
@@ -266,7 +302,7 @@ def prepare_feature_tables(tables: dict[Path, pd.DataFrame]) -> tuple[list[pd.Da
         work = work.drop(columns=["video_source"])
         work = work.replace([np.inf, -np.inf], np.nan)
         prefix = path.stem.lower()
-        rename = {col: f"{prefix}__{col}" for col in numeric_cols}
+        rename = {col: f"{prefix}__{col}" for col in selected_features}
         work = work.rename(columns=rename)
         feature_cols = list(rename.values())
         grouped = work.groupby(["dataset", "gloss", "video_key"], as_index=False)[feature_cols].mean()
@@ -277,13 +313,31 @@ def prepare_feature_tables(tables: dict[Path, pd.DataFrame]) -> tuple[list[pd.Da
                 "key": "dataset + gloss/label + normalized video/file/video_name/path",
                 "rows_before": int(len(df)),
                 "rows_after_video_aggregate": int(len(grouped)),
-                "numeric_features_used": len(feature_cols),
+                "feature_group": infer_feature_group(section),
+                "selected_features": len(selected_features),
+                "ignored_metadata": len(ignored_metadata),
+                "missing_features": len(missing_features),
+                "selected_feature_names": selected_features,
+                "missing_feature_names": missing_features,
+                "metadata_feature_names": ignored_metadata,
             }
         )
 
     if not prepared:
-        raise PipelineError("No usable feature CSV found. Need dataset, gloss/label, video/file key, and numeric features.")
+        raise PipelineError("No usable feature CSV found. Need dataset, gloss/label, video/file key, and schema-defined features.")
     return prepared, merge_info, warnings
+
+
+def infer_feature_group(section: str) -> str:
+    if section.endswith("handshape_features.csv"):
+        return "handshape"
+    if section.endswith("location_video.csv"):
+        return "location"
+    if section.endswith("orientation_video.csv"):
+        return "orientation"
+    if section.endswith("motion_features_per_video.csv"):
+        return "movement"
+    return "other"
 
 
 def merge_video_features(feature_tables: list[pd.DataFrame]) -> pd.DataFrame:
@@ -292,17 +346,15 @@ def merge_video_features(feature_tables: list[pd.DataFrame]) -> pd.DataFrame:
         merged = merged.merge(table, on=["dataset", "gloss", "video_key"], how="outer")
     feature_cols = [col for col in merged.columns if col not in ("dataset", "gloss", "video_key")]
     if not feature_cols:
-        raise PipelineError("No numeric features remained after merge.")
+        raise PipelineError("No feature columns remained after merge.")
     return merged
 
 
 def get_feature_columns(video_features: pd.DataFrame) -> list[str]:
     cols = [col for col in video_features.columns if col not in ("dataset", "gloss", "video_key")]
-    cols = [col for col in cols if pd.api.types.is_numeric_dtype(video_features[col])]
-    valid = [col for col in cols if video_features[col].notna().any()]
-    if not valid:
-        raise PipelineError("No valid numeric feature column found after filtering.")
-    return valid
+    if not cols:
+        raise PipelineError("No feature column found after merge.")
+    return cols
 
 
 def summarize_gloss_features(video_features: pd.DataFrame, feature_cols: list[str]) -> pd.DataFrame:
@@ -617,7 +669,11 @@ def write_validation_report(
     lines.append("## Merge Keys")
     if merge_info:
         for item in merge_info:
-            lines.append(f"- `{item['path']}`: {item['key']}; rows {item['rows_before']} -> {item['rows_after_video_aggregate']}; numeric features used {item['numeric_features_used']}")
+            lines.append(
+                f"- `{item['path']}`: {item['key']}; rows {item['rows_before']} -> {item['rows_after_video_aggregate']}; "
+                f"selected features {item['selected_features']}; ignored metadata {item['ignored_metadata']}; "
+                f"missing features {item['missing_features']}"
+            )
     else:
         lines.append("- No mergeable feature tables found.")
     lines.append("")
@@ -666,7 +722,7 @@ def write_report(
         f"- video rows after merge: {len(video_features)}",
         f"- unique videos: {video_features['video_key'].nunique()}",
         f"- gloss rows: {len(gloss_summary)}",
-        f"- numeric feature columns used before gloss aggregation: {len(feature_cols)}",
+        f"- schema-selected feature columns used before gloss aggregation: {len(feature_cols)}",
         f"- mapped VSL-ASL pairs scored: {len(similarity)}",
         "",
         "## Similarity Statistics",
@@ -713,6 +769,8 @@ def write_report(
 
 def run_pipeline(data_roots: list[Path], output_dir: Path, mapping_path: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
+    schema_path = (Path(__file__).resolve().parents[2] / "results" / "csv_fields_summary.md").resolve()
+    schema_summary = load_schema_summary(schema_path)
     csv_files = discover_csv_files(data_roots, output_dir)
     mapping_path = mapping_path.resolve()
     if mapping_path not in [path.resolve() for path in csv_files]:
@@ -721,11 +779,34 @@ def run_pipeline(data_roots: list[Path], output_dir: Path, mapping_path: Path) -
         raise PipelineError(f"No CSV files found under: {', '.join(str(root) for root in data_roots)}")
     tables, profiles = profile_tables(csv_files)
     mapping_df, asl_col, vsl_col = load_mapping_file(mapping_path)
-    feature_tables, merge_info, warnings = prepare_feature_tables(tables)
+    feature_tables, merge_info, warnings = prepare_feature_tables(tables, schema_summary)
     warnings.append(f"Mapping file used exactly: {mapping_path} with columns `{vsl_col}` and `{asl_col}`.")
+
+    for item in merge_info:
+        print("Detected feature file:")
+        print(Path(item["path"]).name)
+        print("Selected features:")
+        print(item["selected_features"])
+        print("Ignored metadata:")
+        print(item["ignored_metadata"])
+        print("Missing features:")
+        print(item["missing_features"])
+        print()
 
     video_features = merge_video_features(feature_tables)
     feature_cols = get_feature_columns(video_features)
+    group_totals = {"handshape": 0, "orientation": 0, "location": 0, "movement": 0}
+    for item in merge_info:
+        group = item.get("feature_group", "other")
+        if group in group_totals:
+            group_totals[group] += int(item["selected_features"])
+    print("After merge:")
+    print(f"Handshape features : {group_totals['handshape']}")
+    print(f"Orientation features : {group_totals['orientation']}")
+    print(f"Location features : {group_totals['location']}")
+    print(f"Movement features : {group_totals['movement']}")
+    print(f"Total features : {len(feature_cols)}")
+    print()
     gloss_summary = summarize_gloss_features(video_features, feature_cols)
     scaled_df, gloss_feature_cols = build_scaled_gloss_matrix(gloss_summary)
     similarity, mapping_stats = compute_inter_language_similarity(

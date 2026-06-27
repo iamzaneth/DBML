@@ -7,39 +7,39 @@ The pipeline reads available CSV outputs, validates merge keys, merges per-video
 - video rows after merge: 16342
 - unique videos: 16342
 - gloss rows: 5314
-- numeric feature columns used before gloss aggregation: 131
+- schema-selected feature columns used before gloss aggregation: 82
 - mapped VSL-ASL pairs scored: 392
 
 ## Similarity Statistics
-- Mean Similarity: 0.557183
-- Median: 0.553370
-- Standard Deviation: 0.170698
-- Minimum: 0.147703
-- Maximum: 0.928333
+- Mean Similarity: 0.569270
+- Median: 0.555481
+- Standard Deviation: 0.174203
+- Minimum: 0.145227
+- Maximum: 0.974185
 
 ## Top Similar
-- cửa sổ ↔ window: 0.9283
-- i ↔ i: 0.9151
-- mùa đông ↔ winter: 0.8994
-- bụng ↔ abdomen: 0.8949
-- ông ngoại ↔ grandfather: 0.8940
-- ai ↔ who: 0.8913
-- a ↔ a: 0.8899
-- bên dưới ↔ under: 0.8786
-- Trung Quốc (nước Trung Quốc) ↔ china: 0.8771
-- dao ↔ knife: 0.8759
+- bụng ↔ abdomen: 0.9742
+- i ↔ i: 0.9674
+- a ↔ a: 0.9634
+- cửa sổ ↔ window: 0.9485
+- cây nến ↔ candle: 0.9460
+- bố ↔ dad: 0.9285
+- mùa đông ↔ winter: 0.9213
+- bên dưới ↔ under: 0.9179
+- xe máy ↔ motorcycle: 0.9149
+- 6 ↔ six: 0.9142
 
 ## Top Different
-- xe tải ↔ truck: 0.1477; main differences: movement (50.9%); handshape (43.9%); orientation (5.2%)
-- ngày sinh ↔ birthday: 0.1997; main differences: movement (53.0%); handshape (43.1%); orientation (3.9%)
-- phòng thư viện ↔ library: 0.2009; main differences: movement (49.7%); handshape (44.7%); orientation (5.6%)
-- quan trọng ↔ important: 0.2161; main differences: movement (54.8%); handshape (39.4%); orientation (5.5%)
-- Mexico (nước Mexico) ↔ mexico: 0.2165; main differences: movement (80.8%); handshape (16.8%); orientation (2.1%)
-- con chó ↔ dog: 0.2191; main differences: movement (71.3%); handshape (25.3%); orientation (3.4%)
-- con muỗi ↔ mosquito: 0.2202; main differences: handshape (55.5%); movement (37.9%); orientation (6.3%)
-- bức tranh ↔ picture: 0.2244; main differences: handshape (62.1%); movement (32.2%); orientation (5.6%)
-- chọn lựa ↔ choose: 0.2249; main differences: handshape (50.9%); movement (42.4%); orientation (6.3%)
-- giận dữ ↔ angry: 0.2502; main differences: movement (74.3%); handshape (19.8%); orientation (5.1%)
+- phòng thư viện ↔ library: 0.1452; main differences: handshape (69.6%); movement (17.1%); orientation (11.2%)
+- Mexico (nước Mexico) ↔ mexico: 0.1829; main differences: movement (63.6%); handshape (29.6%); orientation (5.3%)
+- con muỗi ↔ mosquito: 0.1983; main differences: handshape (75.8%); movement (11.1%); orientation (11.0%)
+- bức tranh ↔ picture: 0.2227; main differences: handshape (76.4%); movement (15.1%); orientation (7.9%)
+- giá sách ↔ shelf: 0.2240; main differences: handshape (80.0%); movement (10.8%); orientation (9.0%)
+- ngày sinh ↔ birthday: 0.2266; main differences: handshape (62.6%); movement (29.1%); orientation (7.0%)
+- quan trọng ↔ important: 0.2271; main differences: handshape (66.2%); movement (21.0%); orientation (10.5%)
+- bánh mì ↔ bread: 0.2398; main differences: handshape (78.6%); movement (16.2%); orientation (5.0%)
+- bàn ghế ↔ table: 0.2466; main differences: handshape (80.9%); orientation (9.9%); movement (8.8%)
+- địa chỉ ↔ address: 0.2486; main differences: handshape (75.8%); movement (13.6%); orientation (9.4%)
 
 ## Regional Similarity
 - No VSL gloss with `_B`, `_T`, `_N` regional suffix was detected with enough paired regions.
