@@ -17,7 +17,7 @@ DATASETS = {
     "ASL": PROJECT_ROOT / "data" / "raw" / "ASL"
 }
 
-OUTPUT_DIR = COMPARE_ROOT / "results" / "evaluation_keypoint"
+OUTPUT_DIR = COMPARE_ROOT / "results" / "output_4_5"
 
 
 os.makedirs(
