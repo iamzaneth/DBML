@@ -1,0 +1,404 @@
+asl_id,asl_label,vsl_label,vsl_video_count,vsl_sample_ids,vsl_sample_videos,match_type,confidence,note
+0,book,sách,1,2938,W02900.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1,drink,đồ uống,1,522,D0443.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+2,computer,phòng máy tính,1,2758,W02677.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+4,chair,bàn ghế,1,727,W00094.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+5,go,đi,1,1672,W01190.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+7,who,ai,3,656;657;658,W00004B.mp4;W00004N.mp4;W00004T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+8,candy,kẹo,3,2078;2079;2080,W01743B.mp4;W01743N.mp4;W01743T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+12,help,giúp đỡ,3,1889;1890;1891,W01497B.mp4;W01497N.mp4;W01497T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+13,no,không có,1,152,D0112.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+14,thin,gầy (miền Nam: ốm),3,1819;1820;4031,W01403N.mp4;W01403T.mp4;W01403B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+17,yes,có … không?,1,135,D0098.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+19,black,màu đen,1,2334,W02133B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+21,finish,hoàn thành,1,1995,W01641.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+25,mother,má (giống: mẹ),1,2323,W02110.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+27,orange,màu cam,1,2333,W02132.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+28,table,bàn ghế,1,727,W00094.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+32,bed,giường,1,4046,W01498.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+33,blue,màu xanh da trời,3,2342;2343;2344,W02142B.mp4;W02142N.mp4;W02142T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+36,dog,con chó,3,1303;1304;1305,W00739B.mp4;W00739N.mp4;W00739T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+38,fish,con cá,3,1299;1300;1301,W00737B.mp4;W00737N.mp4;W00737T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+40,hat,mũ,1,4126,W02275.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+41,hearing,nghe,1,2512,W02353.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+42,kiss,hôn,1,2042,W01700.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+43,language,ngôn ngữ,1,2557,W02401.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+49,white,màu trắng,3,2339;2340;2341,W02140B.mp4;W02140N.mp4;W02140T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+52,apple,quả táo,2,2830;2831,W02757B.mp4;W02757N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+53,bird,con chim,1,1302,W00738.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+54,change,biến đổi,1,877,W00262N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+56,corn,bắp ngô,3,822;823;3853,W00196N.mp4;W00196T.mp4;W00196B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+57,cow,con bò,3,1297;3942;3943,W00735T.mp4;W00735B.mp4;W00735N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+58,dance,nhảy múa,1,2602,W02467.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+61,eat,ăn uống,1,693,W00042.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+62,enjoy,thích thú,3,3154;3155;3156,W03252B.mp4;W03252N.mp4;W03252T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+63,forget,quên,1,2862,W02798.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+66,meet,gặp gỡ,1,1813,W01395.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+68,pizza,bánh pizza,1,780,W00140.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+69,play,chơi,2,1210;1211,W00639B.mp4;W00639T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+70,school,nhà trường,3,2593;2594;4157,W02455N.mp4;W02455T.mp4;W02455B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+72,short,ngắn,1,2506,W02343.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+74,want,muốn,3,2406;2407;2408,W02221B.mp4;W02221N.mp4;W02221T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+75,work,làm việc,1,2200,W01928.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+78,birthday,ngày sinh,3,2501;2502;4135,W02338B.mp4;W02338N.mp4;W02338T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+79,brown,màu nâu,3,2336;2337;4111,W02137N.mp4;W02137T.mp4;W02137B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+80,but,nhưng,3,315;316;317,D0242B.mp4;D0242N.mp4;D0242T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+84,decide,quyết định,3,2876;2877;2878,W02814B.mp4;W02814N.mp4;W02814T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+86,how,bao nhiêu?,1,788,W00147.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+90,need,cần không?,3,163;3729;3730,D0122T.mp4;D0122B.mp4;D0122N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+92,paper,giấy,3,1868;1869;4041,W01470B.mp4;W01470N.mp4;W01470T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+93,pull,kéo,1,4070,W01740.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+96,same,giống nhau,1,4045,W01490.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+100,visit,ghé thăm,1,1821,W01406.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+101,wait,trông chờ,3,3377;3378;3379,W03620B.mp4;W03620N.mp4;W03620T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+105,backpack,cặp sách,1,1033,W00428.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+107,brother,anh em,3,669;670;3820,W00013N.mp4;W00013T.mp4;W00013B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+108,cat,con mèo,3,1343;1344;1345,W00772B.mp4;W00772N.mp4;W00772T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+110,class,lớp,1,2284,W02052.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+111,cry,khóc,1,2126,W01821.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+114,green,màu xanh lá cây,3,2345;2346;2347,W02143B.mp4;W02143N.mp4;W02143T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+119,knife,dao,1,1508,W00973.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+120,laugh,tươi cười,1,3459,W03725.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+123,rabbit,con thỏ,1,1373,W00796.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+124,read,đọc sách,1,1707,W01239.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+125,red,màu đỏ,1,2335,W02134.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+126,room,phòng học tin học,1,2757,W02675.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+127,run,chạy,1,1103,W00501.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+129,sick,ốm đau,1,2681,W02567.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+132,tea,trà,1,3333,W03524.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+133,teacher,cô giáo,3,1390;1391;1392,W00812B.mp4;W00812N.mp4;W00812T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+134,week,tuần,3,3428;3429;3430,W03685B.mp4;W03685N.mp4;W03685T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+135,why,vì sao?,3,3524;3525;3526,W03825B.mp4;W03825N.mp4;W03825T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+142,bathroom,nhà vệ sinh,1,560,D0485.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+143,blanket,chăn (cái chăn),3,1109;1110;3910,W00509B.mp4;W00509T.mp4;W00509N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+146,coffee,pha cà phê,1,2700,W02584.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+149,copy,chép bài,1,1144,W00555.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+150,cute,dễ thương,1,1554,W01027.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+155,friend,bạn,3,744;745;3834,W00110B.mp4;W00110N.mp4;W00110T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+157,happy,vui mừng,3,3570;3571;3572,W03889B.mp4;W03889N.mp4;W03889T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+169,remember,ghi nhớ,1,1826,W01413.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+174,test,kiểm tra,3,2166;2167;4088,W01878N.mp4;W01878T.mp4;W01878B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+175,tired,mệt mỏi,1,444,D0369.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+178,window,cửa sổ,1,1480,W00939.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+179,you,bạn,3,744;745;3834,W00110B.mp4;W00110N.mp4;W00110T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+184,banana,quả chuối,1,2797,W02730.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+187,boy,con trai,1,3690,W04068.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+191,chat,nói chuyện,1,2648,W02523.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+194,clock,đồng hồ,1,1727,W01265.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+195,close,đóng cửa,1,1710,W01243.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+199,day,ban ngày,1,724,W00089.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+200,discuss,bàn bạc,1,3831,W00091.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+204,fat,béo,1,846,W00225.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+208,game,trò chơi,1,3361,W03599.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+209,girl,con gái,1,1330,W00760.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+210,government,chính phủ,2,1191;3926,W00617T.mp4;W00617B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+211,hear,nghe,1,2512,W02353.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+214,house,nhà cửa,1,4155,W02443.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+225,new,mới,3,2448;2449;2450,W02264B.mp4;W02264N.mp4;W02264T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+226,none,không có,1,152,D0112.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+235,practice,luyện tập,1,4104,W02074.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+239,russia,Liên Bang Nga (nước Nga),3,2242;2243;2244,W01996B.mp4;W01996N.mp4;W01996T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+240,salt,muối,1,533,D0456.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+241,sandwich,bánh sandwich,1,465,D0392.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+247,student,học sinh Miền Nam,1,2005,W01658.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+248,teach,dạy,1,1513,W00979.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+265,catch,bắt,1,3854,W00197.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+276,east,phương Đông,1,12,D0010.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+278,egg,trứng,3,3408;3409;4318,W03659B.mp4;W03659N.mp4;W03659T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+279,environment,môi trường,1,2417,W02236.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+280,father,cha,1,1078,W00481.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+282,flower,bông hoa,3,931;932;933,W00336B.mp4;W00336N.mp4;W00336T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+283,friendly,thân thiện,1,3123,W03208.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+284,glasses,kính,1,2179,W01900.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+285,halloween,lễ Halloween 31/10,3,66;67;69,D0048B.mp4;D0048N.mp4;D0048T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+287,heart,tim,1,3272,W03431.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+288,hour,mấy giờ?,1,2387,W02196.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+289,humble,khiêm tốn,1,2111,W01796.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+292,internet,internet,1,559,D0484.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+294,kill,giết,1,1882,W01479.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+298,milk,sữa,3,3027;3028;4234,W03042B.mp4;W03042T.mp4;W03042N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+300,month,tháng,3,3098;3099;4257,W03167B.mp4;W03167T.mp4;W03167N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+302,move,di chuyển,1,3984,W01029.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+307,noon,buổi trưa,3,973;974;975,W00370B.mp4;W00370N.mp4;W00370T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+309,not,không có,1,152,D0112.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+313,patient,bệnh nhân,1,865,W00248.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+316,potato,củ khoai tây,1,1462,W00905.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+317,sad,buồn thảm,1,100,D0064.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+319,save,tiết kiệm,3,3264;3265;3266,W03422B.mp4;W03422N.mp4;W03422T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+327,sorry,xin lỗi,1,3640,W03990.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+330,talk,nói chuyện,1,2648,W02523.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+331,temperature,nhiệt độ,1,1748,W01298.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+334,think,suy nghĩ,2,3012;3013,W03025N.mp4;W03025T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+336,today,ngày nay,3,2495;2496;2497,W02336B.mp4;W02336N.mp4;W02336T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+338,understand,hiểu,3,1964;1965;1966,W01591B.mp4;W01591N.mp4;W01591T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+341,vomit,buồn nôn,1,977,W00372.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+342,vote,bỏ phiếu,1,893,W00293.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+344,west,phương Tây,1,11,D0009.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+345,wet,ẩm ướt,1,698,W00050.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+346,when,bao giờ?,3,784;785;786,W00145B.mp4;W00145N.mp4;W00145T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+350,afternoon,buổi chiều,1,967,W00366.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+356,balloon,bóng bay,1,907,W00308.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+358,bear,con gấu,1,1331,W00761.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+363,bowl,bát,1,799,W00170.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+364,box,hộp,1,2044,W01702.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+366,bread,bánh mì,3,778;779;3842,W00137B.mp4;W00137N.mp4;W00137T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+368,car,ô tô,1,2678,W02561.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+369,chicken,con gà,1,1329,W00759.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+371,choose,chọn lựa,1,1201,W00629.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+372,church,nhà thờ,1,2590,W02450.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+374,cup,cốc,1,3956,W00832.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+375,cut,cắt nhau,1,1035,W00430.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+378,deer,con hươu,1,1335,W00766.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+384,ear,tai,1,3038,W03061.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+387,elephant,con voi,3,1381;1382;1383,W00803B.mp4;W00803N.mp4;W00803T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+388,english,tiếng Anh,3,3256;3257;3258,W03409B.mp4;W03409N.mp4;W03409T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+391,explain,giải thích,1,1832,W01424.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+396,floor,nền nhà,1,2483,W02322.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+397,fly,con ruồi,1,1366,W00786.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+402,hello,chào,1,1086,W00489.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+406,important,quan trọng,1,2838,W02766.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+409,jealous,ghen tị,3,20;21;22,D0019B.mp4;D0019N.mp4;D0019T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+412,large,to lớn,1,3294,W03466.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+414,lemon,quả chanh,1,2795,W02728.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+419,mirror,gương,1,1909,W01523.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+421,monkey,con khỉ,1,1336,W00767.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+422,morning,buổi sáng,3,3882;3883;3885,W00368N.mp4;W00368B.mp4;W00368T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+423,motorcycle,xe máy,1,3618,W03961.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+427,night,buổi tối,3,971;972;3884,W00369B.mp4;W00369T.mp4;W00369N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+430,pepper,quả ớt,1,2825,W02751.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+431,phone,điện thoại,1,1686,W01208.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+432,picture,bức tranh,3,990;991;992,W00386B.mp4;W00386N.mp4;W00386T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+438,rain,mưa phùn,1,4128,W02282.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+440,research,nghiên cứu,1,4140,W02367.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+441,scared,hoảng sợ,1,1999,W01650.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+442,science,khoa học,1,4079,W01804.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+446,sit,ngồi,3,2555;2556;4148,W02400N.mp4;W02400T.mp4;W02400B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+448,snake,con rắn,1,1364,W00784.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+449,soap,xà phòng,3,3587;3588;3589,W03930B.mp4;W03930N.mp4;W03930T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+450,soda,7up,1,480,D0408.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+455,stubborn,bướng bỉnh,2,995;996,W00390N.mp4;W00390T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+456,sunset,Mặt trời lặn,1,4117,W02222.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+459,tiger,con cọp,3,1314;1315;1316,W00747B.mp4;W00747N.mp4;W00747T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+461,toilet,nhà vệ sinh,1,560,D0485.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+465,tree,cây xanh,1,1076,W00478.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+466,truck,xe tải,1,3373,W03615.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+467,uncle,chú ( người),1,1105,W00506.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+478,answer,trả lời,1,3335,W03526.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+481,art,nghệ thuật,3,2517;2518;2519,W02357B.mp4;W02357N.mp4;W02357T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+491,big,to lớn,1,3294,W03466.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+497,carrot,củ cà rốt,1,1459,W00901.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+503,cloud,đám mây,1,1596,W01094.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+507,continue,tiếp tục,3,3262;3263;4292,W03421B.mp4;W03421N.mp4;W03421T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+514,desert,sa mạc,1,258,D0191.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+518,doll,búp bê,1,982,W00378.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+523,email,email,1,1786,W01354.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+530,face,mặt,1,2367,W02166.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+533,few,ít,1,2068,W01730.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+543,grammar,ngữ pháp,3,3202;3203;3204,W03327B.mp4;W03327N.mp4;W03327T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+544,grandfather,ông ngoại,3,2686;2687;2688,W02575N.mp4;W02575B.mp4;W02575T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+553,hungry,đói không?,1,446,D0371.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+555,introduce,giới thiệu,1,1888,W01494.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+558,library,phòng thư viện,1,2760,W02680.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+560,lobster,tôm hùm,1,458,D0385.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+561,love,tình yêu,1,3285,W03451.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+569,one,1,1,3814,D0530.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+573,polite,lễ phép,1,2235,W01983.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+579,push,đẩy,1,1637,W01152.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+588,sell,bán hàng,3,740;741;742,W00107B.mp4;W00107N.mp4;W00107T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+589,serious,nghiêm túc,1,2538,W02374.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+592,smart,thông minh,3,3173;3174;4272,W03288N.mp4;W03288T.mp4;W03288B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+599,squirrel,con sóc,1,1368,W00790.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+603,street,con đường,1,1325,W00757.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+608,summer,mùa hè,3,2453;2454;2455,W02270B.mp4;W02270N.mp4;W02270T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+612,that,kia,1,3732,D0124.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+615,thirsty,khát nước,1,4074,W01774.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+616,ticket,vé,1,3520,W03814.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+623,weak,yếu,3,3679;3680;3681,W04059B.mp4;W04059N.mp4;W04059T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+626,wind,gió Lào,1,1883,W01482.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+637,angry,giận dữ,1,4040,W01465.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+639,arm,cánh tay,1,1015,W00410.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+640,army,quân đội,2,2853;4190,W02784N.mp4;W02784B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+643,ask,hỏi,3,4064;4065;4066,W01672N.mp4;W01672B.mp4;W01672T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+654,body,cơ thể,1,1443,W00872.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+658,bottle,chai nước,1,1084,W00486.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+666,candle,cây nến,1,514,D0435.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+681,duck,con vịt,1,1380,W00802.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+683,eagle,chim đại bàng,1,1183,W00606.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+686,every,mỗi,1,2418,W02237.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+697,frog,con cóc,1,1313,W00746.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+705,grapes,quả nho,1,2823,W02749.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+708,hamburger,bánh hamburger,1,464,D0391.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+712,horse,con ngựa,3,1353;1354;1355,W00778B.mp4;W00778N.mp4;W00778T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+717,inside,bên trong,1,860,W00241.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+724,listen,lắng nghe,1,2215,W01955.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+729,mom,má (giống: mẹ),1,2323,W02110.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+730,mouse,con chuột,3,1308;1309;1310,W00742B.mp4;W00742N.mp4;W00742T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+733,museum,bảo tàng,1,790,W00156.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+749,program,chương trình,1,1279,W00713.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+755,rat,con chuột,3,1308;1309;1310,W00742B.mp4;W00742N.mp4;W00742T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+758,rest,nghỉ ngơi,1,2531,W02364.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+761,river,con sông,1,1370,W00792.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+765,send,gửi,1,4051,W01519.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+767,sheep,con cừu,1,1320,W00751.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+774,sky,bầu trời,1,835,W00212.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+779,stand,đứng nghiêm,1,1766,W01326.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+781,stop,dừng lại,1,247,D0183.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+784,sunrise,Mặt trời mọc,1,2404,W02219.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+791,turtle,con rùa,1,3948,W00787N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+797,warm,ấm áp,1,3827,W00051.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+799,wash,rửa tay,1,2930,W02888.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+803,zero,0 (số không),1,617,D0529.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+815,autumn,mùa thu,1,2456,W02271.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+819,below,bên dưới,1,856,W00237.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+822,bicycle,xe đạp,1,3616,W03959.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+824,boyfriend,bạn trai,3,749;750;3835,W00112B.mp4;W00112N.mp4;W00112T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+826,bridge,cầu (cây cầu),1,1047,W00446.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+830,camera,máy ảnh,1,2349,W02145.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+855,dad,bố,1,916,W00325.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+869,eight,8,1,625,D0537.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+889,gloves,găng tay,1,1811,W01393.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+890,goat,con dê,1,1322,W00753.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+891,goodbye,tạm biệt,1,3047,W03075.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+904,information,thông tin,3,3176;3177;4274,W03292N.mp4;W03292T.mp4;W03292B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+905,interpret,phiên dịch,3,2737;2738;4179,W02651B.mp4;W02651T.mp4;W02651N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+911,keyboard,bàn phím (máy vi tính),1,3833,W00096.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+922,mad,giận dữ,1,4040,W01465.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+926,mountain,núi cao,1,261,D0193.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+928,mushroom,nấm,1,4132,W02303.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+930,neck,cổ,1,1393,W00814.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+932,ocean,đại dương,1,1590,W01083.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+933,open,mở cửa,1,2442,W02258.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+939,parents,cha mẹ,1,1079,W00482.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+947,pray,cầu nguyện,1,1051,W00450.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+951,printer,máy in,3,2352;2353;2354,W02148B.mp4;W02148N.mp4;W02148T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+954,project,dự án,1,338,D0259.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+970,roof,mái nhà,1,2327,W02118.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+971,rooster,gà trống,1,1796,W01368.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+974,scientist,nhà bác học,1,2587,W02441.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+981,shrimp,con tôm,3,1374;1375;3952,W00797B.mp4;W00797T.mp4;W00797N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+987,socks,bít tất,1,3869,W00287.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+993,stairs,bậc thang,1,829,W00203.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1006,swim,bơi,1,945,W00347.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1008,taste,nếm,1,2482,W02321.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1014,thermometer,nhiệt kế,3,2627;2628;4165,W02497N.mp4;W02497T.mp4;W02497B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1017,thousand,1000 (một nghìn),1,641,D0548N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1018,three,3,1,619,D0532.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1021,touch,sờ,1,513,D0434.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1024,two,2,1,618,D0531.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1027,vegetable,rau,1,2888,W02835.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1030,we,chúng tôi (đại từ),1,178,D0134.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1033,welcome,chào mừng,1,1088,W00492.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1034,winter,mùa đông,1,4124,W02269.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1035,without,không có,1,152,D0112.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1036,wolf,chó sói,1,1196,W00623.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1040,above,bên trên,1,859,W00240.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1044,alphabet,bảng chữ cái ngón tay,1,3837,W00118.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1049,artist,nghệ sĩ,1,2516,W02356.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1051,bee,con ong,2,1360;1361,W00781N.mp4;W00781T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1057,boots,ủng,1,3469,W03741.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1058,brave,anh dũng,3,666;667;668,W00012B.mp4;W00012N.mp4;W00012T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1062,butterfly,con bướm,1,1298,W00736.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1069,china,Trung Quốc (nước Trung Quốc),3,3395;3396;4314,W03642B.mp4;W03642T.mp4;W03642N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1078,coconut,quả dừa,3,2801;2802;2803,W02732B.mp4;W02732N.mp4;W02732T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1094,director,giám đốc,1,1848,W01441.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1103,england,Anh (nước Anh),3,661;662;663,W00009B.mp4;W00009N.mp4;W00009T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1106,eyeglasses,kính,1,2179,W01900.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1112,fix,sửa chữa,1,3014,W03034.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1117,four,4,1,3815,D0533.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1130,health,sức khỏe,1,4235,W03043.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1139,honest,thật thà,1,3129,W03221.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1140,hug,ôm,1,2680,W02565.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1147,italy,Italia (nước Italia),1,2071,W01733.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1150,key,chìa khóa,1,1164,W00583.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1152,leaf,lá cây,2,2190;2191,W01912B.mp4;W01912N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1153,left,bên trái,1,858,W00239.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1157,lonely,cô đơn,1,1389,W00811.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1158,long,dài,1,1492,W00952.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1165,mexico,Mexico (nước Mexico),3,2391;2392;2393,W02200B.mp4;W02200N.mp4;W02200T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1186,pie,bánh pía,1,781,W00141.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1187,plate,đĩa,1,1674,W01192.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1189,popcorn,bỏng ngô,1,906,W00306.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1221,seven,7,1,624,D0536.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1222,shampoo,dầu gội đầu,1,1527,W00994.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1224,shelf,giá sách,1,4033,W01420.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1226,sign language,ngôn ngữ kí hiệu,1,4362,W04073.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1229,six,6,3,621;622;623,D0535B.mp4;D0535N.mp4;D0535T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1251,teeth,răng,1,2896,W02848.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1258,tooth,răng,1,2896,W02848.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1259,toothbrush,bàn chải đánh răng,1,725,W00092.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1267,under,bên dưới,1,856,W00237.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1269,wall,bức tường,1,993,W00387.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1272,weird,kì lạ,1,4086,W01862.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1281,a,a,1,563,D0489.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1283,abdomen,bụng,1,964,W00362.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1289,address,địa chỉ,3,1;2;3,D0001N.mp4;D0001T.mp4;D0001B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1291,afraid,hoảng sợ,1,1999,W01650.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1297,algebra,đại số,1,3993,W01085.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1315,b,b,1,3806,D0492.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1321,bike,xe đạp,1,3616,W03959.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1357,crab,con cua,1,1318,W00749.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1390,evening,buổi tối,3,971;972;3884,W00369B.mp4;W00369T.mp4;W00369N.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1413,girlfriend,bạn gái,3,746;747;748,W00111B.mp4;W00111N.mp4;W00111T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1414,gold,vàng (kim loại),1,3491,W03777.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1416,grass,bãi cỏ,1,718,W00082.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1444,laptop,máy tính (laptop),1,2356,W02151.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1447,lip,môi,1,2416,W02235.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1470,owl,con cú mèo,1,1319,W00750.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1471,p,p,3,588;589;3810,D0509N.mp4;D0509T.mp4;D0509B.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1476,peace,hòa bình,1,1992,W01634.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1503,proud,tự hào,1,408,D0333.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1505,receive,nhận,1,2615,W02485.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1518,road,con đường,1,1325,W00757.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1531,shoulder,vai,1,3486,W03767.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1549,speak,nói chuyện,1,2648,W02523.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1552,spoon,thìa,3,3151;3152;3153,W03251B.mp4;W03251N.mp4;W03251T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1553,spring,mùa xuân,3,2457;2458;4125,W02272N.mp4;W02272T.mp4;W02272B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1576,tongue,lưỡi,1,4105,W02080.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1578,tornado,lốc xoáy,1,509,D0431.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1579,tower,tháp,1,3110,W03192.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1587,waiter,bồi bàn,1,927,W00332.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1593,whale,cá voi,1,112,D0073.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1597,worker,nhân viên,1,5,D0004.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1603,adjective,tính từ,1,3293,W03464.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1611,alligator,con cá sấu,1,94,D0059.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1639,bookshelf,giá sách,1,4033,W01420.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1687,create,sáng tạo,1,2945,W02918.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1688,crocodile,con cá sấu,1,94,D0059.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1693,d,d,1,570,D0494.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1695,dancer,vũ công,1,3565,W03885.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1697,dangerous,nguy hiểm,3,2562;2563;2564,W02405B.mp4;W02405N.mp4;W02405T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1719,drama,kịch,1,1563,W01035.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1726,e,e,1,572,D0496.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1742,f,f,1,603,D0521.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1748,fire,lửa,1,2301,W02076.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1750,five,5,1,620,D0534.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1757,g,g,2,576;3807,D0498B.mp4;D0498N.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1760,geometry,hình học,1,4060,W01605.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1768,h,h,3,577;578;3808,D0500B.mp4;D0500N.mp4;D0500T.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1779,i,i,1,579,D0501.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1789,j,j,1,604,D0522.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1794,k,k,1,3809,D0502.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1798,lamp,đèn điện,3,1644;1645;1646,W01155B.mp4;W01155N.mp4;W01155T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1801,leader,lãnh đạo,1,2203,W01942.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1811,look at,nhìn,1,2629,W02499.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1814,m,m,1,581,D0504.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1826,mosquito,con muỗi,3,1346;1347;1348,W00773B.mp4;W00773N.mp4;W00773T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1829,n,n,1,582,D0505.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1834,nine,9,1,626,D0538.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1840,o,o,1,583,D0506.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1847,or,hoặc,3,251;252;3748,D0188N.mp4;D0188T.mp4;D0188B.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1856,pear,quả lê,1,2817,W02744.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1864,pilot,phi công,1,2734,W02645.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1878,princess,công chúa,1,1414,W00839.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1892,q,q,1,590,D0510.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1896,r,r,1,591,D0511.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1917,s,s,1,592,D0512.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1923,sea,biển đông,1,873,W00260.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1936,soldier,bộ đội,3,921;922;923,W00328B.mp4;W00328N.mp4;W00328T.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1958,swimming,bơi lội,1,946,W00348.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1959,t,t,3,593;594;595,D0513B.mp4;D0513N.mp4;D0513T.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1963,ten,10,1,627,D0539.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1975,towel,khăn mặt,1,2099,W01777.mp4,semantic_equivalent,High,manual semantic mapping; review if using for model alignment
+1980,u,u,1,596,D0514.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1983,v,v,1,598,D0516.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
+1994,w,w,1,605,D0523.mp4,exact_string,High,manual semantic mapping; review if using for model alignment
