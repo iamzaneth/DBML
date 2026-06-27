@@ -1,0 +1,5315 @@
+﻿dataset,label,num_samples,prototype_index
+ASL,a,4,0
+ASL,a lot,7,1
+ASL,abdomen,5,2
+ASL,able,5,3
+ASL,about,7,4
+ASL,above,5,5
+ASL,accent,5,6
+ASL,accept,8,7
+ASL,accident,13,8
+ASL,accomplish,5,9
+ASL,accountant,5,10
+ASL,across,6,11
+ASL,act,5,12
+ASL,action,6,13
+ASL,active,5,14
+ASL,activity,5,15
+ASL,actor,6,16
+ASL,adapt,6,17
+ASL,add,9,18
+ASL,address,4,19
+ASL,adjective,4,20
+ASL,adjust,4,21
+ASL,admire,5,22
+ASL,admit,5,23
+ASL,adopt,6,24
+ASL,adult,7,25
+ASL,advanced,4,26
+ASL,advantage,4,27
+ASL,adverb,4,28
+ASL,affect,6,29
+ASL,afraid,5,30
+ASL,africa,9,31
+ASL,after,7,32
+ASL,afternoon,7,33
+ASL,again,8,34
+ASL,against,5,35
+ASL,age,7,36
+ASL,agenda,4,37
+ASL,ago,9,38
+ASL,agree,5,39
+ASL,agreement,6,40
+ASL,ahead,4,41
+ASL,aid,5,42
+ASL,aim,5,43
+ASL,airplane,7,44
+ASL,alarm,5,45
+ASL,alcohol,4,46
+ASL,algebra,5,47
+ASL,all,8,48
+ASL,all day,5,49
+ASL,allergy,8,50
+ASL,alligator,5,51
+ASL,allow,8,52
+ASL,almost,5,53
+ASL,alone,9,54
+ASL,alphabet,4,55
+ASL,already,8,56
+ASL,also,7,57
+ASL,always,7,58
+ASL,amazing,5,59
+ASL,america,6,60
+ASL,amputate,5,61
+ASL,analyze,8,62
+ASL,anatomy,4,63
+ASL,and,5,64
+ASL,angel,7,65
+ASL,angle,6,66
+ASL,angry,7,67
+ASL,animal,9,68
+ASL,anniversary,5,69
+ASL,announce,5,70
+ASL,annoy,4,71
+ASL,another,5,72
+ASL,answer,7,73
+ASL,any,5,74
+ASL,anyway,4,75
+ASL,apart,5,76
+ASL,apartment,6,77
+ASL,apostrophe,6,78
+ASL,appear,7,79
+ASL,appetite,5,80
+ASL,apple,11,81
+ASL,appointment,10,82
+ASL,appreciate,5,83
+ASL,approach,5,84
+ASL,appropriate,5,85
+ASL,approve,8,86
+ASL,april,5,87
+ASL,archery,5,88
+ASL,area,7,89
+ASL,argue,10,90
+ASL,arizona,4,91
+ASL,arm,7,92
+ASL,army,5,93
+ASL,around,5,94
+ASL,arrest,6,95
+ASL,arrive,8,96
+ASL,arrogant,6,97
+ASL,art,7,98
+ASL,article,4,99
+ASL,artist,5,100
+ASL,asia,7,101
+ASL,ask,7,102
+ASL,asl,4,103
+ASL,assist,5,104
+ASL,assistant,5,105
+ASL,assume,4,106
+ASL,attend,5,107
+ASL,attention,6,108
+ASL,attitude,7,109
+ASL,attorney,4,110
+ASL,attract,6,111
+ASL,auction,5,112
+ASL,audience,6,113
+ASL,audiologist,4,114
+ASL,audiology,4,115
+ASL,august,6,116
+ASL,aunt,7,117
+ASL,australia,9,118
+ASL,austria,4,119
+ASL,author,4,120
+ASL,authority,5,121
+ASL,autumn,7,122
+ASL,available,4,123
+ASL,average,5,124
+ASL,avoid,7,125
+ASL,awake,5,126
+ASL,award,3,127
+ASL,aware,4,128
+ASL,away,6,129
+ASL,awful,8,130
+ASL,awkward,7,131
+ASL,b,4,132
+ASL,baby,9,133
+ASL,babysitter,4,134
+ASL,back,7,135
+ASL,background,5,136
+ASL,backpack,8,137
+ASL,bacon,7,138
+ASL,bad,10,139
+ASL,bake,7,140
+ASL,balance,10,141
+ASL,bald,7,142
+ASL,ball,9,143
+ASL,balloon,9,144
+ASL,banana,9,145
+ASL,bank,3,146
+ASL,baptize,5,147
+ASL,bar,11,148
+ASL,barely,9,149
+ASL,bark,8,150
+ASL,baseball,6,151
+ASL,basement,6,152
+ASL,basic,4,153
+ASL,basketball,12,154
+ASL,bath,7,155
+ASL,bathroom,7,156
+ASL,battery,3,157
+ASL,battle,4,158
+ASL,bear,7,159
+ASL,beard,9,160
+ASL,beautiful,7,161
+ASL,because,10,162
+ASL,become,5,163
+ASL,bed,13,164
+ASL,bedroom,6,165
+ASL,bee,6,166
+ASL,beer,8,167
+ASL,before,16,168
+ASL,beg,5,169
+ASL,beginning,7,170
+ASL,behavior,5,171
+ASL,behind,5,172
+ASL,belief,7,173
+ASL,believe,7,174
+ASL,bell,6,175
+ASL,below,6,176
+ASL,belt,7,177
+ASL,benefit,7,178
+ASL,berry,5,179
+ASL,beside,5,180
+ASL,best,5,181
+ASL,bet,6,182
+ASL,better,5,183
+ASL,between,6,184
+ASL,bible,4,185
+ASL,bicycle,6,186
+ASL,big,9,187
+ASL,bike,4,188
+ASL,binoculars,4,189
+ASL,biology,6,190
+ASL,bird,10,191
+ASL,birth,6,192
+ASL,birthday,6,193
+ASL,bite,6,194
+ASL,bitter,8,195
+ASL,black,10,196
+ASL,blame,6,197
+ASL,blanket,10,198
+ASL,blend,5,199
+ASL,bless,6,200
+ASL,blind,8,201
+ASL,blood,5,202
+ASL,blow,5,203
+ASL,blue,8,204
+ASL,boast,4,205
+ASL,boat,8,206
+ASL,body,6,207
+ASL,boil,4,208
+ASL,bone,4,209
+ASL,book,6,210
+ASL,bookshelf,3,211
+ASL,bookstore,4,212
+ASL,boots,3,213
+ASL,bored,7,214
+ASL,borrow,6,215
+ASL,boss,7,216
+ASL,both,6,217
+ASL,bother,8,218
+ASL,bottle,7,219
+ASL,bottom,8,220
+ASL,bowl,6,221
+ASL,bowling,13,222
+ASL,box,7,223
+ASL,boxing,4,224
+ASL,boy,8,225
+ASL,boyfriend,5,226
+ASL,bra,4,227
+ASL,bracelet,7,228
+ASL,brag,6,229
+ASL,braid,4,230
+ASL,brain,4,231
+ASL,brave,5,232
+ASL,bread,7,233
+ASL,break,5,234
+ASL,breakdown,4,235
+ASL,breakfast,5,236
+ASL,breathe,6,237
+ASL,breeze,4,238
+ASL,bribe,3,239
+ASL,bridge,4,240
+ASL,brief,5,241
+ASL,bright,6,242
+ASL,bring,8,243
+ASL,brochure,4,244
+ASL,broke,5,245
+ASL,brother,11,246
+ASL,brown,8,247
+ASL,brush,7,248
+ASL,buffalo,5,249
+ASL,bug,4,250
+ASL,build,6,251
+ASL,building,6,252
+ASL,bull,5,253
+ASL,bully,6,254
+ASL,burp,4,255
+ASL,bus,5,256
+ASL,bush,6,257
+ASL,business,7,258
+ASL,busy,5,259
+ASL,but,7,260
+ASL,butter,6,261
+ASL,butterfly,5,262
+ASL,button,5,263
+ASL,buy,9,264
+ASL,bye,5,265
+ASL,cabbage,4,266
+ASL,cabinet,5,267
+ASL,cafeteria,8,268
+ASL,cake,8,269
+ASL,calculate,7,270
+ASL,calculator,5,271
+ASL,calculus,5,272
+ASL,california,9,273
+ASL,call,12,274
+ASL,calm,7,275
+ASL,camel,4,276
+ASL,camera,5,277
+ASL,camp,5,278
+ASL,camping,5,279
+ASL,can,9,280
+ASL,canada,7,281
+ASL,cancel,8,282
+ASL,candidate,5,283
+ASL,candle,6,284
+ASL,candy,13,285
+ASL,cannot,6,286
+ASL,canoe,4,287
+ASL,captain,3,288
+ASL,caption,7,289
+ASL,car,7,290
+ASL,card,8,291
+ASL,cards,4,292
+ASL,care,7,293
+ASL,careful,9,294
+ASL,careless,2,295
+ASL,carnival,5,296
+ASL,carrot,9,297
+ASL,carry,7,298
+ASL,cat,9,299
+ASL,catch,9,300
+ASL,category,5,301
+ASL,caterpillar,4,302
+ASL,catholic,5,303
+ASL,cause,6,304
+ASL,ceiling,6,305
+ASL,celebrate,6,306
+ASL,cemetery,6,307
+ASL,cent,6,308
+ASL,center,7,309
+ASL,cereal,8,310
+ASL,certificate,6,311
+ASL,chain,7,312
+ASL,chair,7,313
+ASL,challenge,6,314
+ASL,champion,11,315
+ASL,chance,5,316
+ASL,change,12,317
+ASL,chapter,5,318
+ASL,character,7,319
+ASL,chase,6,320
+ASL,chat,9,321
+ASL,cheap,7,322
+ASL,cheat,10,323
+ASL,check,11,324
+ASL,cheerleader,4,325
+ASL,cheese,7,326
+ASL,chemical,5,327
+ASL,chemistry,6,328
+ASL,cherry,5,329
+ASL,chicago,3,330
+ASL,chicken,5,331
+ASL,child,9,332
+ASL,children,7,333
+ASL,china,4,334
+ASL,chocolate,6,335
+ASL,choice,8,336
+ASL,choir,6,337
+ASL,choke,4,338
+ASL,choose,8,339
+ASL,chop,7,340
+ASL,christ,4,341
+ASL,christian,7,342
+ASL,christmas,8,343
+ASL,church,6,344
+ASL,cigarette,5,345
+ASL,circle,5,346
+ASL,city,9,347
+ASL,class,9,348
+ASL,classroom,5,349
+ASL,clean,7,350
+ASL,clear,5,351
+ASL,clever,6,352
+ASL,click,4,353
+ASL,climb,5,354
+ASL,clock,5,355
+ASL,close,8,356
+ASL,closet,5,357
+ASL,clothes,5,358
+ASL,cloud,8,359
+ASL,clown,5,360
+ASL,clueless,5,361
+ASL,clumsy,5,362
+ASL,coach,6,363
+ASL,coat,5,364
+ASL,cochlear implant,7,365
+ASL,coconut,5,366
+ASL,coffee,7,367
+ASL,cold,12,368
+ASL,collect,4,369
+ASL,college,7,370
+ASL,color,8,371
+ASL,comb,6,372
+ASL,come,6,373
+ASL,come here,8,374
+ASL,comfortable,7,375
+ASL,comma,4,376
+ASL,command,5,377
+ASL,comment,5,378
+ASL,commit,4,379
+ASL,committee,5,380
+ASL,common,5,381
+ASL,common sense,5,382
+ASL,community,6,383
+ASL,commute,5,384
+ASL,company,4,385
+ASL,compare,7,386
+ASL,compete,4,387
+ASL,complain,6,388
+ASL,complete,5,389
+ASL,complex,7,390
+ASL,compromise,6,391
+ASL,computer,14,392
+ASL,concentrate,3,393
+ASL,concept,4,394
+ASL,concern,5,395
+ASL,conflict,7,396
+ASL,confront,6,397
+ASL,confused,6,398
+ASL,congratulations,4,399
+ASL,congress,6,400
+ASL,connect,5,401
+ASL,conquer,4,402
+ASL,consider,4,403
+ASL,constitution,6,404
+ASL,construct,5,405
+ASL,consume,4,406
+ASL,contact,7,407
+ASL,contest,4,408
+ASL,continue,6,409
+ASL,contract,3,410
+ASL,contribute,7,411
+ASL,control,5,412
+ASL,conversation,5,413
+ASL,convert,4,414
+ASL,convince,10,415
+ASL,cook,8,416
+ASL,cookie,8,417
+ASL,cool,16,418
+ASL,cooperate,3,419
+ASL,cop,8,420
+ASL,copy,8,421
+ASL,corn,12,422
+ASL,corner,5,423
+ASL,correct,9,424
+ASL,cost,6,425
+ASL,couch,5,426
+ASL,cough,6,427
+ASL,counsel,5,428
+ASL,counselor,4,429
+ASL,count,6,430
+ASL,country,9,431
+ASL,court,4,432
+ASL,cousin,14,433
+ASL,cover,5,434
+ASL,cow,9,435
+ASL,crab,6,436
+ASL,cracker,6,437
+ASL,crash,9,438
+ASL,crave,5,439
+ASL,crazy,7,440
+ASL,create,4,441
+ASL,crocodile,4,442
+ASL,cross,5,443
+ASL,crown,4,444
+ASL,cruel,4,445
+ASL,crush,4,446
+ASL,cry,10,447
+ASL,cuba,3,448
+ASL,culture,4,449
+ASL,cup,6,450
+ASL,curious,6,451
+ASL,curriculum,6,452
+ASL,curse,6,453
+ASL,curtain,2,454
+ASL,customer,4,455
+ASL,cut,8,456
+ASL,cute,7,457
+ASL,d,4,458
+ASL,dad,7,459
+ASL,daily,5,460
+ASL,damage,4,461
+ASL,dance,7,462
+ASL,dancer,4,463
+ASL,danger,5,464
+ASL,dangerous,6,465
+ASL,dark,12,466
+ASL,date,5,467
+ASL,daughter,10,468
+ASL,dawn,4,469
+ASL,day,9,470
+ASL,dead,5,471
+ASL,deaf,11,472
+ASL,death,5,473
+ASL,debate,4,474
+ASL,debt,4,475
+ASL,december,5,476
+ASL,decide,9,477
+ASL,decorate,9,478
+ASL,decrease,5,479
+ASL,deduct,6,480
+ASL,deep,8,481
+ASL,deer,7,482
+ASL,defeat,4,483
+ASL,defend,5,484
+ASL,degree,6,485
+ASL,delay,11,486
+ASL,delicious,10,487
+ASL,deliver,4,488
+ASL,demand,8,489
+ASL,democrat,4,490
+ASL,demonstrate,6,491
+ASL,dentist,8,492
+ASL,deny,5,493
+ASL,deodorant,6,494
+ASL,department,4,495
+ASL,depend,7,496
+ASL,deposit,5,497
+ASL,depressed,5,498
+ASL,descend,4,499
+ASL,describe,7,500
+ASL,desert,7,501
+ASL,design,5,502
+ASL,desk,6,503
+ASL,dessert,8,504
+ASL,destroy,7,505
+ASL,detach,4,506
+ASL,detective,3,507
+ASL,determine,4,508
+ASL,develop,8,509
+ASL,devil,3,510
+ASL,diabetes,5,511
+ASL,diamond,6,512
+ASL,diaper,6,513
+ASL,diarrhea,6,514
+ASL,dice,4,515
+ASL,dictionary,6,516
+ASL,die,4,517
+ASL,different,8,518
+ASL,difficult,4,519
+ASL,dig,5,520
+ASL,dime,5,521
+ASL,dining room,5,522
+ASL,dinner,7,523
+ASL,dinosaur,7,524
+ASL,diploma,5,525
+ASL,director,4,526
+ASL,dirt,5,527
+ASL,dirty,9,528
+ASL,disagree,5,529
+ASL,disappear,7,530
+ASL,discipline,5,531
+ASL,disconnect,8,532
+ASL,discount,4,533
+ASL,discover,7,534
+ASL,discuss,8,535
+ASL,disgust,6,536
+ASL,disgusted,4,537
+ASL,dismiss,4,538
+ASL,dissolve,7,539
+ASL,disturb,5,540
+ASL,dive,9,541
+ASL,divide,6,542
+ASL,division,4,543
+ASL,divorce,6,544
+ASL,dizzy,4,545
+ASL,doctor,10,546
+ASL,document,7,547
+ASL,dog,11,548
+ASL,doll,7,549
+ASL,dollar,8,550
+ASL,dolphin,5,551
+ASL,don't want,6,552
+ASL,done,5,553
+ASL,door,7,554
+ASL,dorm,6,555
+ASL,dormitory,5,556
+ASL,double,6,557
+ASL,doubt,6,558
+ASL,down,8,559
+ASL,downstairs,4,560
+ASL,drag,3,561
+ASL,dragon,3,562
+ASL,drama,5,563
+ASL,draw,6,564
+ASL,drawer,7,565
+ASL,dream,6,566
+ASL,dress,8,567
+ASL,drink,15,568
+ASL,drive,7,569
+ASL,drop,9,570
+ASL,drug,4,571
+ASL,drum,5,572
+ASL,drunk,7,573
+ASL,dry,9,574
+ASL,duck,6,575
+ASL,due,6,576
+ASL,dull,6,577
+ASL,dumb,4,578
+ASL,during,5,579
+ASL,dusk,5,580
+ASL,duty,5,581
+ASL,dvd,4,582
+ASL,dye,4,583
+ASL,e,4,584
+ASL,each,4,585
+ASL,eagle,7,586
+ASL,ear,8,587
+ASL,early,6,588
+ASL,earn,6,589
+ASL,earring,6,590
+ASL,earth,6,591
+ASL,earthquake,5,592
+ASL,east,8,593
+ASL,easter,7,594
+ASL,easy,6,595
+ASL,eat,7,596
+ASL,economy,5,597
+ASL,educate,7,598
+ASL,education,5,599
+ASL,effort,4,600
+ASL,egg,7,601
+ASL,egypt,7,602
+ASL,eight,6,603
+ASL,eighteen,6,604
+ASL,either,3,605
+ASL,electrician,5,606
+ASL,electricity,5,607
+ASL,elementary,4,608
+ASL,elephant,7,609
+ASL,elevator,6,610
+ASL,else,3,611
+ASL,email,6,612
+ASL,embarrass,6,613
+ASL,emergency,4,614
+ASL,emotion,6,615
+ASL,empty,5,616
+ASL,encourage,7,617
+ASL,end,6,618
+ASL,energy,6,619
+ASL,engage,5,620
+ASL,engagement,4,621
+ASL,engine,5,622
+ASL,engineer,5,623
+ASL,england,5,624
+ASL,english,5,625
+ASL,enjoy,8,626
+ASL,enormous,5,627
+ASL,enough,5,628
+ASL,enter,5,629
+ASL,envelope,4,630
+ASL,environment,11,631
+ASL,equal,6,632
+ASL,erase,5,633
+ASL,eraser,5,634
+ASL,escape,8,635
+ASL,establish,5,636
+ASL,eternity,5,637
+ASL,europe,7,638
+ASL,evaluate,5,639
+ASL,evening,4,640
+ASL,event,7,641
+ASL,every,5,642
+ASL,every monday,5,643
+ASL,every tuesday,5,644
+ASL,everyday,4,645
+ASL,everything,4,646
+ASL,evidence,7,647
+ASL,exact,6,648
+ASL,exaggerate,5,649
+ASL,example,11,650
+ASL,except,5,651
+ASL,exchange,8,652
+ASL,excited,6,653
+ASL,excuse,3,654
+ASL,exercise,5,655
+ASL,exhibit,4,656
+ASL,expand,4,657
+ASL,expect,6,658
+ASL,expensive,8,659
+ASL,experience,7,660
+ASL,experiment,6,661
+ASL,expert,7,662
+ASL,explain,7,663
+ASL,explode,4,664
+ASL,express,4,665
+ASL,eye,6,666
+ASL,eyeglasses,4,667
+ASL,eyes,5,668
+ASL,f,4,669
+ASL,face,8,670
+ASL,fact,6,671
+ASL,faculty,5,672
+ASL,fail,6,673
+ASL,fairy,4,674
+ASL,fake,6,675
+ASL,fall in love,5,676
+ASL,familiar,3,677
+ASL,family,11,678
+ASL,famous,6,679
+ASL,fancy,7,680
+ASL,far,11,681
+ASL,farm,8,682
+ASL,farmer,4,683
+ASL,fast,9,684
+ASL,fat,10,685
+ASL,father,7,686
+ASL,fault,9,687
+ASL,favorite,5,688
+ASL,fear,5,689
+ASL,february,4,690
+ASL,federal,4,691
+ASL,feed,6,692
+ASL,feedback,6,693
+ASL,feel,7,694
+ASL,fence,6,695
+ASL,festival,4,696
+ASL,few,5,697
+ASL,fight,7,698
+ASL,final,5,699
+ASL,finally,7,700
+ASL,finance,4,701
+ASL,find,8,702
+ASL,fine,9,703
+ASL,fingerspell,3,704
+ASL,finish,9,705
+ASL,fire,3,706
+ASL,firefighter,5,707
+ASL,first,9,708
+ASL,fish,10,709
+ASL,fishing,6,710
+ASL,five,5,711
+ASL,fix,6,712
+ASL,flag,6,713
+ASL,flatter,4,714
+ASL,flexible,7,715
+ASL,flirt,6,716
+ASL,flood,4,717
+ASL,floor,6,718
+ASL,florida,4,719
+ASL,flower,7,720
+ASL,flute,6,721
+ASL,fly,8,722
+ASL,fold,6,723
+ASL,follow,9,724
+ASL,food,7,725
+ASL,fool,5,726
+ASL,football,9,727
+ASL,for,5,728
+ASL,forbid,4,729
+ASL,forest,7,730
+ASL,forever,6,731
+ASL,forget,7,732
+ASL,forgive,5,733
+ASL,fork,4,734
+ASL,form,9,735
+ASL,former,5,736
+ASL,four,5,737
+ASL,fourth,5,738
+ASL,fox,7,739
+ASL,france,6,740
+ASL,free,4,741
+ASL,freeway,4,742
+ASL,freeze,7,743
+ASL,french,5,744
+ASL,french fries,6,745
+ASL,friday,6,746
+ASL,friend,7,747
+ASL,friendly,7,748
+ASL,frog,7,749
+ASL,from,7,750
+ASL,from now on,5,751
+ASL,front,8,752
+ASL,fruit,7,753
+ASL,full,10,754
+ASL,fun,7,755
+ASL,function,7,756
+ASL,funeral,5,757
+ASL,funny,5,758
+ASL,furniture,3,759
+ASL,future,9,760
+ASL,g,4,761
+ASL,gallaudet,4,762
+ASL,gamble,5,763
+ASL,game,6,764
+ASL,gang,4,765
+ASL,garage,3,766
+ASL,gas,7,767
+ASL,gasoline,4,768
+ASL,gather,6,769
+ASL,gay,4,770
+ASL,general,6,771
+ASL,generation,4,772
+ASL,geography,7,773
+ASL,geometry,5,774
+ASL,german,5,775
+ASL,germany,6,776
+ASL,get,7,777
+ASL,get up,6,778
+ASL,ghost,6,779
+ASL,gift,4,780
+ASL,giraffe,7,781
+ASL,girl,9,782
+ASL,girlfriend,5,783
+ASL,give,10,784
+ASL,give up,6,785
+ASL,glass,7,786
+ASL,glasses,9,787
+ASL,gloves,2,788
+ASL,go,15,789
+ASL,goal,7,790
+ASL,goat,6,791
+ASL,god,7,792
+ASL,gold,4,793
+ASL,golf,7,794
+ASL,gone,5,795
+ASL,good,10,796
+ASL,goodbye,5,797
+ASL,gorilla,5,798
+ASL,gossip,6,799
+ASL,government,10,800
+ASL,grab,4,801
+ASL,graduate,10,802
+ASL,graduation,5,803
+ASL,grammar,9,804
+ASL,grandfather,7,805
+ASL,grandma,4,806
+ASL,grandmother,7,807
+ASL,grapes,7,808
+ASL,grass,5,809
+ASL,grateful,5,810
+ASL,gray,6,811
+ASL,great,9,812
+ASL,greece,7,813
+ASL,green,7,814
+ASL,grey,2,815
+ASL,group,8,816
+ASL,grow,6,817
+ASL,grow up,4,818
+ASL,guess,6,819
+ASL,guide,5,820
+ASL,guilty,7,821
+ASL,guitar,7,822
+ASL,gum,6,823
+ASL,gun,4,824
+ASL,gymnastics,4,825
+ASL,h,4,826
+ASL,habit,4,827
+ASL,hair,9,828
+ASL,haircut,3,829
+ASL,half,5,830
+ASL,halloween,9,831
+ASL,hamburger,6,832
+ASL,hammer,6,833
+ASL,hang up,3,834
+ASL,hanukkah,4,835
+ASL,happen,6,836
+ASL,happy,8,837
+ASL,hard,6,838
+ASL,hard of hearing,5,839
+ASL,hat,9,840
+ASL,hate,4,841
+ASL,have,6,842
+ASL,hawaii,7,843
+ASL,head,6,844
+ASL,headache,9,845
+ASL,health,6,846
+ASL,heap,5,847
+ASL,hear,9,848
+ASL,hearing,8,849
+ASL,hearing aid,5,850
+ASL,heart,8,851
+ASL,heart attack,5,852
+ASL,heaven,5,853
+ASL,heavy,5,854
+ASL,helicopter,8,855
+ASL,hello,4,856
+ASL,helmet,5,857
+ASL,help,14,858
+ASL,her,8,859
+ASL,here,7,860
+ASL,herself,7,861
+ASL,hide,5,862
+ASL,high,6,863
+ASL,high school,4,864
+ASL,highway,7,865
+ASL,hill,3,866
+ASL,hippopotamus,3,867
+ASL,his,4,868
+ASL,history,8,869
+ASL,hit,6,870
+ASL,hockey,5,871
+ASL,hold,5,872
+ASL,holy,5,873
+ASL,home,7,874
+ASL,homework,5,875
+ASL,honest,5,876
+ASL,honey,5,877
+ASL,honor,6,878
+ASL,hop,4,879
+ASL,hope,9,880
+ASL,horse,4,881
+ASL,hospital,7,882
+ASL,host,5,883
+ASL,hot,10,884
+ASL,hot dog,5,885
+ASL,hour,7,886
+ASL,house,7,887
+ASL,how,9,888
+ASL,hug,5,889
+ASL,human,4,890
+ASL,humble,8,891
+ASL,hungry,6,892
+ASL,hunt,5,893
+ASL,hurricane,5,894
+ASL,hurry,7,895
+ASL,hurt,5,896
+ASL,husband,7,897
+ASL,i,4,898
+ASL,ice cream,7,899
+ASL,idea,8,900
+ASL,identify,5,901
+ASL,if,6,902
+ASL,ignore,5,903
+ASL,ill,4,904
+ASL,illegal,5,905
+ASL,image,5,906
+ASL,impact,5,907
+ASL,important,8,908
+ASL,impossible,6,909
+ASL,improve,9,910
+ASL,in,7,911
+ASL,include,4,912
+ASL,increase,5,913
+ASL,independent,7,914
+ASL,india,4,915
+ASL,individual,4,916
+ASL,infection,6,917
+ASL,influence,6,918
+ASL,inform,9,919
+ASL,information,7,920
+ASL,innocent,4,921
+ASL,insect,5,922
+ASL,inside,6,923
+ASL,inspect,5,924
+ASL,inspire,5,925
+ASL,instead,5,926
+ASL,institute,5,927
+ASL,insurance,6,928
+ASL,interest,10,929
+ASL,interesting,6,930
+ASL,international,3,931
+ASL,internet,8,932
+ASL,interpret,4,933
+ASL,interpreter,5,934
+ASL,interrupt,5,935
+ASL,intersection,4,936
+ASL,interview,5,937
+ASL,introduce,6,938
+ASL,invest,7,939
+ASL,investigate,6,940
+ASL,invite,5,941
+ASL,involve,5,942
+ASL,iran,7,943
+ASL,ireland,4,944
+ASL,iron,4,945
+ASL,island,6,946
+ASL,israel,5,947
+ASL,italy,5,948
+ASL,j,4,949
+ASL,jacket,7,950
+ASL,jail,5,951
+ASL,january,5,952
+ASL,japan,7,953
+ASL,jealous,8,954
+ASL,jesus,6,955
+ASL,jewelry,6,956
+ASL,jewish,5,957
+ASL,join,8,958
+ASL,joke,5,959
+ASL,journey,4,960
+ASL,joy,5,961
+ASL,judge,5,962
+ASL,july,4,963
+ASL,jump,6,964
+ASL,june,5,965
+ASL,k,4,966
+ASL,kangaroo,3,967
+ASL,karate,4,968
+ASL,keep,6,969
+ASL,key,6,970
+ASL,keyboard,6,971
+ASL,kick,5,972
+ASL,kid,5,973
+ASL,kill,7,974
+ASL,kindergarten,5,975
+ASL,king,7,976
+ASL,kiss,9,977
+ASL,kitchen,7,978
+ASL,kneel,4,979
+ASL,knife,6,980
+ASL,knock,3,981
+ASL,know,8,982
+ASL,label,6,983
+ASL,lady,5,984
+ASL,lamp,2,985
+ASL,land,6,986
+ASL,language,10,987
+ASL,laptop,6,988
+ASL,large,7,989
+ASL,last,12,990
+ASL,last week,5,991
+ASL,last year,6,992
+ASL,late,8,993
+ASL,later,12,994
+ASL,laugh,11,995
+ASL,laundry,4,996
+ASL,law,7,997
+ASL,lawyer,5,998
+ASL,lazy,6,999
+ASL,lead,7,1000
+ASL,leader,5,1001
+ASL,leaf,6,1002
+ASL,league,3,1003
+ASL,leak,5,1004
+ASL,learn,8,1005
+ASL,leave,11,1006
+ASL,lecture,7,1007
+ASL,left,5,1008
+ASL,legal,4,1009
+ASL,lemon,8,1010
+ASL,lend,6,1011
+ASL,lesbian,6,1012
+ASL,less,5,1013
+ASL,lesson,6,1014
+ASL,let,4,1015
+ASL,letter,11,1016
+ASL,lettuce,7,1017
+ASL,liability,5,1018
+ASL,librarian,4,1019
+ASL,library,5,1020
+ASL,license,3,1021
+ASL,lie,7,1022
+ASL,lift,6,1023
+ASL,light,8,1024
+ASL,lightning,6,1025
+ASL,like,10,1026
+ASL,limit,7,1027
+ASL,line,6,1028
+ASL,linguistics,7,1029
+ASL,lion,5,1030
+ASL,lip,4,1031
+ASL,lipstick,4,1032
+ASL,list,9,1033
+ASL,listen,7,1034
+ASL,little bit,3,1035
+ASL,live,6,1036
+ASL,loan,3,1037
+ASL,lobster,7,1038
+ASL,local,4,1039
+ASL,lock,6,1040
+ASL,lonely,6,1041
+ASL,long,5,1042
+ASL,look at,2,1043
+ASL,look for,3,1044
+ASL,lord,4,1045
+ASL,lose,9,1046
+ASL,loud,6,1047
+ASL,lousy,6,1048
+ASL,love,7,1049
+ASL,lucky,7,1050
+ASL,lunch,6,1051
+ASL,m,4,1052
+ASL,machine,6,1053
+ASL,mad,5,1054
+ASL,magazine,5,1055
+ASL,magic,5,1056
+ASL,mainstream,5,1057
+ASL,major,5,1058
+ASL,make,9,1059
+ASL,man,12,1060
+ASL,manage,5,1061
+ASL,manager,5,1062
+ASL,many,10,1063
+ASL,march,7,1064
+ASL,marry,7,1065
+ASL,match,8,1066
+ASL,math,7,1067
+ASL,mature,4,1068
+ASL,maximum,6,1069
+ASL,maybe,6,1070
+ASL,me,4,1071
+ASL,mean,8,1072
+ASL,meaning,2,1073
+ASL,measure,7,1074
+ASL,meat,8,1075
+ASL,mechanic,6,1076
+ASL,medicine,8,1077
+ASL,meet,9,1078
+ASL,meeting,6,1079
+ASL,melody,5,1080
+ASL,melt,4,1081
+ASL,member,5,1082
+ASL,memorize,7,1083
+ASL,mention,3,1084
+ASL,message,5,1085
+ASL,metal,4,1086
+ASL,mexico,6,1087
+ASL,microphone,5,1088
+ASL,microscope,4,1089
+ASL,microwave,7,1090
+ASL,middle,7,1091
+ASL,midnight,4,1092
+ASL,military,3,1093
+ASL,milk,5,1094
+ASL,mind,5,1095
+ASL,mine,4,1096
+ASL,minus,4,1097
+ASL,minute,9,1098
+ASL,mirror,8,1099
+ASL,miss,8,1100
+ASL,mistake,4,1101
+ASL,misunderstand,4,1102
+ASL,mix,6,1103
+ASL,mock,3,1104
+ASL,mom,7,1105
+ASL,monday,6,1106
+ASL,money,6,1107
+ASL,monkey,7,1108
+ASL,monster,5,1109
+ASL,month,7,1110
+ASL,monthly,4,1111
+ASL,moon,7,1112
+ASL,moose,4,1113
+ASL,more,8,1114
+ASL,morning,6,1115
+ASL,mosquito,4,1116
+ASL,most,7,1117
+ASL,mother,11,1118
+ASL,motivate,6,1119
+ASL,motor,5,1120
+ASL,motorcycle,7,1121
+ASL,mountain,5,1122
+ASL,mouse,5,1123
+ASL,mouth,5,1124
+ASL,move,10,1125
+ASL,movie,5,1126
+ASL,much,6,1127
+ASL,multiply,6,1128
+ASL,murder,4,1129
+ASL,muscle,5,1130
+ASL,museum,5,1131
+ASL,mushroom,5,1132
+ASL,music,8,1133
+ASL,must,7,1134
+ASL,mustache,5,1135
+ASL,my,6,1136
+ASL,myself,6,1137
+ASL,n,4,1138
+ASL,name,6,1139
+ASL,napkin,7,1140
+ASL,narrow,4,1141
+ASL,nation,5,1142
+ASL,near,9,1143
+ASL,necessary,4,1144
+ASL,neck,6,1145
+ASL,necklace,9,1146
+ASL,need,6,1147
+ASL,negative,7,1148
+ASL,negotiate,3,1149
+ASL,neighbor,7,1150
+ASL,nephew,6,1151
+ASL,nervous,7,1152
+ASL,network,6,1153
+ASL,neutral,6,1154
+ASL,never,7,1155
+ASL,new,9,1156
+ASL,new york,4,1157
+ASL,newspaper,4,1158
+ASL,next,5,1159
+ASL,nice,6,1160
+ASL,nickel,4,1161
+ASL,niece,7,1162
+ASL,night,5,1163
+ASL,nine,5,1164
+ASL,nineteen,6,1165
+ASL,no,11,1166
+ASL,none,7,1167
+ASL,noon,6,1168
+ASL,normal,5,1169
+ASL,north,7,1170
+ASL,northwest,4,1171
+ASL,nose,6,1172
+ASL,not,7,1173
+ASL,not yet,4,1174
+ASL,nothing,6,1175
+ASL,notice,6,1176
+ASL,november,5,1177
+ASL,now,9,1178
+ASL,number,5,1179
+ASL,numerous,5,1180
+ASL,nun,4,1181
+ASL,nurse,6,1182
+ASL,nut,5,1183
+ASL,o,4,1184
+ASL,objective,4,1185
+ASL,obsess,7,1186
+ASL,obtain,5,1187
+ASL,occur,3,1188
+ASL,ocean,5,1189
+ASL,october,5,1190
+ASL,octopus,5,1191
+ASL,odd,4,1192
+ASL,odor,5,1193
+ASL,off,7,1194
+ASL,offer,6,1195
+ASL,office,9,1196
+ASL,often,6,1197
+ASL,ok,7,1198
+ASL,old,7,1199
+ASL,olympics,3,1200
+ASL,on,5,1201
+ASL,once,5,1202
+ASL,one,8,1203
+ASL,onion,8,1204
+ASL,only,6,1205
+ASL,open,7,1206
+ASL,operate,6,1207
+ASL,opinion,7,1208
+ASL,opposite,5,1209
+ASL,or,3,1210
+ASL,oral,4,1211
+ASL,orange,10,1212
+ASL,order,10,1213
+ASL,organize,5,1214
+ASL,other,5,1215
+ASL,our,4,1216
+ASL,out,5,1217
+ASL,outside,9,1218
+ASL,over,6,1219
+ASL,overcome,5,1220
+ASL,overlook,5,1221
+ASL,overwhelm,8,1222
+ASL,owe,5,1223
+ASL,owl,5,1224
+ASL,p,4,1225
+ASL,pack,5,1226
+ASL,page,5,1227
+ASL,pain,5,1228
+ASL,paint,7,1229
+ASL,painter,5,1230
+ASL,pants,8,1231
+ASL,paper,8,1232
+ASL,parachute,4,1233
+ASL,parade,6,1234
+ASL,paragraph,5,1235
+ASL,parallel,5,1236
+ASL,parents,3,1237
+ASL,part,4,1238
+ASL,party,9,1239
+ASL,pass,7,1240
+ASL,past,9,1241
+ASL,path,6,1242
+ASL,patient,7,1243
+ASL,pause,5,1244
+ASL,pay,7,1245
+ASL,pay attention,4,1246
+ASL,peace,4,1247
+ASL,peaceful,7,1248
+ASL,peach,6,1249
+ASL,peanut butter,5,1250
+ASL,pear,3,1251
+ASL,peel,4,1252
+ASL,penalty,4,1253
+ASL,pencil,5,1254
+ASL,pennsylvania,5,1255
+ASL,penny,3,1256
+ASL,people,6,1257
+ASL,pepper,7,1258
+ASL,percent,4,1259
+ASL,perfect,7,1260
+ASL,perfume,5,1261
+ASL,period,5,1262
+ASL,permit,4,1263
+ASL,person,7,1264
+ASL,personality,4,1265
+ASL,perspective,10,1266
+ASL,pet,5,1267
+ASL,philadelphia,4,1268
+ASL,philosophy,6,1269
+ASL,phone,5,1270
+ASL,photographer,5,1271
+ASL,phrase,6,1272
+ASL,physician,6,1273
+ASL,physics,6,1274
+ASL,piano,5,1275
+ASL,pick,5,1276
+ASL,pickle,4,1277
+ASL,picture,6,1278
+ASL,pie,5,1279
+ASL,piece,4,1280
+ASL,pig,7,1281
+ASL,pillow,7,1282
+ASL,pilot,4,1283
+ASL,pink,9,1284
+ASL,pity,5,1285
+ASL,pizza,12,1286
+ASL,place,5,1287
+ASL,plan,7,1288
+ASL,plant,5,1289
+ASL,plate,5,1290
+ASL,play,11,1291
+ASL,player,4,1292
+ASL,please,7,1293
+ASL,plenty,5,1294
+ASL,plus,7,1295
+ASL,pneumonia,5,1296
+ASL,pocket,6,1297
+ASL,point,9,1298
+ASL,polar bear,5,1299
+ASL,police,8,1300
+ASL,policeman,5,1301
+ASL,policy,6,1302
+ASL,polite,6,1303
+ASL,politics,6,1304
+ASL,poop,5,1305
+ASL,poor,6,1306
+ASL,popcorn,4,1307
+ASL,popular,6,1308
+ASL,position,4,1309
+ASL,positive,5,1310
+ASL,possible,8,1311
+ASL,post,2,1312
+ASL,postpone,8,1313
+ASL,potato,8,1314
+ASL,potential,5,1315
+ASL,pound,6,1316
+ASL,pour,5,1317
+ASL,poverty,4,1318
+ASL,power,7,1319
+ASL,practice,9,1320
+ASL,praise,5,1321
+ASL,pray,6,1322
+ASL,preach,5,1323
+ASL,preacher,3,1324
+ASL,precious,5,1325
+ASL,precipitation,6,1326
+ASL,precise,4,1327
+ASL,predict,6,1328
+ASL,prefer,3,1329
+ASL,pregnant,5,1330
+ASL,prepare,7,1331
+ASL,preschool,3,1332
+ASL,present,8,1333
+ASL,presentation,8,1334
+ASL,president,9,1335
+ASL,pressure,5,1336
+ASL,pretty,5,1337
+ASL,prevent,5,1338
+ASL,price,6,1339
+ASL,pride,5,1340
+ASL,priest,5,1341
+ASL,prince,3,1342
+ASL,princess,3,1343
+ASL,principal,5,1344
+ASL,principle,5,1345
+ASL,print,6,1346
+ASL,printer,6,1347
+ASL,priority,4,1348
+ASL,prison,6,1349
+ASL,private,7,1350
+ASL,problem,9,1351
+ASL,process,4,1352
+ASL,procrastinate,7,1353
+ASL,professional,7,1354
+ASL,professor,5,1355
+ASL,profit,4,1356
+ASL,program,6,1357
+ASL,progress,4,1358
+ASL,project,7,1359
+ASL,promise,5,1360
+ASL,promote,4,1361
+ASL,proof,6,1362
+ASL,propaganda,2,1363
+ASL,proper,4,1364
+ASL,prostitute,4,1365
+ASL,protect,6,1366
+ASL,proud,5,1367
+ASL,prove,5,1368
+ASL,provide,6,1369
+ASL,psychologist,3,1370
+ASL,psychology,6,1371
+ASL,public,5,1372
+ASL,publish,6,1373
+ASL,pull,9,1374
+ASL,pumpkin,5,1375
+ASL,punish,6,1376
+ASL,purchase,4,1377
+ASL,pure,4,1378
+ASL,purple,8,1379
+ASL,purpose,6,1380
+ASL,pursue,4,1381
+ASL,push,6,1382
+ASL,put,6,1383
+ASL,put off,5,1384
+ASL,puzzled,6,1385
+ASL,q,4,1386
+ASL,quality,5,1387
+ASL,quarrel,4,1388
+ASL,quarter,5,1389
+ASL,queen,6,1390
+ASL,question,5,1391
+ASL,quick,7,1392
+ASL,quiet,7,1393
+ASL,quit,7,1394
+ASL,quote,6,1395
+ASL,r,4,1396
+ASL,rabbit,8,1397
+ASL,raccoon,7,1398
+ASL,race,6,1399
+ASL,radio,6,1400
+ASL,rage,4,1401
+ASL,rain,7,1402
+ASL,rainbow,5,1403
+ASL,rake,5,1404
+ASL,rat,6,1405
+ASL,rather,4,1406
+ASL,read,6,1407
+ASL,ready,10,1408
+ASL,real,4,1409
+ASL,realize,4,1410
+ASL,really,7,1411
+ASL,reason,7,1412
+ASL,receive,5,1413
+ASL,recent,7,1414
+ASL,recliner,4,1415
+ASL,recognize,5,1416
+ASL,recommend,4,1417
+ASL,recover,6,1418
+ASL,red,7,1419
+ASL,reduce,5,1420
+ASL,refer,5,1421
+ASL,referee,5,1422
+ASL,refuse,6,1423
+ASL,regular,4,1424
+ASL,rehearse,7,1425
+ASL,reject,5,1426
+ASL,relate,5,1427
+ASL,relationship,5,1428
+ASL,relax,4,1429
+ASL,release,5,1430
+ASL,relief,6,1431
+ASL,religion,7,1432
+ASL,rely,5,1433
+ASL,remember,7,1434
+ASL,remote control,5,1435
+ASL,remove,7,1436
+ASL,rent,5,1437
+ASL,repeat,5,1438
+ASL,replace,5,1439
+ASL,reply,4,1440
+ASL,report,3,1441
+ASL,represent,7,1442
+ASL,reputation,5,1443
+ASL,request,4,1444
+ASL,require,6,1445
+ASL,rescue,4,1446
+ASL,research,7,1447
+ASL,resign,5,1448
+ASL,resist,3,1449
+ASL,respect,7,1450
+ASL,responsibility,6,1451
+ASL,responsible,4,1452
+ASL,rest,6,1453
+ASL,restaurant,7,1454
+ASL,restroom,3,1455
+ASL,result,7,1456
+ASL,retire,7,1457
+ASL,retreat,4,1458
+ASL,reveal,5,1459
+ASL,revenge,6,1460
+ASL,review,7,1461
+ASL,rich,6,1462
+ASL,ride,8,1463
+ASL,ridiculous,4,1464
+ASL,right,9,1465
+ASL,ring,5,1466
+ASL,rise,7,1467
+ASL,river,5,1468
+ASL,road,4,1469
+ASL,roar,4,1470
+ASL,rob,8,1471
+ASL,robber,5,1472
+ASL,robot,4,1473
+ASL,rock,6,1474
+ASL,role,5,1475
+ASL,roof,4,1476
+ASL,room,11,1477
+ASL,roommate,5,1478
+ASL,rooster,5,1479
+ASL,rope,4,1480
+ASL,rose,5,1481
+ASL,rough,7,1482
+ASL,rubber,5,1483
+ASL,rude,6,1484
+ASL,ruin,4,1485
+ASL,rule,6,1486
+ASL,run,7,1487
+ASL,rush,5,1488
+ASL,russia,8,1489
+ASL,s,4,1490
+ASL,sad,8,1491
+ASL,safe,5,1492
+ASL,salad,6,1493
+ASL,salary,5,1494
+ASL,salt,8,1495
+ASL,salute,4,1496
+ASL,same,9,1497
+ASL,sandwich,10,1498
+ASL,satisfy,5,1499
+ASL,saturday,7,1500
+ASL,sauce,4,1501
+ASL,sausage,4,1502
+ASL,save,8,1503
+ASL,saw,3,1504
+ASL,say,6,1505
+ASL,scan,3,1506
+ASL,scared,8,1507
+ASL,schedule,5,1508
+ASL,school,9,1509
+ASL,science,7,1510
+ASL,scientist,5,1511
+ASL,scissors,8,1512
+ASL,scold,4,1513
+ASL,score,11,1514
+ASL,scotland,6,1515
+ASL,scream,3,1516
+ASL,screwdriver,6,1517
+ASL,sculpture,6,1518
+ASL,sea,5,1519
+ASL,search,5,1520
+ASL,second,6,1521
+ASL,secret,8,1522
+ASL,secretary,10,1523
+ASL,see,5,1524
+ASL,seem,6,1525
+ASL,seldom,3,1526
+ASL,selfish,5,1527
+ASL,sell,7,1528
+ASL,senate,6,1529
+ASL,send,5,1530
+ASL,senior,6,1531
+ASL,sensitive,5,1532
+ASL,sentence,7,1533
+ASL,separate,6,1534
+ASL,september,5,1535
+ASL,sequence,5,1536
+ASL,serious,6,1537
+ASL,serve,5,1538
+ASL,service,7,1539
+ASL,settle,4,1540
+ASL,seven,6,1541
+ASL,several,4,1542
+ASL,sew,4,1543
+ASL,shame,5,1544
+ASL,shampoo,5,1545
+ASL,shape,7,1546
+ASL,share,7,1547
+ASL,shave,4,1548
+ASL,she,6,1549
+ASL,sheep,5,1550
+ASL,shelf,5,1551
+ASL,shine,8,1552
+ASL,shirt,12,1553
+ASL,shock,9,1554
+ASL,shoes,6,1555
+ASL,shoot,5,1556
+ASL,shop,6,1557
+ASL,shopping,3,1558
+ASL,short,13,1559
+ASL,should,6,1560
+ASL,shoulder,4,1561
+ASL,shout,3,1562
+ASL,shovel,3,1563
+ASL,show,9,1564
+ASL,shower,5,1565
+ASL,shrimp,6,1566
+ASL,shy,6,1567
+ASL,sick,8,1568
+ASL,side,5,1569
+ASL,sign,9,1570
+ASL,sign language,5,1571
+ASL,silent,5,1572
+ASL,silly,10,1573
+ASL,silver,6,1574
+ASL,similar,6,1575
+ASL,simple,5,1576
+ASL,sin,4,1577
+ASL,since,8,1578
+ASL,sing,5,1579
+ASL,singer,4,1580
+ASL,single,6,1581
+ASL,siren,6,1582
+ASL,sister,7,1583
+ASL,sit,6,1584
+ASL,situation,6,1585
+ASL,six,6,1586
+ASL,sixteen,6,1587
+ASL,size,5,1588
+ASL,skate,4,1589
+ASL,skeleton,5,1590
+ASL,sketch,6,1591
+ASL,ski,2,1592
+ASL,skill,4,1593
+ASL,skin,6,1594
+ASL,skinny,6,1595
+ASL,skip,4,1596
+ASL,skirt,6,1597
+ASL,skunk,5,1598
+ASL,sky,8,1599
+ASL,slave,6,1600
+ASL,sleep,6,1601
+ASL,sleepy,5,1602
+ASL,slice,4,1603
+ASL,slip,6,1604
+ASL,slow,8,1605
+ASL,small,8,1606
+ASL,smart,8,1607
+ASL,smell,5,1608
+ASL,smile,7,1609
+ASL,smoking,2,1610
+ASL,smooth,5,1611
+ASL,snack,5,1612
+ASL,snake,7,1613
+ASL,sneeze,4,1614
+ASL,snob,6,1615
+ASL,snow,10,1616
+ASL,snowman,5,1617
+ASL,soap,7,1618
+ASL,soccer,5,1619
+ASL,society,5,1620
+ASL,socks,6,1621
+ASL,soda,6,1622
+ASL,sofa,4,1623
+ASL,soft,8,1624
+ASL,soldier,4,1625
+ASL,solid,6,1626
+ASL,solve,4,1627
+ASL,some,7,1628
+ASL,someday,5,1629
+ASL,someone,3,1630
+ASL,something,4,1631
+ASL,sometimes,5,1632
+ASL,somewhere,4,1633
+ASL,son,10,1634
+ASL,song,5,1635
+ASL,soon,11,1636
+ASL,sore throat,6,1637
+ASL,sorry,7,1638
+ASL,soul,5,1639
+ASL,sound,7,1640
+ASL,soup,6,1641
+ASL,sour,7,1642
+ASL,south,7,1643
+ASL,south america,6,1644
+ASL,spain,6,1645
+ASL,spanish,5,1646
+ASL,speak,5,1647
+ASL,special,8,1648
+ASL,specific,6,1649
+ASL,speech,10,1650
+ASL,speed,5,1651
+ASL,spell,6,1652
+ASL,spider,6,1653
+ASL,spill,4,1654
+ASL,spin,8,1655
+ASL,spirit,7,1656
+ASL,spit,4,1657
+ASL,spoon,4,1658
+ASL,spray,8,1659
+ASL,spread,4,1660
+ASL,spring,6,1661
+ASL,sprint,6,1662
+ASL,square,5,1663
+ASL,squeeze,4,1664
+ASL,squirrel,6,1665
+ASL,stadium,6,1666
+ASL,staff,5,1667
+ASL,stairs,6,1668
+ASL,stamp,5,1669
+ASL,stand,5,1670
+ASL,standard,5,1671
+ASL,star,7,1672
+ASL,stare,7,1673
+ASL,start,4,1674
+ASL,statistics,4,1675
+ASL,stay,9,1676
+ASL,steal,7,1677
+ASL,steel,6,1678
+ASL,stepfather,2,1679
+ASL,sticky,5,1680
+ASL,still,5,1681
+ASL,sting,3,1682
+ASL,stink,8,1683
+ASL,stir,4,1684
+ASL,stitch,4,1685
+ASL,stomach,7,1686
+ASL,stop,5,1687
+ASL,store,7,1688
+ASL,story,7,1689
+ASL,straight,8,1690
+ASL,strange,7,1691
+ASL,straw,7,1692
+ASL,strawberry,8,1693
+ASL,street,6,1694
+ASL,stress,8,1695
+ASL,stretch,4,1696
+ASL,strict,6,1697
+ASL,strong,8,1698
+ASL,structure,7,1699
+ASL,struggle,7,1700
+ASL,stubborn,7,1701
+ASL,stuck,4,1702
+ASL,student,8,1703
+ASL,study,10,1704
+ASL,stupid,5,1705
+ASL,subtract,6,1706
+ASL,subway,5,1707
+ASL,sue,4,1708
+ASL,suffer,5,1709
+ASL,sugar,7,1710
+ASL,suggest,6,1711
+ASL,summer,7,1712
+ASL,summon,5,1713
+ASL,sun,6,1714
+ASL,sunday,8,1715
+ASL,sunrise,4,1716
+ASL,sunset,8,1717
+ASL,sunshine,5,1718
+ASL,superman,4,1719
+ASL,support,6,1720
+ASL,suppose,4,1721
+ASL,sure,5,1722
+ASL,surface,6,1723
+ASL,surgeon,3,1724
+ASL,surgery,7,1725
+ASL,surprise,6,1726
+ASL,surrender,4,1727
+ASL,suspect,6,1728
+ASL,suspend,4,1729
+ASL,swallow,7,1730
+ASL,sweater,6,1731
+ASL,sweden,4,1732
+ASL,sweep,4,1733
+ASL,sweet,10,1734
+ASL,sweetheart,6,1735
+ASL,swim,4,1736
+ASL,swimming,6,1737
+ASL,swimsuit,5,1738
+ASL,swing,4,1739
+ASL,switzerland,6,1740
+ASL,symbol,6,1741
+ASL,sympathy,4,1742
+ASL,t,4,1743
+ASL,table,5,1744
+ASL,take,11,1745
+ASL,take turns,7,1746
+ASL,take up,4,1747
+ASL,tale,6,1748
+ASL,talent,4,1749
+ASL,talk,7,1750
+ASL,tall,13,1751
+ASL,tan,5,1752
+ASL,taste,6,1753
+ASL,tea,7,1754
+ASL,teach,7,1755
+ASL,teacher,8,1756
+ASL,team,6,1757
+ASL,tease,8,1758
+ASL,technology,5,1759
+ASL,teeth,4,1760
+ASL,telephone,6,1761
+ASL,telescope,5,1762
+ASL,television,6,1763
+ASL,tell,10,1764
+ASL,temperature,8,1765
+ASL,temple,6,1766
+ASL,tempt,3,1767
+ASL,ten,5,1768
+ASL,tend,3,1769
+ASL,tender,6,1770
+ASL,tennis,6,1771
+ASL,tent,8,1772
+ASL,terrible,6,1773
+ASL,test,8,1774
+ASL,testify,5,1775
+ASL,texas,3,1776
+ASL,text,6,1777
+ASL,thailand,6,1778
+ASL,than,4,1779
+ASL,thank you,7,1780
+ASL,thankful,5,1781
+ASL,thanksgiving,13,1782
+ASL,that,4,1783
+ASL,theater,4,1784
+ASL,their,5,1785
+ASL,them,5,1786
+ASL,theme,5,1787
+ASL,themselves,7,1788
+ASL,then,5,1789
+ASL,theory,10,1790
+ASL,therapy,6,1791
+ASL,there,6,1792
+ASL,therefore,3,1793
+ASL,thermometer,5,1794
+ASL,they,5,1795
+ASL,thick,5,1796
+ASL,thin,16,1797
+ASL,thing,6,1798
+ASL,think,7,1799
+ASL,third,7,1800
+ASL,thirsty,8,1801
+ASL,this,4,1802
+ASL,thousand,6,1803
+ASL,three,7,1804
+ASL,thrill,5,1805
+ASL,throat,5,1806
+ASL,through,5,1807
+ASL,throw,7,1808
+ASL,thursday,11,1809
+ASL,ticket,6,1810
+ASL,tie,7,1811
+ASL,tiger,9,1812
+ASL,time,8,1813
+ASL,tiptoe,4,1814
+ASL,tired,7,1815
+ASL,tissue,6,1816
+ASL,title,5,1817
+ASL,to,7,1818
+ASL,toast,10,1819
+ASL,tobacco,4,1820
+ASL,today,9,1821
+ASL,together,6,1822
+ASL,toilet,5,1823
+ASL,toilet paper,4,1824
+ASL,tolerate,4,1825
+ASL,tomato,8,1826
+ASL,tomorrow,7,1827
+ASL,tongue,5,1828
+ASL,tonight,5,1829
+ASL,tooth,6,1830
+ASL,toothbrush,5,1831
+ASL,top,6,1832
+ASL,topic,7,1833
+ASL,tornado,5,1834
+ASL,torture,4,1835
+ASL,total,5,1836
+ASL,touch,5,1837
+ASL,tough,6,1838
+ASL,tournament,7,1839
+ASL,towel,5,1840
+ASL,tower,3,1841
+ASL,town,9,1842
+ASL,trade,13,1843
+ASL,tradition,5,1844
+ASL,traffic,6,1845
+ASL,train,9,1846
+ASL,tranquil,5,1847
+ASL,transfer,8,1848
+ASL,transform,4,1849
+ASL,translate,7,1850
+ASL,travel,9,1851
+ASL,tree,6,1852
+ASL,triangle,6,1853
+ASL,trip,5,1854
+ASL,trophy,5,1855
+ASL,trouble,5,1856
+ASL,truck,6,1857
+ASL,true,5,1858
+ASL,trust,6,1859
+ASL,truth,5,1860
+ASL,try,6,1861
+ASL,tuesday,7,1862
+ASL,turkey,7,1863
+ASL,turn,4,1864
+ASL,turtle,5,1865
+ASL,tutor,5,1866
+ASL,tv,2,1867
+ASL,twin,5,1868
+ASL,two,6,1869
+ASL,type,5,1870
+ASL,u,4,1871
+ASL,ugly,9,1872
+ASL,umbrella,6,1873
+ASL,uncle,6,1874
+ASL,under,5,1875
+ASL,understand,7,1876
+ASL,underwear,8,1877
+ASL,unique,6,1878
+ASL,united states,5,1879
+ASL,university,7,1880
+ASL,until,7,1881
+ASL,up,7,1882
+ASL,upset,9,1883
+ASL,upstairs,3,1884
+ASL,use,5,1885
+ASL,v,4,1886
+ASL,vacant,4,1887
+ASL,vacation,6,1888
+ASL,vague,4,1889
+ASL,valley,4,1890
+ASL,value,3,1891
+ASL,vampire,5,1892
+ASL,vegetable,5,1893
+ASL,verb,4,1894
+ASL,very,6,1895
+ASL,vice president,4,1896
+ASL,viewpoint,5,1897
+ASL,violin,7,1898
+ASL,visit,9,1899
+ASL,visitor,5,1900
+ASL,visualize,5,1901
+ASL,vlog,4,1902
+ASL,vocabulary,6,1903
+ASL,voice,9,1904
+ASL,volleyball,5,1905
+ASL,volunteer,7,1906
+ASL,vomit,9,1907
+ASL,vote,8,1908
+ASL,w,4,1909
+ASL,wait,10,1910
+ASL,waiter,3,1911
+ASL,wake up,5,1912
+ASL,walk,11,1913
+ASL,wall,5,1914
+ASL,wallet,6,1915
+ASL,wander,5,1916
+ASL,want,9,1917
+ASL,war,7,1918
+ASL,warm,5,1919
+ASL,warn,5,1920
+ASL,wash,6,1921
+ASL,wash face,2,1922
+ASL,washington,5,1923
+ASL,waste,5,1924
+ASL,watch,8,1925
+ASL,water,9,1926
+ASL,waterfall,5,1927
+ASL,watermelon,5,1928
+ASL,way,5,1929
+ASL,we,7,1930
+ASL,weak,7,1931
+ASL,wear,6,1932
+ASL,weather,8,1933
+ASL,wedding,7,1934
+ASL,wednesday,8,1935
+ASL,week,9,1936
+ASL,weekend,9,1937
+ASL,weekly,4,1938
+ASL,weigh,3,1939
+ASL,weight,6,1940
+ASL,weird,5,1941
+ASL,welcome,5,1942
+ASL,west,8,1943
+ASL,wet,9,1944
+ASL,whale,6,1945
+ASL,what,12,1946
+ASL,whatever,4,1947
+ASL,wheelchair,4,1948
+ASL,when,8,1949
+ASL,where,7,1950
+ASL,which,6,1951
+ASL,while,6,1952
+ASL,whistle,3,1953
+ASL,white,10,1954
+ASL,who,14,1955
+ASL,why,11,1956
+ASL,wide,6,1957
+ASL,wife,8,1958
+ASL,will,4,1959
+ASL,willing,6,1960
+ASL,win,7,1961
+ASL,wind,8,1962
+ASL,window,6,1963
+ASL,wine,5,1964
+ASL,winter,6,1965
+ASL,wish,4,1966
+ASL,with,8,1967
+ASL,within,5,1968
+ASL,without,7,1969
+ASL,witness,6,1970
+ASL,wolf,6,1971
+ASL,woman,11,1972
+ASL,wonder,5,1973
+ASL,wonderful,6,1974
+ASL,wood,6,1975
+ASL,word,8,1976
+ASL,work,10,1977
+ASL,worker,5,1978
+ASL,workshop,5,1979
+ASL,world,6,1980
+ASL,worm,6,1981
+ASL,worry,5,1982
+ASL,worse,6,1983
+ASL,worthless,5,1984
+ASL,wow,9,1985
+ASL,wrap,6,1986
+ASL,wrench,3,1987
+ASL,wristwatch,6,1988
+ASL,write,10,1989
+ASL,wrong,8,1990
+ASL,year,10,1991
+ASL,yellow,8,1992
+ASL,yes,12,1993
+ASL,yesterday,10,1994
+ASL,you,8,1995
+ASL,young,5,1996
+ASL,your,6,1997
+ASL,yourself,5,1998
+ASL,zero,4,1999
+VSL,0 (số không),1,2000
+VSL,1,1,2001
+VSL,1 000 000 (một triệu),3,2002
+VSL,1 000 000 000 (một tỉ),3,2003
+VSL,10,1,2004
+VSL,10 000 (mười nghìn),3,2005
+VSL,100,1,2006
+VSL,1000 (một nghìn),1,2007
+VSL,11,3,2008
+VSL,12,3,2009
+VSL,2,1,2010
+VSL,2 _ 5 (Toán học),1,2011
+VSL,2 _ 6 (Toán học),1,2012
+VSL,23,3,2013
+VSL,3,1,2014
+VSL,33,2,2015
+VSL,4,1,2016
+VSL,40,1,2017
+VSL,5,1,2018
+VSL,5 _ 3 (Toán học),1,2019
+VSL,5000 (năm nghìn),2,2020
+VSL,6,3,2021
+VSL,7,1,2022
+VSL,7up,1,2023
+VSL,8,1,2024
+VSL,80,1,2025
+VSL,9,1,2026
+VSL,90,1,2027
+VSL,Albania (nước Albania),1,2028
+VSL,An Giang,1,2029
+VSL,Anh (nước Anh),3,2030
+VSL,Ba chân bốn cẳng,1,2031
+VSL,Bra-xin (nước Bra-xin),3,2032
+VSL,Bru-nây (nước Bru-nây),3,2033
+VSL,Bun-ga-ri (nước Bun-ga-ri),1,2034
+VSL,Bà Nà,1,2035
+VSL,Bà Rịa - Vũng Tàu,1,2036
+VSL,Bãi biển Vũng Tàu,1,2037
+VSL,Bình Dương,1,2038
+VSL,Bình Phước,1,2039
+VSL,Bình Thuận,1,2040
+VSL,Bình Định,1,2041
+VSL,Băng-la-đét (nước Băng-la-đét),1,2042
+VSL,Bạc Liêu,1,2043
+VSL,Bắc Giang,1,2044
+VSL,Bắc Kạn,1,2045
+VSL,Bắc Ninh,1,2046
+VSL,Bắc bộ,1,2047
+VSL,Bến Tre,1,2048
+VSL,Cam-pu-chia (nước Cam-pu-chia),3,2049
+VSL,Cao Bằng,1,2050
+VSL,Chi-lê (nước Chi-lê),1,2051
+VSL,Châu Á Thái Bình Dương,1,2052
+VSL,Châu Đại Dương,1,2053
+VSL,Cocacola,1,2054
+VSL,Cu ba (nước Cu ba),1,2055
+VSL,Cà Mau,1,2056
+VSL,Cô vy (covid),1,2057
+VSL,Cô-lôm-bi-a (nước Cô-lôm-bi-a),1,2058
+VSL,Cố đô Huế,1,2059
+VSL,Cộng Hòa Séc (nước Cộng Hòa Séc),1,2060
+VSL,Dinh Độc Lập,1,2061
+VSL,Do Thái,1,2062
+VSL,Gia Lai,1,2063
+VSL,Hoàng tử,1,2064
+VSL,Hoãn,1,2065
+VSL,Hung-ga-ri (nước Hung-ga-ri),1,2066
+VSL,Hà Giang,1,2067
+VSL,Hà Lan (nước Hà Lan),1,2068
+VSL,Hùng Vương,1,2069
+VSL,Hưng Yên,1,2070
+VSL,Hạ Long,1,2071
+VSL,Hải Dương,1,2072
+VSL,Hậu Giang,1,2073
+VSL,Hồ Chí Minh,1,2074
+VSL,I-rắc (nước I-rắc),1,2075
+VSL,Italia (nước Italia),1,2076
+VSL,Khánh Hòa,1,2077
+VSL,Kim Đồng,1,2078
+VSL,Kiên Giang,1,2079
+VSL,Kon Tum,1,2080
+VSL,Liên Bang Nga (nước Nga),3,2081
+VSL,Long An,1,2082
+VSL,Long Vương,1,2083
+VSL,Lào (nước Lào),3,2084
+VSL,Lâm Đồng,1,2085
+VSL,Lượm,2,2086
+VSL,Lạc Long Quân,1,2087
+VSL,Lạng Sơn,1,2088
+VSL,Ma Cao,1,2089
+VSL,Mexico (nước Mexico),3,2090
+VSL,Miến Điện (nước Mi-an-ma),3,2091
+VSL,Mã Lai (nước Ma-lai-xi-a),3,2092
+VSL,Mặt trời lặn,1,2093
+VSL,Mặt trời mọc,1,2094
+VSL,Nam bán cầu,1,2095
+VSL,Nam Định,1,2096
+VSL,Nhật (nước Nhật),3,2097
+VSL,Ninh Bình,1,2098
+VSL,Ninh Thuận,1,2099
+VSL,Oa-sinh-tơn,1,2100
+VSL,Pa-ki-xtan (nước Pa-ki-xtan),1,2101
+VSL,Paris,1,2102
+VSL,Phi-líp-pin (nước Phi-líp-pin),3,2103
+VSL,Phú Thọ,1,2104
+VSL,Pê-ru (nước Pê-ru),1,2105
+VSL,Quy Nhơn,1,2106
+VSL,Quảng Bình,1,2107
+VSL,Quảng Nam,1,2108
+VSL,Quảng Ngãi,1,2109
+VSL,Quảng Ninh,1,2110
+VSL,Quảng Trị,1,2111
+VSL,Quốc Tử Giám,1,2112
+VSL,Sapa,1,2113
+VSL,Socola,1,2114
+VSL,Sóc Trăng,1,2115
+VSL,Thanh Hóa,1,2116
+VSL,Thái Nguyên,1,2117
+VSL,Thánh Gióng,1,2118
+VSL,Thăng Long,1,2119
+VSL,Thủy Điện Hòa Bình,3,2120
+VSL,Thừa Thiên – Huế,3,2121
+VSL,Tiền Giang,1,2122
+VSL,Trung Quốc (nước Trung Quốc),3,2123
+VSL,Trung Thu,3,2124
+VSL,Trà Vinh,1,2125
+VSL,Trần Quốc Toản,1,2126
+VSL,Tuy Hoà,1,2127
+VSL,Tây Bắc,1,2128
+VSL,Tây Nguyên,1,2129
+VSL,Tây Ninh,1,2130
+VSL,Tết Dương,2,2131
+VSL,Tết Thiếu nhi,1,2132
+VSL,Tết Trung thu,3,2133
+VSL,Tết hàn thực,3,2134
+VSL,Tết Âm,2,2135
+VSL,UNICEF,1,2136
+VSL,Võ Nguyên Giáp,1,2137
+VSL,Võ Thị Sáu,1,2138
+VSL,Văn miếu Quốc Tử Giám,1,2139
+VSL,Vĩnh Long,1,2140
+VSL,Vĩnh Phúc,1,2141
+VSL,Y-Éc-Xanh,1,2142
+VSL,Yên Bái,1,2143
+VSL,a,1,2144
+VSL,ai,3,2145
+VSL,ai bảo,1,2146
+VSL,ai cho,1,2147
+VSL,an ninh,1,2148
+VSL,anh chị,1,2149
+VSL,anh chị em,1,2150
+VSL,anh dũng,3,2151
+VSL,anh em,3,2152
+VSL,"anh hai, anh cả",3,2153
+VSL,anh hùng,1,2154
+VSL,anh họ,2,2155
+VSL,anh ruột,3,2156
+VSL,anh rể,3,2157
+VSL,anh vợ,1,2158
+VSL,ao chuôm,1,2159
+VSL,b,1,2160
+VSL,ba là,1,2161
+VSL,ban giám hiệu,1,2162
+VSL,ban ngày,1,2163
+VSL,ban đêm,3,2164
+VSL,bao giờ_,3,2165
+VSL,bao la,1,2166
+VSL,bao nhiêu_,1,2167
+VSL,bao tay (dùng cho trẻ sơ sinh),1,2168
+VSL,bay,1,2169
+VSL,bay liệng (bay lượn),1,2170
+VSL,bay nhanh (máy bay),1,2171
+VSL,biến đổi,1,2172
+VSL,biển hiệu,1,2173
+VSL,biển đông,1,2174
+VSL,biểu thị,1,2175
+VSL,biểu thức,1,2176
+VSL,biểu đồ,1,2177
+VSL,biểu đồ cột,1,2178
+VSL,biểu đồ hình quạt,1,2179
+VSL,biện pháp,1,2180
+VSL,bom nguyên tử,1,2181
+VSL,bom đạn,1,2182
+VSL,boong tàu,1,2183
+VSL,buôn làng,1,2184
+VSL,buông màn,3,2185
+VSL,buồn nôn,1,2186
+VSL,buồn thảm,1,2187
+VSL,buồng trứng,1,2188
+VSL,buổi chiều,1,2189
+VSL,buổi sáng,3,2190
+VSL,buổi trưa,3,2191
+VSL,buổi tối,3,2192
+VSL,buổi đêm,3,2193
+VSL,buộc dây,1,2194
+VSL,buộc tóc,1,2195
+VSL,bài báo,1,2196
+VSL,bài thơ,3,2197
+VSL,bàn bạc,1,2198
+VSL,bàn chân,1,2199
+VSL,bàn chải đánh răng,1,2200
+VSL,bàn ghế,1,2201
+VSL,bàn là,1,2202
+VSL,bàn phím (máy vi tính),1,2203
+VSL,bàn tay,1,2204
+VSL,bàn tán,1,2205
+VSL,bán buôn,1,2206
+VSL,bán hàng,3,2207
+VSL,bán kính (hình tròn),1,2208
+VSL,bán đảo,1,2209
+VSL,bánh Trung Thu,1,2210
+VSL,bánh bột lọc,1,2211
+VSL,bánh canh,1,2212
+VSL,bánh cuốn,3,2213
+VSL,bánh cốm,1,2214
+VSL,bánh gai,1,2215
+VSL,bánh giò,1,2216
+VSL,bánh giầy,1,2217
+VSL,bánh gối,1,2218
+VSL,bánh hamburger,1,2219
+VSL,bánh mì,3,2220
+VSL,bánh pizza,1,2221
+VSL,bánh pía,1,2222
+VSL,bánh sandwich,1,2223
+VSL,bánh tráng,1,2224
+VSL,bánh xe,1,2225
+VSL,bánh đa,1,2226
+VSL,bánh đúc,1,2227
+VSL,báo (con báo),3,2228
+VSL,báo cáo,1,2229
+VSL,báo thù,1,2230
+VSL,báo động,1,2231
+VSL,bát,1,2232
+VSL,bát hương,1,2233
+VSL,bát ngát,1,2234
+VSL,bãi cát,1,2235
+VSL,bãi cỏ,1,2236
+VSL,bãi tắm,1,2237
+VSL,bãi đỗ xe (ô tô),1,2238
+VSL,bé gái,1,2239
+VSL,bé hơn,1,2240
+VSL,bé loắt choắt,1,2241
+VSL,bé trai,3,2242
+VSL,béo,1,2243
+VSL,bê tông,1,2244
+VSL,bên cạnh,2,2245
+VSL,bên dưới,1,2246
+VSL,bên phải,1,2247
+VSL,bên trong,1,2248
+VSL,bên trái,1,2249
+VSL,bên trên,1,2250
+VSL,bênh vực,1,2251
+VSL,bìa sách,1,2252
+VSL,bìa vở,3,2253
+VSL,bình an,3,2254
+VSL,bình minh,1,2255
+VSL,bình phương,1,2256
+VSL,bình sữa (em bé),1,2257
+VSL,bình thường,3,2258
+VSL,bí ngô,1,2259
+VSL,bím tóc đuôi sam,1,2260
+VSL,bít tất,1,2261
+VSL,bít tết (bò),3,2262
+VSL,bò,1,2263
+VSL,bò sát,1,2264
+VSL,bò tót,1,2265
+VSL,bó hoa,1,2266
+VSL,bó đũa,1,2267
+VSL,bóc lột,1,2268
+VSL,bóc vỏ,1,2269
+VSL,bón phân,3,2270
+VSL,bóng bay,1,2271
+VSL,bông hoa,3,2272
+VSL,bùn,1,2273
+VSL,bùng binh,1,2274
+VSL,bún chả,1,2275
+VSL,bún mắm,1,2276
+VSL,bún ngan,1,2277
+VSL,bún đậu,1,2278
+VSL,bún ốc,1,2279
+VSL,búp bê,1,2280
+VSL,bút,1,2281
+VSL,bút bi,1,2282
+VSL,bút dạ,1,2283
+VSL,bút màu,3,2284
+VSL,bút máy,1,2285
+VSL,băng bó,1,2286
+VSL,băng chuyền,1,2287
+VSL,băng dính,1,2288
+VSL,băng giá,1,2289
+VSL,băng hình,1,2290
+VSL,bơi,1,2291
+VSL,bơi lội,1,2292
+VSL,bơm (cái bơm),1,2293
+VSL,bơm nước,1,2294
+VSL,bơm xe,1,2295
+VSL,bưu tá,1,2296
+VSL,bước,1,2297
+VSL,bước chân,1,2298
+VSL,bướng bỉnh,2,2299
+VSL,bạn,3,2300
+VSL,bạn gái,3,2301
+VSL,bạn trai,3,2302
+VSL,bạn yêu bạn ấy,1,2303
+VSL,bạn yêu tôi,1,2304
+VSL,bạn ấy yêu bạn,1,2305
+VSL,bạn ấy yêu tôi,1,2306
+VSL,bản làng,1,2307
+VSL,bản lề,1,2308
+VSL,bản nhạc,1,2309
+VSL,bản sao (chỉ người),1,2310
+VSL,bản thân,1,2311
+VSL,bản đồ Việt Nam,3,2312
+VSL,bảng chia,2,2313
+VSL,bảng chỉ dẫn,1,2314
+VSL,bảng chữ cái ngón tay,1,2315
+VSL,bảng cộng,3,2316
+VSL,bảng cửu chương,1,2317
+VSL,bảng học sinh,1,2318
+VSL,bảng màu,1,2319
+VSL,bảng nhân,3,2320
+VSL,bảng trừ,3,2321
+VSL,bảng đen,3,2322
+VSL,bảo hiểm,1,2323
+VSL,bảo thủ,1,2324
+VSL,bảo tàng,1,2325
+VSL,bảo vệ môi trường,3,2326
+VSL,bảo đảm,1,2327
+VSL,bất hiếu,1,2328
+VSL,bất khuất,1,2329
+VSL,bất động,1,2330
+VSL,bầu trời,1,2331
+VSL,bẫy chim,1,2332
+VSL,bẫy chuột (dụng cụ),1,2333
+VSL,bẫy chuột (hành động),3,2334
+VSL,bậc thang,1,2335
+VSL,bập bênh,1,2336
+VSL,bật lửa,1,2337
+VSL,bật đèn,1,2338
+VSL,bắc bán cầu,1,2339
+VSL,bắc nam,2,2340
+VSL,bắn bi,3,2341
+VSL,bắn cung tên,1,2342
+VSL,bắn súng,1,2343
+VSL,bắp ngô,3,2344
+VSL,bắt,1,2345
+VSL,bắt buộc,1,2346
+VSL,bắt giữ,1,2347
+VSL,bắt nạt,1,2348
+VSL,bắt tay,1,2349
+VSL,bắt đền,3,2350
+VSL,bằng,1,2351
+VSL,bằng phẳng,1,2352
+VSL,bẻ ngô,3,2353
+VSL,bế em,1,2354
+VSL,bến phà,1,2355
+VSL,bến tàu,1,2356
+VSL,bến xe,1,2357
+VSL,bể bơi,1,2358
+VSL,bể cá,1,2359
+VSL,bệ hạ,2,2360
+VSL,bệ xí,1,2361
+VSL,bệnh nhân,1,2362
+VSL,bệnh phong_cùi,1,2363
+VSL,bệnh thủy đậu,1,2364
+VSL,bệnh tật,1,2365
+VSL,bệnh Đao - Down,1,2366
+VSL,bị động,1,2367
+VSL,bịa đặt,1,2368
+VSL,bọc sách,1,2369
+VSL,bọt biển,1,2370
+VSL,bọt xà phòng,1,2371
+VSL,bỏ hoang,1,2372
+VSL,bỏ phiếu,1,2373
+VSL,bỏ qua,1,2374
+VSL,bỏ rơi,1,2375
+VSL,bỏng,1,2376
+VSL,bỏng ngô,1,2377
+VSL,bố,1,2378
+VSL,bố dượng,3,2379
+VSL,bố mẹ,1,2380
+VSL,bố trí,1,2381
+VSL,bốc hơi,1,2382
+VSL,bốc thăm,1,2383
+VSL,bốc vác,1,2384
+VSL,bối rối,1,2385
+VSL,bốn là,1,2386
+VSL,bốt cảnh sát,3,2387
+VSL,bốt điện,3,2388
+VSL,bồ kết,1,2389
+VSL,bồi bàn,1,2390
+VSL,bồi thường,1,2391
+VSL,bồn hoa,1,2392
+VSL,bồn rửa bát,1,2393
+VSL,bổ ngữ,1,2394
+VSL,bổ trợ,1,2395
+VSL,bổ ích,1,2396
+VSL,bộ sách,1,2397
+VSL,bộ truyện,1,2398
+VSL,bộ đội,3,2399
+VSL,bột giặt,1,2400
+VSL,bột màu,3,2401
+VSL,bột ngọt,2,2402
+VSL,bớt,1,2403
+VSL,bớt đi,1,2404
+VSL,bờ biển,1,2405
+VSL,bờ ruộng,1,2406
+VSL,bờ rào,1,2407
+VSL,bờm tóc,1,2408
+VSL,bụi phấn,3,2409
+VSL,bụi tre,1,2410
+VSL,bụi đời,1,2411
+VSL,bụng,1,2412
+VSL,bức tranh,3,2413
+VSL,bức tường,1,2414
+VSL,bữa cơm,1,2415
+VSL,bực mình,1,2416
+VSL,c,1,2417
+VSL,ca,1,2418
+VSL,ca nô,1,2419
+VSL,cao (người),1,2420
+VSL,cao (nhà),1,2421
+VSL,cao (núi),1,2422
+VSL,cao (vật),1,2423
+VSL,cao nguyên,1,2424
+VSL,cao quý,1,2425
+VSL,cao thấp,1,2426
+VSL,cao tầng,1,2427
+VSL,cao tốc,1,2428
+VSL,cao độ,1,2429
+VSL,cau có,1,2430
+VSL,cha,1,2431
+VSL,cha mẹ,1,2432
+VSL,chai,1,2433
+VSL,chai nước,1,2434
+VSL,chanh muối,1,2435
+VSL,chanh nóng,1,2436
+VSL,chanh đá,1,2437
+VSL,che chở,1,2438
+VSL,che phủ,1,2439
+VSL,chen lấn,1,2440
+VSL,chi hội,1,2441
+VSL,chi tiết,1,2442
+VSL,chia,3,2443
+VSL,chia ba,3,2444
+VSL,chia cắt,1,2445
+VSL,chia hết,1,2446
+VSL,chia phần,1,2447
+VSL,chia rẽ,1,2448
+VSL,chia sẻ,1,2449
+VSL,chia tay,1,2450
+VSL,chia đôi,3,2451
+VSL,chia đều,1,2452
+VSL,chim bồ câu,1,2453
+VSL,chim chuyền cành,1,2454
+VSL,chim chào mào,1,2455
+VSL,chim chích chòe,1,2456
+VSL,chim chóc,1,2457
+VSL,chim gõ kiến,1,2458
+VSL,chim phượng hoàng,1,2459
+VSL,chim sâu,1,2460
+VSL,chim sơn ca,1,2461
+VSL,chim sẻ,1,2462
+VSL,chim yến,1,2463
+VSL,chim đại bàng,1,2464
+VSL,chiên_rán (1)(2),1,2465
+VSL,chiêng,1,2466
+VSL,chiếc gối,3,2467
+VSL,chiếm đoạt,1,2468
+VSL,chiến khu,1,2469
+VSL,chiến thắng,1,2470
+VSL,chiếu,3,2471
+VSL,chiếu phim,1,2472
+VSL,chiều cao,1,2473
+VSL,chiều dài,1,2474
+VSL,chiều rộng,1,2475
+VSL,chiều tối,1,2476
+VSL,chong chóng,1,2477
+VSL,chu vi,1,2478
+VSL,chui,1,2479
+VSL,chum,1,2480
+VSL,chung kết,1,2481
+VSL,chung tay,1,2482
+VSL,chuyên biệt,1,2483
+VSL,chuyên cần,1,2484
+VSL,chuyên gia,3,2485
+VSL,chuyền bóng,1,2486
+VSL,chuyển giao,1,2487
+VSL,chuyển hướng,1,2488
+VSL,chuyển vế,1,2489
+VSL,chuyển đồ,1,2490
+VSL,chuyển đổi số đo,1,2491
+VSL,chuyển động,1,2492
+VSL,chuyển động quay,1,2493
+VSL,chuyển động đều,1,2494
+VSL,chuyện lớn,1,2495
+VSL,chuyện nhỏ,1,2496
+VSL,chuyện trò,1,2497
+VSL,chuông,1,2498
+VSL,chuông nhà,1,2499
+VSL,chuẩn bị,3,2500
+VSL,chuồng,1,2501
+VSL,chuỗi hạt,1,2502
+VSL,chuột quang,1,2503
+VSL,chàng trai,1,2504
+VSL,chào,1,2505
+VSL,chào cờ,1,2506
+VSL,chào mừng,1,2507
+VSL,chày,1,2508
+VSL,cháo sườn,1,2509
+VSL,chát,1,2510
+VSL,cháu gái,3,2511
+VSL,cháu họ,3,2512
+VSL,cháu ngoại,3,2513
+VSL,cháu nội,3,2514
+VSL,cháu trai,2,2515
+VSL,cháy rừng,1,2516
+VSL,châm chọc,1,2517
+VSL,châm cứu,3,2518
+VSL,chân dung,1,2519
+VSL,chân tay,1,2520
+VSL,chân đất,1,2521
+VSL,chè đỗ đỏ,1,2522
+VSL,chèn ép,1,2523
+VSL,chèo thuyền,1,2524
+VSL,chém,1,2525
+VSL,chén,1,2526
+VSL,chép bài,1,2527
+VSL,chìa khóa,1,2528
+VSL,chín,1,2529
+VSL,chính phủ,2,2530
+VSL,chính quyền,1,2531
+VSL,chính tả,1,2532
+VSL,chính xác,3,2533
+VSL,chó cắn,1,2534
+VSL,chó sói,1,2535
+VSL,chó xù,1,2536
+VSL,chõ xôi,1,2537
+VSL,chùa,3,2538
+VSL,chùa Hương,1,2539
+VSL,chùa Một Cột,1,2540
+VSL,chùa Yên Tử,1,2541
+VSL,chùm hoa,1,2542
+VSL,chùm khế,1,2543
+VSL,chùm nho,1,2544
+VSL,chùm vải,1,2545
+VSL,chú ( người),1,2546
+VSL,chú hề,1,2547
+VSL,chú rể,1,2548
+VSL,chú tễu,1,2549
+VSL,chú ý,1,2550
+VSL,chúc mừng,3,2551
+VSL,chúc thọ,3,2552
+VSL,chúc tết,3,2553
+VSL,chúi đầu,1,2554
+VSL,chúng tôi (2 người) (đại từ),1,2555
+VSL,chúng tôi (3 người) (đại từ),1,2556
+VSL,chúng tôi (4 người) (đại từ),1,2557
+VSL,chúng tôi (5 người) (đại từ),1,2558
+VSL,chúng tôi (đại từ),1,2559
+VSL,chăm học,1,2560
+VSL,chăm sóc sức khỏe,3,2561
+VSL,chăn (cái chăn),3,2562
+VSL,chăn nuôi,3,2563
+VSL,chơi,2,2564
+VSL,chương trình,1,2565
+VSL,chạy,1,2566
+VSL,chạy (động vật),1,2567
+VSL,chạy bàn,1,2568
+VSL,chạy chậm,1,2569
+VSL,chạy nhanh,1,2570
+VSL,chả cá,3,2571
+VSL,chảo,3,2572
+VSL,chấm dứt,1,2573
+VSL,chấm điểm,1,2574
+VSL,chất dẻo,1,2575
+VSL,chất hữu cơ,1,2576
+VSL,chất lượng,1,2577
+VSL,chất lỏng,1,2578
+VSL,chất rắn,1,2579
+VSL,chất thải,1,2580
+VSL,chất đốt,1,2581
+VSL,chất độc,1,2582
+VSL,chất độc màu da cam,1,2583
+VSL,chậm chạp,1,2584
+VSL,chật chội,1,2585
+VSL,chậu,1,2586
+VSL,chặn,1,2587
+VSL,chặt,3,2588
+VSL,chặt chẽ,1,2589
+VSL,chỉ,1,2590
+VSL,chỉ dẫn,1,2591
+VSL,chỉ huy,1,2592
+VSL,chỉ khâu,1,2593
+VSL,chỉnh sửa,1,2594
+VSL,chị,3,2595
+VSL,chị chồng,2,2596
+VSL,chị dâu,1,2597
+VSL,"chị hai, chị cả",3,2598
+VSL,chị họ,3,2599
+VSL,chọi gà,1,2600
+VSL,chọi trâu,1,2601
+VSL,chọn lọc,1,2602
+VSL,chọn lựa,1,2603
+VSL,chống đối,3,2604
+VSL,chồi non,1,2605
+VSL,chớp mắt,1,2606
+VSL,chợ Bến Thành,1,2607
+VSL,chợ nổi,1,2608
+VSL,chợ nổi Cái Bè,1,2609
+VSL,chợ nổi Cái Răng,1,2610
+VSL,chục,1,2611
+VSL,chục nghìn,1,2612
+VSL,chục triệu,1,2613
+VSL,chụp đèn,1,2614
+VSL,chụp ảnh,1,2615
+VSL,chủ nghĩa xã hội,1,2616
+VSL,chủ ngữ,1,2617
+VSL,chủ nhiệm,1,2618
+VSL,chủ tịch,3,2619
+VSL,chủ đề,1,2620
+VSL,chủ động,1,2621
+VSL,chức năng,1,2622
+VSL,chức vụ,1,2623
+VSL,chứng cớ,1,2624
+VSL,chứng kiến,1,2625
+VSL,chứng minh,1,2626
+VSL,chứng nhận,1,2627
+VSL,chữ,1,2628
+VSL,chữ cái,1,2629
+VSL,chữ hoa,1,2630
+VSL,chữ viết,1,2631
+VSL,chữa bài,3,2632
+VSL,chữa bệnh,1,2633
+VSL,chữa cháy,1,2634
+VSL,co dãn,1,2635
+VSL,co giật,1,2636
+VSL,coi thường,1,2637
+VSL,con ba ba,1,2638
+VSL,con bê,3,2639
+VSL,con bò,3,2640
+VSL,con bướm,1,2641
+VSL,con chim,1,2642
+VSL,con chuồn chuồn,1,2643
+VSL,con chuột,3,2644
+VSL,con chuột nhắt,1,2645
+VSL,con chó,3,2646
+VSL,con chồn,1,2647
+VSL,con cua,1,2648
+VSL,con cá,3,2649
+VSL,con cá sấu,1,2650
+VSL,con cò,1,2651
+VSL,con cóc,1,2652
+VSL,con công,1,2653
+VSL,con cú mèo,1,2654
+VSL,con cọp,3,2655
+VSL,con cừu,1,2656
+VSL,con dâu,1,2657
+VSL,con dê,1,2658
+VSL,con dế,1,2659
+VSL,con ghẹ,1,2660
+VSL,con gián,1,2661
+VSL,con gà,1,2662
+VSL,con gái,1,2663
+VSL,con gấu,1,2664
+VSL,con hoẵng,1,2665
+VSL,con hàu,1,2666
+VSL,con hươu,1,2667
+VSL,con khỉ,1,2668
+VSL,con kiến,3,2669
+VSL,con lươn,1,2670
+VSL,con lợn (con heo),3,2671
+VSL,con muỗi,3,2672
+VSL,con mèo,3,2673
+VSL,con mực,1,2674
+VSL,con nai,1,2675
+VSL,con người,3,2676
+VSL,con ngỗng,1,2677
+VSL,con ngựa,3,2678
+VSL,con nhím,1,2679
+VSL,con nuôi,3,2680
+VSL,con ong,2,2681
+VSL,con quạ,1,2682
+VSL,con ruồi,1,2683
+VSL,con rùa,1,2684
+VSL,con rắn,1,2685
+VSL,con rối,1,2686
+VSL,con sâu,1,2687
+VSL,con sò,1,2688
+VSL,con sóc,1,2689
+VSL,con sói,1,2690
+VSL,con sông,1,2691
+VSL,con sư tử,2,2692
+VSL,con số,1,2693
+VSL,con tem,1,2694
+VSL,con thỏ,1,2695
+VSL,con trai,1,2696
+VSL,con trai (động vật),1,2697
+VSL,con trăn,1,2698
+VSL,con trỏ,1,2699
+VSL,con tôm,3,2700
+VSL,con voi,3,2701
+VSL,con vượn,1,2702
+VSL,con vẹt,1,2703
+VSL,con vịt,1,2704
+VSL,con đom đóm,1,2705
+VSL,con đường,1,2706
+VSL,con đẻ,1,2707
+VSL,con ếch,3,2708
+VSL,con ốc,1,2709
+VSL,cong,1,2710
+VSL,cua đồng,1,2711
+VSL,cung cấp,1,2712
+VSL,cung tên,1,2713
+VSL,cung điện,3,2714
+VSL,cuối năm,1,2715
+VSL,cuối tháng,1,2716
+VSL,cuối tuần,1,2717
+VSL,cuốn,1,2718
+VSL,cuống hoa,1,2719
+VSL,cuống lá,1,2720
+VSL,cuộc sống,1,2721
+VSL,cuộc đời,1,2722
+VSL,cuộn giấy vệ sinh,1,2723
+VSL,cày,1,2724
+VSL,cày ruộng,1,2725
+VSL,cá kho,3,2726
+VSL,cá kiếm,1,2727
+VSL,cá mập,1,2728
+VSL,cá voi,1,2729
+VSL,các bạn,1,2730
+VSL,các bạn (2 người),1,2731
+VSL,cách ly,1,2732
+VSL,cái bè,1,2733
+VSL,cái gùi,1,2734
+VSL,cái gương,3,2735
+VSL,cái neo,1,2736
+VSL,cái nhíp,1,2737
+VSL,cái túi,1,2738
+VSL,cái vợt cá,1,2739
+VSL,cánh buồm,1,2740
+VSL,cánh tay,1,2741
+VSL,cáp treo,1,2742
+VSL,cát,1,2743
+VSL,câu chuyện,1,2744
+VSL,câu cá,1,2745
+VSL,câu ghép,1,2746
+VSL,câu thơ,3,2747
+VSL,câu văn,1,2748
+VSL,câu đơn,1,2749
+VSL,câu đố,1,2750
+VSL,câu đối,1,2751
+VSL,cây bàng,2,2752
+VSL,cây cọ,1,2753
+VSL,cây cối,1,2754
+VSL,cây cổ thụ,3,2755
+VSL,cây gỗ,1,2756
+VSL,cây khế,1,2757
+VSL,cây ngô,3,2758
+VSL,cây nến,1,2759
+VSL,cây phượng,3,2760
+VSL,cây sả,1,2761
+VSL,cây số,1,2762
+VSL,cây thân gỗ,3,2763
+VSL,cây thông,1,2764
+VSL,cây tre,1,2765
+VSL,cây trồng,1,2766
+VSL,cây xanh,1,2767
+VSL,cây xanh tươi,3,2768
+VSL,cây ăn quả,3,2769
+VSL,cây đa,1,2770
+VSL,cãi nhau,1,2771
+VSL,còi,1,2772
+VSL,còi xương,1,2773
+VSL,còn bạn_,1,2774
+VSL,còng,1,2775
+VSL,còng (cái còng),1,2776
+VSL,có ích,1,2777
+VSL,có … không_,1,2778
+VSL,cô dâu,1,2779
+VSL,cô giáo,3,2780
+VSL,cô đơn,1,2781
+VSL,côn trùng,1,2782
+VSL,công bằng,1,2783
+VSL,công chúa,1,2784
+VSL,công cộng,1,2785
+VSL,công cụ,1,2786
+VSL,công nghiệp,3,2787
+VSL,công nhận,1,2788
+VSL,công sức,1,2789
+VSL,công thức,1,2790
+VSL,công trường,1,2791
+VSL,công tắc,1,2792
+VSL,công viên,3,2793
+VSL,công việc,1,2794
+VSL,công văn,1,2795
+VSL,công ước,1,2796
+VSL,cõng,1,2797
+VSL,cù,1,2798
+VSL,cùi chỏ,1,2799
+VSL,cùng _ với (giới từ),1,2800
+VSL,cúc áo,1,2801
+VSL,cúi,1,2802
+VSL,căm thù,1,2803
+VSL,cũng vậy_cũng thế,1,2804
+VSL,cơ bắp,1,2805
+VSL,cơ hội,3,2806
+VSL,cơ quan,1,2807
+VSL,cơ sở,1,2808
+VSL,cơ thể,1,2809
+VSL,cơm,1,2810
+VSL,cơm bình dân,3,2811
+VSL,cơm hộp,1,2812
+VSL,cơm rang,1,2813
+VSL,cưa,1,2814
+VSL,cưa (cái cưa),1,2815
+VSL,cướp,3,2816
+VSL,cướp biển,1,2817
+VSL,cướp cờ,1,2818
+VSL,cướp giật,1,2819
+VSL,cười nhếch mép,1,2820
+VSL,cười vỡ bụng,1,2821
+VSL,cưỡi ngựa,1,2822
+VSL,cạnh,1,2823
+VSL,cạnh bên (toán),1,2824
+VSL,cạnh tranh,1,2825
+VSL,cạnh đáy,1,2826
+VSL,cạnh đối diện,1,2827
+VSL,cả ngày,1,2828
+VSL,cảng Hải Phòng,1,2829
+VSL,cảng Sài Gòn,1,2830
+VSL,cảnh giác,1,2831
+VSL,cảnh vật,1,2832
+VSL,cấp cứu,1,2833
+VSL,cấp dưỡng,1,2834
+VSL,cất giấu,1,2835
+VSL,cất giữ,1,2836
+VSL,cất tiếng khóc,1,2837
+VSL,cất tiếng nói,1,2838
+VSL,cấy,1,2839
+VSL,cấy lúa,1,2840
+VSL,cần không_,3,2841
+VSL,cần khởi động,1,2842
+VSL,cầu (cây cầu),1,2843
+VSL,cầu Long Biên,1,2844
+VSL,cầu Thê Húc (Hồ Gươm),1,2845
+VSL,cầu cứu,1,2846
+VSL,cầu giao,1,2847
+VSL,cầu kì,1,2848
+VSL,cầu nguyện,1,2849
+VSL,cầu thang,1,2850
+VSL,cầu thủ,1,2851
+VSL,cầu tre,1,2852
+VSL,cầu trượt,1,2853
+VSL,cầu vượt,1,2854
+VSL,cắm trại,1,2855
+VSL,cắt lông mũi,1,2856
+VSL,cắt nhau,1,2857
+VSL,cặp sách,1,2858
+VSL,cặp tóc,1,2859
+VSL,cỏ,3,2860
+VSL,cỏ may,1,2861
+VSL,cố gắng,3,2862
+VSL,cố ý (như cố tình),1,2863
+VSL,cố định,1,2864
+VSL,cốc,1,2865
+VSL,cối giã,1,2866
+VSL,cối xay gió,1,2867
+VSL,cối xay lúa,1,2868
+VSL,cốm,1,2869
+VSL,cống,1,2870
+VSL,cốp xe,1,2871
+VSL,cổ,1,2872
+VSL,cổ chân,1,2873
+VSL,cổ họng,1,2874
+VSL,cổ kính,1,2875
+VSL,cổ tay,1,2876
+VSL,cổ truyền,1,2877
+VSL,cổ tích,1,2878
+VSL,cổ vũ,1,2879
+VSL,cổ áo,1,2880
+VSL,cổ đại,1,2881
+VSL,cổng,1,2882
+VSL,cổng trường,2,2883
+VSL,cỗ,1,2884
+VSL,cộng (Toán học),3,2885
+VSL,cột,1,2886
+VSL,cột nhà,1,2887
+VSL,cột sống,1,2888
+VSL,cột điện,3,2889
+VSL,cột đèn,1,2890
+VSL,cờ,1,2891
+VSL,cờ ca rô,1,2892
+VSL,cờ tướng,1,2893
+VSL,cờ vua,1,2894
+VSL,cởi mở,1,2895
+VSL,cởi áo,1,2896
+VSL,cụ,1,2897
+VSL,cụ già,1,2898
+VSL,cụ thể,1,2899
+VSL,cụ đồ,1,2900
+VSL,cục tẩy,1,2901
+VSL,cụm từ,1,2902
+VSL,củ cà rốt,1,2903
+VSL,củ cải trắng,1,2904
+VSL,củ gừng,1,2905
+VSL,củ hành tây,1,2906
+VSL,củ khoai lang,1,2907
+VSL,củ khoai tây,1,2908
+VSL,củ nghệ,1,2909
+VSL,củ su hào,1,2910
+VSL,củ sả,1,2911
+VSL,củ tỏi,1,2912
+VSL,củ từ,1,2913
+VSL,củ đậu,1,2914
+VSL,củi,1,2915
+VSL,cứu,1,2916
+VSL,cứu hộ,1,2917
+VSL,cứu sống,1,2918
+VSL,cử chỉ điệu bộ,1,2919
+VSL,cử động,1,2920
+VSL,cửa hàng,3,2921
+VSL,cửa khẩu,1,2922
+VSL,cửa kính,1,2923
+VSL,cửa sổ,1,2924
+VSL,cực khổ,1,2925
+VSL,d,1,2926
+VSL,da ngăm (nước da ngăm đen),3,2927
+VSL,da trắng,3,2928
+VSL,dai,1,2929
+VSL,danh bạ,1,2930
+VSL,danh dự,1,2931
+VSL,danh hiệu,1,2932
+VSL,danh lam thắng cảnh,1,2933
+VSL,danh mục,1,2934
+VSL,danh nhân,1,2935
+VSL,danh sách,1,2936
+VSL,danh từ,1,2937
+VSL,danh từ riêng,1,2938
+VSL,dao,1,2939
+VSL,di chuyển,1,2940
+VSL,di truyền,3,2941
+VSL,diêm,1,2942
+VSL,diều,1,2943
+VSL,diễn thuyết,1,2944
+VSL,diện tích,1,2945
+VSL,diện tích toàn phần,1,2946
+VSL,diện tích xung quanh,1,2947
+VSL,diệt chủng,1,2948
+VSL,doanh nghiệp,1,2949
+VSL,doanh trại,1,2950
+VSL,du học,1,2951
+VSL,du thuyền,1,2952
+VSL,dung tích,1,2953
+VSL,duy nhất,1,2954
+VSL,duyên dáng,1,2955
+VSL,duyệt binh,1,2956
+VSL,dài,1,2957
+VSL,dài hơn,1,2958
+VSL,dài hạn,1,2959
+VSL,dài nhất,1,2960
+VSL,dàn bài,1,2961
+VSL,dàn nhạc,1,2962
+VSL,dám làm,3,2963
+VSL,dán,1,2964
+VSL,dân ca,1,2965
+VSL,dân chài,1,2966
+VSL,dân chủ,1,2967
+VSL,dân số,1,2968
+VSL,dân tộc,3,2969
+VSL,dân tộc Chăm,1,2970
+VSL,dân tộc Khơ me,1,2971
+VSL,dân tộc Mông,1,2972
+VSL,dân tộc Mường,1,2973
+VSL,dân tộc Thái,1,2974
+VSL,dân tộc thiểu số,3,2975
+VSL,dây buộc tóc,1,2976
+VSL,dây chun,1,2977
+VSL,dây thần kinh,1,2978
+VSL,dây thừng,1,2979
+VSL,dây xích,1,2980
+VSL,dây điện,3,2981
+VSL,dãy nhà,1,2982
+VSL,dãy núi,1,2983
+VSL,dãy núi Hoàng Liên Sơn,1,2984
+VSL,dãy số,1,2985
+VSL,dãy số liệu,1,2986
+VSL,dép quai hậu,3,2987
+VSL,dê con,1,2988
+VSL,dê mẹ,1,2989
+VSL,dòng chữ,1,2990
+VSL,dòng họ,1,2991
+VSL,dòng sông,1,2992
+VSL,dòng sông chảy,1,2993
+VSL,dũng cảm,1,2994
+VSL,dạy,1,2995
+VSL,dải phân cách,1,2996
+VSL,dấu bằng,1,2997
+VSL,dấu chia,1,2998
+VSL,dấu chấm,1,2999
+VSL,dấu chấm hỏi,1,3000
+VSL,dấu chấm than,1,3001
+VSL,dấu gạch ngang,1,3002
+VSL,dấu hai chấm,1,3003
+VSL,dấu huyền,3,3004
+VSL,dấu hỏi,3,3005
+VSL,dấu ngoặc đơn,1,3006
+VSL,dấu ngã,3,3007
+VSL,dấu nhân,1,3008
+VSL,dấu nặng,1,3009
+VSL,dấu phẩy,1,3010
+VSL,dấu sắc,3,3011
+VSL,dầu gội đầu,1,3012
+VSL,dầu hoả,1,3013
+VSL,dầu khí,1,3014
+VSL,dầu mỏ,1,3015
+VSL,dầu ăn,1,3016
+VSL,dẫn chương trình,1,3017
+VSL,dẫn chứng,1,3018
+VSL,dập,1,3019
+VSL,dắt,1,3020
+VSL,dặn dò,1,3021
+VSL,dẻo,1,3022
+VSL,dễ chịu,1,3023
+VSL,dễ thương,1,3024
+VSL,dệt,1,3025
+VSL,dịch vụ,3,3026
+VSL,dịu dàng,1,3027
+VSL,dọc,1,3028
+VSL,dốc,1,3029
+VSL,dốt,1,3030
+VSL,dỗi,3,3031
+VSL,dụng cụ,1,3032
+VSL,dừng lại,1,3033
+VSL,dự trữ,1,3034
+VSL,dự án,1,3035
+VSL,dựng phim,1,3036
+VSL,e,1,3037
+VSL,e thẹn,3,3038
+VSL,em dâu,1,3039
+VSL,em gái,1,3040
+VSL,em họ,3,3041
+VSL,em rể,3,3042
+VSL,em trai,3,3043
+VSL,em út,1,3044
+VSL,email,1,3045
+VSL,f,1,3046
+VSL,g,2,3047
+VSL,ga tàu,3,3048
+VSL,gai,1,3049
+VSL,gan,1,3050
+VSL,gan dạ,1,3051
+VSL,gan lì,1,3052
+VSL,gang tay,1,3053
+VSL,ghen tị,3,3054
+VSL,ghi chép,1,3055
+VSL,ghi chú,1,3056
+VSL,ghi hình,1,3057
+VSL,ghi nhớ,1,3058
+VSL,ghé thăm,1,3059
+VSL,ghép hình,1,3060
+VSL,giai đoạn,1,3061
+VSL,gian dối,1,3062
+VSL,gian khổ,1,3063
+VSL,gian lận,1,3064
+VSL,giao hoán,1,3065
+VSL,giao hàng,1,3066
+VSL,giao lưu,1,3067
+VSL,giao thông,2,3068
+VSL,giao thừa,1,3069
+VSL,giao tiếp,3,3070
+VSL,gieo xúc xắc,1,3071
+VSL,giàn khoan,1,3072
+VSL,giàn mướp,1,3073
+VSL,giàn nho,1,3074
+VSL,giàu có,1,3075
+VSL,giá sách,1,3076
+VSL,giá trị,3,3077
+VSL,giá trị phần trăm,3,3078
+VSL,giá trị tuyệt đối,1,3079
+VSL,giám khảo,1,3080
+VSL,giám sát,2,3081
+VSL,giám đốc,1,3082
+VSL,gián tiếp,3,3083
+VSL,giáo dục,1,3084
+VSL,giáo sĩ,1,3085
+VSL,giã,1,3086
+VSL,giãn cách xã hội,1,3087
+VSL,gió Lào,1,3088
+VSL,giông bão,1,3089
+VSL,giúp đỡ,3,3090
+VSL,giơ tay,1,3091
+VSL,giường,1,3092
+VSL,giả bộ (giống giả vờ),1,3093
+VSL,giả mạo,1,3094
+VSL,giả sử,1,3095
+VSL,giải lao,1,3096
+VSL,giải quyết,1,3097
+VSL,giải thích,1,3098
+VSL,giải vô địch,1,3099
+VSL,giảm,1,3100
+VSL,giấc ngủ,1,3101
+VSL,giấy,3,3102
+VSL,giấy màu,3,3103
+VSL,giấy nháp,3,3104
+VSL,giấy tờ,1,3105
+VSL,giấy ăn,3,3106
+VSL,giầy ba ta,1,3107
+VSL,giầy dép,1,3108
+VSL,giầy thể thao,1,3109
+VSL,giẫm,1,3110
+VSL,giận dỗi,1,3111
+VSL,giận dữ,1,3112
+VSL,giật mình,1,3113
+VSL,giẻ lau,1,3114
+VSL,giếng nước,1,3115
+VSL,giết,1,3116
+VSL,giọng ca,1,3117
+VSL,giọng nói,1,3118
+VSL,giỏi,1,3119
+VSL,giống nhau,1,3120
+VSL,giỗ,1,3121
+VSL,giới hạn,1,3122
+VSL,giới thiệu,1,3123
+VSL,giữ nguyên,1,3124
+VSL,gà mái,1,3125
+VSL,gà nướng lu,1,3126
+VSL,gà rừng,1,3127
+VSL,gà trống,1,3128
+VSL,gà tây,1,3129
+VSL,gánh,1,3130
+VSL,gáy,1,3131
+VSL,gãi đầu gãi tai,1,3132
+VSL,gãy chân,1,3133
+VSL,gãy tay,1,3134
+VSL,góc bẹt,1,3135
+VSL,góc bếp,1,3136
+VSL,góc học tập,1,3137
+VSL,góc nhọn,1,3138
+VSL,góc tù,1,3139
+VSL,góc vuông,1,3140
+VSL,góc vườn,1,3141
+VSL,gói,1,3142
+VSL,gói (đgt),1,3143
+VSL,góp tiền,1,3144
+VSL,góp ý,1,3145
+VSL,gù lưng,1,3146
+VSL,găng tay,1,3147
+VSL,gương,1,3148
+VSL,gương mẫu,1,3149
+VSL,gương mặt,1,3150
+VSL,gạo,3,3151
+VSL,gạo nếp,1,3152
+VSL,gấp ba,1,3153
+VSL,gấp giấy,1,3154
+VSL,gấp quần áo,1,3155
+VSL,gấp đôi,1,3156
+VSL,gần gũi,1,3157
+VSL,gầy (miền Nam_ ốm),3,3158
+VSL,gật gù,1,3159
+VSL,gật đầu,1,3160
+VSL,gậy của người già,1,3161
+VSL,gắn bó,1,3162
+VSL,gắp thức ăn,1,3163
+VSL,gặm cỏ,1,3164
+VSL,gặm xương (con chó gặm xương),1,3165
+VSL,gặp gỡ,1,3166
+VSL,gặt lúa,1,3167
+VSL,gọi,1,3168
+VSL,gọn gàng,1,3169
+VSL,gọt bút chì,1,3170
+VSL,gọt bút chì (cái),1,3171
+VSL,gỏi_nộm,1,3172
+VSL,gốm sứ,1,3173
+VSL,gỗ,3,3174
+VSL,gợi ý,1,3175
+VSL,gửi,1,3176
+VSL,gửi quà,1,3177
+VSL,gửi thư,1,3178
+VSL,h,3,3179
+VSL,hai là,1,3180
+VSL,hai phân số bằng nhau,1,3181
+VSL,ham chơi,3,3182
+VSL,hay là (hoặc là),3,3183
+VSL,hi sinh,3,3184
+VSL,hi vọng,3,3185
+VSL,hiếu thảo,1,3186
+VSL,hiểu,3,3187
+VSL,hiện nay,1,3188
+VSL,hiện đại,1,3189
+VSL,hiệu (Toán học),1,3190
+VSL,hiệu cầm đồ,1,3191
+VSL,hiệu thuốc,1,3192
+VSL,hoa,3,3193
+VSL,hoa cúc,1,3194
+VSL,hoa dâm bụt,1,3195
+VSL,hoa giấy,1,3196
+VSL,hoa hậu,1,3197
+VSL,hoa hồng,1,3198
+VSL,hoa lay ơn,1,3199
+VSL,hoa mai,1,3200
+VSL,hoa sen,3,3201
+VSL,hoa đào,1,3202
+VSL,hoan hô,1,3203
+VSL,hoang mang,1,3204
+VSL,hoàn thành,1,3205
+VSL,hoàng hôn,1,3206
+VSL,hoàng đế,1,3207
+VSL,hoán vị,1,3208
+VSL,hoạt hình,3,3209
+VSL,hoạt động,1,3210
+VSL,hoảng sợ,1,3211
+VSL,hoặc,3,3212
+VSL,hung thủ,1,3213
+VSL,hung ác,1,3214
+VSL,huy hiệu,1,3215
+VSL,huyện,3,3216
+VSL,huân chương,1,3217
+VSL,huỷ,1,3218
+VSL,huỷ diệt,1,3219
+VSL,hài hước,1,3220
+VSL,hài lòng,1,3221
+VSL,hàm răng,1,3222
+VSL,hàng chục,1,3223
+VSL,hàng chục nghìn,1,3224
+VSL,hàng chục triệu,1,3225
+VSL,hàng dọc,1,3226
+VSL,hàng ngang,1,3227
+VSL,hàng nghìn,1,3228
+VSL,hàng ngày,3,3229
+VSL,hàng triệu,1,3230
+VSL,hàng trăm,1,3231
+VSL,hàng trăm nghìn,1,3232
+VSL,hàng xóm,1,3233
+VSL,hàng đơn vị,1,3234
+VSL,hành lang,1,3235
+VSL,hành quân,3,3236
+VSL,hành tinh,1,3237
+VSL,hành vi,1,3238
+VSL,hành động,1,3239
+VSL,háo hức,1,3240
+VSL,hát ru,1,3241
+VSL,hãng máy bay,1,3242
+VSL,hãng tàu thuyền,1,3243
+VSL,hãng xe máy,1,3244
+VSL,hãng ô tô,1,3245
+VSL,héc-ta (ha),1,3246
+VSL,héc-tô-gam (hg),3,3247
+VSL,héc-tô-mét (hm),3,3248
+VSL,héc-tô-mét vuông (hm2),3,3249
+VSL,héo,1,3250
+VSL,hét (giống la),1,3251
+VSL,hên_gặp may,1,3252
+VSL,hình,1,3253
+VSL,hình bình hành,1,3254
+VSL,hình chiếu,1,3255
+VSL,hình cầu,1,3256
+VSL,hình dáng,1,3257
+VSL,hình elip,1,3258
+VSL,hình học,1,3259
+VSL,hình hộp chữ nhật,1,3260
+VSL,hình lập phương,1,3261
+VSL,hình phạt,1,3262
+VSL,hình thang,1,3263
+VSL,hình trụ,1,3264
+VSL,hình tứ giác,1,3265
+VSL,hình vuông,1,3266
+VSL,hình vẽ,1,3267
+VSL,hòa bình,1,3268
+VSL,hòa nhập,1,3269
+VSL,hòn bi (giống viên bi),1,3270
+VSL,hòn đá,1,3271
+VSL,hóa đơn,1,3272
+VSL,hói đầu,1,3273
+VSL,hót,1,3274
+VSL,hót rác,1,3275
+VSL,hót rác (cái hót rác),1,3276
+VSL,hôi,1,3277
+VSL,hôn,1,3278
+VSL,hùng vĩ,1,3279
+VSL,hú vía,1,3280
+VSL,hút nước,1,3281
+VSL,hút thuốc lá,1,3282
+VSL,hăm dọa,1,3283
+VSL,hăng hái,1,3284
+VSL,hơi nước,1,3285
+VSL,hướng dẫn,1,3286
+VSL,hạn hán,1,3287
+VSL,hạt,1,3288
+VSL,hạt cườm,1,3289
+VSL,hạt lúa,1,3290
+VSL,hạt lạc,1,3291
+VSL,hạt tiêu,1,3292
+VSL,hải sản,1,3293
+VSL,hải đảo,1,3294
+VSL,hấp,1,3295
+VSL,hấp dẫn,1,3296
+VSL,hậu quả,1,3297
+VSL,hắt hơi,1,3298
+VSL,hằng đẳng thức,1,3299
+VSL,hẹn,3,3300
+VSL,hệ bài tiết,1,3301
+VSL,hệ thống,3,3302
+VSL,họ (2 người) (đại từ),1,3303
+VSL,họ (đại từ),1,3304
+VSL,họa sỹ,1,3305
+VSL,học bổng,1,3306
+VSL,học giỏi,1,3307
+VSL,học kém,1,3308
+VSL,học nhóm,1,3309
+VSL,học phí,1,3310
+VSL,học sinh Miền Nam,1,3311
+VSL,học trung bình,1,3312
+VSL,học trò,1,3313
+VSL,học tập,1,3314
+VSL,họng,1,3315
+VSL,họp,3,3316
+VSL,họp nhóm,3,3317
+VSL,hỏi,3,3318
+VSL,hỏi han,1,3319
+VSL,hỏi thăm,1,3320
+VSL,hỏng,3,3321
+VSL,hối hận,3,3322
+VSL,hối lộ,1,3323
+VSL,hốt hoảng,1,3324
+VSL,hồ Hoàn Kiếm,1,3325
+VSL,hồ dán,1,3326
+VSL,hồ nước,1,3327
+VSL,hồi hộp,3,3328
+VSL,hỗn số,1,3329
+VSL,hội chứng Đao - Down,1,3330
+VSL,hội nghị,1,3331
+VSL,hội thoại,1,3332
+VSL,hội thảo,2,3333
+VSL,hội trường,1,3334
+VSL,hộp,1,3335
+VSL,hộp bút,1,3336
+VSL,hộp sữa,1,3337
+VSL,hợp lí,1,3338
+VSL,hợp tác,1,3339
+VSL,hợp đồng,2,3340
+VSL,hứa,3,3341
+VSL,hữu nghị,1,3342
+VSL,i,1,3343
+VSL,in (ấn),1,3344
+VSL,internet,1,3345
+VSL,j,1,3346
+VSL,k,1,3347
+VSL,keo kiệt,1,3348
+VSL,khai mạc,1,3349
+VSL,khe cửa,1,3350
+VSL,khe núi,1,3351
+VSL,khen,1,3352
+VSL,khen tặng,1,3353
+VSL,khiêm tốn,1,3354
+VSL,khiêng,1,3355
+VSL,khoa học,1,3356
+VSL,khoan,1,3357
+VSL,khoan (cái khoan),1,3358
+VSL,khoan (khoan đã),1,3359
+VSL,khoang tàu,1,3360
+VSL,khoanh tay,1,3361
+VSL,khoe,1,3362
+VSL,khoá (cái khóa),1,3363
+VSL,khoác tay,1,3364
+VSL,khoác vai,1,3365
+VSL,khoác áo,1,3366
+VSL,khoáng sản,1,3367
+VSL,khoảng cách,1,3368
+VSL,khoẻ mạnh,1,3369
+VSL,khu rừng,1,3370
+VSL,khu vườn,1,3371
+VSL,khu vực cách ly,1,3372
+VSL,khung cửa số,1,3373
+VSL,khung thành,1,3374
+VSL,khuy,1,3375
+VSL,khuyên tai,1,3376
+VSL,khuyến khích,1,3377
+VSL,khuôn hình,1,3378
+VSL,khác,1,3379
+VSL,khách,1,3380
+VSL,khách mời,1,3381
+VSL,khách sạn,1,3382
+VSL,khách vip,1,3383
+VSL,khám bệnh,1,3384
+VSL,khám phá,1,3385
+VSL,kháng cự,1,3386
+VSL,kháng sinh,1,3387
+VSL,khát nước,1,3388
+VSL,khát vọng,1,3389
+VSL,kháu khỉnh,1,3390
+VSL,khâm phục,1,3391
+VSL,khâu vá,1,3392
+VSL,khéo,1,3393
+VSL,khép cửa,1,3394
+VSL,khí cầu,1,3395
+VSL,khó khăn,2,3396
+VSL,khó tiêu,1,3397
+VSL,khóa cửa,1,3398
+VSL,khóa quần,1,3399
+VSL,khóc,1,3400
+VSL,khói,1,3401
+VSL,khóm dứa,1,3402
+VSL,khô héo,1,3403
+VSL,không bình đẳng,1,3404
+VSL,không cho,3,3405
+VSL,không có,1,3406
+VSL,không có chi,1,3407
+VSL,không cần,1,3408
+VSL,không dám,3,3409
+VSL,không gian,1,3410
+VSL,không hiểu,3,3411
+VSL,không khí,1,3412
+VSL,không muốn,3,3413
+VSL,không nghe lời,3,3414
+VSL,không ngon,1,3415
+VSL,không nên,3,3416
+VSL,không quen,3,3417
+VSL,không thẳng hàng,1,3418
+VSL,không đẹp,3,3419
+VSL,khúc khuỷu,1,3420
+VSL,khăn mặt,1,3421
+VSL,khăn quàng,1,3422
+VSL,khăn quàng đỏ,1,3423
+VSL,khả năng,1,3424
+VSL,khẩu hiệu,1,3425
+VSL,khẩu trang,1,3426
+VSL,khắc phục,1,3427
+VSL,khỏi bệnh,3,3428
+VSL,khố,1,3429
+VSL,khối lượng,1,3430
+VSL,khổ,2,3431
+VSL,khổ công,1,3432
+VSL,khổ thơ,1,3433
+VSL,khổng lồ,1,3434
+VSL,khớp xương,1,3435
+VSL,khờ dại,1,3436
+VSL,khởi nghiệp,1,3437
+VSL,ki-lô-gam,1,3438
+VSL,ki-lô-mét (km),1,3439
+VSL,ki-lô-mét vuông (km2),1,3440
+VSL,kia,1,3441
+VSL,kim,1,3442
+VSL,kim cương,1,3443
+VSL,kinh nghiệm,3,3444
+VSL,kinh ngạc,1,3445
+VSL,kiên quyết,1,3446
+VSL,kiên trì (giống_ kiên nhẫn),1,3447
+VSL,"kiêu (kiêu căng, kiêu xa)",1,3448
+VSL,kiếm (cái kiếm),1,3449
+VSL,kiến thức,1,3450
+VSL,kiến trúc,1,3451
+VSL,kiến trúc sư,1,3452
+VSL,kiểm tra,3,3453
+VSL,kèn,1,3454
+VSL,kém,3,3455
+VSL,kéo,1,3456
+VSL,kéo co,1,3457
+VSL,kêu,1,3458
+VSL,kêu gọi,1,3459
+VSL,kì diệu,1,3460
+VSL,kì lạ,1,3461
+VSL,kí duyệt,1,3462
+VSL,kí hiệu,1,3463
+VSL,kí tên,3,3464
+VSL,kính,1,3465
+VSL,kính hiển vi,1,3466
+VSL,kính lão,1,3467
+VSL,kính lúp,1,3468
+VSL,kính trọng,1,3469
+VSL,kẹo,3,3470
+VSL,kẹp,1,3471
+VSL,kẹt xe_tắc đường,1,3472
+VSL,kẻ cắp,1,3473
+VSL,kẻ thù,1,3474
+VSL,kết bạn,1,3475
+VSL,kết hợp,1,3476
+VSL,kết luận,1,3477
+VSL,kết quả,3,3478
+VSL,kể chuyện,1,3479
+VSL,kỉ luật,1,3480
+VSL,kỉ niệm,3,3481
+VSL,kịch,1,3482
+VSL,kịch bản,1,3483
+VSL,kịch câm,1,3484
+VSL,kịp thời,1,3485
+VSL,kỹ năng,1,3486
+VSL,l,1,3487
+VSL,la bàn,1,3488
+VSL,la hét,1,3489
+VSL,lang thang,1,3490
+VSL,lao phổi,1,3491
+VSL,lau chùi,1,3492
+VSL,lau khô,1,3493
+VSL,lau miệng,1,3494
+VSL,lau nhà,1,3495
+VSL,leo trèo,1,3496
+VSL,linh hồn,1,3497
+VSL,liên hoan,3,3498
+VSL,liên kết,1,3499
+VSL,liên lạc,3,3500
+VSL,liên quan,3,3501
+VSL,liên tục,1,3502
+VSL,liếc nhìn,3,3503
+VSL,liền sau,1,3504
+VSL,liền trước,1,3505
+VSL,liều lĩnh,1,3506
+VSL,liều mình,1,3507
+VSL,liệt (liệt tay chân),1,3508
+VSL,lo sợ,1,3509
+VSL,loa,1,3510
+VSL,lon bia,1,3511
+VSL,long lanh (mắt),1,3512
+VSL,loài vật,3,3513
+VSL,loạn thị,1,3514
+VSL,lung tung,3,3515
+VSL,luyện tập,1,3516
+VSL,luyện từ và câu,1,3517
+VSL,luân phiên,2,3518
+VSL,luật chơi,3,3519
+VSL,luật lệ,1,3520
+VSL,luộc,1,3521
+VSL,luộc rau,1,3522
+VSL,là gì_,3,3523
+VSL,làm bài tập,2,3524
+VSL,làm quen,1,3525
+VSL,làm ruộng,1,3526
+VSL,làm việc,1,3527
+VSL,làm được,1,3528
+VSL,làn sóng,1,3529
+VSL,làng gốm Bát Tràng,1,3530
+VSL,làng xóm,1,3531
+VSL,lá cây,2,3532
+VSL,lá thư,1,3533
+VSL,lái tàu hỏa,3,3534
+VSL,lâu,2,3535
+VSL,lây bệnh,1,3536
+VSL,lây nhiễm,1,3537
+VSL,lãng phí,1,3538
+VSL,lãnh đạo,1,3539
+VSL,lão già,1,3540
+VSL,lên ngôi,1,3541
+VSL,lên xe,1,3542
+VSL,lên đường,1,3543
+VSL,lí do,1,3544
+VSL,lò xo,1,3545
+VSL,lông,1,3546
+VSL,lông gà,1,3547
+VSL,lùi bước,1,3548
+VSL,lúa,1,3549
+VSL,lúc nào,3,3550
+VSL,lúng túng,1,3551
+VSL,lý do,1,3552
+VSL,lăng Bác Hồ,1,3553
+VSL,lĩnh hội,1,3554
+VSL,lĩnh vực,3,3555
+VSL,lũ quét,1,3556
+VSL,lũy tre,1,3557
+VSL,lơ lửng,1,3558
+VSL,lưu,1,3559
+VSL,lưu ý,1,3560
+VSL,lương thực,1,3561
+VSL,lưới,1,3562
+VSL,lướt ván,1,3563
+VSL,lười,3,3564
+VSL,lười học,3,3565
+VSL,lưỡi,1,3566
+VSL,lưỡi câu,1,3567
+VSL,lược,1,3568
+VSL,lượt về (trong thể thao),1,3569
+VSL,lượt đi,1,3570
+VSL,lạc quan,1,3571
+VSL,lạnh lùng,3,3572
+VSL,lấm lem,1,3573
+VSL,lấy,1,3574
+VSL,lầu (tầng),1,3575
+VSL,lẩu,1,3576
+VSL,lẫn lộn,1,3577
+VSL,lắc đầu,1,3578
+VSL,lắng nghe,1,3579
+VSL,lắp ráp,1,3580
+VSL,lặn,1,3581
+VSL,lặng lẽ,1,3582
+VSL,lều trại,1,3583
+VSL,lễ Halloween 31_10,3,3584
+VSL,lễ Nô-en,3,3585
+VSL,lễ bế giảng,2,3586
+VSL,lễ hội,3,3587
+VSL,lễ hội hóa trang,3,3588
+VSL,lễ phép,1,3589
+VSL,lễ vật,1,3590
+VSL,lọ hoa,1,3591
+VSL,lọ mực,1,3592
+VSL,lọng,1,3593
+VSL,lốc xoáy,1,3594
+VSL,lối đi,1,3595
+VSL,lồng bàn,1,3596
+VSL,lồng chim,1,3597
+VSL,lồng tiếng,1,3598
+VSL,lỗi chính tả,1,3599
+VSL,lỗi lầm,1,3600
+VSL,lớn hơn 1 (Toán học),1,3601
+VSL,lớn hơn 2 (Toán học),1,3602
+VSL,lớp,1,3603
+VSL,lớp phó,1,3604
+VSL,lớp trưởng,1,3605
+VSL,lời giải,1,3606
+VSL,lời nói,1,3607
+VSL,lợi ích,1,3608
+VSL,lục giác,1,3609
+VSL,lục địa,1,3610
+VSL,lửa,1,3611
+VSL,lựu,1,3612
+VSL,lựu đạn,1,3613
+VSL,m,1,3614
+VSL,ma,1,3615
+VSL,ma cà rồng,1,3616
+VSL,ma quỷ,1,3617
+VSL,ma sát,1,3618
+VSL,ma túy,1,3619
+VSL,may mắn,1,3620
+VSL,mi-li-mét (mm),1,3621
+VSL,minh hoạ,1,3622
+VSL,miêu tả,1,3623
+VSL,miến,1,3624
+VSL,miền Bắc Việt Nam,1,3625
+VSL,miền Nam Việt Nam,1,3626
+VSL,mua bán,1,3627
+VSL,mua vé,1,3628
+VSL,mui xe,1,3629
+VSL,muối,1,3630
+VSL,muối i-ốt,1,3631
+VSL,muốn,3,3632
+VSL,muốn không_,3,3633
+VSL,muộn,1,3634
+VSL,màn,3,3635
+VSL,màu cam,1,3636
+VSL,màu nhiệm,1,3637
+VSL,màu nâu,3,3638
+VSL,màu trắng,3,3639
+VSL,màu xanh da trời,3,3640
+VSL,màu xanh lá cây,3,3641
+VSL,màu đen,1,3642
+VSL,màu đỏ,1,3643
+VSL,má,1,3644
+VSL,má (giống_ mẹ),1,3645
+VSL,má hồng,1,3646
+VSL,mách,3,3647
+VSL,mái chèo,1,3648
+VSL,mái hiên,1,3649
+VSL,mái nhà,1,3650
+VSL,mái tóc,1,3651
+VSL,mái vòm,1,3652
+VSL,máy bơm,1,3653
+VSL,máy chiếu,1,3654
+VSL,máy in,3,3655
+VSL,máy khâu,1,3656
+VSL,máy quay,1,3657
+VSL,máy tính (laptop),1,3658
+VSL,máy tính bỏ túi,1,3659
+VSL,máy vi tính,1,3660
+VSL,máy xúc,1,3661
+VSL,máy ảnh,1,3662
+VSL,mâm cơm,1,3663
+VSL,mâm ngũ quả,3,3664
+VSL,mây,1,3665
+VSL,mã vạch,1,3666
+VSL,mèo cào,1,3667
+VSL,mét (m),1,3668
+VSL,mét khối (m3),1,3669
+VSL,mét vuông (m2),1,3670
+VSL,mê say (như_ say mê),1,3671
+VSL,mê tín,1,3672
+VSL,mênh mông,1,3673
+VSL,mía,1,3674
+VSL,mít tinh,1,3675
+VSL,móc áo,1,3676
+VSL,móng chân,1,3677
+VSL,móng tay,1,3678
+VSL,móng vuốt,1,3679
+VSL,mô hình,1,3680
+VSL,mô tả,1,3681
+VSL,môi,1,3682
+VSL,môi trường,1,3683
+VSL,môn Giáo dục công dân,1,3684
+VSL,môn Giáo dục thể chất,1,3685
+VSL,môn Khoa học,1,3686
+VSL,môn Kĩ thuật,4,3687
+VSL,môn Lịch sử,3,3688
+VSL,môn Mĩ thuật,1,3689
+VSL,môn Ngoại ngữ,1,3690
+VSL,môn Sinh học,1,3691
+VSL,môn Tin học và Công nghệ,1,3692
+VSL,môn Tiếng Việt,1,3693
+VSL,môn Toán,1,3694
+VSL,môn Tự nhiên và Xã hội,1,3695
+VSL,môn Âm nhạc,1,3696
+VSL,môn Đạo đức,3,3697
+VSL,môn Địa lý,3,3698
+VSL,mõm,1,3699
+VSL,mù chữ,1,3700
+VSL,mùa hè,3,3701
+VSL,mùa thu,1,3702
+VSL,mùa xuân,3,3703
+VSL,mùa đông,1,3704
+VSL,múa,1,3705
+VSL,múa lân,1,3706
+VSL,múa rối,1,3707
+VSL,múa sạp,1,3708
+VSL,măng,1,3709
+VSL,mĩ thuật,1,3710
+VSL,mũ,1,3711
+VSL,mũ lưỡi trai,1,3712
+VSL,mũi tên,1,3713
+VSL,mũm mĩm,1,3714
+VSL,mơ ngủ,1,3715
+VSL,mơ ước,1,3716
+VSL,mưa phùn,1,3717
+VSL,mạch lạc,1,3718
+VSL,mạch máu,1,3719
+VSL,mạng lưới,1,3720
+VSL,mạnh bạo (giống_ mạnh dạn),1,3721
+VSL,mạnh mẽ,1,3722
+VSL,mất (chết) (chỉ người),1,3723
+VSL,mất ngủ,1,3724
+VSL,mất trí,1,3725
+VSL,mấy giờ_,1,3726
+VSL,mầm cây,1,3727
+VSL,mầm non,1,3728
+VSL,mẫu số,1,3729
+VSL,mẫu số bé,1,3730
+VSL,mẫu số chung,1,3731
+VSL,mẫu số lớn,1,3732
+VSL,mật khẩu,3,3733
+VSL,mật ong,1,3734
+VSL,mắc áo,1,3735
+VSL,mắm,1,3736
+VSL,mắng,3,3737
+VSL,mặc,1,3738
+VSL,mặc kệ,1,3739
+VSL,mặc quần áo,1,3740
+VSL,mặt,1,3741
+VSL,mặt dài,1,3742
+VSL,mặt nạ,1,3743
+VSL,mặt vuông,1,3744
+VSL,mặt đất,1,3745
+VSL,mềm mại,1,3746
+VSL,mệt không_,1,3747
+VSL,mệt mỏi,1,3748
+VSL,mọc ria mép,1,3749
+VSL,mọc râu,1,3750
+VSL,mọc tóc,1,3751
+VSL,mồ côi,1,3752
+VSL,mồ côi cha mẹ,1,3753
+VSL,mồ hôi,1,3754
+VSL,mồ hôi nhễ nhại,1,3755
+VSL,mỗi,1,3756
+VSL,mỗi ngày,3,3757
+VSL,mộc nhĩ,1,3758
+VSL,một cặp,1,3759
+VSL,một là,1,3760
+VSL,một mình,1,3761
+VSL,một tiếng,3,3762
+VSL,một tiết học,1,3763
+VSL,một ít_ một chút,1,3764
+VSL,một đôi,1,3765
+VSL,mớ rau,1,3766
+VSL,mới,3,3767
+VSL,mời,1,3768
+VSL,mở,1,3769
+VSL,mở cửa,1,3770
+VSL,mở màn,1,3771
+VSL,mở rộng,1,3772
+VSL,mở đầu,1,3773
+VSL,mục lục,1,3774
+VSL,mục tiêu,1,3775
+VSL,mục đích,1,3776
+VSL,mứt,1,3777
+VSL,mỳ tôm,3,3778
+VSL,mỳ vằn thắn,1,3779
+VSL,mỳ ý,3,3780
+VSL,n,1,3781
+VSL,nghe,1,3782
+VSL,nghi ngờ,3,3783
+VSL,nghiêm khắc,3,3784
+VSL,nghiêm túc,1,3785
+VSL,nghiên cứu,1,3786
+VSL,nghiến răng,1,3787
+VSL,nghé,3,3788
+VSL,nghênh nghênh (đầu),1,3789
+VSL,nghĩ,1,3790
+VSL,nghĩa bóng,1,3791
+VSL,nghĩa trang,1,3792
+VSL,nghĩa đen,1,3793
+VSL,nghẹn ngào,1,3794
+VSL,nghệ sĩ,1,3795
+VSL,nghệ thuật,3,3796
+VSL,nghỉ hè,3,3797
+VSL,nghỉ hưu,1,3798
+VSL,nghỉ học,3,3799
+VSL,nghỉ mát,1,3800
+VSL,nghỉ ngơi,1,3801
+VSL,nghị lực,1,3802
+VSL,ngoan ngoãn,1,3803
+VSL,ngon giấc,1,3804
+VSL,ngon miệng,1,3805
+VSL,ngoại hình,1,3806
+VSL,ngoắc tay,1,3807
+VSL,ngoằn ngoèo,1,3808
+VSL,ngoặc kép,1,3809
+VSL,ngoặc đơn,1,3810
+VSL,nguy hiểm,3,3811
+VSL,nguyên nhân,1,3812
+VSL,nguyện vọng,1,3813
+VSL,nguệch ngoạc,1,3814
+VSL,nguồn gốc,1,3815
+VSL,nguội,1,3816
+VSL,ngà voi,1,3817
+VSL,ngành nghề,1,3818
+VSL,ngày Giải phóng miền Nam 30_4,3,3819
+VSL,ngày Ngôn ngữ kí hiệu Quốc tế 23_9,3,3820
+VSL,ngày Người khuyết tật Thế giới 3_12,3,3821
+VSL,ngày Người khuyết tật Việt Nam 18_4,3,3822
+VSL,ngày Nhà giáo Việt nam,2,3823
+VSL,ngày Phụ nữ Việt Nam 20_10,3,3824
+VSL,ngày Quốc tế Lao động,3,3825
+VSL,ngày Quốc tế phụ nữ 8_3,3,3826
+VSL,ngày của Cha,3,3827
+VSL,ngày của Mẹ,3,3828
+VSL,ngày gia đình Việt Nam 28_6,3,3829
+VSL,ngày giải phóng thủ đô 10_10,3,3830
+VSL,ngày giỗ tổ Hùng Vương (âm lịch 10_3),3,3831
+VSL,ngày khai trường,1,3832
+VSL,ngày nay,3,3833
+VSL,ngày sinh,3,3834
+VSL,ngày thành lập quân đội nhân dân Việt Nam,3,3835
+VSL,ngày tháng,3,3836
+VSL,ngày thương bình liệt sĩ 27_7,3,3837
+VSL,ngày thầy thuốc Việt Nam,3,3838
+VSL,ngày xưa,1,3839
+VSL,ngày đêm,1,3840
+VSL,ngán,1,3841
+VSL,ngâm hạt,1,3842
+VSL,ngân hàng,1,3843
+VSL,ngây thơ,1,3844
+VSL,ngã,1,3845
+VSL,ngã ba,1,3846
+VSL,ngói,1,3847
+VSL,ngón chân,1,3848
+VSL,ngón tay,1,3849
+VSL,ngô,2,3850
+VSL,ngôn ngữ,1,3851
+VSL,ngôn ngữ kí hiệu,1,3852
+VSL,ngõ,1,3853
+VSL,ngăn chặn,1,3854
+VSL,ngăn cản,1,3855
+VSL,ngũ quả,3,3856
+VSL,ngước nhìn,1,3857
+VSL,người bán hàng,1,3858
+VSL,người gửi,1,3859
+VSL,người lái xe (ô tô),3,3860
+VSL,người lạ,1,3861
+VSL,người máy,1,3862
+VSL,người nhận,1,3863
+VSL,người nước ngoài,1,3864
+VSL,người quen,3,3865
+VSL,người xưa,3,3866
+VSL,người xấu,3,3867
+VSL,người yêu,3,3868
+VSL,ngưỡng mộ,1,3869
+VSL,ngược lại,1,3870
+VSL,ngược đãi,1,3871
+VSL,ngạc nhiên,1,3872
+VSL,ngẩng đầu,1,3873
+VSL,ngập lụt,1,3874
+VSL,ngập ngừng,1,3875
+VSL,ngắn,1,3876
+VSL,ngắn nhất,1,3877
+VSL,ngắt hoa,2,3878
+VSL,ngọn cây,3,3879
+VSL,ngồi,3,3880
+VSL,ngộ nghĩnh,1,3881
+VSL,ngộ độc,1,3882
+VSL,ngừng lại,1,3883
+VSL,ngữ pháp,3,3884
+VSL,ngữ điệu,1,3885
+VSL,nhanh nhẹn,1,3886
+VSL,nhi đồng,1,3887
+VSL,nhiều hơn,1,3888
+VSL,nhiều vô cùng,1,3889
+VSL,nhiệt kế,3,3890
+VSL,nhiệt độ,1,3891
+VSL,nhu cầu,1,3892
+VSL,nhà bác học,1,3893
+VSL,nhà cửa,1,3894
+VSL,nhà kho,1,3895
+VSL,nhà nước,3,3896
+VSL,nhà rông,1,3897
+VSL,nhà sàn,1,3898
+VSL,nhà thơ,1,3899
+VSL,nhà thờ,1,3900
+VSL,nhà thờ Đức Bà,1,3901
+VSL,nhà toán học,1,3902
+VSL,nhà trường,3,3903
+VSL,nhà tù,1,3904
+VSL,nhà tầng,1,3905
+VSL,nhà văn hóa,3,3906
+VSL,nhà vệ sinh,1,3907
+VSL,nhào lộn,1,3908
+VSL,nhát gan,1,3909
+VSL,nháy mắt,1,3910
+VSL,nhân (Toán học),3,3911
+VSL,nhân chứng,1,3912
+VSL,nhân cách hoá,1,3913
+VSL,nhân dân,1,3914
+VSL,nhân hậu,3,3915
+VSL,nhân viên,1,3916
+VSL,nhân vật,1,3917
+VSL,nhãn vở,3,3918
+VSL,nhìn,1,3919
+VSL,nhóm,1,3920
+VSL,nhõng nhẽo,1,3921
+VSL,nhút nhát,1,3922
+VSL,nhăn mặt,1,3923
+VSL,như hình với bóng,1,3924
+VSL,nhưng,3,3925
+VSL,nhường nhịn,1,3926
+VSL,nhược điểm,1,3927
+VSL,nhạy cảm,1,3928
+VSL,nhảy bao bố,1,3929
+VSL,nhảy cao,1,3930
+VSL,nhảy dù,1,3931
+VSL,nhảy lò cò,1,3932
+VSL,nhảy múa,1,3933
+VSL,nhấn mạnh,1,3934
+VSL,nhấp nháy,1,3935
+VSL,nhầm,3,3936
+VSL,nhận,1,3937
+VSL,nhận hàng,1,3938
+VSL,nhận thức,1,3939
+VSL,nhận xét,1,3940
+VSL,nhập khẩu,1,3941
+VSL,nhập ngũ,3,3942
+VSL,nhập trường,3,3943
+VSL,nhắc nhở,1,3944
+VSL,nhắm mắt,1,3945
+VSL,nhặt rau,1,3946
+VSL,nhẹ hơn,1,3947
+VSL,nhẹ nhàng,1,3948
+VSL,nhọn,1,3949
+VSL,nhọn hoắt,1,3950
+VSL,nhỏ hơn,1,3951
+VSL,nhỏ tuổi,1,3952
+VSL,nhỏ_ nhỏ bé,1,3953
+VSL,nhổ củ cải,1,3954
+VSL,nhổ lông mày,1,3955
+VSL,nhổ râu,1,3956
+VSL,nhổ răng,1,3957
+VSL,nhổ tóc,1,3958
+VSL,nhộn nhịp (đông người),1,3959
+VSL,nhụy hoa,1,3960
+VSL,niềm vui,1,3961
+VSL,no,3,3962
+VSL,náo nức,1,3963
+VSL,"náo động, náo nhiệt",1,3964
+VSL,nén,1,3965
+VSL,nét mặt,1,3966
+VSL,nên không_,3,3967
+VSL,nóc nhà,1,3968
+VSL,nói chuyện,1,3969
+VSL,nói dối,1,3970
+VSL,nói leo,1,3971
+VSL,nói ngập ngừng,1,3972
+VSL,nón,1,3973
+VSL,nóng tính,1,3974
+VSL,nô lệ,1,3975
+VSL,nông nghiệp,1,3976
+VSL,nông thôn,1,3977
+VSL,núi cao,1,3978
+VSL,núi lửa,1,3979
+VSL,núi thấp,1,3980
+VSL,năm là,1,3981
+VSL,năm ngoái,1,3982
+VSL,năm tới,1,3983
+VSL,năn nỉ,1,3984
+VSL,năng khiếu,1,3985
+VSL,năng lực,1,3986
+VSL,nơ,1,3987
+VSL,nơi chốn,1,3988
+VSL,nước Việt nam,3,3989
+VSL,nước mắm,1,3990
+VSL,nước mắt,1,3991
+VSL,nước tương (xì dầu),1,3992
+VSL,nước tới chân mới nhảy,1,3993
+VSL,"nước ép (cam, cà chua,..)",1,3994
+VSL,nước ép trái cây,3,3995
+VSL,nướng,1,3996
+VSL,nạn nhân,1,3997
+VSL,nạp điện,3,3998
+VSL,nấm,1,3999
+VSL,nấu nướng,1,4000
+VSL,nắn nót,1,4001
+VSL,nắp,1,4002
+VSL,nằm,1,4003
+VSL,nặn,1,4004
+VSL,nặng hơn,1,4005
+VSL,nẻ,1,4006
+VSL,nếm,1,4007
+VSL,nến,1,4008
+VSL,nền nhà,1,4009
+VSL,nỏ,1,4010
+VSL,nối tiếp,1,4011
+VSL,nốt ruồi,1,4012
+VSL,nồi,1,4013
+VSL,nồi cơm điện,1,4014
+VSL,nổ lốp xe,1,4015
+VSL,nổ mìn,1,4016
+VSL,nổ súng,1,4017
+VSL,nổi bật,1,4018
+VSL,nổi da gà,1,4019
+VSL,nổi dậy,1,4020
+VSL,nổi giận,1,4021
+VSL,nổi nóng,1,4022
+VSL,nội dung,3,4023
+VSL,nội quy,1,4024
+VSL,nội tiếp,1,4025
+VSL,nứt nẻ (ruộng),1,4026
+VSL,o,1,4027
+VSL,p,3,4028
+VSL,pha chế,1,4029
+VSL,pha cà phê,1,4030
+VSL,pha lê,1,4031
+VSL,phao,1,4032
+VSL,phi công,1,4033
+VSL,phi ngựa,1,4034
+VSL,phi tiêu,1,4035
+VSL,phim hoạt hình,3,4036
+VSL,phim truyện,3,4037
+VSL,phim tài liệu,1,4038
+VSL,phiên dịch,3,4039
+VSL,phiền hà,1,4040
+VSL,phong bì,1,4041
+VSL,phong cách,1,4042
+VSL,phong kiến,1,4043
+VSL,phong toả,1,4044
+VSL,phong trào,1,4045
+VSL,phong tục,1,4046
+VSL,phun nước,1,4047
+VSL,phà,1,4048
+VSL,phá,3,4049
+VSL,pháo hoa,1,4050
+VSL,pháo sáng,1,4051
+VSL,pháo đài,1,4052
+VSL,phát biểu,1,4053
+VSL,phát hiện,1,4054
+VSL,phát động,1,4055
+VSL,phân biệt,1,4056
+VSL,phân công,1,4057
+VSL,phân loại,1,4058
+VSL,phân số,1,4059
+VSL,phân số thập phân,1,4060
+VSL,phân số tối giản,1,4061
+VSL,phân tích,1,4062
+VSL,phân vân,1,4063
+VSL,phép mầu,1,4064
+VSL,phép tính,1,4065
+VSL,phê bình,1,4066
+VSL,phích nước,1,4067
+VSL,phòng bệnh,1,4068
+VSL,phòng chống,1,4069
+VSL,phòng chức năng,1,4070
+VSL,phòng học tin học,1,4071
+VSL,phòng máy tính,1,4072
+VSL,phòng mĩ thuật,1,4073
+VSL,phòng thí nghiệm,1,4074
+VSL,phòng thư viện,1,4075
+VSL,phòng y tế,1,4076
+VSL,phòng âm nhạc,1,4077
+VSL,phòng đa năng,1,4078
+VSL,phó hiệu trưởng,3,4079
+VSL,phóng viên,1,4080
+VSL,phô tô,1,4081
+VSL,phù hợp,1,4082
+VSL,phơi quần áo,1,4083
+VSL,phương Tây,1,4084
+VSL,phương hướng,1,4085
+VSL,phương pháp,1,4086
+VSL,phương tiện,1,4087
+VSL,phương tiện giao thông,3,4088
+VSL,phương Đông,1,4089
+VSL,phải không_,3,4090
+VSL,phản bội,3,4091
+VSL,phản xạ,1,4092
+VSL,phản động,1,4093
+VSL,phấn (viết bảng),3,4094
+VSL,phấn trang điểm,1,4095
+VSL,phấn đấu,1,4096
+VSL,phấp phới,1,4097
+VSL,phần trăm,1,4098
+VSL,phẫu thuật bụng,1,4099
+VSL,phẫu thuật chân,1,4100
+VSL,phẫu thuật cổ,1,4101
+VSL,phẫu thuật mũi,1,4102
+VSL,phẫu thuật mắt,1,4103
+VSL,phẫu thuật tay,1,4104
+VSL,phật (tượng),1,4105
+VSL,phễu,1,4106
+VSL,phố,1,4107
+VSL,phố cổ,1,4108
+VSL,phố cổ Hội an,1,4109
+VSL,phổ biến,1,4110
+VSL,phổi,1,4111
+VSL,phở,3,4112
+VSL,phở cuốn,3,4113
+VSL,phụ huynh,1,4114
+VSL,phụ thuộc,1,4115
+VSL,phục hồi,1,4116
+VSL,phục vụ,1,4117
+VSL,phủ nhận,1,4118
+VSL,phức tạp,1,4119
+VSL,pi-a-nô (dương cầm),1,4120
+VSL,q,1,4121
+VSL,quan (chức vụ),1,4122
+VSL,quan hệ,1,4123
+VSL,quan hệ từ,1,4124
+VSL,quan sát,1,4125
+VSL,quan trọng,1,4126
+VSL,quan tâm,1,4127
+VSL,quan điểm,1,4128
+VSL,quang hợp,1,4129
+VSL,quanh năm,1,4130
+VSL,quay cóp,1,4131
+VSL,quay phim,1,4132
+VSL,quy nạp,1,4133
+VSL,quy tắc,1,4134
+VSL,quy định,1,4135
+VSL,quy đồng mẫu số,1,4136
+VSL,quyên góp,1,4137
+VSL,quyến luyến,1,4138
+VSL,quyết tâm,3,4139
+VSL,quyết định,3,4140
+VSL,quyền lợi,3,4141
+VSL,quyển vở,3,4142
+VSL,quà,1,4143
+VSL,quàng khăn,1,4144
+VSL,quá cảnh,1,4145
+VSL,quát mắng,1,4146
+VSL,quân đội,2,4147
+VSL,quét dọn,1,4148
+VSL,quét nhà,1,4149
+VSL,quê,3,4150
+VSL,quên,1,4151
+VSL,quý giá,1,4152
+VSL,quý hiếm,1,4153
+VSL,quạt cây,1,4154
+VSL,quạt treo tường,1,4155
+VSL,quạt trần,1,4156
+VSL,quả,1,4157
+VSL,quả bưởi,3,4158
+VSL,quả bầu,1,4159
+VSL,quả bầu hồ lô,1,4160
+VSL,quả cam,1,4161
+VSL,quả chanh,1,4162
+VSL,quả chuối,1,4163
+VSL,quả chôm chôm,1,4164
+VSL,quả dưa hấu,3,4165
+VSL,quả dừa,3,4166
+VSL,quả dừa xiêm,3,4167
+VSL,quả gấc,1,4168
+VSL,quả hồng,1,4169
+VSL,quả hồng xiêm,1,4170
+VSL,quả khế,3,4171
+VSL,quả lê,1,4172
+VSL,quả mít,1,4173
+VSL,quả mướp,1,4174
+VSL,quả na,1,4175
+VSL,quả nho,1,4176
+VSL,quả nhãn,3,4177
+VSL,quả quýt,1,4178
+VSL,quả quất,1,4179
+VSL,quả roi,3,4180
+VSL,quả su su,1,4181
+VSL,quả sầu riêng,1,4182
+VSL,quả thanh long,1,4183
+VSL,quả táo,2,4184
+VSL,quả vải,1,4185
+VSL,quả xoài,1,4186
+VSL,quả điều,2,4187
+VSL,quả đu đủ,3,4188
+VSL,quả đất,1,4189
+VSL,quả địa cầu,1,4190
+VSL,quả ổi,1,4191
+VSL,quả ớt,1,4192
+VSL,quảng cáo,1,4193
+VSL,quần bò,3,4194
+VSL,quần yếm,1,4195
+VSL,quần âu,1,4196
+VSL,quần đùi,1,4197
+VSL,quận,3,4198
+VSL,quốc ca,1,4199
+VSL,quốc gia,1,4200
+VSL,quốc hội,1,4201
+VSL,quốc khánh,1,4202
+VSL,quốc tế,1,4203
+VSL,quỳ,1,4204
+VSL,r,1,4205
+VSL,ra lệnh,1,4206
+VSL,ra ngoài,3,4207
+VSL,rau,1,4208
+VSL,rau bắp cải,1,4209
+VSL,rau cải,1,4210
+VSL,rau cải thảo,1,4211
+VSL,rau diếp cá,1,4212
+VSL,rau dền,1,4213
+VSL,rau mùng tơi,1,4214
+VSL,rau ngò_rau mùi,1,4215
+VSL,rau ngót,1,4216
+VSL,reo hò,1,4217
+VSL,ria mép,1,4218
+VSL,riêng biệt,1,4219
+VSL,riêng tư,1,4220
+VSL,rong biển,1,4221
+VSL,rong chơi,3,4222
+VSL,ru ngủ,1,4223
+VSL,ruộng bậc thang,1,4224
+VSL,ruột già,1,4225
+VSL,ruột non,1,4226
+VSL,rào chắn,1,4227
+VSL,rách,1,4228
+VSL,râu,1,4229
+VSL,rèn luyện,1,4230
+VSL,rèn sắt,1,4231
+VSL,rình mò,1,4232
+VSL,rìu,1,4233
+VSL,róc rách,1,4234
+VSL,rón rén,1,4235
+VSL,rõ ràng,2,4236
+VSL,rút gọn,1,4237
+VSL,rút gọn phân số,1,4238
+VSL,răng,1,4239
+VSL,răng cưa,1,4240
+VSL,răng hô,1,4241
+VSL,răng khểnh,1,4242
+VSL,rơi,1,4243
+VSL,rơm,1,4244
+VSL,rơm rớm,1,4245
+VSL,rước đèn,1,4246
+VSL,rưỡi,3,4247
+VSL,rượu,3,4248
+VSL,rạch,1,4249
+VSL,rạp chiếu phim,1,4250
+VSL,rắc rối,1,4251
+VSL,rằm trung thu,3,4252
+VSL,rẽ phải,1,4253
+VSL,rế,1,4254
+VSL,rễ chùm,1,4255
+VSL,rễ cây,1,4256
+VSL,rễ cọc,1,4257
+VSL,rổ,1,4258
+VSL,rộng lớn,1,4259
+VSL,rộng rãi,1,4260
+VSL,rụng tóc (đt),1,4261
+VSL,rừng núi,1,4262
+VSL,rừng rậm,1,4263
+VSL,rừng thưa,1,4264
+VSL,rửa bát,1,4265
+VSL,rửa chân,2,4266
+VSL,rửa mặt,2,4267
+VSL,rửa tay,1,4268
+VSL,rực rỡ,1,4269
+VSL,s,1,4270
+VSL,sa mạc,1,4271
+VSL,sa thải,1,4272
+VSL,san hô,1,4273
+VSL,san sẻ,1,4274
+VSL,sao,2,4275
+VSL,sao chép,1,4276
+VSL,sau,1,4277
+VSL,say sưa,1,4278
+VSL,sinh hoạt,1,4279
+VSL,sinh sản,3,4280
+VSL,sinh sống,1,4281
+VSL,sinh tố,1,4282
+VSL,"sinh tố (bơ, dâu,..)",1,4283
+VSL,sinh vật,1,4284
+VSL,sinh đôi,3,4285
+VSL,sinh đẻ,3,4286
+VSL,sinh động,1,4287
+VSL,siêng năng,1,4288
+VSL,siêu thị,1,4289
+VSL,siêu tốc,1,4290
+VSL,siêu âm,1,4291
+VSL,soi,1,4292
+VSL,son môi,1,4293
+VSL,song song,1,4294
+VSL,sum họp,1,4295
+VSL,suy nghĩ,2,4296
+VSL,suy ra (Toán học),1,4297
+VSL,suýt,3,4298
+VSL,suối,1,4299
+VSL,suỵt,1,4300
+VSL,sách,1,4301
+VSL,sách giáo khoa,1,4302
+VSL,sách toán,1,4303
+VSL,sáng,1,4304
+VSL,sáng chói,1,4305
+VSL,sáng kiến,1,4306
+VSL,sáng tạo,1,4307
+VSL,sáo,1,4308
+VSL,sân chơi,2,4309
+VSL,sân khấu,1,4310
+VSL,sân nhà,1,4311
+VSL,sân thượng,1,4312
+VSL,sân trường,3,4313
+VSL,sân vận động,1,4314
+VSL,sâu,1,4315
+VSL,sâu bọ,1,4316
+VSL,sâu răng,1,4317
+VSL,sâu thẳm,1,4318
+VSL,sóng biển,1,4319
+VSL,sóng thần,1,4320
+VSL,sông Hồng,1,4321
+VSL,súc miệng,1,4322
+VSL,súp,1,4323
+VSL,súp lơ,1,4324
+VSL,săn bắn,1,4325
+VSL,sĩ diện,2,4326
+VSL,sĩ quan,1,4327
+VSL,sơ mi,3,4328
+VSL,sơ đồ,2,4329
+VSL,sơn,1,4330
+VSL,sương gió,1,4331
+VSL,sườn,1,4332
+VSL,sản xuất,1,4333
+VSL,sấm chớp,1,4334
+VSL,sấm sét,1,4335
+VSL,sắp xếp,3,4336
+VSL,sắt,3,4337
+VSL,số La Mã (Toán học),1,4338
+VSL,số bé,1,4339
+VSL,số chín,1,4340
+VSL,số chẵn,1,4341
+VSL,số liền sau,1,4342
+VSL,số liền trước,1,4343
+VSL,số lẻ,1,4344
+VSL,số lớn,1,4345
+VSL,số thập phân,1,4346
+VSL,số đo,1,4347
+VSL,sống sót,3,4348
+VSL,sốt,1,4349
+VSL,sổ tay,1,4350
+VSL,sổ điểm danh,1,4351
+VSL,sổ đầu bài,1,4352
+VSL,sờ,1,4353
+VSL,sợ không_,1,4354
+VSL,sợi,1,4355
+VSL,sợi chỉ,1,4356
+VSL,sợi dây,1,4357
+VSL,sợi len,1,4358
+VSL,sụp đổ,1,4359
+VSL,sức khỏe,1,4360
+VSL,sừng,1,4361
+VSL,sừng bò,1,4362
+VSL,sừng trâu,1,4363
+VSL,sửa chữa,1,4364
+VSL,sữa,3,4365
+VSL,sữa bò,3,4366
+VSL,sữa bột,3,4367
+VSL,sữa dê,3,4368
+VSL,sữa hộp,3,4369
+VSL,sữa rửa mặt,1,4370
+VSL,sữa đặc,1,4371
+VSL,sự thật,1,4372
+VSL,t,3,4373
+VSL,tai,1,4374
+VSL,tai nạn,1,4375
+VSL,tai nạn giao thông,1,4376
+VSL,tam giác,1,4377
+VSL,taxi,1,4378
+VSL,tay,1,4379
+VSL,tay chân sạch sẽ,3,4380
+VSL,tay phải,1,4381
+VSL,tay trái,1,4382
+VSL,tha,1,4383
+VSL,tha mồi,1,4384
+VSL,tha thứ,3,4385
+VSL,tham dự,3,4386
+VSL,tham khảo,1,4387
+VSL,tham lam,1,4388
+VSL,tham quan,3,4389
+VSL,tham ăn,3,4390
+VSL,thanh niên,1,4391
+VSL,thao thức,1,4392
+VSL,theo dõi,1,4393
+VSL,theo đuổi,1,4394
+VSL,thi cử,3,4395
+VSL,thiu,1,4396
+VSL,thiên nhiên,1,4397
+VSL,thiên thần,1,4398
+VSL,thiên đình,1,4399
+VSL,thiếp mời,1,4400
+VSL,thiếp đi,1,4401
+VSL,thiết kế,3,4402
+VSL,thiếu nhi,1,4403
+VSL,thiếu niên,1,4404
+VSL,thiếu thốn,3,4405
+VSL,thiệp sinh nhật,3,4406
+VSL,thiệt thòi,1,4407
+VSL,thoát hiểm,1,4408
+VSL,thoăn thoắt,1,4409
+VSL,thu mua,1,4410
+VSL,thu nhỏ,1,4411
+VSL,thu thập,1,4412
+VSL,thung lũng,1,4413
+VSL,thuyết phục,1,4414
+VSL,thuyết trình,1,4415
+VSL,thuyền chài,1,4416
+VSL,thuyền rồng,1,4417
+VSL,thuê,3,4418
+VSL,thuận lợi,1,4419
+VSL,thuốc bắc,1,4420
+VSL,thuốc bổ,1,4421
+VSL,thuốc lá,1,4422
+VSL,thuộc lòng,1,4423
+VSL,thuộc địa,1,4424
+VSL,thuỷ thủ,1,4425
+VSL,thuỷ điện,3,4426
+VSL,thành công,1,4427
+VSL,thành lập,4,4428
+VSL,thành thạo,1,4429
+VSL,thành thị,1,4430
+VSL,thành viên,1,4431
+VSL,thác,1,4432
+VSL,thái độ,3,4433
+VSL,thám tử,1,4434
+VSL,thán phục,1,4435
+VSL,tháng,3,4436
+VSL,thánh địa Mỹ Sơn,1,4437
+VSL,tháo gỡ,1,4438
+VSL,tháp,1,4439
+VSL,tháp Rùa,1,4440
+VSL,thâm quầng mắt,1,4441
+VSL,thân cây,3,4442
+VSL,thân hình,1,4443
+VSL,thân thiết,1,4444
+VSL,thân thiện,1,4445
+VSL,thèm,1,4446
+VSL,thèm rỏ dãi,1,4447
+VSL,thét,1,4448
+VSL,thêm,1,4449
+VSL,thêu,2,4450
+VSL,thì thầm,1,4451
+VSL,thìa,3,4452
+VSL,thí nghiệm,1,4453
+VSL,thích nghi,1,4454
+VSL,thích thú,3,4455
+VSL,thím,1,4456
+VSL,thóc (gạo),1,4457
+VSL,thói quen,3,4458
+VSL,thông báo,1,4459
+VSL,thông cảm,1,4460
+VSL,thông minh,3,4461
+VSL,thông qua,1,4462
+VSL,thông thường,1,4463
+VSL,thông tin,3,4464
+VSL,thù lao,1,4465
+VSL,thùng,1,4466
+VSL,thú dữ,3,4467
+VSL,thú y,3,4468
+VSL,thúc đẩy,1,4469
+VSL,thăm hỏi,3,4470
+VSL,thăng bằng,1,4471
+VSL,thơm,3,4472
+VSL,thư giãn,1,4473
+VSL,thương (số),1,4474
+VSL,thương mại,1,4475
+VSL,thương yêu,6,4476
+VSL,thường xuyên,4,4477
+VSL,thả diều,1,4478
+VSL,thả mồi,1,4479
+VSL,thản nhiên,1,4480
+VSL,thấp hơn,1,4481
+VSL,thấp nhất,1,4482
+VSL,thần chết,1,4483
+VSL,thần kinh,1,4484
+VSL,thần kì,1,4485
+VSL,thầy cô,3,4486
+VSL,thầy cúng,1,4487
+VSL,thầy giáo,3,4488
+VSL,thận,1,4489
+VSL,thập thò,1,4490
+VSL,thật thà,1,4491
+VSL,thắc mắc,1,4492
+VSL,thắng lợi,1,4493
+VSL,thắp đèn,1,4494
+VSL,thẳng hàng (Toán học),1,4495
+VSL,thẳng tắp,1,4496
+VSL,thẻ,1,4497
+VSL,thế hệ,1,4498
+VSL,thế nào_,3,4499
+VSL,thề,1,4500
+VSL,thềm,1,4501
+VSL,thị giác,1,4502
+VSL,thị lực,1,4503
+VSL,thịnh vượng,1,4504
+VSL,thối,1,4505
+VSL,thống nhất,1,4506
+VSL,thống nhất đất nước,1,4507
+VSL,thổ dân,1,4508
+VSL,thổi,1,4509
+VSL,thổi bóng,1,4510
+VSL,thổi kèn,1,4511
+VSL,thờ cúng,1,4512
+VSL,thời gian biểu,1,4513
+VSL,thở,1,4514
+VSL,thở dài,1,4515
+VSL,thợ kim hoàn,1,4516
+VSL,thợ rèn,1,4517
+VSL,thợ thêu,1,4518
+VSL,thụ phấn (hoa),1,4519
+VSL,thủ công,3,4520
+VSL,thủ tướng,3,4521
+VSL,thủng,1,4522
+VSL,thủy chung,1,4523
+VSL,thứ tự,1,4524
+VSL,thừa,3,4525
+VSL,thực hiện,1,4526
+VSL,thực hành,1,4527
+VSL,thực phẩm,1,4528
+VSL,thực sự,1,4529
+VSL,thực tế,1,4530
+VSL,thực vật,1,4531
+VSL,ti hí mắt,1,4532
+VSL,tia chớp,1,4533
+VSL,tia nắng,1,4534
+VSL,tia số,1,4535
+VSL,tim,1,4536
+VSL,tin cậy,1,4537
+VSL,tin học,1,4538
+VSL,tin nhắn,1,4539
+VSL,tin tức,1,4540
+VSL,tinh mắt,1,4541
+VSL,tinh trùng,1,4542
+VSL,tiêm,1,4543
+VSL,tiêu cực,1,4544
+VSL,tiêu diệt,1,4545
+VSL,tiêu hoá,1,4546
+VSL,tiếc,3,4547
+VSL,tiến bộ,1,4548
+VSL,tiến sĩ,1,4549
+VSL,tiếng Anh,3,4550
+VSL,tiếng nói,1,4551
+VSL,tiếp nhận,1,4552
+VSL,tiếp theo,1,4553
+VSL,tiếp thu,1,4554
+VSL,tiếp tân,1,4555
+VSL,tiếp tục,3,4556
+VSL,tiết kiệm,3,4557
+VSL,tiểu học,1,4558
+VSL,tiệc,1,4559
+VSL,tiện nghi,1,4560
+VSL,to lớn,1,4561
+VSL,toa lét,1,4562
+VSL,toa xe,3,4563
+VSL,toà án,3,4564
+VSL,toàn cầu,1,4565
+VSL,trang phục,1,4566
+VSL,trang trí,1,4567
+VSL,trang điểm,1,4568
+VSL,tranh luận,1,4569
+VSL,trao tặng,1,4570
+VSL,tre,3,4571
+VSL,tri kỉ,1,4572
+VSL,triều cường,1,4573
+VSL,triều đình,1,4574
+VSL,triệu phú,1,4575
+VSL,trong khoảng,1,4576
+VSL,trong ngoài,3,4577
+VSL,trong suốt,1,4578
+VSL,trong sáng,1,4579
+VSL,trung bình,1,4580
+VSL,trung thành,1,4581
+VSL,trung tâm,1,4582
+VSL,trung điểm,1,4583
+VSL,trung ương,1,4584
+VSL,truyền dịch,1,4585
+VSL,truyền thông,1,4586
+VSL,truyền thống,1,4587
+VSL,trà,1,4588
+VSL,trà nóng,1,4589
+VSL,trà sữa,1,4590
+VSL,trà đá,1,4591
+VSL,tràn ngập (nước),1,4592
+VSL,trách mắng,1,4593
+VSL,trách nhiệm,1,4594
+VSL,trái nghĩa,2,4595
+VSL,tránh thai,1,4596
+VSL,trêu,1,4597
+VSL,trêu tức,1,4598
+VSL,trình bày,1,4599
+VSL,trình độ,1,4600
+VSL,trí khôn,1,4601
+VSL,trí thức,1,4602
+VSL,trò chơi,1,4603
+VSL,tròn,1,4604
+VSL,tròn trịa (mặt),1,4605
+VSL,trói tay,1,4606
+VSL,trông chờ,3,4607
+VSL,trông coi,1,4608
+VSL,trông nhà,1,4609
+VSL,trông nom,3,4610
+VSL,trùm chăn,1,4611
+VSL,trú mưa,1,4612
+VSL,trúng thưởng,1,4613
+VSL,trúng tuyển,3,4614
+VSL,trăng,3,4615
+VSL,trưng bày,1,4616
+VSL,trước,3,4617
+VSL,trường PTCS (cấp 2),3,4618
+VSL,trường THPT ( cấp 3),3,4619
+VSL,trường hợp,1,4620
+VSL,trường mầm non,3,4621
+VSL,trường tiểu học,2,4622
+VSL,trưởng nhóm,1,4623
+VSL,trưởng thành,1,4624
+VSL,trại giam,1,4625
+VSL,trạm xe buýt,1,4626
+VSL,trạm y tế,1,4627
+VSL,trả (đt),1,4628
+VSL,trả lời,1,4629
+VSL,trả thù,1,4630
+VSL,trầm trồ,1,4631
+VSL,trần nhà,1,4632
+VSL,trắng muốt,3,4633
+VSL,trắng tay,1,4634
+VSL,trẻ con_con nít,3,4635
+VSL,trọc đầu,3,4636
+VSL,trọng nam khinh nữ,1,4637
+VSL,trọng tài,1,4638
+VSL,trốn chạy,3,4639
+VSL,trốn tìm,1,4640
+VSL,trống,1,4641
+VSL,trống (không có gì),1,4642
+VSL,trộm cắp,1,4643
+VSL,trộn (đt),1,4644
+VSL,trở thành,1,4645
+VSL,trục hoành,1,4646
+VSL,trục tung,1,4647
+VSL,trục xuất,1,4648
+VSL,trụi lá,3,4649
+VSL,trứng,3,4650
+VSL,trực nhật,1,4651
+VSL,trực tiếp,1,4652
+VSL,tung tăng,1,4653
+VSL,tuyên bố,1,4654
+VSL,tuyên ngôn,1,4655
+VSL,tuyên truyền,1,4656
+VSL,tuyệt vọng,1,4657
+VSL,tuân lệnh,1,4658
+VSL,tuân thủ,1,4659
+VSL,tuần,3,4660
+VSL,tuần lễ người Điếc thế giới,3,4661
+VSL,tuần này,3,4662
+VSL,tuần sau,3,4663
+VSL,tuần trăng mật,1,4664
+VSL,tuần trước,3,4665
+VSL,tuốt lúa,1,4666
+VSL,tuổi thơ,1,4667
+VSL,tuổi thơ ấu,1,4668
+VSL,tuỷ sống,1,4669
+VSL,tài giỏi,1,4670
+VSL,tài năng,1,4671
+VSL,tài trợ,1,4672
+VSL,tàu hoả,3,4673
+VSL,tàu ngầm,1,4674
+VSL,tàu thuyền,1,4675
+VSL,tàu thủy,1,4676
+VSL,tác dụng,1,4677
+VSL,tác giả,1,4678
+VSL,tác phẩm,1,4679
+VSL,tác động,2,4680
+VSL,tách,1,4681
+VSL,tách lớp,1,4682
+VSL,tái phát,1,4683
+VSL,tái phạm,3,4684
+VSL,tán thành,1,4685
+VSL,tát,1,4686
+VSL,tâm thần,1,4687
+VSL,tên là gì_,2,4688
+VSL,tên riêng,1,4689
+VSL,tìm hiểu,3,4690
+VSL,tình cảm,1,4691
+VSL,tình cờ,1,4692
+VSL,tình huống,1,4693
+VSL,tình yêu,1,4694
+VSL,tí hon,1,4695
+VSL,tích (số),1,4696
+VSL,tích cực,1,4697
+VSL,tím tái,1,4698
+VSL,tính,1,4699
+VSL,tính chất,1,4700
+VSL,tính chất bằng nhau,1,4701
+VSL,tính chất cơ bản của phân số,1,4702
+VSL,tính chất giao hoán,1,4703
+VSL,tính chất kết hợp,1,4704
+VSL,tính cách,1,4705
+VSL,tính nhẩm,1,4706
+VSL,tính toán,1,4707
+VSL,tính từ,1,4708
+VSL,tò mò,2,4709
+VSL,tòa soạn,1,4710
+VSL,tóc dài,1,4711
+VSL,tóc dựng đứng,1,4712
+VSL,tóc ngắn,3,4713
+VSL,tóc xoăn,1,4714
+VSL,tóm cổ,1,4715
+VSL,tóm lược,1,4716
+VSL,tóm tắt,1,4717
+VSL,tô màu,3,4718
+VSL,tôi yêu bạn,3,4719
+VSL,tôi yêu bạn ấy,1,4720
+VSL,tôm hùm,1,4721
+VSL,tôn thờ,1,4722
+VSL,tôn trọng,2,4723
+VSL,tù giam,1,4724
+VSL,túm tóc,1,4725
+VSL,tăm,1,4726
+VSL,tĩnh lặng,1,4727
+VSL,tươi cười,1,4728
+VSL,tương lai,1,4729
+VSL,tương ớt,3,4730
+VSL,tương ứng,1,4731
+VSL,tưới cây,3,4732
+VSL,tưởng,1,4733
+VSL,tưởng tượng,4,4734
+VSL,tượng,1,4735
+VSL,tượng đài,1,4736
+VSL,tạm biệt,1,4737
+VSL,tạo dáng,1,4738
+VSL,tạo thành,1,4739
+VSL,tải về,1,4740
+VSL,tấm lòng,1,4741
+VSL,tấm vải,3,4742
+VSL,tấn công,1,4743
+VSL,tẩy chay,1,4744
+VSL,tận số,1,4745
+VSL,tập hợp (Toán học),1,4746
+VSL,tập hợp rỗng,1,4747
+VSL,tập làm văn,1,4748
+VSL,tập thể,1,4749
+VSL,tập thể dục,2,4750
+VSL,tập trung,1,4751
+VSL,tập viết,1,4752
+VSL,tặc lưỡi,1,4753
+VSL,tỉ lệ,1,4754
+VSL,tỉ mỉ,1,4755
+VSL,tỉ số,1,4756
+VSL,tỉ số phần trăm,1,4757
+VSL,tỉnh,1,4758
+VSL,tỉnh táo,1,4759
+VSL,tỏa hương,1,4760
+VSL,tống tiền,1,4761
+VSL,tồn tại,1,4762
+VSL,tổ chim,1,4763
+VSL,tổ tiên,1,4764
+VSL,tổ trưởng,1,4765
+VSL,tổng (số),1,4766
+VSL,tổng hợp,1,4767
+VSL,tổng kết_bế giảng,3,4768
+VSL,tổng thống,3,4769
+VSL,tờ báo,3,4770
+VSL,tờ giấy,3,4771
+VSL,tờ tiền,1,4772
+VSL,tụ tập,1,4773
+VSL,tủi thân,1,4774
+VSL,từ bỏ,1,4775
+VSL,từ chối,3,4776
+VSL,từ ngữ,1,4777
+VSL,từ phải sang trái,1,4778
+VSL,từ trái nghĩa,3,4779
+VSL,từ trái sang phải,1,4780
+VSL,từ đồng âm,1,4781
+VSL,tự (tự làm),1,4782
+VSL,tự do,3,4783
+VSL,tự giác,1,4784
+VSL,tự hào,1,4785
+VSL,tự lập,3,4786
+VSL,tự tin,3,4787
+VSL,tự trọng,1,4788
+VSL,tự vệ,3,4789
+VSL,u,1,4790
+VSL,u ám ( trời u ám),1,4791
+VSL,ung dung,1,4792
+VSL,ung thư,3,4793
+VSL,uốn,1,4794
+VSL,uốn cong,1,4795
+VSL,uốn dẻo,1,4796
+VSL,uốn tóc,1,4797
+VSL,v,1,4798
+VSL,va chạm,1,4799
+VSL,va li,1,4800
+VSL,vai,1,4801
+VSL,vai trò,1,4802
+VSL,vi khuẩn,1,4803
+VSL,viết lia lịa,1,4804
+VSL,việc làm,1,4805
+VSL,viện bảo tàng,1,4806
+VSL,viện nghiên cứu,1,4807
+VSL,vua Hùng,1,4808
+VSL,vui chơi,3,4809
+VSL,vui mừng,3,4810
+VSL,vui sướng,3,4811
+VSL,vui tính,1,4812
+VSL,vun đắp,1,4813
+VSL,vuông góc,1,4814
+VSL,vuốt tóc,1,4815
+VSL,vàng (kim loại),1,4816
+VSL,vàng bạc,1,4817
+VSL,vào,1,4818
+VSL,vào lớp,1,4819
+VSL,vào mùa,2,4820
+VSL,vá quần áo,1,4821
+VSL,vá xe,1,4822
+VSL,vác,1,4823
+VSL,vái lạy,1,4824
+VSL,vái tứ phương,1,4825
+VSL,vây bắt,1,4826
+VSL,vé,1,4827
+VSL,vênh váo,1,4828
+VSL,vì sao_,3,4829
+VSL,ví dụ,3,4830
+VSL,vòi nước,1,4831
+VSL,vòi voi,1,4832
+VSL,vòm lá,1,4833
+VSL,vòng cung,1,4834
+VSL,vòng nguyệt quế,1,4835
+VSL,vòng quanh Trái Đất,1,4836
+VSL,vòng tròn,1,4837
+VSL,vòng đeo tay,1,4838
+VSL,vòng đời,1,4839
+VSL,vô duyên,3,4840
+VSL,vô lo vô nghĩ,1,4841
+VSL,vô lí,1,4842
+VSL,vô tâm,1,4843
+VSL,vô tình,1,4844
+VSL,vô tư,1,4845
+VSL,vô ý,1,4846
+VSL,vô ý thức,1,4847
+VSL,võ thuật,1,4848
+VSL,võng (cái võng),1,4849
+VSL,vùng vẫy (dành cho người),1,4850
+VSL,văn,1,4851
+VSL,văn bản,1,4852
+VSL,văn nghệ,3,4853
+VSL,vĩ cầm,1,4854
+VSL,vĩ đại,1,4855
+VSL,vũ công,1,4856
+VSL,vũ trụ,1,4857
+VSL,vườn thú,1,4858
+VSL,vượt trội,1,4859
+VSL,vạch trần,1,4860
+VSL,vạch xuất phát,1,4861
+VSL,vạm vỡ,1,4862
+VSL,vạt áo,1,4863
+VSL,vải lụa,3,4864
+VSL,vấn đề,3,4865
+VSL,vầng trăng,2,4866
+VSL,vẫn,3,4867
+VSL,vẫy tay,1,4868
+VSL,vẫy vùng (cá),1,4869
+VSL,vận chuyển,1,4870
+VSL,vận tốc,1,4871
+VSL,vận động,1,4872
+VSL,vật,1,4873
+VSL,vật nuôi,3,4874
+VSL,vắn tắt,1,4875
+VSL,vắng,3,4876
+VSL,vắng lặng,1,4877
+VSL,vắt cam,1,4878
+VSL,vắt chanh,1,4879
+VSL,vết thương,1,4880
+VSL,về (Sài Gòn),1,4881
+VSL,về 2 (Miền Bắc),2,4882
+VSL,về 3 (đi về),1,4883
+VSL,về 4 (từ nơi khác về),1,4884
+VSL,về 5 (về nhà),1,4885
+VSL,vệ sinh cá nhân,1,4886
+VSL,vị ngữ,1,4887
+VSL,vị trí,1,4888
+VSL,vịnh,1,4889
+VSL,vịnh Hạ Long,1,4890
+VSL,vịt quay,1,4891
+VSL,vỏ,1,4892
+VSL,vồ,1,4893
+VSL,vỗ cánh,1,4894
+VSL,vỗ tay,1,4895
+VSL,vỗ về,1,4896
+VSL,vội vã,1,4897
+VSL,vớt,1,4898
+VSL,vở chèo,1,4899
+VSL,vỡ,1,4900
+VSL,vỡ lòng,1,4901
+VSL,vợt cầu lông,1,4902
+VSL,vững chắc,1,4903
+VSL,vực sâu,1,4904
+VSL,w,1,4905
+VSL,x,3,4906
+VSL,xa cách,1,4907
+VSL,xa vô tận,1,4908
+VSL,xa xôi,1,4909
+VSL,xanh xao,3,4910
+VSL,xe ben,1,4911
+VSL,xe container,1,4912
+VSL,xe cảnh sát,3,4913
+VSL,xe cẩu,1,4914
+VSL,xe cứu hỏa,2,4915
+VSL,xe cứu thương,1,4916
+VSL,xe khách,3,4917
+VSL,xe lam,1,4918
+VSL,xe lu,1,4919
+VSL,xe máy,1,4920
+VSL,xe tải,1,4921
+VSL,xe đạp,1,4922
+VSL,xem,3,4923
+VSL,xem xét,1,4924
+VSL,xem đã,1,4925
+VSL,xen,1,4926
+VSL,xin lỗi,1,4927
+VSL,xinh,1,4928
+VSL,xinh xắn,1,4929
+VSL,xoa đầu,1,4930
+VSL,xoá bỏ,1,4931
+VSL,xoáy,1,4932
+VSL,xu (tiền),1,4933
+VSL,xui xẻo,1,4934
+VSL,xung phong,1,4935
+VSL,xung quanh nhà,1,4936
+VSL,xung đột,1,4937
+VSL,xuyên Việt,1,4938
+VSL,xuất hiện,3,4939
+VSL,xuất khẩu,1,4940
+VSL,xuống,1,4941
+VSL,xà phòng,3,4942
+VSL,xà phòng giặt,3,4943
+VSL,xào,1,4944
+VSL,xác chết,1,4945
+VSL,xác định,1,4946
+VSL,xách nặng,1,4947
+VSL,xách túi,1,4948
+VSL,xâm hại tình dục,1,4949
+VSL,xâm lược,1,4950
+VSL,xây,3,4951
+VSL,xây nhà,1,4952
+VSL,xã,1,4953
+VSL,xã hội,3,4954
+VSL,xé rách,1,4955
+VSL,xì hơi (đánh rắm),2,4956
+VSL,xích đạo,1,4957
+VSL,xóa bảng,1,4958
+VSL,xóm làng,1,4959
+VSL,xô,1,4960
+VSL,xôi,1,4961
+VSL,xôi gà,1,4962
+VSL,xôi gấc,1,4963
+VSL,xông hơi,1,4964
+VSL,xúc xắc,1,4965
+VSL,xăm,1,4966
+VSL,xăng,1,4967
+VSL,xăng-ti-mét (cm),1,4968
+VSL,xăng-ti-mét-khối (cm3),1,4969
+VSL,xăng-ti-mét-vuông (cm2),1,4970
+VSL,xưa,3,4971
+VSL,xương rồng,1,4972
+VSL,xả rác,1,4973
+VSL,xảy ra,1,4974
+VSL,xẻng,1,4975
+VSL,xếp,1,4976
+VSL,xếp hàng,1,4977
+VSL,xếp hàng dọc,1,4978
+VSL,xếp hàng ngang,1,4979
+VSL,xếp hàng ưu tiên,1,4980
+VSL,xếp hình,1,4981
+VSL,xịt côn trùng,1,4982
+VSL,xứ Nghệ,1,4983
+VSL,xử lý,1,4984
+VSL,y,1,4985
+VSL,y tế,1,4986
+VSL,yên bình,1,4987
+VSL,yên lòng,1,4988
+VSL,yên ngựa,1,4989
+VSL,yên tâm,1,4990
+VSL,yêu cầu,3,4991
+VSL,yêu mến (yêu quí),3,4992
+VSL,yêu nước Việt Nam,1,4993
+VSL,yếm,1,4994
+VSL,yếu,3,4995
+VSL,yếu tố,1,4996
+VSL,z,1,4997
+VSL,Âu Cơ,1,4998
+VSL,Ê Đê,1,4999
+VSL,Ê-ti-ô-pi-a (nước Ê-ti-ô-pi-a),1,5000
+VSL,Ô-lim-píc,1,5001
+VSL,ác,1,5002
+VSL,ác cảm,1,5003
+VSL,ác mộng,1,5004
+VSL,ác độc,1,5005
+VSL,áo,1,5006
+VSL,áo cánh,1,5007
+VSL,áo kẻ sọc,1,5008
+VSL,áo len,1,5009
+VSL,áo phao,1,5010
+VSL,áo phông,3,5011
+VSL,áo đồng phục,3,5012
+VSL,áo ấm,1,5013
+VSL,áp phích,1,5014
+VSL,â,3,5015
+VSL,âm thanh,1,5016
+VSL,ân hận,3,5017
+VSL,ê,3,5018
+VSL,ích lợi,1,5019
+VSL,ít,1,5020
+VSL,ít hơn,1,5021
+VSL,ít nhất,1,5022
+VSL,óc,1,5023
+VSL,ô,3,5024
+VSL,ô nhiễm,1,5025
+VSL,ô tô,1,5026
+VSL,ô ăn quan,1,5027
+VSL,ôm,1,5028
+VSL,ôn luyện,1,5029
+VSL,ôn tập,1,5030
+VSL,ông bà,3,5031
+VSL,ông già,1,5032
+VSL,ông ngoại,3,5033
+VSL,ông nội,3,5034
+VSL,úp,1,5035
+VSL,ý chí,1,5036
+VSL,ý nghĩa,3,5037
+VSL,ý thức,1,5038
+VSL,ý tưởng,1,5039
+VSL,ă,3,5040
+VSL,ăn bám,1,5041
+VSL,ăn cóc,1,5042
+VSL,ăn diện,1,5043
+VSL,ăn hối lộ,1,5044
+VSL,ăn uống,1,5045
+VSL,ăn vú sữa,1,5046
+VSL,ăn vú sữa (bằng thìa),1,5047
+VSL,ăn vặt,1,5048
+VSL,ăn vụng,1,5049
+VSL,ăn vừa,1,5050
+VSL,ăn xin,1,5051
+VSL,ăn ít,1,5052
+VSL,ăn đủ,1,5053
+VSL,Điện Biên Phủ,1,5054
+VSL,Đu Bai (nước Đu Bai),1,5055
+VSL,Đông Dương,1,5056
+VSL,Đông Nam,1,5057
+VSL,Đông Nam Á,1,5058
+VSL,Đông Timor (nước Đông Timor),1,5059
+VSL,Đảng,1,5060
+VSL,Đắk Lắk,1,5061
+VSL,Đặng Văn Ngữ,1,5062
+VSL,Đền Hùng,1,5063
+VSL,Đồng Nai,1,5064
+VSL,Đồng Tháp Mười,1,5065
+VSL,đ,1,5066
+VSL,đan,1,5067
+VSL,đau bụng,1,5068
+VSL,đau chân,1,5069
+VSL,đau mắt,1,5070
+VSL,đau mắt đỏ,1,5071
+VSL,đau tai,1,5072
+VSL,đau tay,1,5073
+VSL,đen láy (như đen nhánh),3,5074
+VSL,đen đủi,1,5075
+VSL,đeo kính,1,5076
+VSL,đi,1,5077
+VSL,đi dạo,3,5078
+VSL,đi học,1,5079
+VSL,"đi lạc (đường, rừng..)",1,5080
+VSL,đi tuần,1,5081
+VSL,đi vệ sinh,1,5082
+VSL,đinh,1,5083
+VSL,điêu khắc,1,5084
+VSL,điều hòa,2,5085
+VSL,điều khiển,1,5086
+VSL,điều kiện,1,5087
+VSL,điều phối,2,5088
+VSL,điều tra,1,5089
+VSL,điều trị,1,5090
+VSL,điểm ở giữa đoạn thẳng,1,5091
+VSL,điện,3,5092
+VSL,điện thoại,1,5093
+VSL,đo,1,5094
+VSL,đoàn cải lương,1,5095
+VSL,đoàn thanh niên,1,5096
+VSL,đoàn tụ,1,5097
+VSL,đoán,1,5098
+VSL,đoạn thơ,1,5099
+VSL,đoạn thẳng,1,5100
+VSL,đoạn văn,1,5101
+VSL,đua ngựa,1,5102
+VSL,đua thuyền,1,5103
+VSL,đua xe máy,1,5104
+VSL,đua đòi,1,5105
+VSL,đun nấu,1,5106
+VSL,đuôi,1,5107
+VSL,đuôi chuột,1,5108
+VSL,đuôi cá,1,5109
+VSL,đuốc,1,5110
+VSL,đài sen,1,5111
+VSL,đàn bướm,1,5112
+VSL,đàn bầu,1,5113
+VSL,đàn ghi ta,1,5114
+VSL,đàn kiến,1,5115
+VSL,đàn tơ-rưng,1,5116
+VSL,đàn xê lô đại vĩ cầm,1,5117
+VSL,đàng hoàng,1,5118
+VSL,đàng ngoài,1,5119
+VSL,đàng trong,1,5120
+VSL,đào tạo,1,5121
+VSL,đá bóng,1,5122
+VSL,đám ma,1,5123
+VSL,đám mây,1,5124
+VSL,đáng quý,1,5125
+VSL,đánh,1,5126
+VSL,đánh bắt,1,5127
+VSL,đánh cầu lông,1,5128
+VSL,đánh giá,1,5129
+VSL,đánh răng,2,5130
+VSL,đánh trống,1,5131
+VSL,đèn báo giao thông,3,5132
+VSL,đèn lồng,1,5133
+VSL,đèn pin,3,5134
+VSL,đèn vàng,3,5135
+VSL,đèn xanh,3,5136
+VSL,đèn ông sao,1,5137
+VSL,đèn điện,3,5138
+VSL,đèn đỏ,1,5139
+VSL,đèo,1,5140
+VSL,đèo Hải Vân,3,5141
+VSL,đích,1,5142
+VSL,đòi,1,5143
+VSL,đòi hỏi,1,5144
+VSL,đói không_,1,5145
+VSL,đón,1,5146
+VSL,đón tiếp,1,5147
+VSL,đóng cửa,1,5148
+VSL,đóng dấu,1,5149
+VSL,đóng góp,1,5150
+VSL,đô thị,1,5151
+VSL,đôi chân,1,5152
+VSL,đôi dép,1,5153
+VSL,đôi tay,1,5154
+VSL,đôi_cặp,1,5155
+VSL,đông lạnh,1,5156
+VSL,đùa,3,5157
+VSL,đùm bọc,1,5158
+VSL,đúng không_,3,5159
+VSL,đăng ký,1,5160
+VSL,đăng nhập,1,5161
+VSL,đĩa,1,5162
+VSL,đĩa DVD,1,5163
+VSL,đũa,1,5164
+VSL,đơn giản,1,5165
+VSL,đưa đón,1,5166
+VSL,đường Nguyễn Huệ,1,5167
+VSL,đường biên giới,1,5168
+VSL,đường bộ,1,5169
+VSL,đường cao,1,5170
+VSL,đường chéo,1,5171
+VSL,đường chỉ tay,1,5172
+VSL,đường hàng không,1,5173
+VSL,đường hầm,1,5174
+VSL,đường kính,1,5175
+VSL,đường ray xe lửa,1,5176
+VSL,đường sắt,1,5177
+VSL,đường thuỷ,1,5178
+VSL,đường thẳng,1,5179
+VSL,đường tròn,1,5180
+VSL,đại diện,3,5181
+VSL,đại dương,1,5182
+VSL,đại số,1,5183
+VSL,đại sứ,1,5184
+VSL,đại tá,1,5185
+VSL,đại tướng,1,5186
+VSL,đại úy,1,5187
+VSL,đạn,1,5188
+VSL,đạo diễn,1,5189
+VSL,đảm nhiệm,1,5190
+VSL,đảo,1,5191
+VSL,đảo Hoàng Sa,1,5192
+VSL,đảo Lý Sơn,1,5193
+VSL,đảo Phú Quốc,1,5194
+VSL,đảo Trường Sa,1,5195
+VSL,đất,1,5196
+VSL,đất màu mỡ,1,5197
+VSL,đất nước bị chia cắt (Việt Nam),1,5198
+VSL,đất nặn,1,5199
+VSL,đất ruộng,1,5200
+VSL,đất trồng cây,1,5201
+VSL,đấu tranh,1,5202
+VSL,đấu vật,1,5203
+VSL,đầu gối,1,5204
+VSL,đầu hàng,1,5205
+VSL,đầu tiên,1,5206
+VSL,đầu tàu,1,5207
+VSL,đầu tư,1,5208
+VSL,đầu xuôi đuôi lọt,1,5209
+VSL,đầy,1,5210
+VSL,đầy tớ,1,5211
+VSL,đầy đủ,1,5212
+VSL,đẩy,1,5213
+VSL,đập,1,5214
+VSL,đắt đỏ,1,5215
+VSL,đằng sau,1,5216
+VSL,đằng trước,1,5217
+VSL,đặc biệt,4,5218
+VSL,đặc điểm,1,5219
+VSL,đặt,1,5220
+VSL,đẹp không_,3,5221
+VSL,đẹp không_ (người),3,5222
+VSL,đẹp mê hồn,1,5223
+VSL,đẹp đẽ (như đẹp),1,5224
+VSL,đếm,1,5225
+VSL,đề nghị,3,5226
+VSL,đề phòng,1,5227
+VSL,đề tài,1,5228
+VSL,đề-ca-mét (dam),1,5229
+VSL,đề-ca-mét vuông (dam2),1,5230
+VSL,đề-xi-mét (dm),1,5231
+VSL,đề-xi-mét khối (dm3),1,5232
+VSL,đề-xi-mét vuông (dm2),1,5233
+VSL,đền,1,5234
+VSL,đều đặn,1,5235
+VSL,để (đặt),1,5236
+VSL,đệm,1,5237
+VSL,đỉnh,1,5238
+VSL,đỉnh núi,1,5239
+VSL,địa chỉ,3,5240
+VSL,địa cầu,1,5241
+VSL,địa hình,1,5242
+VSL,địa lí,1,5243
+VSL,địa điểm,1,5244
+VSL,địa đạo Củ Chi,1,5245
+VSL,định vị,1,5246
+VSL,đọc sách,1,5247
+VSL,đỏ thắm,1,5248
+VSL,đối diện,1,5249
+VSL,đối thoại,1,5250
+VSL,đối tượng,1,5251
+VSL,đối xứng,1,5252
+VSL,đối xử,1,5253
+VSL,đồ chơi,1,5254
+VSL,đồ dùng dạy học,1,5255
+VSL,đồ dùng học tập,1,5256
+VSL,đồ uống,1,5257
+VSL,đồ ăn,1,5258
+VSL,đồn công an,1,5259
+VSL,đồng bào,1,5260
+VSL,đồng bằng,1,5261
+VSL,đồng bằng duyên hải miền Trung,1,5262
+VSL,đồng bằng sông Cửu Long,1,5263
+VSL,đồng bằng sông Hồng,1,5264
+VSL,đồng hồ,1,5265
+VSL,đồng lúa,1,5266
+VSL,đồng phục,3,5267
+VSL,đồng ruộng,1,5268
+VSL,đồng tiền,1,5269
+VSL,đổ nước,1,5270
+VSL,đổi,1,5271
+VSL,đổi mới,1,5272
+VSL,độc hại,1,5273
+VSL,độc lập,1,5274
+VSL,đội thiếu niên,1,5275
+VSL,đội trưởng,1,5276
+VSL,động cơ,1,5277
+VSL,động viên,1,5278
+VSL,đỡ,1,5279
+VSL,đợi,3,5280
+VSL,đứng nghiêm,1,5281
+VSL,đứng đầu (hàng đầu),1,5282
+VSL,đựng,1,5283
+VSL,ơ,1,5284
+VSL,ư,1,5285
+VSL,ưu tiên,3,5286
+VSL,ưu điểm,1,5287
+VSL,Ả Rập (nước Ả Rập),1,5288
+VSL,ảo thuật,1,5289
+VSL,ấm no,1,5290
+VSL,ấm trà,1,5291
+VSL,ấm áp,1,5292
+VSL,ấm đun nước,1,5293
+VSL,ấn,1,5294
+VSL,ấn tượng,1,5295
+VSL,ầm ĩ,1,5296
+VSL,ẩm mốc,1,5297
+VSL,ẩm ướt,1,5298
+VSL,ế ẩm,1,5299
+VSL,ốc vít,1,5300
+VSL,ốm đau,1,5301
+VSL,ống nghe,1,5302
+VSL,ống nhòm,1,5303
+VSL,ống nước,1,5304
+VSL,ổn định,1,5305
+VSL,ở ngoài,3,5306
+VSL,ở trong,1,5307
+VSL,ủng,1,5308
+VSL,ủng hộ,1,5309
+VSL,ủy ban,1,5310
+VSL,ủy ban nhân dân,1,5311
+VSL,ủy quyền,3,5312
+VSL,ức chế,1,5313

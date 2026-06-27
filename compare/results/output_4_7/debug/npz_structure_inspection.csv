@@ -1,0 +1,121 @@
+﻿dataset,file,key,shape,dtype
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,label,(),<U1
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,video_name,(),<U9
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,target_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,source_fps,(),float32
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,source_total_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,sample_indices,"(60,)",int32
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,train_feature_dim,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,pose,"(60, 330)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,hands,"(60, 252)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,face,"(60, 52)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,mouth,"(60, 36)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01610.npz,valid_mask,"(60, 4)",uint8
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,label,(),<U1
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,video_name,(),<U9
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,target_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,source_fps,(),float32
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,source_total_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,sample_indices,"(60,)",int32
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,train_feature_dim,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,pose,"(60, 330)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,hands,"(60, 252)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,face,"(60, 52)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,mouth,"(60, 36)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01612.npz,valid_mask,"(60, 4)",uint8
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,label,(),<U1
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,video_name,(),<U9
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,target_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,source_fps,(),float32
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,source_total_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,sample_indices,"(60,)",int32
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,train_feature_dim,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,pose,"(60, 330)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,hands,"(60, 252)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,face,"(60, 52)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,mouth,"(60, 36)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/01615.npz,valid_mask,"(60, 4)",uint8
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,label,(),<U1
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,video_name,(),<U9
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,target_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,source_fps,(),float32
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,source_total_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,sample_indices,"(60,)",int32
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,train_feature_dim,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,pose,"(60, 330)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,hands,"(60, 252)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,face,"(60, 52)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,mouth,"(60, 36)",float16
+ASL,/content/drive/MyDrive/data/ASL/a/66039.npz,valid_mask,"(60, 4)",uint8
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,label,(),<U5
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,video_name,(),<U9
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,target_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,source_fps,(),float32
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,source_total_frames,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,sample_indices,"(60,)",int32
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,train_feature_dim,(),int32
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,pose,"(60, 330)",float16
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,hands,"(60, 252)",float16
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,face,"(60, 52)",float16
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,mouth,"(60, 36)",float16
+ASL,/content/drive/MyDrive/data/ASL/a lot/02124.npz,valid_mask,"(60, 4)",uint8
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,label,(),<U12
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,video_name,(),<U9
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,target_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,source_fps,(),float32
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,source_total_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,sample_indices,"(60,)",int32
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,train_feature_dim,(),int32
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,pose,"(60, 330)",float16
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,hands,"(60, 252)",float16
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,face,"(60, 52)",float16
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,mouth,"(60, 36)",float16
+VSL,/content/drive/MyDrive/data/VSL/0 (số không)/D0529.npz,valid_mask,"(60, 4)",uint8
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,label,(),<U1
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,video_name,(),<U9
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,target_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,source_fps,(),float32
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,source_total_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,sample_indices,"(60,)",int32
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,train_feature_dim,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,pose,"(60, 330)",float16
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,hands,"(60, 252)",float16
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,face,"(60, 52)",float16
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,mouth,"(60, 36)",float16
+VSL,/content/drive/MyDrive/data/VSL/1/D0530.npz,valid_mask,"(60, 4)",uint8
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,label,(),<U21
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,video_name,(),<U10
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,target_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,source_fps,(),float32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,source_total_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,sample_indices,"(60,)",int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,train_feature_dim,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,pose,"(60, 330)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,hands,"(60, 252)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,face,"(60, 52)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,mouth,"(60, 36)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551B.npz,valid_mask,"(60, 4)",uint8
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,label,(),<U21
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,video_name,(),<U10
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,target_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,source_fps,(),float32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,source_total_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,sample_indices,"(60,)",int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,train_feature_dim,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,pose,"(60, 330)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,hands,"(60, 252)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,face,"(60, 52)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,mouth,"(60, 36)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551N.npz,valid_mask,"(60, 4)",uint8
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,label,(),<U21
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,video_name,(),<U10
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,target_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,source_fps,(),float32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,source_total_frames,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,sample_indices,"(60,)",int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,train_feature_dim,(),int32
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,pose,"(60, 330)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,hands,"(60, 252)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,face,"(60, 52)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,mouth,"(60, 36)",float16
+VSL,/content/drive/MyDrive/data/VSL/1 000 000 (một triệu)/D0551T.npz,valid_mask,"(60, 4)",uint8
