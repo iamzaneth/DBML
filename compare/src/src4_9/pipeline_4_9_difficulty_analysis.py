@@ -35,17 +35,14 @@ SEQUENCE_FILE = "sequence_length_by_label.csv"
 SIGNER_OUTPUT = "signer_variation.csv"
 MOTION_OUTPUT = "motion_complexity_ranking.csv"
 SEQUENCE_OUTPUT = "sequence_length_variation.csv"
-SUMMARY_OUTPUT = "intrinsic_factors_summary.csv"
-DATASET_SUMMARY_OUTPUT = "dataset_summary.csv"
-TOP20_SIGNER_OUTPUT = "top20_signer_variation.csv"
-TOP20_MOTION_OUTPUT = "top20_motion_complexity.csv"
-TOP20_SEQUENCE_OUTPUT = "top20_sequence_length_variation.csv"
+SUMMARY_OUTPUT = "difficulty_summary.csv"
 
 FIGURE_DIRNAME = "figures"
 LOG_DIRNAME = "logs"
 
 RANDOM_STATE = 42
 PLOT_DPI = 300
+DATASET_ORDER = ("VSL", "ASL")
 
 
 class PipelineError(RuntimeError):
@@ -170,38 +167,16 @@ def choose_key_column(df: pd.DataFrame) -> str:
     return key
 
 
-def standardize_feature_groups(
-    df: pd.DataFrame,
-    feature_groups: list[tuple[str, list[str]]],
-) -> pd.DataFrame:
-    scaled_groups: list[pd.DataFrame] = []
-    for group_name, feature_cols in feature_groups:
-        if not feature_cols:
-            raise PipelineError(f"No feature columns available for standardization in group `{group_name}`.")
-        matrix = df[feature_cols].replace([np.inf, -np.inf], np.nan)
-        fill_values = matrix.median(axis=0, numeric_only=True).fillna(0.0)
-        matrix = matrix.fillna(fill_values)
-        scaler = StandardScaler()
-        scaled = scaler.fit_transform(matrix.to_numpy(dtype=float))
-        scaled_groups.append(pd.DataFrame(scaled, columns=feature_cols, index=df.index))
-    return pd.concat(scaled_groups, axis=1)
+def standardize_numeric_features(df: pd.DataFrame, feature_cols: list[str]) -> pd.DataFrame:
+    if not feature_cols:
+        raise PipelineError("No feature columns available for standardization.")
 
-
-def compute_cosine_distance(matrix: np.ndarray, centroid: np.ndarray) -> np.ndarray:
-    centroid = centroid.reshape(-1)
-    centroid_norm = float(np.linalg.norm(centroid))
-    sample_norms = np.linalg.norm(matrix, axis=1)
-    if centroid_norm == 0.0:
-        return np.where(sample_norms == 0.0, 0.0, 1.0)
-
-    denom = sample_norms * centroid_norm
-    distances = np.ones(len(matrix), dtype=float)
-    valid = denom > 0.0
-    if np.any(valid):
-        similarities = np.zeros(len(matrix), dtype=float)
-        similarities[valid] = (matrix[valid] @ centroid) / denom[valid]
-        distances[valid] = 1.0 - similarities[valid]
-    return np.clip(distances, 0.0, 2.0)
+    matrix = df[feature_cols].replace([np.inf, -np.inf], np.nan)
+    fill_values = matrix.median(axis=0, numeric_only=True).fillna(0.0)
+    matrix = matrix.fillna(fill_values)
+    scaler = StandardScaler()
+    scaled = scaler.fit_transform(matrix.to_numpy(dtype=float))
+    return pd.DataFrame(scaled, columns=feature_cols, index=df.index)
 
 
 def aggregate_video_table(
@@ -362,8 +337,8 @@ def compute_signer_variation(merged: pd.DataFrame, logger: logging.Logger) -> pd
     if missing:
         raise PipelineError("Missing required signer feature columns: " + ", ".join(missing))
 
-    logger.info("Filling missing signer features using column medians and applying group-wise StandardScaler.")
-    scaled_features = standardize_feature_groups(merged, feature_groups)
+    logger.info("Filling missing signer features using column medians and applying StandardScaler across all signer features.")
+    scaled_features = standardize_numeric_features(merged, feature_cols)
     scaled = pd.concat([merged[["dataset", "gloss", "video_key"]], scaled_features], axis=1)
 
     rows: list[dict[str, Any]] = []
@@ -372,31 +347,27 @@ def compute_signer_variation(merged: pd.DataFrame, logger: logging.Logger) -> pd
         matrix = group[feature_cols].to_numpy(dtype=float)
         centroid = matrix.mean(axis=0, keepdims=True)
         euclidean_distances = np.linalg.norm(matrix - centroid, axis=1)
-        cosine_distances = compute_cosine_distance(matrix, centroid)
         rows.append(
             {
                 "dataset": dataset,
                 "gloss": gloss,
                 "num_samples": int(len(group)),
-                "mean_euclidean_distance": float(np.mean(euclidean_distances)),
-                "median_euclidean_distance": float(np.median(euclidean_distances)),
-                "std_euclidean_distance": float(np.std(euclidean_distances, ddof=0)),
-                "euclidean_distance_variance": float(np.var(euclidean_distances, ddof=0)),
-                "max_euclidean_distance": float(np.max(euclidean_distances)),
-                "mean_cosine_distance": float(np.mean(cosine_distances)),
-                "median_cosine_distance": float(np.median(cosine_distances)),
-                "std_cosine_distance": float(np.std(cosine_distances, ddof=0)),
-                "cosine_distance_variance": float(np.var(cosine_distances, ddof=0)),
-                "max_cosine_distance": float(np.max(cosine_distances)),
+                "mean_distance": float(np.mean(euclidean_distances)),
+                "median_distance": float(np.median(euclidean_distances)),
+                "std_distance": float(np.std(euclidean_distances, ddof=0)),
+                "within_class_variance": float(np.var(euclidean_distances, ddof=0)),
+                "max_distance": float(np.max(euclidean_distances)),
             }
         )
 
     out = pd.DataFrame(rows)
+    out["dataset"] = pd.Categorical(out["dataset"], categories=list(DATASET_ORDER), ordered=True)
     out = out.sort_values(
-        ["mean_euclidean_distance", "dataset", "gloss"],
-        ascending=[False, True, True],
+        ["dataset", "mean_distance", "gloss"],
+        ascending=[True, False, True],
         kind="mergesort",
     ).reset_index(drop=True)
+    out["dataset"] = out["dataset"].astype(str)
     logger.info("Computed signer variation for %d glosses.", len(out))
     return out
 
@@ -488,9 +459,14 @@ def create_top20_bar_chart(
     metric: str,
     title: str,
     output_path: Path,
+    *,
+    include_dataset_prefix: bool = True,
 ) -> None:
     top = df.sort_values(metric, ascending=False, kind="mergesort").head(20).copy()
-    top["label_display"] = top["dataset"].astype(str) + " | " + top["gloss"].astype(str)
+    if include_dataset_prefix:
+        top["label_display"] = top["dataset"].astype(str) + " | " + top["gloss"].astype(str)
+    else:
+        top["label_display"] = top["gloss"].astype(str)
     top = top.sort_values(metric, ascending=True, kind="mergesort")
 
     fig, ax = plt.subplots(figsize=(12, 8))
@@ -589,11 +565,13 @@ def build_motion_complexity_table(input_47: Path, logger: logging.Logger) -> pd.
             "motion_complexity_score",
         ]
     ].copy()
+    out["dataset"] = pd.Categorical(out["dataset"], categories=list(DATASET_ORDER), ordered=True)
     out = out.sort_values(
-        ["motion_complexity_score", "dataset", "gloss"],
-        ascending=[False, True, True],
+        ["dataset", "motion_complexity_score", "gloss"],
+        ascending=[True, False, True],
         kind="mergesort",
     ).reset_index(drop=True)
+    out["dataset"] = out["dataset"].astype(str)
     logger.info("Prepared motion complexity ranking for %d glosses.", len(out))
     return out
 
@@ -623,23 +601,15 @@ def build_sequence_length_table(input_47: Path, logger: logging.Logger) -> pd.Da
 
     agg = aggregate_by_gloss(work, logger=logger)
     out = agg[["dataset", "gloss", "num_samples", "mean_frames", "std_frames", "sequence_length_variance"]].copy()
+    out["dataset"] = pd.Categorical(out["dataset"], categories=list(DATASET_ORDER), ordered=True)
     out = out.sort_values(
-        ["sequence_length_variance", "dataset", "gloss"],
-        ascending=[False, True, True],
+        ["dataset", "sequence_length_variance", "gloss"],
+        ascending=[True, False, True],
         kind="mergesort",
     ).reset_index(drop=True)
+    out["dataset"] = out["dataset"].astype(str)
     logger.info("Prepared sequence length variation ranking for %d glosses.", len(out))
     return out
-
-
-def make_summary_frame(section: str, metric: str, df: pd.DataFrame) -> dict[str, Any]:
-    summary = compute_stat_summary(df[metric])
-    return {
-        "analysis": section,
-        "metric": metric,
-        "num_glosses": int(len(df)),
-        **summary,
-    }
 
 
 def build_summary_table(
@@ -647,76 +617,64 @@ def build_summary_table(
     motion_df: pd.DataFrame,
     sequence_df: pd.DataFrame,
 ) -> pd.DataFrame:
-    rows = [
-        make_summary_frame("Signer Variation", "mean_euclidean_distance", signer_df),
-        make_summary_frame("Motion Complexity", "motion_complexity_score", motion_df),
-        make_summary_frame("Sequence Length Variation", "sequence_length_variance", sequence_df),
-    ]
-    return pd.DataFrame(rows)
-
-
-def build_dataset_summary_table(
-    signer_df: pd.DataFrame,
-    motion_df: pd.DataFrame,
-    sequence_df: pd.DataFrame,
-) -> pd.DataFrame:
-    datasets = sorted(
-        set(signer_df["dataset"].astype(str))
-        | set(motion_df["dataset"].astype(str))
-        | set(sequence_df["dataset"].astype(str))
-    )
     rows: list[dict[str, Any]] = []
-    for dataset in datasets:
-        signer_mask = signer_df["dataset"].astype(str) == dataset
-        motion_mask = motion_df["dataset"].astype(str) == dataset
-        sequence_mask = sequence_df["dataset"].astype(str) == dataset
-        gloss_count = len(
-            set(signer_df.loc[signer_mask, "gloss"].astype(str))
-            | set(motion_df.loc[motion_mask, "gloss"].astype(str))
-            | set(sequence_df.loc[sequence_mask, "gloss"].astype(str))
-        )
-        signer_summary = compute_stat_summary(signer_df.loc[signer_mask, "mean_euclidean_distance"])
-        motion_summary = compute_stat_summary(motion_df.loc[motion_mask, "motion_complexity_score"])
-        sequence_summary = compute_stat_summary(sequence_df.loc[sequence_mask, "sequence_length_variance"])
-        rows.append(
-            {
-                "dataset": dataset,
-                "num_glosses": int(gloss_count),
-                "mean_signer_variation": signer_summary["mean"],
-                "std_signer_variation": signer_summary["std"],
-                "mean_motion_complexity": motion_summary["mean"],
-                "std_motion_complexity": motion_summary["std"],
-                "mean_sequence_length_variance": sequence_summary["mean"],
-                "std_sequence_length_variance": sequence_summary["std"],
-            }
+    for dataset in DATASET_ORDER:
+        signer_subset = signer_df.loc[signer_df["dataset"].astype(str) == dataset]
+        motion_subset = motion_df.loc[motion_df["dataset"].astype(str) == dataset]
+        sequence_subset = sequence_df.loc[sequence_df["dataset"].astype(str) == dataset]
+        rows.extend(
+            [
+                {
+                    "dataset": dataset,
+                    "analysis": "Signer Variation",
+                    "metric": "mean_distance",
+                    "num_glosses": int(len(signer_subset)),
+                    **compute_stat_summary(signer_subset["mean_distance"]),
+                },
+                {
+                    "dataset": dataset,
+                    "analysis": "Motion Complexity",
+                    "metric": "motion_complexity_score",
+                    "num_glosses": int(len(motion_subset)),
+                    **compute_stat_summary(motion_subset["motion_complexity_score"]),
+                },
+                {
+                    "dataset": dataset,
+                    "analysis": "Sequence Length Variation",
+                    "metric": "sequence_length_variance",
+                    "num_glosses": int(len(sequence_subset)),
+                    **compute_stat_summary(sequence_subset["sequence_length_variance"]),
+                },
+            ]
         )
     return pd.DataFrame(rows)
 
 
-def save_figure_bundle(
+def save_dataset_figure_bundle(
     output_dir: Path,
     figure_name_prefix: str,
     df: pd.DataFrame,
     metric: str,
     title_prefix: str,
-    top20_title: str,
+    dataset: str,
 ) -> None:
     create_histogram(
         df,
         metric,
-        f"{title_prefix} Histogram",
-        output_dir / f"{figure_name_prefix}_histogram.png",
+        f"{title_prefix} Histogram - {dataset}",
+        output_dir / f"{figure_name_prefix}_histogram_{dataset}.png",
     )
     create_top20_bar_chart(
         df,
         metric,
-        top20_title,
-        output_dir / f"{figure_name_prefix}_top20.png",
+        f"Top 20 {title_prefix} - {dataset}",
+        output_dir / f"{figure_name_prefix}_top20_{dataset}.png",
+        include_dataset_prefix=False,
     )
 
 
-def export_top20_table(df: pd.DataFrame, metric: str, path: Path) -> None:
-    write_csv(df.sort_values(metric, ascending=False, kind="mergesort").head(20).reset_index(drop=True), path)
+def dataset_subset(df: pd.DataFrame, dataset: str) -> pd.DataFrame:
+    return df.loc[df["dataset"].astype(str) == dataset].copy()
 
 
 def parse_args() -> argparse.Namespace:
@@ -748,61 +706,43 @@ def main() -> None:
     motion_complexity = build_motion_complexity_table(args.input_47, logger)
     sequence_variation = build_sequence_length_table(args.input_47, logger)
     summary = build_summary_table(signer_variation, motion_complexity, sequence_variation)
-    dataset_summary = build_dataset_summary_table(signer_variation, motion_complexity, sequence_variation)
 
     logger.info("Writing CSV outputs.")
     write_csv(signer_variation, output_dir / SIGNER_OUTPUT)
     write_csv(motion_complexity, output_dir / MOTION_OUTPUT)
     write_csv(sequence_variation, output_dir / SEQUENCE_OUTPUT)
     write_csv(summary, output_dir / SUMMARY_OUTPUT)
-    write_csv(dataset_summary, output_dir / DATASET_SUMMARY_OUTPUT)
-    export_top20_table(signer_variation, "mean_euclidean_distance", output_dir / TOP20_SIGNER_OUTPUT)
-    export_top20_table(motion_complexity, "motion_complexity_score", output_dir / TOP20_MOTION_OUTPUT)
-    export_top20_table(sequence_variation, "sequence_length_variance", output_dir / TOP20_SEQUENCE_OUTPUT)
 
     logger.info("Generating publication-quality figures at %d dpi.", PLOT_DPI)
-    save_figure_bundle(
-        figures_dir,
-        "signer_variation",
-        signer_variation,
-        "mean_euclidean_distance",
-        "Signer Variation",
-        "Top Signer Variation",
-    )
-    create_grouped_boxplot(
-        signer_variation,
-        "mean_euclidean_distance",
-        "Signer Variation Boxplot by Dataset",
-        figures_dir / "signer_variation_boxplot_by_dataset.png",
-    )
-    save_figure_bundle(
-        figures_dir,
-        "motion_complexity",
-        motion_complexity,
-        "motion_complexity_score",
-        "Motion Complexity",
-        "Top Motion Complexity",
-    )
-    create_grouped_boxplot(
-        motion_complexity,
-        "motion_complexity_score",
-        "Motion Complexity Boxplot by Dataset",
-        figures_dir / "motion_complexity_boxplot_by_dataset.png",
-    )
-    save_figure_bundle(
-        figures_dir,
-        "sequence_length_variation",
-        sequence_variation,
-        "sequence_length_variance",
-        "Sequence Length Variation",
-        "Top Temporal Variation",
-    )
-    create_grouped_boxplot(
-        sequence_variation,
-        "sequence_length_variance",
-        "Sequence Length Variation Boxplot by Dataset",
-        figures_dir / "sequence_length_variation_boxplot_by_dataset.png",
-    )
+    for dataset in DATASET_ORDER:
+        signer_subset = dataset_subset(signer_variation, dataset)
+        motion_subset = dataset_subset(motion_complexity, dataset)
+        sequence_subset = dataset_subset(sequence_variation, dataset)
+
+        save_dataset_figure_bundle(
+            figures_dir,
+            "signer_variation",
+            signer_subset,
+            "mean_distance",
+            "Signer Variation",
+            dataset,
+        )
+        save_dataset_figure_bundle(
+            figures_dir,
+            "motion_complexity",
+            motion_subset,
+            "motion_complexity_score",
+            "Motion Complexity",
+            dataset,
+        )
+        save_dataset_figure_bundle(
+            figures_dir,
+            "sequence_length_variation",
+            sequence_subset,
+            "sequence_length_variance",
+            "Sequence Length Variation",
+            dataset,
+        )
 
     logger.info("Completed Section 4.9 successfully.")
     print(f"Section 4.9 outputs written to: {output_dir}")
