@@ -251,6 +251,221 @@ Nguon du lieu:
   - `sequence_length_variance`
   - `motion_complexity_score`
 
+## `output_4_8/gloss_feature_summary.csv`
+
+- So cot: 167
+- Truong du lieu:
+  - `dataset`
+  - `gloss`
+  - `sample_count`
+  - `handshape_features__valid_frame_ratio__mean`
+  - `handshape_features__motion_magnitude__mean`
+  - `handshape_features__thumb_angle_1_mean__mean`
+  - `handshape_features__thumb_angle_1_std__mean`
+  - `handshape_features__thumb_angle_2_mean__mean`
+  - `handshape_features__thumb_angle_2_std__mean`
+  - `handshape_features__thumb_tip_wrist_ratio_mean__mean`
+  - `handshape_features__index_angle_1_mean__mean`
+  - `handshape_features__index_angle_1_std__mean`
+  - `handshape_features__index_angle_2_mean__mean`
+  - `handshape_features__index_angle_2_std__mean`
+  - `handshape_features__index_angle_3_mean__mean`
+  - `handshape_features__index_angle_3_std__mean`
+  - `handshape_features__index_tip_wrist_ratio_mean__mean`
+  - `handshape_features__middle_angle_1_mean__mean`
+  - `handshape_features__middle_angle_1_std__mean`
+  - `handshape_features__middle_angle_2_mean__mean`
+  - `handshape_features__middle_angle_2_std__mean`
+  - `handshape_features__middle_angle_3_mean__mean`
+  - `handshape_features__middle_angle_3_std__mean`
+  - `handshape_features__middle_tip_wrist_ratio_mean__mean`
+  - `handshape_features__ring_angle_1_mean__mean`
+  - `handshape_features__ring_angle_1_std__mean`
+  - `handshape_features__ring_angle_2_mean__mean`
+  - `handshape_features__ring_angle_2_std__mean`
+  - `handshape_features__ring_angle_3_mean__mean`
+  - `handshape_features__ring_angle_3_std__mean`
+  - `handshape_features__ring_tip_wrist_ratio_mean__mean`
+  - `handshape_features__pinky_angle_1_mean__mean`
+  - `handshape_features__pinky_angle_1_std__mean`
+  - `handshape_features__pinky_angle_2_mean__mean`
+  - `handshape_features__pinky_angle_2_std__mean`
+  - `handshape_features__pinky_angle_3_mean__mean`
+  - `handshape_features__pinky_angle_3_std__mean`
+  - `handshape_features__pinky_tip_wrist_ratio_mean__mean`
+  - `handshape_features__thumb_index_distance_ratio_mean__mean`
+  - `handshape_features__thumb_index_distance_ratio_std__mean`
+  - `handshape_features__index_middle_distance_ratio_mean__mean`
+  - `handshape_features__index_middle_distance_ratio_std__mean`
+  - `handshape_features__middle_ring_distance_ratio_mean__mean`
+  - `handshape_features__middle_ring_distance_ratio_std__mean`
+  - `handshape_features__ring_pinky_distance_ratio_mean__mean`
+  - `handshape_features__ring_pinky_distance_ratio_std__mean`
+  - `handshape_features__index_pinky_distance_ratio_mean__mean`
+  - `handshape_features__index_pinky_distance_ratio_std__mean`
+  - `handshape_features__palm_width_ratio_mean__mean`
+  - `handshape_features__openness_mean__mean`
+  - `handshape_features__curvature_proxy_mean__mean`
+  - `location_video__valid_frame_ratio__mean`
+  - `location_video__head_ratio__mean`
+  - `location_video__shoulder_ratio__mean`
+  - `location_video__chest_ratio__mean`
+  - `location_video__waist_ratio__mean`
+  - `location_video__below_waist_ratio__mean`
+  - `orientation_video__valid_frame_ratio__mean`
+  - `orientation_video__finger_dir_x_mean__mean`
+  - `orientation_video__finger_dir_y_mean__mean`
+  - `orientation_video__finger_dir_z_mean__mean`
+  - `orientation_video__palm_normal_x_mean__mean`
+  - `orientation_video__palm_normal_y_mean__mean`
+  - `orientation_video__palm_normal_z_mean__mean`
+  - `motion_features_per_video__total_motion__mean`
+  - `motion_features_per_video__mean_motion__mean`
+  - `motion_features_per_video__max_motion__mean`
+  - `motion_features_per_video__motion_variance__mean`
+  - `motion_features_per_video__mean_velocity__mean`
+  - `motion_features_per_video__max_velocity__mean`
+  - `motion_features_per_video__velocity_std__mean`
+  - `motion_features_per_video__mean_acceleration__mean`
+  - `motion_features_per_video__max_acceleration__mean`
+  - `motion_features_per_video__acceleration_std__mean`
+  - `motion_features_per_video__trajectory_length__mean`
+  - `motion_features_per_video__displacement__mean`
+  - `motion_features_per_video__straightness_ratio__mean`
+  - `motion_features_per_video__direction_change_count__mean`
+  - `motion_features_per_video__trajectory_bbox_area__mean`
+  - `motion_features_per_video__hand_face_dist_mean__mean`
+  - `motion_features_per_video__hand_face_dist_std__mean`
+  - `motion_features_per_video__hand_body_dist_mean__mean`
+  - `motion_features_per_video__hand_body_dist_std__mean`
+  - `motion_features_per_video__left_right_hand_dist_mean__mean`
+  - `motion_features_per_video__left_right_hand_dist_std__mean`
+  - `handshape_features__valid_frame_ratio__std`
+  - `handshape_features__motion_magnitude__std`
+  - `handshape_features__thumb_angle_1_mean__std`
+  - `handshape_features__thumb_angle_1_std__std`
+  - `handshape_features__thumb_angle_2_mean__std`
+  - `handshape_features__thumb_angle_2_std__std`
+  - `handshape_features__thumb_tip_wrist_ratio_mean__std`
+  - `handshape_features__index_angle_1_mean__std`
+  - `handshape_features__index_angle_1_std__std`
+  - `handshape_features__index_angle_2_mean__std`
+  - `handshape_features__index_angle_2_std__std`
+  - `handshape_features__index_angle_3_mean__std`
+  - `handshape_features__index_angle_3_std__std`
+  - `handshape_features__index_tip_wrist_ratio_mean__std`
+  - `handshape_features__middle_angle_1_mean__std`
+  - `handshape_features__middle_angle_1_std__std`
+  - `handshape_features__middle_angle_2_mean__std`
+  - `handshape_features__middle_angle_2_std__std`
+  - `handshape_features__middle_angle_3_mean__std`
+  - `handshape_features__middle_angle_3_std__std`
+  - `handshape_features__middle_tip_wrist_ratio_mean__std`
+  - `handshape_features__ring_angle_1_mean__std`
+  - `handshape_features__ring_angle_1_std__std`
+  - `handshape_features__ring_angle_2_mean__std`
+  - `handshape_features__ring_angle_2_std__std`
+  - `handshape_features__ring_angle_3_mean__std`
+  - `handshape_features__ring_angle_3_std__std`
+  - `handshape_features__ring_tip_wrist_ratio_mean__std`
+  - `handshape_features__pinky_angle_1_mean__std`
+  - `handshape_features__pinky_angle_1_std__std`
+  - `handshape_features__pinky_angle_2_mean__std`
+  - `handshape_features__pinky_angle_2_std__std`
+  - `handshape_features__pinky_angle_3_mean__std`
+  - `handshape_features__pinky_angle_3_std__std`
+  - `handshape_features__pinky_tip_wrist_ratio_mean__std`
+  - `handshape_features__thumb_index_distance_ratio_mean__std`
+  - `handshape_features__thumb_index_distance_ratio_std__std`
+  - `handshape_features__index_middle_distance_ratio_mean__std`
+  - `handshape_features__index_middle_distance_ratio_std__std`
+  - `handshape_features__middle_ring_distance_ratio_mean__std`
+  - `handshape_features__middle_ring_distance_ratio_std__std`
+  - `handshape_features__ring_pinky_distance_ratio_mean__std`
+  - `handshape_features__ring_pinky_distance_ratio_std__std`
+  - `handshape_features__index_pinky_distance_ratio_mean__std`
+  - `handshape_features__index_pinky_distance_ratio_std__std`
+  - `handshape_features__palm_width_ratio_mean__std`
+  - `handshape_features__openness_mean__std`
+  - `handshape_features__curvature_proxy_mean__std`
+  - `location_video__valid_frame_ratio__std`
+  - `location_video__head_ratio__std`
+  - `location_video__shoulder_ratio__std`
+  - `location_video__chest_ratio__std`
+  - `location_video__waist_ratio__std`
+  - `location_video__below_waist_ratio__std`
+  - `orientation_video__valid_frame_ratio__std`
+  - `orientation_video__finger_dir_x_mean__std`
+  - `orientation_video__finger_dir_y_mean__std`
+  - `orientation_video__finger_dir_z_mean__std`
+  - `orientation_video__palm_normal_x_mean__std`
+  - `orientation_video__palm_normal_y_mean__std`
+  - `orientation_video__palm_normal_z_mean__std`
+  - `motion_features_per_video__total_motion__std`
+  - `motion_features_per_video__mean_motion__std`
+  - `motion_features_per_video__max_motion__std`
+  - `motion_features_per_video__motion_variance__std`
+  - `motion_features_per_video__mean_velocity__std`
+  - `motion_features_per_video__max_velocity__std`
+  - `motion_features_per_video__velocity_std__std`
+  - `motion_features_per_video__mean_acceleration__std`
+  - `motion_features_per_video__max_acceleration__std`
+  - `motion_features_per_video__acceleration_std__std`
+  - `motion_features_per_video__trajectory_length__std`
+  - `motion_features_per_video__displacement__std`
+  - `motion_features_per_video__straightness_ratio__std`
+  - `motion_features_per_video__direction_change_count__std`
+  - `motion_features_per_video__trajectory_bbox_area__std`
+  - `motion_features_per_video__hand_face_dist_mean__std`
+  - `motion_features_per_video__hand_face_dist_std__std`
+  - `motion_features_per_video__hand_body_dist_mean__std`
+  - `motion_features_per_video__hand_body_dist_std__std`
+  - `motion_features_per_video__left_right_hand_dist_mean__std`
+  - `motion_features_per_video__left_right_hand_dist_std__std`
+
+## `output_4_8/gloss_similarity.csv`
+
+- So cot: 7
+- Truong du lieu:
+  - `VSL_gloss`
+  - `ASL_gloss`
+  - `cosine_similarity`
+  - `similarity_score`
+  - `sample_count_VSL`
+  - `sample_count_ASL`
+  - `top_difference_features`
+
+## `output_4_8/summary_statistics.csv`
+
+- So cot: 2
+- Truong du lieu:
+  - `metric`
+  - `value`
+
+## `output_4_8/top_different.csv`
+
+- So cot: 7
+- Truong du lieu:
+  - `VSL_gloss`
+  - `ASL_gloss`
+  - `cosine_similarity`
+  - `similarity_score`
+  - `sample_count_VSL`
+  - `sample_count_ASL`
+  - `top_difference_features`
+
+## `output_4_8/top_similar.csv`
+
+- So cot: 7
+- Truong du lieu:
+  - `VSL_gloss`
+  - `ASL_gloss`
+  - `cosine_similarity`
+  - `similarity_score`
+  - `sample_count_VSL`
+  - `sample_count_ASL`
+  - `top_difference_features`
+
 ## `output_4_7/motion_features_per_video.csv`
 
 - So cot: 57

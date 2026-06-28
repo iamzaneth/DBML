@@ -1,0 +1,23 @@
+2026-06-28 23:19:58,896 | INFO | Starting Section 4.9 Dataset-level Recognition Difficulty Analysis
+2026-06-28 23:19:58,896 | INFO | Input 4.6 directory: E:\NAM3\BDML\Project\DBML\compare\results\output_4_6
+2026-06-28 23:19:58,896 | INFO | Input 4.7 directory: E:\NAM3\BDML\Project\DBML\compare\results\output_4_7
+2026-06-28 23:19:58,896 | INFO | Output directory: E:\NAM3\BDML\Project\DBML\compare\results\output_4_9
+2026-06-28 23:19:58,896 | INFO | Random state: 42
+2026-06-28 23:19:58,898 | INFO | Reading E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\handshape_features.csv
+2026-06-28 23:19:59,358 | INFO | handshape_features.csv: loaded 23780 rows, selected 48 numeric columns, aggregated to 11890 unique videos.
+2026-06-28 23:19:59,360 | INFO | Reading E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\location_video.csv
+2026-06-28 23:19:59,556 | INFO | location_video.csv: loaded 23780 rows, selected 5 numeric columns, aggregated to 11890 unique videos.
+2026-06-28 23:19:59,557 | INFO | Reading E:\NAM3\BDML\Project\DBML\compare\results\output_4_6\orientation_video.csv
+2026-06-28 23:19:59,757 | INFO | orientation_video.csv: loaded 23780 rows, selected 6 numeric columns, aggregated to 11890 unique videos.
+2026-06-28 23:19:59,758 | INFO | Reading E:\NAM3\BDML\Project\DBML\compare\results\output_4_7\motion_features_per_video.csv
+2026-06-28 23:20:00,049 | INFO | motion_features_per_video.csv: loaded 16342 rows, selected 12 numeric columns, aggregated to 16342 unique videos.
+2026-06-28 23:20:00,164 | INFO | Merged signer feature table contains 16342 video-level rows.
+2026-06-28 23:20:00,169 | INFO | Filling missing signer features using column medians and applying StandardScaler.
+2026-06-28 23:20:01,857 | INFO | Computed signer variation for 5314 glosses.
+2026-06-28 23:20:01,862 | INFO | Reading motion complexity summary: E:\NAM3\BDML\Project\DBML\compare\results\output_4_7\motion_features_by_label.csv
+2026-06-28 23:20:01,903 | INFO | Prepared motion complexity ranking for 5314 glosses.
+2026-06-28 23:20:01,904 | INFO | Reading sequence length summary: E:\NAM3\BDML\Project\DBML\compare\results\output_4_7\sequence_length_by_label.csv
+2026-06-28 23:20:01,933 | INFO | Prepared sequence length variation ranking for 5314 glosses.
+2026-06-28 23:20:01,937 | INFO | Writing CSV outputs.
+2026-06-28 23:20:02,021 | INFO | Generating publication-quality figures at 300 dpi.
+2026-06-28 23:20:04,587 | INFO | Completed Section 4.9 successfully.

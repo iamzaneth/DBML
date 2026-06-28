@@ -1,0 +1,4 @@
+﻿analysis,metric,num_glosses,mean,std,median,min,max
+Signer Variation,mean_euclidean_distance,5314,2.3129332276231693,2.8877381584161546,0.0,0.0,32.17116834302465
+Motion Complexity,motion_complexity_score,5314,0.1305589164229582,0.09051958752015324,0.09831851,0.0,0.8061404
+Sequence Length Variation,sequence_length_variance,5314,71.61733022374466,312.77808812861065,0.0,0.0,7200.0
