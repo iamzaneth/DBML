@@ -35,7 +35,7 @@ SEQUENCE_FILE = "sequence_length_by_label.csv"
 SIGNER_OUTPUT = "signer_variation.csv"
 MOTION_OUTPUT = "motion_complexity_ranking.csv"
 SEQUENCE_OUTPUT = "sequence_length_variation.csv"
-SUMMARY_OUTPUT = "difficulty_summary.csv"
+SUMMARY_OUTPUT = "intrinsic_factors_summary.csv"
 DATASET_SUMMARY_OUTPUT = "dataset_summary.csv"
 TOP20_SIGNER_OUTPUT = "top20_signer_variation.csv"
 TOP20_MOTION_OUTPUT = "top20_motion_complexity.csv"
@@ -699,6 +699,7 @@ def save_figure_bundle(
     df: pd.DataFrame,
     metric: str,
     title_prefix: str,
+    top20_title: str,
 ) -> None:
     create_histogram(
         df,
@@ -709,7 +710,7 @@ def save_figure_bundle(
     create_top20_bar_chart(
         df,
         metric,
-        f"{title_prefix} Top-20 Glosses",
+        top20_title,
         output_dir / f"{figure_name_prefix}_top20.png",
     )
 
@@ -719,7 +720,7 @@ def export_top20_table(df: pd.DataFrame, metric: str, path: Path) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Section 4.9 Dataset-level Recognition Difficulty Analysis")
+    parser = argparse.ArgumentParser(description="Section 4.9 Dataset-level Intrinsic Factor Analysis")
     parser.add_argument("--input-46", type=Path, default=DEFAULT_INPUT_46, help="Path to output_4_6 directory")
     parser.add_argument("--input-47", type=Path, default=DEFAULT_INPUT_47, help="Path to output_4_7 directory")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT, help="Path to output_4_9 directory")
@@ -736,7 +737,7 @@ def main() -> None:
     logs_dir.mkdir(parents=True, exist_ok=True)
 
     logger = configure_logging(logs_dir)
-    logger.info("Starting Section 4.9 Dataset-level Recognition Difficulty Analysis")
+    logger.info("Starting Section 4.9 Dataset-level Intrinsic Factor Analysis")
     logger.info("Input 4.6 directory: %s", args.input_46)
     logger.info("Input 4.7 directory: %s", args.input_47)
     logger.info("Output directory: %s", output_dir)
@@ -760,7 +761,14 @@ def main() -> None:
     export_top20_table(sequence_variation, "sequence_length_variance", output_dir / TOP20_SEQUENCE_OUTPUT)
 
     logger.info("Generating publication-quality figures at %d dpi.", PLOT_DPI)
-    save_figure_bundle(figures_dir, "signer_variation", signer_variation, "mean_euclidean_distance", "Signer Variation")
+    save_figure_bundle(
+        figures_dir,
+        "signer_variation",
+        signer_variation,
+        "mean_euclidean_distance",
+        "Signer Variation",
+        "Top Signer Variation",
+    )
     create_grouped_boxplot(
         signer_variation,
         "mean_euclidean_distance",
@@ -773,6 +781,7 @@ def main() -> None:
         motion_complexity,
         "motion_complexity_score",
         "Motion Complexity",
+        "Top Motion Complexity",
     )
     create_grouped_boxplot(
         motion_complexity,
@@ -786,6 +795,7 @@ def main() -> None:
         sequence_variation,
         "sequence_length_variance",
         "Sequence Length Variation",
+        "Top Temporal Variation",
     )
     create_grouped_boxplot(
         sequence_variation,
