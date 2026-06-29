@@ -28,6 +28,8 @@ data/processed/ASL/*
 data/processed/VSL/*
 data/processed/v2/*
 
+compare/results/output_4_10/*
+
 # Chỉ cho phép track file .gitkeep để giữ folder
 !data/raw/ASL/.gitkeep
 !data/raw/VSL/.gitkeep
