@@ -43,6 +43,7 @@ LOG_DIRNAME = "logs"
 RANDOM_STATE = 42
 PLOT_DPI = 300
 DATASET_ORDER = ("VSL", "ASL")
+DATASET_DISPLAY_NAMES = {"VSL": "VSL", "ASL": "WLASL"}
 
 
 class PipelineError(RuntimeError):
@@ -158,6 +159,10 @@ def select_numeric_feature_columns(
 
 def source_prefix(source_name: str) -> str:
     return source_name.replace(".csv", "").lower()
+
+
+def display_dataset_name(dataset: str) -> str:
+    return DATASET_DISPLAY_NAMES.get(dataset, dataset)
 
 
 def choose_key_column(df: pd.DataFrame) -> str:
@@ -437,7 +442,7 @@ def create_histogram(
         colors = plt.cm.Set2(np.linspace(0.1, 0.9, len(datasets)))
         for dataset, color in zip(datasets, colors, strict=False):
             values = pd.to_numeric(df.loc[df["dataset"].astype(str) == dataset, metric], errors="coerce").dropna()
-            ax.hist(values, bins=bins, alpha=0.55, label=dataset, color=color, edgecolor="white")
+            ax.hist(values, bins=bins, alpha=0.55, label=display_dataset_name(dataset), color=color, edgecolor="white")
         ax.legend(frameon=False)
     else:
         values = pd.to_numeric(df[metric], errors="coerce").dropna()
@@ -658,17 +663,18 @@ def save_dataset_figure_bundle(
     title_prefix: str,
     dataset: str,
 ) -> None:
+    display_dataset = display_dataset_name(dataset)
     create_histogram(
         df,
         metric,
-        f"{title_prefix} Histogram - {dataset}",
-        output_dir / f"{figure_name_prefix}_histogram_{dataset}.png",
+        f"{title_prefix} Histogram - {display_dataset}",
+        output_dir / f"{figure_name_prefix}_histogram_{display_dataset}.png",
     )
     create_top20_bar_chart(
         df,
         metric,
-        f"Top 20 {title_prefix} - {dataset}",
-        output_dir / f"{figure_name_prefix}_top20_{dataset}.png",
+        f"Top 20 {title_prefix} - {display_dataset}",
+        output_dir / f"{figure_name_prefix}_top20_{display_dataset}.png",
         include_dataset_prefix=False,
     )
 
