@@ -6,6 +6,7 @@ from tqdm import tqdm
 
 from utils_4_6 import (
     OUTPUT_DIR,
+    display_dataset_name,
     extract_hands,
     hand_centers,
     iter_npz_files,
@@ -89,11 +90,12 @@ def main():
     write_csv(summary, "one_two_hand_statistics.csv")
 
     for dataset, part in summary.groupby("dataset"):
+        display_name = display_dataset_name.get(dataset, dataset)
         save_bar(
             part.set_index("activity_type")["percentage"],
-            f"{dataset}: one-hand vs two-hand proxy",
+            f"{display_name}: one-hand vs two-hand proxy",
             "Percentage (%)",
-            os.path.join(OUTPUT_DIR, f"{dataset}_one_two_hand_distribution.png"),
+            os.path.join(OUTPUT_DIR, f"{display_name}_one_two_hand_distribution.png"),
         )
     print("Saved motion_features.csv and one_two_hand_statistics.csv")
 

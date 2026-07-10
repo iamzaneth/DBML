@@ -6,6 +6,7 @@ from tqdm import tqdm
 from utils_4_6 import (
     HAND,
     OUTPUT_DIR,
+    display_dataset_name,
     extract_hands,
     extract_pose,
     iter_npz_files,
@@ -87,11 +88,12 @@ def main():
     write_csv(summary, "location_statistics.csv")
 
     for dataset, part in summary.groupby("dataset"):
+        display_name = display_dataset_name.get(dataset, dataset)
         save_bar(
             part.set_index("dominant_location")["percentage"],
-            f"{dataset}: dominant hand location",
+            f"{display_name}: dominant hand location",
             "Percentage (%)",
-            os.path.join(OUTPUT_DIR, f"{dataset}_location_distribution.png"),
+            os.path.join(OUTPUT_DIR, f"{display_name}_location_distribution.png"),
         )
     print("Saved location_video.csv and location_statistics.csv")
 

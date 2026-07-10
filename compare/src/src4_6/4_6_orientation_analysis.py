@@ -7,6 +7,7 @@ from tqdm import tqdm
 from utils_4_6 import (
     HAND,
     OUTPUT_DIR,
+    display_dataset_name,
     extract_hands,
     iter_npz_files,
     load_npz,
@@ -92,11 +93,12 @@ def main():
     for dataset, part in summary.groupby("dataset"):
         top = part.head(10).copy()
         top["orientation"] = top["dominant_finger_direction"] + "/" + top["dominant_palm_orientation"]
+        display_name = display_dataset_name.get(dataset, dataset)
         save_bar(
             top.set_index("orientation")["percentage"],
-            f"{dataset}: orientation proxy",
+            f"{display_name}: orientation proxy",
             "Percentage (%)",
-            os.path.join(OUTPUT_DIR, f"{dataset}_orientation_distribution.png"),
+            os.path.join(OUTPUT_DIR, f"{display_name}_orientation_distribution.png"),
         )
     print("Saved orientation_video.csv and orientation_statistics.csv")
 

@@ -10,7 +10,12 @@ DATASETS = {
     "ASL": "./dataset/ASL",
 }
 
-OUTPUT_DIR = "./results/structure_4_6"
+display_dataset_name = {
+    "ASL": "WLASL",
+    "VSL": "VSL",
+}
+
+OUTPUT_DIR = Path(__file__).resolve().parents[2] / "results" / "output_4_6"
 EPS = 1e-6
 
 
@@ -174,16 +179,46 @@ def write_csv(df, filename):
     return path
 
 
+LABEL_MAPPER = {
+    # Handshape
+    "neutral_proxy": "Neutral",
+    "closed_proxy": "Closed",
+    "curved_proxy": "Curved",
+    "compact_proxy": "Compact",
+    "open_spread_proxy": "Open Spread",
+    # Location
+    "head": "Head",
+    "shoulder": "Shoulder",
+    "chest": "Chest",
+    "waist": "Waist",
+    "below_waist": "Below Waist",
+    # Motion
+    "two_hand": "Two-hand",
+    "low_hand_activity": "Low Hand Activity",
+    "right_one_hand": "Right One-hand",
+    "left_one_hand": "Left One-hand",
+}
+
+
 def save_bar(series, title, ylabel, path):
     import matplotlib.pyplot as plt
 
-    ax = series.plot(kind="bar", figsize=(9, 5), color="#4C78A8")
-    ax.set_title(title)
-    ax.set_ylabel(ylabel)
-    ax.set_xlabel("")
-    plt.xticks(rotation=30, ha="right")
+    # Clean index labels
+    series = series.copy()
+    series.index = [LABEL_MAPPER.get(str(x), str(x).replace("_", " ").replace("/", " / ").title()) for x in series.index]
+
+    plt.figure(figsize=(8, 5))
+    ax = series.plot(kind="bar", color="#4C78A8", width=0.6)
+    
+    ax.set_title(title, fontsize=14, fontweight="bold", pad=15)
+    ax.set_ylabel(ylabel, fontsize=12, labelpad=10)
+    ax.set_xlabel("", fontsize=12)
+    
+    plt.xticks(rotation=25, ha="right", fontsize=10)
+    plt.yticks(fontsize=10)
+    
     plt.tight_layout()
-    plt.savefig(path, dpi=160)
+    plt.savefig(path, dpi=300)
     plt.close()
 
 

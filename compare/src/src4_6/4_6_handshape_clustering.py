@@ -3,7 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 
-from utils_4_6 import OUTPUT_DIR, read_csv, save_bar, write_csv
+from utils_4_6 import OUTPUT_DIR, display_dataset_name, read_csv, save_bar, write_csv
 
 
 def kmeans_numpy(features, k=8, max_iter=100, seed=42):
@@ -94,11 +94,12 @@ def main(k=8):
 
     for dataset, part in summary.groupby("dataset"):
         top = part.head(8).set_index("cluster_label_proxy")["percentage"]
+        display_name = display_dataset_name.get(dataset, dataset)
         save_bar(
             top,
-            f"{dataset}: handshape proxy cluster distribution",
+            f"{display_name}: handshape proxy cluster distribution",
             "Percentage (%)",
-            os.path.join(OUTPUT_DIR, f"{dataset}_handshape_clusters.png"),
+            os.path.join(OUTPUT_DIR, f"{display_name}_handshape_clusters.png"),
         )
 
     pca_path = os.path.join(OUTPUT_DIR, "handshape_pca.png")
@@ -108,15 +109,30 @@ def main(k=8):
     import matplotlib.pyplot as plt
 
     plt.figure(figsize=(8, 6))
+    
+    # Use different markers for black & white print compatibility
+    markers = {"VSL": "o", "WLASL": "^", "ASL": "^"}
+    
     for dataset in sorted(df["dataset"].unique()):
         mask = df["dataset"].to_numpy() == dataset
-        plt.scatter(coords[mask, 0], coords[mask, 1], s=8, alpha=0.35, label=dataset)
-    plt.title("Handshape feature PCA")
-    plt.xlabel("PC1")
-    plt.ylabel("PC2")
-    plt.legend()
+        display_name = display_dataset_name.get(dataset, dataset)
+        plt.scatter(
+            coords[mask, 0], 
+            coords[mask, 1], 
+            s=12, 
+            alpha=0.45, 
+            label=display_name, 
+            marker=markers.get(display_name, "o")
+        )
+        
+    plt.title("Handshape Feature PCA", fontsize=14, fontweight="bold", pad=15)
+    plt.xlabel("PC1", fontsize=12, labelpad=8)
+    plt.ylabel("PC2", fontsize=12, labelpad=8)
+    plt.xticks(fontsize=10)
+    plt.yticks(fontsize=10)
+    plt.legend(fontsize=10, loc="upper right")
     plt.tight_layout()
-    plt.savefig(pca_path, dpi=160)
+    plt.savefig(pca_path, dpi=300)
     plt.close()
 
     print("Saved handshape_clusters.csv, handshape_cluster_summary.csv and plots")
