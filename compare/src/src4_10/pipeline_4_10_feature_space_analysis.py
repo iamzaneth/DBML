@@ -45,6 +45,9 @@ PLOT_DPI = 300
 DATASET_ORDER = ("VSL", "ASL")
 
 
+DATASET_DISPLAY_NAMES = {"VSL": "VSL", "ASL": "WLASL"}
+
+
 HANDSHAPE_EXCLUDE = {"dataset", "gloss", "video", "path", "hand"}
 HANDSHAPE_PREFIXES = (
     "thumb_",
@@ -171,6 +174,10 @@ def normalize_text(value: Any) -> str:
     if pd.isna(value):
         return ""
     return unicodedata.normalize("NFC", str(value).strip())
+
+
+def display_dataset_name(dataset: str) -> str:
+    return DATASET_DISPLAY_NAMES.get(dataset, dataset)
 
 
 def normalize_video_key(value: Any) -> str:
@@ -312,7 +319,16 @@ def color_values(labels: pd.Series) -> tuple[np.ndarray, dict[str, int]]:
     return values, mapping
 
 
-def scatter_plot(embedding: np.ndarray, labels: pd.Series, title: str, path: Path) -> None:
+def scatter_plot(
+    embedding: np.ndarray,
+    labels: pd.Series,
+    title: str,
+    path: Path,
+    *,
+    x_label: str = "Component 1",
+    y_label: str = "Component 2",
+    note: str | None = None,
+) -> None:
     colors, mapping = color_values(labels)
     fig, ax = plt.subplots(figsize=(11, 8))
     scatter = ax.scatter(
@@ -326,11 +342,22 @@ def scatter_plot(embedding: np.ndarray, labels: pd.Series, title: str, path: Pat
         edgecolors="white",
     )
     ax.set_title(title, fontsize=14, weight="bold", pad=12)
-    ax.set_xlabel("Component 1")
-    ax.set_ylabel("Component 2")
+    ax.set_xlabel(x_label)
+    ax.set_ylabel(y_label)
     ax.grid(alpha=0.2)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
+    if note:
+        ax.text(
+            0.01,
+            -0.12,
+            note,
+            transform=ax.transAxes,
+            ha="left",
+            va="top",
+            fontsize=9,
+            color="#555555",
+        )
     if len(mapping) <= 20:
         handles, _ = scatter.legend_elements(num=len(mapping))
         ax.legend(
@@ -507,7 +534,15 @@ def compute_cluster_metrics(df: pd.DataFrame, x_scaled: np.ndarray) -> tuple[dic
 def run_pca(x_scaled: np.ndarray, labels: pd.Series, dataset_dir: Path, dataset: str) -> tuple[float, float]:
     pca = PCA(n_components=2, random_state=RANDOM_STATE)
     embedding = pca.fit_transform(x_scaled)
-    scatter_plot(embedding, labels, f"{dataset} PCA Feature Space", dataset_dir / "pca.png")
+    scatter_plot(
+        embedding,
+        labels,
+        f"{display_dataset_name(dataset)} PCA Feature Space",
+        dataset_dir / "pca.png",
+        x_label="PC1",
+        y_label="PC2",
+        note="PC1 and PC2 are the first two principal components from PCA.",
+    )
     ratio = pca.explained_variance_ratio_
     pd.DataFrame(
         {
@@ -531,7 +566,15 @@ def run_tsne(x_scaled: np.ndarray, labels: pd.Series, dataset_dir: Path, dataset
         random_state=RANDOM_STATE,
     )
     embedding = tsne.fit_transform(x_scaled)
-    scatter_plot(embedding, labels, f"{dataset} t-SNE Feature Space", dataset_dir / "tsne.png")
+    scatter_plot(
+        embedding,
+        labels,
+        f"{display_dataset_name(dataset)} t-SNE Feature Space",
+        dataset_dir / "tsne.png",
+        x_label="Dim 1",
+        y_label="Dim 2",
+        note="t-SNE axes are arbitrary embedding dimensions, not PCA components.",
+    )
 
 
 def run_umap(x_scaled: np.ndarray, labels: pd.Series, dataset_dir: Path, dataset: str) -> None:
@@ -551,7 +594,15 @@ def run_umap(x_scaled: np.ndarray, labels: pd.Series, dataset_dir: Path, dataset
         random_state=RANDOM_STATE,
     )
     embedding = reducer.fit_transform(x_scaled)
-    scatter_plot(embedding, labels, f"{dataset} UMAP Feature Space", dataset_dir / "umap.png")
+    scatter_plot(
+        embedding,
+        labels,
+        f"{display_dataset_name(dataset)} UMAP Feature Space",
+        dataset_dir / "umap.png",
+        x_label="Dim 1",
+        y_label="Dim 2",
+        note="UMAP axes are arbitrary embedding dimensions, not PCA components.",
+    )
 
 
 def analyze_dataset(dataset_df: pd.DataFrame, dataset: str, output_dir: Path, logger: logging.Logger) -> dict[str, Any]:
@@ -581,8 +632,9 @@ def analyze_dataset(dataset_df: pd.DataFrame, dataset: str, output_dir: Path, lo
     write_csv(compactness, dataset_dir / "compactness.csv")
     write_csv(compactness.head(20), dataset_dir / "top20_compact_glosses.csv")
     write_csv(compactness.tail(20).sort_values("compactness", ascending=False), dataset_dir / "top20_dispersed_glosses.csv")
-    histogram(compactness["compactness"], f"{dataset} Intra-class Compactness", "Mean distance to centroid", dataset_dir / "compactness_histogram.png")
-    boxplot(compactness["compactness"], f"{dataset} Compactness Distribution", "Mean distance to centroid", dataset_dir / "compactness_boxplot.png")
+    display_dataset = display_dataset_name(dataset)
+    histogram(compactness["compactness"], f"{display_dataset} Intra-class Compactness", "Mean distance to centroid", dataset_dir / "compactness_histogram.png")
+    boxplot(compactness["compactness"], f"{display_dataset} Compactness Distribution", "Mean distance to centroid", dataset_dir / "compactness_boxplot.png")
 
     euclidean, cosine, pairs, separation_stats = compute_centroid_distances(dataset_df, x_scaled)
     write_csv(euclidean.reset_index().rename(columns={"index": "gloss"}), dataset_dir / "interclass_distance_euclidean.csv")
